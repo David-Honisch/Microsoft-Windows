@@ -1,0 +1,28 @@
+# Project: LC2Grep32
+# Makefile created by Dev-C++ 5.10
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = LC2Grep32.o
+LINKOBJ  = LC2Grep32.o
+LIBS     = -L"C:/utils/Dev-Cpp/lib/wx/gcc_lib" -L"C:/utils/Dev-Cpp/lib"
+INCS     = -I"C:/utils/Dev-Cpp/include"
+CXXINCS  = -I"C:/utils/Dev-Cpp/" -I"C:/utils/Dev-Cpp/" -I"C:/utils/Dev-Cpp/include/common"
+BIN      = LC2Grep32.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+LC2Grep32.o: LC2Grep32.cpp
+	$(CPP) -c LC2Grep32.cpp -o LC2Grep32.o $(CXXFLAGS)

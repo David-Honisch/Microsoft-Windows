@@ -1,0 +1,17 @@
+REGEDIT4
+
+[-HKEY_CURRENT_USER\Software\Kazaa]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\knight]
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System]
+"HideLegacyLogonScripts"=-
+"HideLogoffScripts"=-
+"RunLogonScriptSync"=-
+"RunStartupScriptSync"=-
+"HideStartupScripts"=-
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System]
+"HideLegacyLogonScripts"=-
+"HideLogoffScripts"=-
+"RunLogonScriptSync"=-
+"RunStartupScriptSync"=-
+"HideStartupScripts"=-
