@@ -26,7 +26,7 @@
 #define GAMEPOINTERv2 0x9BE364
 //#define MONEYNUM 0x7c
 
-#define glTitle "Worms Reloaded Trainer +1 by beYond3r\n\n"
+#define glTitle "Worms Reloaded Trainer +1 by LetzteChance.Org\n\n"
 #define glDescription1 "Description:\n"
 #define glDescription2 "1 - Godmode (Freeze health by 100%))\n"
 #define glDescription3 "2 - Unlimited money (Freeze health by maximum ammo)\n"
