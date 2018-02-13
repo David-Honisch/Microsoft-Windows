@@ -1,0 +1,36 @@
+# Project: LC2WormsTrainer
+# Makefile created by Dev-C++ 5.10
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = LC2WormsTrainer_private.res
+OBJ      = wormstrainer.o include/config/lc2config.o $(RES)
+LINKOBJ  = wormstrainer.o include/config/lc2config.o $(RES)
+LIBS     = -L"C:/Dev-Cpp/MinGW64/lib" -L"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Dev-Cpp/MinGW64/include" -I"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
+CXXINCS  = -I"C:/Dev-Cpp/MinGW64/include" -I"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"C:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
+BIN      = LC2WormsTrainer.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+wormstrainer.o: wormstrainer.cpp
+	$(CPP) -c wormstrainer.cpp -o wormstrainer.o $(CXXFLAGS)
+
+include/config/lc2config.o: include/config/lc2config.cpp
+	$(CPP) -c include/config/lc2config.cpp -o include/config/lc2config.o $(CXXFLAGS)
+
+LC2WormsTrainer_private.res: LC2WormsTrainer_private.rc 
+	$(WINDRES) -i LC2WormsTrainer_private.rc --input-format=rc -o LC2WormsTrainer_private.res -O coff 
+

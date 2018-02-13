@@ -1,0 +1,22 @@
+; dlltool --base-file C:\Users\David\AppData\Local\Temp/cca06596.base --output-exp LC2Hanoi.exp --dllname LC2Hanoi.dll --output-def libLC2Hanoi.def --no-export-all-symbols --add-stdcall-alias --exclude-symbol=DllMainCRTStartup@12 --def C:\Users\David\AppData\Local\Temp/cca06596.def --output-lib libLC2Hanoi.a
+EXPORTS
+;	LC2HANOI::LC2HANOI()
+	_ZN8LC2HANOIC1Ev @ 1
+;	LC2HANOI::LC2HANOI()
+	_ZN8LC2HANOIC2Ev @ 2
+;	LC2HANOI::~LC2HANOI()
+	_ZN8LC2HANOID0Ev @ 3
+;	LC2HANOI::~LC2HANOI()
+	_ZN8LC2HANOID1Ev @ 4
+;	LC2HANOI::~LC2HANOI()
+	_ZN8LC2HANOID2Ev @ 5
+;	vtable for LC2HANOI
+	_ZTV8LC2HANOI @ 6 DATA
+	doPrint @ 7
+	doPrintResult @ 8
+	getConsoleInput @ 9
+	getFunc @ 10
+	getInfo @ 11
+	log @ 12
+	showMessageBox = showMessageBox@4 @ 13
+	showMessageBox@4 @ 14

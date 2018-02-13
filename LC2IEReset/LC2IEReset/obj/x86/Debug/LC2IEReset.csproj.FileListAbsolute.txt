@@ -1,5 +1,0 @@
-d:\source\c#\LC2IEReset\LC2IEReset\obj\x86\Debug\LC2IEReset.csprojResolveAssemblyReference.cache
-d:\source\c#\LC2IEReset\LC2IEReset\bin\Debug\LC2IEReset.exe
-d:\source\c#\LC2IEReset\LC2IEReset\bin\Debug\LC2IEReset.pdb
-d:\source\c#\LC2IEReset\LC2IEReset\obj\x86\Debug\LC2IEReset.exe
-d:\source\c#\LC2IEReset\LC2IEReset\obj\x86\Debug\LC2IEReset.pdb
