@@ -1,0 +1,22 @@
+	cecho v2.0
+
+echo command with colors support
+by david@honisch.org
+
+Usage: cecho <text_to_output>
+	{{		= Escape character '{'
+	{\n\t}		= New line - tab
+	{\u0007}	= Unicode character code
+	{0A}		= Color code
+	{red on gray}	= Color name
+	{#}		= Restore initial color
+
+Available colors:
+	0 = black  	8 = gray
+	1 = navy   	9 = blue
+	2 = green  	A = lime
+	3 = teal   	B = aqua
+	4 = maroon 	C = red
+	5 = purple 	D = fuchisa
+	6 = olive  	E = yellow
+	7 = silver 	F = white
