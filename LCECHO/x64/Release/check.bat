@@ -8,8 +8,7 @@ REM echo ^<h2^>Reading Java Version^</h2^>
 %cecho% {blue on black}^<h2^>Reading Java Version^</h2^>{#}{\n}
 
 Set "JV="
-REM echo Hapag Lloyd - Material Import Java Check
-%cecho% {blue on black}Hapag Lloyd - Material Import Java Check{#}{\n}
+%cecho% {blue on black}Java Check{#}{\n}
 For /F "Tokens=3" %%A In ('java -version 2^>^&1') Do If Not Defined JV Set "JV=%%~A"
 %cecho% {blue on black}^<h4^>Searching^</h4^>{#}{\n}
 If /I "%JV%"=="not" (Echo Java is not installed) Else (
