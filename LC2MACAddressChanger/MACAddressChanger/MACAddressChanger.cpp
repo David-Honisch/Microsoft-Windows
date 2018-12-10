@@ -1,6 +1,6 @@
 /*
-	Copyright(C) Nishant Sivakumar, 2005. All rights reserved.
-	http://blog.voidnish.com
+	Copyright(C) David Honisch, 2018. All rights reserved.
+	http://www.letztechance.org
 */
 
 // MACAddressChanger.cpp : Defines the class behaviors for the application.
