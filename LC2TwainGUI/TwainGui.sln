@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwainGui32", "TwainGui32.csproj", "{CE179C13-DA23-42CD-9A6F-234E7F67BAF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC2TwainLib", "..\LC2TwainLib\LC2TwainLib.csproj", "{85D42C29-056F-40DA-89F6-29869C4352D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC2TwainCLI", "LC2TwainCLI\LC2TwainCLI.csproj", "{19D1D22C-D0D3-41B6-A476-763791A40B27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE179C13-DA23-42CD-9A6F-234E7F67BAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE179C13-DA23-42CD-9A6F-234E7F67BAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE179C13-DA23-42CD-9A6F-234E7F67BAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE179C13-DA23-42CD-9A6F-234E7F67BAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85D42C29-056F-40DA-89F6-29869C4352D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85D42C29-056F-40DA-89F6-29869C4352D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85D42C29-056F-40DA-89F6-29869C4352D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85D42C29-056F-40DA-89F6-29869C4352D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D1D22C-D0D3-41B6-A476-763791A40B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D1D22C-D0D3-41B6-A476-763791A40B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D1D22C-D0D3-41B6-A476-763791A40B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D1D22C-D0D3-41B6-A476-763791A40B27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02FB9627-8907-4D4A-A195-C6BB9EA2DBD4}
+	EndGlobalSection
+EndGlobal
