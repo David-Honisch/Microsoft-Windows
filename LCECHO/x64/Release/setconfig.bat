@@ -48,5 +48,4 @@ set "restoredb=c:\x\x2.bak"
 set "sqlconfigv1=%cd%\x.sql"
 set "sqlconfigv2=%cd%\x2.sql"
 set "jsonConfig=%cd%\config\xMain.json"
-set "nodeconfig=%cd%\config\xnode.config.json"
 rem ============= EOF CONFIGURE THE ENVIRONMENT =============
