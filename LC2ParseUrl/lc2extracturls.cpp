@@ -85,7 +85,7 @@ int main(int argc, char** argv)
 	}
 	if (!fileName.empty())
 	{
-		for (auto str : extract_hyperlinks("urls.html")) {
+		for (auto str : extract_hyperlinks(fileName)) {
 			if (argc > 2 && argv[2] == "true") {
 				if (isWebUrl(str) == 0) {
 					std::cout << str << '\n';
