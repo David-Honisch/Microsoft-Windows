@@ -1,12 +1,13 @@
 ![Logo](img/LC2SQITE.png)
-
-How to Build an Electron App with a Local SQLite3 Database That's Portable.
+https://letztechance.org/
+A portable SQLite Database Application
 ------------------------------------------------------------------------
 
 This project demonstrates how to install and use a local SQLite3 database in Electron using [SQL.js](https://github.com/kripken/sql.js). SQL.js is a port of SQLite to JavaScript, by compiling the SQLite C code with [Emscripten](https://github.com/kripken/emscripten). Using only JavaScript means there are no C bindings or node-gyp compilations to deal with.
 
 Updates
 -------
+__March 2019__ - local db / changed from user directory to app root path
 __January 2018__
 - Updated SQL.js to 0.4.0
 - Updated Bootstrap to 4.0.0-beta.3. Form validation was revised to agree with [current documentation](http://getbootstrap.com/docs/4.0/components/forms/). Improved responsive layout and UTF-8 support.
@@ -24,6 +25,7 @@ Quick Code Tour
  - The application's database work is all done in **model.js**. Here you'll find functions to open and close the database as well as functions to select, insert, update, and delete records. [Prepared statements](https://en.wikipedia.org/wiki/Prepared_statement) are used throughout.
  - The application opens with a list of people. Click a red X to delete a person's record.
 
+ https://letztechance.org/
  ![Adress](screenshots/adress-list.png)
  - Click a pencil (shown above) to edit a person:
 

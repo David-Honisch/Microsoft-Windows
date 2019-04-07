@@ -43,7 +43,7 @@ module.exports.listPeople = function (e) {
   $('a.nav-link').removeClass('active');
   $(e).addClass('active');
   $('#edit-person').hide();
-  window.model.getPeople();
+  window.model.getQuery('SELECT * FROM `people` ORDER BY `name` ASC limit 999999');
   $('#people').show();
 }
 

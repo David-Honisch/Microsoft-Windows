@@ -116,10 +116,10 @@ module.exports.initDb = function (appPath, callback) {
 /*
   Populates the People List.
 */
-module.exports.getPeople = function () {
+module.exports.getQuery = function (query) {
   let db = SQL.dbOpen(window.model.db)
   if (db !== null) {
-    let query = 'SELECT * FROM `people` ORDER BY `name` ASC'
+    //let query = 'SELECT * FROM `people` ORDER BY `name` ASC'
     try {
       let row = db.exec(query)
       if (row !== undefined && row.length > 0) {
@@ -127,7 +127,7 @@ module.exports.getPeople = function () {
         view.showPeople(row)
       }
     } catch (error) {
-      console.log('model.getPeople', error.message)
+      console.log('model.getQuery', error.message)
     } finally {
       SQL.dbClose(db, window.model.db)
     }
@@ -148,10 +148,10 @@ module.exports.getPerson = function (pid) {
         let columns = statement.getColumnNames()
         return _rowsFromSqlDataObject({values: values, columns: columns})
       } else {
-        console.log('model.getPeople', 'No data found for person_id =', pid)
+        console.log('model.getQuery', 'No data found for person_id =', pid)
       }
     } catch (error) {
-      console.log('model.getPeople', error.message)
+      console.log('model.getQuery', error.message)
     } finally {
       SQL.dbClose(db, window.model.db)
     }

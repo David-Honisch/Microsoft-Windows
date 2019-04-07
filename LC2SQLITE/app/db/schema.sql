@@ -1,3 +1,13 @@
+CREATE TABLE "batch" (
+	 "person_id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	 "name" TEXT(255,0) NOT NULL,
+	 "first_name" TEXT(255,0) NULL,	 
+	 "description" TEXT(255,0) NULL,
+	 "zipcode" TEXT(255,0) NULL,
+	 "city" TEXT(255,0) NULL,
+	 "street" TEXT(255,0) NULL,
+	 "url" TEXT(255,0) NULL
+);
 CREATE TABLE "people" (
 	 "person_id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	 "name" TEXT(255,0) NOT NULL,
