@@ -1,0 +1,12 @@
+# ignore all logs
+*.log
+/.metadata
+*.class
+/node_modules/
+/release-builds/
+/install/nsis/
+/install/apache-ant-1.10.5/
+/bin
+/log
+/archive
+/temp

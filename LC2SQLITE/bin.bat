@@ -1,0 +1,1 @@
+start release-builds\LCAdressbookSQLite-win32-ia32\LCAdressbookSQLite.exe
