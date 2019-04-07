@@ -10,7 +10,7 @@ window.Tether = require('tether');
 window.Bootstrap = require('bootstrap');
 
 let webRoot = path.dirname(__dirname);
-window.view = require(path.join(webRoot, 'view.js'));
+window.view = require(path.join(webRoot,'toolsview.js'));
 window.model = require(path.join(webRoot, 'model.js'));
 let rootLib = require('app-root-path');
 let appRoot = path.dirname((''+rootLib).replace("resources",""));
@@ -36,7 +36,11 @@ let dom = O.html()
 $('body').html(dom)
 
 $('document').ready(function () {
-  window.model.getQuery('SELECT * FROM `bat` ORDER BY `name` ASC');
+  window.model.getQuery('SELECT * FROM `tools` ORDER BY `name` ASC');
+  $('#searchsubmit').click(function (e) {
+    e.preventDefault();
+    window.model.getQuery('SELECT * FROM `tools` WHERE name like "%'+$('#search').val()+'%" ORDER BY `name` ASC');
+  })
   $('#edit-person-submit').click(function (e) {
     e.preventDefault();
     let ok = true;
@@ -53,8 +57,8 @@ $('document').ready(function () {
       $('#edit-person-form').addClass('was-validated');
       let formId = $(e.target).parents('form').attr('id');
       let keyValue = window.view.getFormFieldValues(formId);
-      window.model.saveFormData('people', keyValue, function () {
-        window.model.getQuery('SELECT * FROM `people` ORDER BY `name` ASC');
+      window.model.saveFormData('tools', keyValue, function () {
+        window.model.getQuery('SELECT * FROM `tools` ORDER BY `name` ASC');
       })
     }
   })

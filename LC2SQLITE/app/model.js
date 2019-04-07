@@ -1,9 +1,9 @@
 'use strict'
 
-const path = require('path')
-const fs = require('fs')
-const SQL = require('sql.js')
-const view = require(path.join(__dirname, 'view.js'))
+const path = require('path');
+const fs = require('fs');
+const SQL = require('sql.js');
+const view = require(path.join(__dirname, 'homeview.js'));
 
 /*
   SQL.js returns a compact object listing the columns separately from the
@@ -137,10 +137,10 @@ module.exports.getQuery = function (query) {
 /*
   Fetch a person's data from the database.
 */
-module.exports.getPerson = function (pid) {
+module.exports.getPerson = function (pid, query) {
   let db = SQL.dbOpen(window.model.db)
   if (db !== null) {
-    let query = 'SELECT * FROM `people` WHERE `person_id` IS ?'
+    //let query = 'SELECT * FROM `people` WHERE `person_id` IS ?'
     let statement = db.prepare(query, [pid])
     try {
       if (statement.step()) {
@@ -148,7 +148,7 @@ module.exports.getPerson = function (pid) {
         let columns = statement.getColumnNames()
         return _rowsFromSqlDataObject({values: values, columns: columns})
       } else {
-        console.log('model.getQuery', 'No data found for person_id =', pid)
+        console.log('model.getQuery', 'No data found for person_id =', pid+" Query:"+query)
       }
     } catch (error) {
       console.log('model.getQuery', error.message)

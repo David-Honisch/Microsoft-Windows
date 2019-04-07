@@ -10,7 +10,7 @@ window.Tether = require('tether');
 window.Bootstrap = require('bootstrap');
 
 let webRoot = path.dirname(__dirname);
-window.view = require(path.join(webRoot, 'view.js'));
+window.view = require(path.join(webRoot,'homeview.js'));
 window.model = require(path.join(webRoot, 'model.js'));
 let rootLib = require('app-root-path');
 let appRoot = path.dirname((''+rootLib).replace("resources",""));
@@ -37,6 +37,11 @@ $('body').html(dom)
 
 $('document').ready(function () {
   window.model.getQuery('SELECT * FROM `people` ORDER BY `name` ASC');
+  $('#searchsubmit').click(function (e) {
+    e.preventDefault();
+    window.model.getQuery('SELECT * FROM `people` WHERE name like "%'+$('#search').val()+'%" ORDER BY `name` ASC');
+  })
+
   $('#edit-person-submit').click(function (e) {
     e.preventDefault();
     let ok = true;
