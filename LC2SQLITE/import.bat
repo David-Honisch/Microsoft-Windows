@@ -1,13 +1,12 @@
 @echo off
-cls
-set "tableName=people"
+set "tableName=%2"
 set "dbfile=lc.db"
-set "PRG=.\LC2SQLiteGUI.exe"
+REM set "PRG=.\LC2SQLiteGUI.exe"
 set "sexec=.\SQLite3.exe"
-set "importsql=.\\import.sql"
-set "csv=.\\export.csv"
+REM set "importsql=.\\import.sql"
+set "csv=%1"
 rem set "dropsql=.\\bin\\droptables.sql"
-SET "QUERY=select rowid, name from %temptable% limit 1000000;"
+REM SET "QUERY=select rowid, name from %temptable% limit 1000000;"
 set hr=%time:~0,2%
 .\LC2Logo.exe
 echo Writing DATA files
