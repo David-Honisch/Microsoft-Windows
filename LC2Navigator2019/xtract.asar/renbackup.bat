@@ -1,0 +1,1 @@
+copy app.asar.zip app.asar
