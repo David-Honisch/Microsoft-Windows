@@ -62,7 +62,7 @@ Fetch videos from youtube playlist and download them one by one or all.
 
 #### Tests
 
-- [jest](https://jestjs.io/)
+- TODO[jest](https://jestjs.io/)
 
 #### Libraries
 
