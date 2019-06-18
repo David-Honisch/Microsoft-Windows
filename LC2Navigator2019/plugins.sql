@@ -22,7 +22,7 @@ values
 ('exec.bat .\\resources\\cmd\\updates.bat','exec.bat .\\resources\\cmd\\updates.bat','exec.bat .\\resources\\cmd\\updates.bat');
 INSERT OR REPLACE INTO importscripts (first_name,name,url) 
 values 
-('.\\resources\\cmd\\javaversion.bat','.\\resources\\cmd\\javaversion.bat','.\\resources\\cmd\\javaversion.bat');
+('exec.bat .\\resources\\cmd\\javaversion.bat','exec.bat .\\resources\\cmd\\javaversion.bat','exec.bat .\\resources\\cmd\\javaversion.bat');
 SELECT '<h4>INSERT INTO importscripts</h4>';
 INSERT OR REPLACE INTO importscripts (first_name,name,url) 
 values 
