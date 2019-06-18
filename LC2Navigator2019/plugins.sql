@@ -19,11 +19,11 @@ where rowid not in (select min(rowid)
 SELECT '<h4>INSERT INTO importscripts</h4>';
 INSERT OR REPLACE INTO importscripts (first_name,name,url) 
 values 
-('.\\resources\\cmd\\updates.bat','.\\resources\\cmd\\updates.bat','.\\resources\\cmd\\updates.bat');
+('exec.bat .\\resources\\cmd\\updates.bat','exec.bat .\\resources\\cmd\\updates.bat','exec.bat .\\resources\\cmd\\updates.bat');
 SELECT '<h4>INSERT INTO importscripts</h4>';
 INSERT OR REPLACE INTO importscripts (first_name,name,url) 
 values 
-('.\\resources\\cmd\\updates.bat','.\\resources\\cmd\\updates.bat','.\\resources\\cmd\\updates.bat');
+('exec.bat .\\resources\\cmd\\updates.bat','exec.bat .\\resources\\cmd\\updates.bat','exec.bat .\\resources\\cmd\\updates.bat');
 INSERT OR REPLACE INTO importscripts (first_name,name,url) 
 values 
 ('.\\resources\\cmd\\javaversion.bat','.\\resources\\cmd\\javaversion.bat','.\\resources\\cmd\\javaversion.bat');
