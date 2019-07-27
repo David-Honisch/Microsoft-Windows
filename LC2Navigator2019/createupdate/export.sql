@@ -1,7 +1,7 @@
 SELECT 'UPDATING';
 .mode insert
 .separator ";"
-.output dbexport.sql
+.output .\\sql\\_dbexport.sql
 --.dump;
 SELECT 'UPDATING DONE';
 --.exit;
