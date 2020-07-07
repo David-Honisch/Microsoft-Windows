@@ -5,7 +5,7 @@
   "author": "David Honisch",
   "description": "LetzteChance.Org - Adressbook SQLite - Hybrid Application for Windows,Android and IOS",
   "devDependencies": {
-    "electron": "^4.0.5",
+    "electron": "^7.2.4",
     "electron-builder": "^19.48.3",
     "electron-packager": "^13.0.1",
     "electron-prebuilt": "^1.4.13",
