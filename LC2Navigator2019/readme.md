@@ -7,11 +7,15 @@ http://letztechance.org
 
 ## What is "LC2Navigator2019" app?
 
-It´s a small SQLite App to manage or execute different utitilites or services
+Combining different technologies like electron, html5, jquery and many more...
 
 <img src="app-resources/video.gif" alt="video demo" width="320" />
 
-Mp3 files will be saved to a **y2mp3** folder in the **Download** folder
+Different Plugins included:
+- SQLite Database
+- Different Windows Command Plugin
+- Mp3 files will be saved to a **y2mp3** folder in the **Download** folder
+more coming soon...
 
 ## Supported os
 
@@ -67,6 +71,11 @@ Fetch videos from youtube playlist and download them one by one or all.
 #### Libraries
 
 - Electron
+- HTML5
+- JQuery
+- Angular 10
+- ReactJS
+- Phaser IO
 - NodeJS
 - SQL.js
 -- This is realized as a soon coming plugin. Please wait for Updates...
@@ -75,10 +84,11 @@ Fetch videos from youtube playlist and download them one by one or all.
 - Spring MVC
 - Spring Rest
 - Hibernate
+and more...
 
 ### TODO
 
-?? Okay, there a lot of tasks. What´s the first feature. Me be i will update the tab control rendered by sql query.
+?? Okay, there a lot of tasks todo....
 
 ## License
 MIT
