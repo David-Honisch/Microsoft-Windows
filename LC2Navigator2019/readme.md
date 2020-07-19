@@ -233,6 +233,4 @@ Datenschutzerklärung für Google Adsense, Datenschutzerklärung Google 1, Datensch
 
 Kontakt: 
 
-David Honisch
-53721 Siegburg 
-Hauptstrasse 47a
+https://www.letztechance.org/contact.html
