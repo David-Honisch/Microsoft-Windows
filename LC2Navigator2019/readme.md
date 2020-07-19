@@ -7,14 +7,16 @@ http://letztechance.org
 
 ## What is "LC2Navigator2019" app?
 
-Combining different technologies like electron, html5, jquery and many more...
+Combining different technologies like electron, html5, jquery and many more.
+News, News Grabber and SQLite based plugin system
 
 <img src="app-resources/video.gif" alt="video demo" width="320" />
 
 Different Plugins included:
 - SQLite Database
 - Different Windows Command Plugin
-- Mp3 files will be saved to a **y2mp3** folder in the **Download** folder
+- Mp3 files will be saved to a **y2mp3** folder in the **Download** folder (grab youtube or anything else)
+- Excel Import Export (convert xls, xlsx, csv, json, xml and more...)
 more coming soon...
 
 ## Supported os
