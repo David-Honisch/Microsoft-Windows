@@ -384,7 +384,13 @@ Section "CreateShortCuts"
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\LC2Navigator2020.lnk" $INSTDIR\LC2Navigator2020.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\_LC2Launcher.lnk" $INSTDIR\LC2Navigator2020.exe
  CreateShortCut "$INSTDIR\Update.lnk" $INSTDIR\LC2Start.NET.exe
- CreateShortCut "$DESKTOP\\LC2Navigator2020.exe.lnk" $INSTDIR\LC2Start.NET.exe
+ CreateShortCut "$INSTDIR\LC2Start.NET.exe.lnk" $INSTDIR\LC2Start.NET.exe
+ CreateShortCut "$INSTDIR\LC2Search.exe.lnk" $INSTDIR\release-builds\lc2search-win32-ia32\lc2search.exe
+ CreateShortCut "$DESKTOP\LC2Search.exe.lnk" $INSTDIR\release-builds\lc2search-win32-ia32\lc2search.exe
+ CreateShortCut "$DESKTOP\LC2Navigator2020.exe.lnk" $INSTDIR\LC2Start.NET.exe
+ 
+; CreateShortCut "$SMPROGRAMS\Startup\lc2search.exe.lnk" "$INSTDIR\release-builds\lc2search-win32-ia32\lc2search.exe"
+ 
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\AutoStart.lnk" $INSTDIR\LC2autostart.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\AutoStartConfig.lnk" $INSTDIR\LC2autostartConfig.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\AutoStartUninstall.lnk" $INSTDIR\LC2autostartUninstall.exe
@@ -396,6 +402,15 @@ Section "CreateShortCuts"
 ;  Call CSCTest
 
 SectionEnd
+
+
+Section "CreateAutoShortCuts"
+ CreateShortCut "$SMPROGRAMS\Startup\lc2search.exe.lnk" "$INSTDIR\release-builds\lc2search-win32-ia32\lc2search.exe"
+  SectionIn 1 2 3
+;  Call CSCTest
+SectionEnd
+
+
 
 Section ""
 # Give ownership for file C:\test.txt to Waterloo\Mathias
