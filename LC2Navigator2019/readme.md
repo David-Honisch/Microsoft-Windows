@@ -2,8 +2,8 @@
 
 Source:
 http://letztechance.org
+<img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
-<img src="app-resources/logo-128.png" alt="logo" />
 
 ## What is "LC2Navigator2019" app?
 
@@ -91,6 +91,11 @@ and more...
 ### TODO
 
 ?? Okay, there a lot of tasks todo....
+
+### Plugins
+LC2ImportExcelTransform v.1.01a
+<img src="excelimportexport.jpg" alt="logo" />
+
 
 ## License
 MIT
