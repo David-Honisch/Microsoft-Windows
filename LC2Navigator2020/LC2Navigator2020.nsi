@@ -380,13 +380,13 @@ Section "CreateShortCuts"
  CreateDirectory $SMPROGRAMS\$R0
  CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG
  CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\Start.LC2Launcher.lnk" $INSTDIR\LC2Navigator2020.exe
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\LC2Navigator2020.lnk" $INSTDIR\LC2Navigator2020.exe
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\_LC2Launcher.lnk" $INSTDIR\LC2Navigator2020.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\LC2Start.NET.lnk" $INSTDIR\LC2Start.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\LC2Search.lnk" $INSTDIR\lc2search.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\_LC2Launcher.lnk" $INSTDIR\lc2search.exe
  CreateShortCut "$INSTDIR\Update.lnk" $INSTDIR\LC2Start.NET.exe
  CreateShortCut "$INSTDIR\LC2Start.NET.exe.lnk" $INSTDIR\LC2Start.NET.exe
- CreateShortCut "$INSTDIR\LC2Search.exe.lnk" $INSTDIR\release-builds\lc2search.exe
- CreateShortCut "$DESKTOP\LC2Search.exe.lnk" $INSTDIR\release-builds\lc2search.exe
+ CreateShortCut "$INSTDIR\LC2Search.exe.lnk" $INSTDIR\lc2search.exe
+ CreateShortCut "$DESKTOP\LC2Search.exe.lnk" $INSTDIR\lc2search.exe
  CreateShortCut "$DESKTOP\LC2Navigator2020.exe.lnk" $INSTDIR\LC2Start.NET.exe
  
 ; CreateShortCut "$SMPROGRAMS\Startup\lc2search.exe.lnk" "$INSTDIR\release-builds\lc2search-win32-ia32\lc2search.exe"
