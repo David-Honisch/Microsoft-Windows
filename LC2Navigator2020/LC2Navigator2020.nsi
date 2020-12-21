@@ -389,7 +389,7 @@ Section "CreateShortCuts"
  CreateShortCut "$DESKTOP\LC2Search.exe.lnk" $INSTDIR\lc2search.exe
  CreateShortCut "$DESKTOP\LC2Navigator2020.exe.lnk" $INSTDIR\LC2Start.NET.exe
  
-; CreateShortCut "$SMPROGRAMS\Startup\lc2search.exe.lnk" "$INSTDIR\release-builds\lc2search-win32-ia32\lc2search.exe"
+; CreateShortCut "$SMPROGRAMS\Startup\lc2search.exe.lnk" "$INSTDIR\lc2search-win32-ia32\lc2search.exe"
  
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\AutoStart.lnk" $INSTDIR\LC2autostart.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\AutoStartConfig.lnk" $INSTDIR\LC2autostartConfig.exe
@@ -405,7 +405,7 @@ SectionEnd
 
 
 Section "CreateAutoShortCuts"
- CreateShortCut "$SMPROGRAMS\Startup\lc2search.exe.lnk" "$INSTDIR\release-builds\lc2search-win32-ia32\lc2search.exe"
+ CreateShortCut "$SMPROGRAMS\Startup\lc2search.exe.lnk" "$INSTDIR\lc2search-win32-ia32\lc2search.exe"
   SectionIn 1 2 3
 ;  Call CSCTest
 SectionEnd
