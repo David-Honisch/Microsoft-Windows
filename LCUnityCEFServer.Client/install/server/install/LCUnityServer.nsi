@@ -92,21 +92,21 @@ LoadLanguageFile "${NSISDIR}\Contrib\Language files\Slovak.nlf"
 ;Version Information
 
   VIProductVersion "1.2.3.4"
-  VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductName" "LC2Navigator2020"
-  VIAddVersionKey /LANG=${LANG_ENGLISH} "Comments" "LC2Navigator2020 Client x64"
+  VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductName" "LCUnityServer"
+  VIAddVersionKey /LANG=${LANG_ENGLISH} "Comments" "LCUnityServer Client x64"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "CompanyName" "letztechance.org"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalTrademarks" "no trademark"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalCopyright" "© 2020 by David Honisch"
-  VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "LC2Navigator2020 x64"
+  VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "LCUnityServer x64"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "1.0.0"
 
 ;--------------------------------
 
 
-Name "LC2Navigator2020"
-Caption "LC2Navigator2020 Install (c)by http://www.letztechance.org"
+Name "LCUnityServer"
+Caption "LCUnityServer Install (c)by http://www.letztechance.org"
 Icon "${NSISDIR}\Contrib\Graphics\Icons\lc.ico"
-OutFile "LC2Navigator2020install.exe"
+OutFile "LCUnityServerinstall.exe"
 
 SetDateSave on
 SetDatablockOptimize on
@@ -116,8 +116,8 @@ BGGradient FFFFFF A66E3C 000000
 InstallColors A66E3C FFFFFF
 XPStyle on
 
-InstallDir "$PROGRAMFILES\LETZTECHANCE.ORG\LC2Navigator2020"
-InstallDirRegKey HKLM "Software\LETZTECHANCE.ORG\LC2Navigator2020" "LC2Navigator2020"
+InstallDir "$PROGRAMFILES\LETZTECHANCE.ORG\LCUnityServer"
+InstallDirRegKey HKLM "Software\LETZTECHANCE.ORG\LCUnityServer" "LCUnityServer"
 
 CheckBitmap "${NSISDIR}\Contrib\Graphics\Checks\classic-cross.bmp"
 
@@ -151,12 +151,12 @@ UninstPage instfiles
 ;!if $1 != "Admin"
 ;MessageBox MB_YESNO "Startmenü Eintrag ohne Administrations Privilegien setzen ?" IDYES NoReadme
 ;      Exec notepad.exe ; view readme or whatever, if you want.
-;	CreateShortCut "$SMPROGRAMS\$R0\All users LC2Navigator2020.lnk" $INSTDIR\LC2Navigator2020.exe
+;	CreateShortCut "$SMPROGRAMS\$R0\All users LCUnityServer.lnk" $INSTDIR\LCUnityServer.exe
 ;Abort
 ;!else
 ;MessageBox MB_YESNO "Startmenü Eintrag mit Administrations Privilegien setzen ?" IDYES NoReadme
 ;      Exec notepad.exe ; view readme or whatever, if you want.
-;	CreateShortCut "$SMPROGRAMS\$R0\All users LC2Navigator2020.lnk" $INSTDIR\LC2Navigator2020.exe
+;	CreateShortCut "$SMPROGRAMS\$R0\All users LCUnityServer.lnk" $INSTDIR\LCUnityServer.exe
 ;!endif
 ;    NoReadme:
 ;
@@ -189,14 +189,14 @@ Section "" ; empty string makes it hidden, so would starting with -
   ; write reg info
   StrCpy $1 "POOOOOOOOOOOP"
   DetailPrint "I like to be able to see what is going on (debug) $1"
-  WriteRegStr HKLM SOFTWARE\WWW.LETZTECHANCE.ORG\LC2Navigator2020 "Install_Dir" "$INSTDIR"
+  WriteRegStr HKLM SOFTWARE\WWW.LETZTECHANCE.ORG\LCUnityServer "Install_Dir" "$INSTDIR"
 
   ; write uninstall strings
-  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\LC2Navigator2020" "DisplayName" "LC2Navigator2020 (remove only)"
-  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\LC2Navigator2020" "UninstallString" '"$INSTDIR\uninst.exe"'
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\LCUnityServer" "DisplayName" "LCUnityServer (remove only)"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\LCUnityServer" "UninstallString" '"$INSTDIR\uninst.exe"'
 ;---Extrahiere Dateien --------------------->
   SetOutPath $INSTDIR
-  ;File /a "exe\LC2Navigator2020.exe"
+  ;File /a "exe\LCUnityServer.exe"
   ;File /a "exe\*.*"
   File /a ".\install.zip"
   ;File /a /r "exe\Presents\*.*"	
@@ -281,7 +281,7 @@ Section "" ; empty string makes it hidden, so would starting with -
 
 SectionEnd
 
-Section "LC2Navigator2020"
+Section "LCUnityServer"
 
 SectionIn 1 2 3
 ;  Start: MessageBox MB_OK "Starte Installation"
@@ -328,11 +328,11 @@ Section "Registry/INI functions"
 
 SectionIn 1 4 3
 
-  WriteRegStr HKLM SOFTWARE\LETZTECHANCE.ORG\LC2Navigator2020 "StrTest_INSTDIR" "$INSTDIR"
-  WriteRegDword HKLM SOFTWARE\LETZTECHANCE.ORG\LC2Navigator2020 "DwordTest_0xDEADBEEF" 0xdeadbeef
-  WriteRegDword HKLM SOFTWARE\LETZTECHANCE.ORG\LC2Navigator2020 "DwordTest_123456" 123456
-  WriteRegDword HKLM SOFTWARE\LETZTECHANCE.ORG\LC2Navigator2020 "DwordTest_0123" 0123
-  WriteRegBin HKLM SOFTWARE\LETZTECHANCE.ORG\LC2Navigator2020 "BinTest_deadbeef01f00dbeef" "DEADBEEF01F00DBEEF"
+  WriteRegStr HKLM SOFTWARE\LETZTECHANCE.ORG\LCUnityServer "StrTest_INSTDIR" "$INSTDIR"
+  WriteRegDword HKLM SOFTWARE\LETZTECHANCE.ORG\LCUnityServer "DwordTest_0xDEADBEEF" 0xdeadbeef
+  WriteRegDword HKLM SOFTWARE\LETZTECHANCE.ORG\LCUnityServer "DwordTest_123456" 123456
+  WriteRegDword HKLM SOFTWARE\LETZTECHANCE.ORG\LCUnityServer "DwordTest_0123" 0123
+  WriteRegBin HKLM SOFTWARE\LETZTECHANCE.ORG\LCUnityServer "BinTest_deadbeef01f00dbeef" "DEADBEEF01F00DBEEF"
 ;  StrCpy $8 "$SYSDIR\LC"
   WriteINIStr "$INSTDIR\lc.ini"  "LC2Applikationen" "Value1" $8
   WriteINIStr "$INSTDIR\lc.ini"  "server" "http://www.letztechance.org" $8
@@ -379,24 +379,24 @@ SectionEnd
 Section "CreateShortCuts"
  CreateDirectory $SMPROGRAMS\$R0
  CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG
- CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\LC2Start.NET.lnk" $INSTDIR\LC2Start.exe
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\LC2Search.lnk" $INSTDIR\lc2search.exe
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\_LC2Launcher.lnk" $INSTDIR\lc2search.exe
+ CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer\LC2Start.NET.lnk" $INSTDIR\LCUnityServer.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer\LC2Search.lnk" $INSTDIR\LCUnityServer.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer\_LC2Launcher.lnk" $INSTDIR\LCUnityServer.exe
  CreateShortCut "$INSTDIR\Update.lnk" $INSTDIR\LC2Start.NET.exe
  CreateShortCut "$INSTDIR\LC2Start.NET.exe.lnk" $INSTDIR\LC2Start.NET.exe
- CreateShortCut "$INSTDIR\LC2Search.exe.lnk" $INSTDIR\lc2search.exe
- CreateShortCut "$DESKTOP\LC2Search.exe.lnk" $INSTDIR\lc2search.exe
- CreateShortCut "$DESKTOP\LC2Navigator2020.exe.lnk" $INSTDIR\LC2Start.NET.exe
+ CreateShortCut "$INSTDIR\LCUnityServer.exe.lnk" $INSTDIR\LCUnityServer.exe
+ CreateShortCut "$DESKTOP\LCUnityServer.exe.lnk" $INSTDIR\LCUnityServer.exe
+ CreateShortCut "$DESKTOP\LCUnityServer.exe.lnk" $INSTDIR\LC2Start.NET.exe
  
-; CreateShortCut "$SMPROGRAMS\Startup\lc2search.exe.lnk" "$INSTDIR\lc2search-win32-ia32\lc2search.exe"
+; CreateShortCut "$SMPROGRAMS\Startup\LCUnityServer.exe.lnk" "$INSTDIR\lc2search-win32-ia32\LCUnityServer.exe"
  
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\AutoStart.lnk" $INSTDIR\LC2autostart.exe
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\AutoStartConfig.lnk" $INSTDIR\LC2autostartConfig.exe
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\AutoStartUninstall.lnk" $INSTDIR\LC2autostartUninstall.exe
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\LC2Config.lnk" $INSTDIR\LC2Config.exe
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\Uninstall.lnk" $INSTDIR\uninst.exe
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\Support.lnk" $INSTDIR\letztechance.org.url
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer\AutoStart.lnk" $INSTDIR\LC2autostart.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer\AutoStartConfig.lnk" $INSTDIR\LC2autostartConfig.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer\AutoStartUninstall.lnk" $INSTDIR\LC2autostartUninstall.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer\LC2Config.lnk" $INSTDIR\LC2Config.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer\Uninstall.lnk" $INSTDIR\uninst.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer\Support.lnk" $INSTDIR\letztechance.org.url
   SectionIn 1 2 3
 
 ;  Call CSCTest
@@ -405,7 +405,7 @@ SectionEnd
 
 
 Section "CreateAutoShortCuts"
- CreateShortCut "$SMPROGRAMS\Startup\lc2search.exe.lnk" "$INSTDIR\lc2search-win32-ia32\lc2search.exe"
+ CreateShortCut "$SMPROGRAMS\Startup\LCUnityServer.exe.lnk" "$INSTDIR\lc2search-win32-ia32\LCUnityServer.exe"
   SectionIn 1 2 3
 ;  Call CSCTest
 SectionEnd
@@ -473,16 +473,16 @@ SectionGroupEnd
 
 ;Uninstaller
 
-UninstallText "Uninstall LC2Navigator2020 ?"
+UninstallText "Uninstall LCUnityServer ?"
 ;UninstallIcon "${NSISDIR}\Contrib\Graphics\Icons\nsis1-uninstall.ico"
 UninstallIcon "${NSISDIR}\Contrib\Graphics\Icons\lc.ico"
 
 Section "Uninstall"
 
-  DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\LC2Navigator2020"
-  DeleteRegKey HKLM "SOFTWARE\WWW.LETZTECHANCE.ORG\LC2Navigator2020"
+  DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\LCUnityServer"
+  DeleteRegKey HKLM "SOFTWARE\WWW.LETZTECHANCE.ORG\LCUnityServer"
 
-;  Delete "$SMPROGRAMS\WWW.LETZTECHANCE.ORG\LC2Navigator2020\reg\*.*"
+;  Delete "$SMPROGRAMS\WWW.LETZTECHANCE.ORG\LCUnityServer\reg\*.*"
 ;  RMDir "$SMPROGRAMS\reg"
   Delete "$INSTDIR\reg\*.*"
   RMDir "$INSTDIR\reg"
@@ -517,9 +517,9 @@ Section "Uninstall"
   Delete "$INSTDIR\*.*"
   RMDir "$INSTDIR\"
   
-  Delete "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\LC2Navigator2020.lnk"
-  Delete "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\uninst.lnk"
-  Delete "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\*.*"
+  Delete "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer\LCUnityServer.lnk"
+  Delete "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer\uninst.lnk"
+  Delete "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LCUnityServer\*.*"
   ;RMDir "$SMPROGRAMS\$R0\LETZTECHANCE.ORG"
   ;RMDir "$SMPROGRAMS"
   !insertmacro RemoveFilesAndSubDirs "$INSTDIR"
