@@ -1,16 +1,14 @@
-<h1>LC2Navigator2019</h1>
-
-This Version is not longer supported
+<h1>LC2Navigator2020</h1>
 
 Source:
-https://letztechance.org
+http://letztechance.org
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
 
-## What is "LC2Navigator2019" app?
+## What is "LC2Navigator2020" app?
 
 Combining different technologies like electron, html5, jquery and many more...
-News, News Grabber and SQLite based plugin system
+It is a News, News Grabber and SQLite Javascript based plugin system
 
 <img src="app-resources/video.gif" alt="video demo" width="320" />
 
@@ -25,14 +23,6 @@ Different Plugins included:
 - Excel Import Export (convert xls, xlsx, csv, json, xml and more...)
 more coming soon...
 
-## Download Installer (Microsoft Windows x64):
-
-Not longer supported
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2019/LC2Navigator2019install.exe
-
-New Installer:
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
-
 ## Requirements
 
 Windows 64
@@ -41,10 +31,15 @@ Linux
 
 Note:curently only windows x64 builds available. 32 Bit Electron build is not longer supported
 
+## Download Installer (Microsoft Windows x64):
+
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
+
+
 ## Plugin requirements
-Docker Desktop
-Python 3x
-PHP
+- Docker Desktop
+- Python 3x
+- PHP
 
 ## Supported os
 
@@ -57,7 +52,7 @@ PHP
 - Free ??
 - No ads ??
 
-Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2019](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2019)
+Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020)
 
 ## Change log
 
@@ -77,10 +72,24 @@ Fetch videos from youtube playlist and download them one by one or all.
 </div>
 
 ## Development
+	
+- Not open source
+- No comments
+
+Just using electron.
 
 
-    npm run webpack
+## Development Notes
+
+You can find scripts on this repository to solve following package.json entries:
+    npm run tlint
+	npm run webpack	
     npm run electron
+	npm run test
+	npm run build
+	npm run buildwindows
+	npm run buildmacos
+	npm run buildlinux
 
 
 ### Stack

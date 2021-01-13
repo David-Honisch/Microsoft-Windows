@@ -1,37 +1,14 @@
-<h1>LC2Navigator2019</h1>
-
-This Version is not longer supported
+<h1>CSP.Hash.Generator</h1>
 
 Source:
-https://letztechance.org
+http://letztechance.org
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
 
-## What is "LC2Navigator2019" app?
+## What is "CSP.Hash.Generator" app?
+<img src="resources/app.png" alt="app demo" width="320" />
+create csp hashes base64 encoded
 
-Combining different technologies like electron, html5, jquery and many more...
-News, News Grabber and SQLite based plugin system
-
-<img src="app-resources/video.gif" alt="video demo" width="320" />
-
-Different Plugins included:
-- SQLite Database
-- Docker support
-- Device flushing plugin coming soon...
-- npm auto download plugins
-- Different Windows Batches Plugin
-- FFMPEG Plugin support
-- Mp3 files will be saved to a **y2mp3** folder in the **Download** folder (grab youtube or anything else)
-- Excel Import Export (convert xls, xlsx, csv, json, xml and more...)
-more coming soon...
-
-## Download Installer (Microsoft Windows x64):
-
-Not longer supported
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2019/LC2Navigator2019install.exe
-
-New Installer:
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
 
 ## Requirements
 
@@ -39,12 +16,15 @@ Windows 64
 Mac IOS
 Linux
 
-Note:curently only windows x64 builds available. 32 Bit Electron build is not longer supported
+
+
+## LC2Navigator Plugin Installer (Microsoft Windows x64) Download:
+
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/CSP.Hash.Generator/CSP.Hash.Generatorinstall.exe">Installer</a>
+
 
 ## Plugin requirements
-Docker Desktop
-Python 3x
-PHP
+- no requirements
 
 ## Supported os
 
@@ -54,74 +34,69 @@ PHP
 
 ## Download
 
-- Free ??
-- No ads ??
+- Free
+- No ads
 
-Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2019](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2019)
+Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/CSP.Hash.Generator](https://github.com/David-Honisch/Microsoft-Windows/tree/master/CSP.Hash.Generator)
 
 ## Change log
 
-##### 1.1.0
-Allow fetch and download a single video
+- no comment
+
+##### .1.0
+- no comment
 
 ##### 1.0.0
-Fetch videos from youtube playlist and download them one by one or all.
 
-## Disclaimer
+- https://developers.google.com/web/fundamentals/security/csp
+- https://www.ionos.de/digitalguide/server/sicherheit/content-security-policy-wie-websites-sicherer-werden/
+- https://content-security-policy.com/
+- https://wiki.selfhtml.org/wiki/Sicherheit/Content_Security_Policy#.3Cmeta.3E-Element_im_HTML-Code
 
-1. Please use this app for downloading only public resources.
-2. The app doesn't store ANY media files ANYWHERE except on the device who use this app.
+##### examples
 
-<div>
-  Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-</div>
+Based on:
+- https://developers.google.com/web/fundamentals/security/csp
 
-## Development
+Content-Security-Policy: script-src 'sha256-qznLcsROx4GACP2dm0UCKCzCG-HiZ1guq6ZZDob_Tng='
+
+##### Other examples
+
+Content-Security-Policy: script-src 'nonce-EDNnf03nceIOfn39fn3e9h3sdfa'
+<script nonce="EDNnf03nceIOfn39fn3e9h3sdfa">
+  // Some inline code I can't remove yet, but need to asap.
+</script>
 
 
-    npm run webpack
-    npm run electron
+- Content-Security-Policy: default-src https://cdn.example.net; child-src 'none'; object-src 'none'
+- Content-Security-Policy: default-src https://cdn.example.net; child-src 'none'; object-src 'none'
+
+- Content-Security-Policy: script-src 'self' https://apis.google.com
+- Header set Content-Security-Policy "default-src 'self';"
+- server {
+  ...
+  add_header Content-Security-Policy "default-src 'self';";
+}
+- Header set Content-Security-Policy "default-src 'self';"
+- Header set Content-Security-Policy "default-src 'self';"
+- Content-Security-Policy: "default-src 'none'; script-src 'self' *.example.com; style-src 'self'; img-src 'self' data:; font-src 'self' fonts.google.com; report-uri example.org/report.html;
+- X-Content-Security-Policy: "default-src 'none'; script-src 'self' *.example.com; style-src 'self'; img-src 'self' data:; font-src 'self' fonts.google.com; report-uri example.org/report.html;
+- X-WebKit-CSP: "default-src 'none'; script-src 'self' *.example.com; style-src 'self'; img-src 'self' data:; font-src 'self' fonts.google.com; report-uri example.org;
 
 
-### Stack
+Creating your Content Security Policy config
+https://gridpane.com/kb/how-to-create-a-content-security-policy-csp-header/
 
-- [electron](http://electronjs.org/)
-- [jquery](https://jquery.org/)
-- [sqlite](https://sqlite.org/)
-- [java](https://java.org/)
-- [spring boot](https://spring.io/)
-- [typescript](https://www.typescriptlang.org/)
-- [webpack](https://webpack.js.org/)
-
-#### Tests
-
-- TODO[jest](https://jestjs.io/)
-
-#### Libraries
-
-- Electron
-- HTML5
-- JQuery
-- Angular 10
-- ReactJS
-- Phaser IO
-- NodeJS
-- SQL.js
--- This is realized as a soon coming plugin. Please wait for Updates...
-- JSF
-- Spring Boot
-- Spring MVC
-- Spring Rest
-- Hibernate
-and more...
+<?php
+header("Content-Security-Policy: default-src 'self'; script-src 'self'");
+header("X-Content-Security-Policy: default-src 'self'; script-src 'self'");
+header("X-WebKit-CSP: default-src 'self'; script-src 'self'");
 
 ### TODO
+- no comment
 
-?? Okay, there a lot of tasks todo....
-
-### Plugins
-LC2ImportExcelTransform v.1.01a
-<img src="excelimportexport.jpg" alt="logo" />
+## Disclaimer
+- no comment
 
 
 ## License
