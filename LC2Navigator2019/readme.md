@@ -27,7 +27,11 @@ more coming soon...
 
 ## Download Installer (Microsoft Windows x64):
 
+Not longer supported
 https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2019/LC2Navigator2019install.exe
+
+New Installer:
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
 
 ## Requirements
 
