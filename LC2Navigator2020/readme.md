@@ -8,7 +8,7 @@ http://letztechance.org
 ## What is "LC2Navigator2020" app?
 
 Combining different technologies like electron, html5, jquery and many more...
-News, News Grabber and SQLite based plugin system
+It is a News, News Grabber and SQLite Javascript based plugin system
 
 <img src="app-resources/video.gif" alt="video demo" width="320" />
 
@@ -72,10 +72,24 @@ Fetch videos from youtube playlist and download them one by one or all.
 </div>
 
 ## Development
+	
+- Not open source
+- No comments
+
+Just using electron.
 
 
-    npm run webpack
+## Development Notes
+
+You can find scripts on this repository to solve following package.json entries:
+    npm run tlint
+	npm run webpack	
     npm run electron
+	npm run test
+	npm run build
+	npm run buildwindows
+	npm run buildmacos
+	npm run buildlinux
 
 
 ### Stack
