@@ -22,6 +22,7 @@ Different Plugins included:
 - Mp3 files will be saved to a **y2mp3** folder in the **Download** folder (grab youtube or anything else)
 - Excel Import Export (convert xls, xlsx, csv, json, xml and more...)
 more coming soon...
+
 ## Requirements
 
 Windows 64
@@ -30,10 +31,15 @@ Linux
 
 Note:curently only windows x64 builds available. 32 Bit Electron build is not longer supported
 
+## Download Installer (Microsoft Windows x64):
+
+<a href="">https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe>Installer</a>
+
+
 ## Plugin requirements
-Docker Desktop
-Python 3x
-PHP
+- Docker Desktop
+- Python 3x
+- PHP
 
 ## Supported os
 
