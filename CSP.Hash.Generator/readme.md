@@ -41,18 +41,56 @@ Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/mas
 
 ## Change log
 
-##### 1.1.0
+- no comment
+
+##### .1.0
 - no comment
 
 ##### 1.0.0
-- no comment
 
-    Content-Security-Policy: "default-src 'none'; script-src 'self' *.example.com; style-src 'self'; img-src 'self' data:; font-src 'self' fonts.google.com; report-uri example.org/report.html;
+- https://developers.google.com/web/fundamentals/security/csp
+- https://www.ionos.de/digitalguide/server/sicherheit/content-security-policy-wie-websites-sicherer-werden/
+- https://content-security-policy.com/
+- https://wiki.selfhtml.org/wiki/Sicherheit/Content_Security_Policy#.3Cmeta.3E-Element_im_HTML-Code
 
-    X-Content-Security-Policy: "default-src 'none'; script-src 'self' *.example.com; style-src 'self'; img-src 'self' data:; font-src 'self' fonts.google.com; report-uri example.org/report.html;
+##### examples
 
-    X-WebKit-CSP: "default-src 'none'; script-src 'self' *.example.com; style-src 'self'; img-src 'self' data:; font-src 'self' fonts.google.com; report-uri example.org;
+Based on:
+- https://developers.google.com/web/fundamentals/security/csp
 
+Content-Security-Policy: script-src 'sha256-qznLcsROx4GACP2dm0UCKCzCG-HiZ1guq6ZZDob_Tng='
+
+##### Other examples
+
+Content-Security-Policy: script-src 'nonce-EDNnf03nceIOfn39fn3e9h3sdfa'
+<script nonce="EDNnf03nceIOfn39fn3e9h3sdfa">
+  // Some inline code I can't remove yet, but need to asap.
+</script>
+
+
+- Content-Security-Policy: default-src https://cdn.example.net; child-src 'none'; object-src 'none'
+- Content-Security-Policy: default-src https://cdn.example.net; child-src 'none'; object-src 'none'
+
+- Content-Security-Policy: script-src 'self' https://apis.google.com
+- Header set Content-Security-Policy "default-src 'self';"
+- server {
+  ...
+  add_header Content-Security-Policy "default-src 'self';";
+}
+- Header set Content-Security-Policy "default-src 'self';"
+- Header set Content-Security-Policy "default-src 'self';"
+- Content-Security-Policy: "default-src 'none'; script-src 'self' *.example.com; style-src 'self'; img-src 'self' data:; font-src 'self' fonts.google.com; report-uri example.org/report.html;
+- X-Content-Security-Policy: "default-src 'none'; script-src 'self' *.example.com; style-src 'self'; img-src 'self' data:; font-src 'self' fonts.google.com; report-uri example.org/report.html;
+- X-WebKit-CSP: "default-src 'none'; script-src 'self' *.example.com; style-src 'self'; img-src 'self' data:; font-src 'self' fonts.google.com; report-uri example.org;
+
+
+Creating your Content Security Policy config
+https://gridpane.com/kb/how-to-create-a-content-security-policy-csp-header/
+
+<?php
+header("Content-Security-Policy: default-src 'self'; script-src 'self'");
+header("X-Content-Security-Policy: default-src 'self'; script-src 'self'");
+header("X-WebKit-CSP: default-src 'self'; script-src 'self'");
 
 ### TODO
 - no comment
