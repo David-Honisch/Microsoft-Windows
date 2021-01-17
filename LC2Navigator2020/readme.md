@@ -1,7 +1,8 @@
 <h1>LC2Navigator2020</h1>
 
-Source:
+## Source:
 http://letztechance.org
+## Logo:
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
 
@@ -10,9 +11,12 @@ http://letztechance.org
 It is a News Links Grabbing system based on NodeJS Javascript SQLite.
 Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
 
+I´ve build an windows artifact and windows installer only in 64 Bit. 
+32 Bit is not longer supported.
+
 There are different "Plugins" with a different technology stack.
 
-##Plugins
+## Plugins
 
 - SQLIte and NPM AutoInstall Packages 
 	- Required. Please always update this package
@@ -64,7 +68,9 @@ There are different "Plugins" with a different technology stack.
 	- LC2PAINT - Simple 3D Painter with small animations
 
  
-
+Example Screenshot of LC2ExcelTransform:
+- LC2ExcelTransform 
+	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
 <img src="LC2ExcelTransform.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
 
 Different Plugins included:
@@ -74,7 +80,7 @@ Different Plugins included:
 - npm auto download plugins
 - Different Windows Batches Plugin
 - FFMPEG Plugin support
-- Mp3 files will be saved to a **y2mp3** folder in the **Download** folder (grab youtube or anything else)
+- Mp3 files will be saved to a **yt2mp3** folder in the **Download** folder (grab youtube or anything else)
 - Excel Import Export (convert xls, xlsx, csv, json, xml and more...)
 more coming soon...
 
