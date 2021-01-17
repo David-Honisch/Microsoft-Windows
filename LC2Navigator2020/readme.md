@@ -82,16 +82,6 @@ Example Screenshot of LC2ExcelTransform:
 	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
 <img src="LC2ExcelTransform.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
 
-Different Plugins included:
-- SQLite Database
-- Docker support
-- Device flushing plugin coming soon...
-- npm auto download plugins
-- Different Windows Batches Plugin
-- FFMPEG Plugin support
-- Mp3 files will be saved to a **yt2mp3** folder in the **Download** folder (grab youtube or anything else)
-- Excel Import Export (convert xls, xlsx, csv, json, xml and more...)
-more coming soon...
 
 ## Requirements
 
@@ -109,7 +99,9 @@ Note:curently only windows x64 builds available. 32 Bit Electron build is not lo
 ## Plugin requirements
 - Docker Desktop
 - Python 3x
-- PHP
+- PHP 7.x
+- CURL
+- Please read Plugin comments
 
 ## Supported os
 
