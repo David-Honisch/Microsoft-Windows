@@ -14,30 +14,54 @@ There are different "Plugins" with a different technology stack.
 
 ##Plugins
 
-SQLIte and NPM AutoInstall Packages - Required. Please always update this package
-Core - SQLITE Import, Export, CRUD and more...
-LC2Redirect - Redirect Output
-LC2Zip - .NET Core
-LC2Zip - ZIP Java Java Installer (SWT)
-LC2UnZip - Unzip .NET Core
-LC2UnZip - LC2UnZip Java Java Installer (SWT)
-LC2DL - LetzteChance.Org offizieller Downloader
-LC2Start.NET - LetzteChance.Org offizieller Windows .NET 4.72 Installer
-LC2SQLIITEGUI - LetzteChance.Org offizieller LC2SQLIITEGUI
-LC2RESTIFY - LC2RESTIFY
-LC2SOAP - LC2SOAP
-LC2ExcelTransform - Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
-LC2Docker - Some fist scripts (updates coming soon.
-LC2FTP - FTP Client based on HMTL/NodeJS
-LC2EXPRESS - HTTP NPM HTTPSERVER
-LC2UnityServer - LC2UnityServer
-LC2UnityServerClient - LC2UnityServerClient Chromium Client 
-LC2Color - .NET v.4.7.2
-LC2Color - .NET Core v.3.1
-LC2Python - LC2Python (Python 3 Scripts)
-LC2PHP - LC2PHP (PHP Installation required)
-LC2FFMPEG - LC2FFMPEG
-LC2PAINT - LC2PAINT - Simple 3D Painter with small animations
+- SQLIte and NPM AutoInstall Packages 
+	- Required. Please always update this package
+- Core 
+	- SQLITE Import, Export, CRUD and more...
+- LC2Redirect 
+	- Redirect Output
+- LC2Zip 
+	- .NET Core
+- LC2Zip 
+	- ZIP Java Java Installer (SWT)
+- LC2UnZip 
+	- Unzip .NET Core
+- LC2UnZip 
+	- LC2UnZip Java Java Installer (SWT)
+- LC2DL 
+	- LetzteChance.Org offizieller Downloader
+- LC2Start.NET 
+	- LetzteChance.Org offizieller Windows .NET 4.72 Installer
+- LC2SQLIITEGUI 
+	- LetzteChance.Org offizieller LC2SQLIITEGUI
+- LC2RESTIFY 
+	- LC2RESTIFY
+- LC2SOAP 
+	- LC2SOAP
+- LC2ExcelTransform 
+	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
+- LC2Docker 
+	- Some fist scripts (updates coming soon.
+- LC2FTP 
+	- FTP Client based on HMTL/NodeJS
+- LC2EXPRESS 
+	- HTTP NPM HTTPSERVER
+- LC2UnityServer 
+	- LC2UnityServer
+- LC2UnityServerClient 
+	- LC2UnityServerClient Chromium Client 
+- LC2Color 
+	- .NET v.4.7.2
+- LC2Color 
+	- .NET Core v.3.1
+- LC2Python 
+	- LC2Python (Python 3 Scripts)
+- LC2PHP 
+	- LC2PHP (PHP Installation required)
+- LC2FFMPEG 
+	- LC2FFMPEG
+- LC2PAINT 
+	- LC2PAINT - Simple 3D Painter with small animations
 
  
 
