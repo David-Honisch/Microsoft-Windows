@@ -106,6 +106,9 @@ https://www.letztechance.org/read-20-35.html
 - Python 3x
 - PHP 7.x
 - CURL
+- Maven
+- Ant
+- MsBuild
 - Please read Plugin comments
 
 ## Supported os
