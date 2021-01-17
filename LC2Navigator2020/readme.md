@@ -53,6 +53,8 @@ There are different "Plugins" with a different technology stack.
 	- LC2SOAP
 - LC2ExcelTransform 
 	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
+- LC2SAPUI
+	- - SAP.UI Electron Webpack Project (Routing JSON and query based fragments and models)
 - LC2Docker 
 	- Some fist scripts (updates coming soon.
 - LC2FTP 
@@ -114,8 +116,8 @@ https://www.letztechance.org/read-20-35.html
 
 ## Download
 
-- Free ??
-- No ads ??
+- Free ?? yes
+- No ads ?? yes
 
 Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020)
 
@@ -174,20 +176,25 @@ You can find scripts on this repository to solve following package.json entries:
 #### Libraries
 
 - Electron
+- NodeJS
+- SQL.js
+- SQLITE
 - HTML5
 - JQuery
 - Angular 10
 - ReactJS
+- SAP.UI
 - Phaser IO
-- NodeJS
-- SQL.js
--- This is realized as a soon coming plugin. Please wait for Updates...
+- .NET CORE
+- ASP .NET CORE 
+- .NET CORE EF
+- .NET CORE NHIBERNATE
 - JSF
 - Spring Boot
 - Spring MVC
 - Spring Rest
 - Hibernate
-and more...
+see plugins...
 
 ### TODO
 
