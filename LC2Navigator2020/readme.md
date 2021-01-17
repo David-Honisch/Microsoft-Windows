@@ -1,7 +1,16 @@
 <h1>LC2Navigator2020</h1>
 
 ## Source:
-http://letztechance.org
+https://letztechance.org
+
+## Windows 64 Bit Installer:
+
+https://www.letztechance.org/read-20-35.html
+
+## Linux 64 Bit Installer:
+(coming soon)
+https://www.letztechance.org/read-20-40.html
+
 ## Logo:
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
