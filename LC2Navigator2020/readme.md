@@ -95,6 +95,9 @@ Note:curently only windows x64 builds available. 32 Bit Electron build is not lo
 
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
 
+## HomePage - Download Installer (Microsoft Windows x64):
+
+https://www.letztechance.org/read-20-35.html
 
 ## Plugin requirements
 - Docker Desktop
