@@ -10,7 +10,7 @@ http://letztechance.org
 Combining different technologies like electron, html5, jquery and many more...
 It is a News, News Grabber and SQLite Javascript based plugin system
 
-<img src="app-resources/video.gif" alt="video demo" width="320" />
+<img src="LC2ExcelTransform.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
 
 Different Plugins included:
 - SQLite Database
