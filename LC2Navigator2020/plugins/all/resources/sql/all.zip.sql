@@ -31,7 +31,7 @@ values
 
 INSERT OR REPLACE INTO plugins (first_name,name,url) 
 values 
-('Maven v.3.5.2','Maven Downloader v.3.5.2','exec .\\resources\\cmd\\getupdates.bat /plugins/apache_maven.zip apache_maven.zip');
+('Maven v.3.5.2 Downloader v.1.01','Maven v.3.5.2 Downloader v.1.01','exec .\\resources\\cmd\\getupdates.bat /plugins/apache-maven.zip apache-maven.zip');
 
 
 SELECT '<p>All Plugin Downloaders imported'||count(*)||'</p>' from application;
