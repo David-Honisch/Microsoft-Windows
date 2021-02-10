@@ -33,6 +33,9 @@ INSERT OR REPLACE INTO plugins (first_name,name,url)
 values 
 ('Maven v.3.5.2 Downloader v.1.01','Maven v.3.5.2 Downloader v.1.01','exec .\\resources\\cmd\\getupdates.bat /plugins/apache-maven.zip apache-maven.zip');
 
+INSERT OR REPLACE INTO plugins (first_name,name,url) 
+values 
+('LC2IRC Downloader v.0.01','LC2IRC Downloader v.0.01','exec .\\resources\\cmd\\getupdates.bat /plugins/lc2irc.zip lc2irc.zip');
 
 SELECT '<p>All Plugin Downloaders imported'||count(*)||'</p>' from application;
 
