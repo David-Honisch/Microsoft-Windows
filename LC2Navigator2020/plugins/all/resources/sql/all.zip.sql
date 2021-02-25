@@ -37,6 +37,10 @@ INSERT OR REPLACE INTO plugins (first_name,name,url)
 values 
 ('LC2IRC Downloader v.0.01','LC2IRC Downloader v.0.01','exec .\\resources\\cmd\\getupdates.bat /plugins/lc2irc.zip lc2irc.zip');
 
+INSERT OR REPLACE INTO plugins (first_name,name,url) 
+values 
+('LC2GrabUrls Downloader v.0.01','LC2GrabUrls Downloader v.0.01','exec .\\resources\\cmd\\getupdates.bat /plugins/graburls.zip graburls.zip');
+
 SELECT '<p>All Plugin Downloaders imported'||count(*)||'</p>' from application;
 
 SELECT '<h5>SQL IMPORT DONE</h5>';
