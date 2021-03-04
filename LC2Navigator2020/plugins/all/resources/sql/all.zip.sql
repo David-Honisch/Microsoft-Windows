@@ -29,5 +29,8 @@ SELECT 'Importing lc2irc.zip Plugin SCRIPT DONE';
 SELECT 'Importing graburls.zip Plugin SCRIPT'; 	
 INSERT OR REPLACE INTO plugins(first_name,name,url)values('graburls.zip Download','graburls.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/graburls.zip graburls.zip'); 
 SELECT 'Importing graburls.zip Plugin SCRIPT DONE'; 	
+SELECT 'Importing LC2RotatingTorproxy Plugin SCRIPT'; 	
+INSERT OR REPLACE INTO plugins(first_name,name,url)values('LC2RotatingTorproxy Download','LC2RotatingTorproxy Download','exec .\\resources\\cmd\\getupdates.bat /plugins/LC2RotatingTorproxy LC2RotatingTorproxy'); 
+SELECT 'Importing LC2RotatingTorproxy Plugin SCRIPT DONE'; 	
 SELECT 'Plugins count ',count(*) from plugins; 
 SELECT 'Running SQL plugins import DONE'; 
