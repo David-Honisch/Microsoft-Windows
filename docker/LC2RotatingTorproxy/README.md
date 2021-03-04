@@ -19,7 +19,7 @@ Usage
 call docker build -t david/lc2rotatingtorproxy:latest .
 
 # ... or pull docker container
-docker pull mattes/rotating-proxy:latest
+docker pull david/lc2rotatingtorproxy:latest:latest
 
 # start docker container
 docker run -d -p 5566:5566 -p 4444:4444 --env tors=25 david/lc2rotatingtorproxy
@@ -45,4 +45,5 @@ from HAproxy to Tor, Polipo is used to translate from HTTP proxy to SOCKS proxy.
 HAproxy is able to talk to HTTP proxies only.
 
 Big thanks to
+https://hub.docker.com/r/mattes/rotating-proxy/
 [![Docker Pulls](https://img.shields.io/docker/pulls/mattes/rotating-proxy.svg)](https://hub.docker.com/r/mattes/rotating-proxy/)
