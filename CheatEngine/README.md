@@ -4,7 +4,7 @@ Repository of tables for CheatEngine
 
 # To the Media Companies
 
-My Cheatengine Collection
+My Cheatengine collection of cheat tables
 
 # Looking for maintainers
 This is a very big data dump, and we'd love some help to filter out through malicious / useless tables. Please volunteer!
