@@ -1,27 +1,89 @@
 <h1>LC2Navigator2020</h1>
 
-Source:
-http://letztechance.org
+## Source:
+https://letztechance.org
+
+## Windows 64 Bit Installer:
+
+https://www.letztechance.org/read-20-35.html
+
+## Linux 64 Bit Installer:
+(coming soon)
+https://www.letztechance.org/read-20-40.html
+
+## Logo:
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
 
 ## What is "LC2Navigator2020" app?
 
-Combining different technologies like electron, html5, jquery and many more...
-It is a News, News Grabber and SQLite Javascript based plugin system
+It is a News Links Grabbing system based on NodeJS Javascript SQLite.
+Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
 
-<img src="app-resources/video.gif" alt="video demo" width="320" />
+I´ve build an windows artifact and windows installer only in 64 Bit. 
+32 Bit is not longer supported.
 
-Different Plugins included:
-- SQLite Database
-- Docker support
-- Device flushing plugin coming soon...
-- npm auto download plugins
-- Different Windows Batches Plugin
-- FFMPEG Plugin support
-- Mp3 files will be saved to a **y2mp3** folder in the **Download** folder (grab youtube or anything else)
-- Excel Import Export (convert xls, xlsx, csv, json, xml and more...)
-more coming soon...
+There are different "Plugins" with a different technology stack.
+
+## Plugins
+
+- SQLIte and NPM AutoInstall Packages 
+	- Required. Please always update this package
+- Core 
+	- SQLITE Import, Export, CRUD and more...
+- LC2Redirect 
+	- Redirect Output
+- LC2Zip 
+	- .NET Core
+- LC2Zip 
+	- ZIP Java Java Installer (SWT)
+- LC2UnZip 
+	- Unzip .NET Core
+- LC2UnZip 
+	- LC2UnZip Java Java Installer (SWT)
+- LC2DL 
+	- LetzteChance.Org offizieller Downloader
+- LC2Start.NET 
+	- LetzteChance.Org offizieller Windows .NET 4.72 Installer
+- LC2SQLIITEGUI 
+	- LetzteChance.Org offizieller LC2SQLIITEGUI
+- LC2RESTIFY 
+	- LC2RESTIFY
+- LC2SOAP 
+	- LC2SOAP
+- LC2ExcelTransform 
+	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
+- LC2SAPUI
+	- - SAP.UI Electron Webpack Project (Routing JSON and query based fragments and models)
+- LC2Docker 
+	- Some fist scripts (updates coming soon.
+- LC2FTP 
+	- FTP Client based on HMTL/NodeJS
+- LC2EXPRESS 
+	- HTTP NPM HTTPSERVER
+- LC2UnityServer 
+	- LC2UnityServer
+- LC2UnityServerClient 
+	- LC2UnityServerClient Chromium Client 
+- LC2Color 
+	- .NET v.4.7.2
+- LC2Color 
+	- .NET Core v.3.1
+- LC2Python 
+	- LC2Python (Python 3 Scripts)
+- LC2PHP 
+	- LC2PHP (PHP Installation required)
+- LC2FFMPEG 
+	- LC2FFMPEG
+- LC2PAINT 
+	- LC2PAINT - Simple 3D Painter with small animations
+
+ 
+Example Screenshot of LC2ExcelTransform:
+- LC2ExcelTransform 
+	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
+<img src="LC2ExcelTransform.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
+
 
 ## Requirements
 
@@ -35,11 +97,19 @@ Note:curently only windows x64 builds available. 32 Bit Electron build is not lo
 
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
 
+## HomePage - Download Installer (Microsoft Windows x64):
+
+https://www.letztechance.org/read-20-35.html
 
 ## Plugin requirements
 - Docker Desktop
 - Python 3x
-- PHP
+- PHP 7.x
+- CURL
+- Maven
+- Ant
+- MsBuild
+- Please read Plugin comments
 
 ## Supported os
 
@@ -49,8 +119,8 @@ Note:curently only windows x64 builds available. 32 Bit Electron build is not lo
 
 ## Download
 
-- Free ??
-- No ads ??
+- Free ?? yes
+- No ads ?? yes
 
 Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020)
 
@@ -109,20 +179,25 @@ You can find scripts on this repository to solve following package.json entries:
 #### Libraries
 
 - Electron
+- NodeJS
+- SQL.js
+- SQLITE
 - HTML5
 - JQuery
 - Angular 10
 - ReactJS
+- SAP.UI
 - Phaser IO
-- NodeJS
-- SQL.js
--- This is realized as a soon coming plugin. Please wait for Updates...
+- .NET CORE
+- ASP .NET CORE 
+- .NET CORE EF
+- .NET CORE NHIBERNATE
 - JSF
 - Spring Boot
 - Spring MVC
 - Spring Rest
 - Hibernate
-and more...
+see plugins...
 
 ### TODO
 
