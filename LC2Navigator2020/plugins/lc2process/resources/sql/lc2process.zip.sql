@@ -1,18 +1,8 @@
-SELECT '<h1>lc2process PLUGIN SQL SCRIPT IS RUNNING</h1>';
-SELECT '<p>Deleting import script</p>';
---DELETE FROM importscripts;
-SELECT '<h5>RUNNING IMPORT</h5>';
-SELECT '<p>SET CLEAR</p>';
-SELECT '<h4>DELETING application</h4>';
-SELECT '<h4>DELETING application</h4>';
-
-SELECT '<h1>UPDATE SQL SCRIPT DONE</h1>';
-
-INSERT OR REPLACE INTO application (first_name,name,url) 
-values 
-('lc2process Plugin Menu v.0.1a','lc2process Plugin Menu v.0.1a','.\\resources\\plugins\\lc2process\\main.bat .\\resources\\plugins\\lc2process\\menu.csv');
-
-
-SELECT '<p>Applications imported'||count(*)||'</p>' from application;
-
-SELECT '<h5>SQL IMPORT DONE</h5>';
+SELECT '<h1>lc2process PLUGIN SQL SCRIPT IS RUNNING</h1>'; 
+SELECT '<h5>Deleting import script</h5>'; 
+SELECT '<h5>RUNNING IMPORT</h5>'; 
+SELECT '<h4>SET CLEAR</h4>'; 
+SELECT '<h4>DELETING application</h4>'; 
+SELECT '<h1>UPDATE lc2process SQL SCRIPT DONE</h1>'; 
+INSERT INTO application VALUES(25,'lc2process v.1.01a','lc2process v.1.01a','','','','','exec .\\resources\\plugins\\lc2process\\lc2process.bat .\\resources\\plugins\\lc2process\\menu.csv'); 
+SELECT '<h5>SQL lc2process IMPORT DONE</h5>'; 
