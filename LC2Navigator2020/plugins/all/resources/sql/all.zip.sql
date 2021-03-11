@@ -38,5 +38,8 @@ SELECT 'Importing lc2process.zip Plugin SCRIPT DONE';
 SELECT 'Importing org.letztechance.domain.web.GrabUrls.zip Plugin SCRIPT'; 	
 INSERT OR REPLACE INTO plugins(first_name,name,url)values('org.letztechance.domain.web.GrabUrls.zip Download','org.letztechance.domain.web.GrabUrls.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/org.letztechance.domain.web.GrabUrls.zip org.letztechance.domain.web.GrabUrls.zip'); 
 SELECT 'Importing org.letztechance.domain.web.GrabUrls.zip Plugin SCRIPT DONE'; 	
+SELECT 'Importing lc2linkcli.zip Plugin SCRIPT'; 	
+INSERT OR REPLACE INTO plugins(first_name,name,url)values('lc2linkcli.zip Download','lc2linkcli.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/lc2linkcli.zip lc2linkcli.zip'); 
+SELECT 'Importing lc2linkcli.zip Plugin SCRIPT DONE'; 	
 SELECT 'Plugins count ',count(*) from plugins; 
 SELECT 'Running SQL plugins import DONE'; 
