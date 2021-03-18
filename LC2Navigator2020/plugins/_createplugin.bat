@@ -5,6 +5,7 @@ for /f "usebackq tokens=1-3 delims=;" %%a in ("%input%") do (
 	mkdir %%a\resources\plugins\%%a
 	mkdir %%a\resources\plugins\%%a\install
 	mkdir %%a\resources\plugins\%%a\menu
+	mkdir %%a\resources\plugins\%%a\resources
 	mkdir %%a\resources\sql
 	
 	echo creating sql script
@@ -17,13 +18,14 @@ for /f "usebackq tokens=1-3 delims=;" %%a in ("%input%") do (
 	copy resources\install\install.csv "%cd%\%%a\resources\plugins\%%a\install\install.csv"
 	copy resources\install.html "%cd%\%%a\resources\plugins\%%a\install.html"
 	copy resources\install.js "%cd%\%%a\resources\plugins\%%a\install.js"
+	copy resources\config.js "%cd%\%%a\resources\plugins\%%a\config.js"
 	
 	echo creating default script	
 	REM call resources\default.file.bat "%cd%\%%a\resources\plugins\%%a\%%a.bat" %%a	
 	copy resources\default.file.bat.txt "%cd%\%%a\resources\plugins\%%a\%%a.bat"
 	copy resources\default.file.bat.txt "%cd%\%%a\resources\plugins\%%a\index.bat"
 	
-	
+	copy resources\resources\index.bat "%cd%\%%a\resources\plugins\%%a\resources\index.bat"	
 )
 
 timeout 3
