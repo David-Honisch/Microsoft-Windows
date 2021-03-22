@@ -9,9 +9,9 @@ echo CREATING
 echo SELECT 'Plugins count ',count(*) from plugins; >> %target%
 for /f "usebackq tokens=1-3 delims=;" %%a in ("%inputlist%") do (
 	echo CREATING %%a
-	echo SELECT 'Importing %%a Plugin SCRIPT'; >> %target%	
-	call unqoute "INSERT OR REPLACE INTO plugins(first_name,name,url)values('%%a Download','%%a Download','exec .\\resources\\cmd\\getupdates.bat /plugins/%%a %%a');" >> %target%
-	echo SELECT 'Importing %%a Plugin SCRIPT DONE'; >> %target%	
+	echo SELECT 'Importing %%b Plugin SCRIPT'; >> %target%	
+	call unqoute "INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('%%a','%%b Download','%%b Download','exec .\\resources\\cmd\\getupdates.bat /plugins/%%b %%b');" >> %target%
+	echo SELECT 'Importing %%b Plugin SCRIPT DONE'; >> %target%	
 )
 echo SELECT 'Plugins count ',count(*) from plugins; >> %target%
 echo SELECT 'Running SQL plugins import DONE'; >> %target%
