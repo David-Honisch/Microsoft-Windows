@@ -44,5 +44,8 @@ SELECT 'Importing mysqldocker.zip Plugin SCRIPT DONE';
 SELECT 'Importing python.zip Plugin SCRIPT'; 	
 INSERT OR REPLACE INTO plugins(first_name,name,url)values('python.zip Download','python.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/python.zip python.zip'); 
 SELECT 'Importing python.zip Plugin SCRIPT DONE'; 	
+SELECT 'Importing postgresdocker.zip Plugin SCRIPT'; 	
+INSERT OR REPLACE INTO plugins(first_name,name,url)values('postgresdocker.zip Download','postgresdocker.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/postgresdocker.zip postgresdocker.zip'); 
+SELECT 'Importing postgresdocker.zip Plugin SCRIPT DONE'; 	
 SELECT 'Plugins count ',count(*) from plugins; 
 SELECT 'Running SQL plugins import DONE'; 
