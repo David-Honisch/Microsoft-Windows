@@ -31,6 +31,8 @@ There are different "Plugins" with a different technology stack.
 	- Required. Please always update this package
 - Core 
 	- SQLITE Import, Export, CRUD and more...
+- LC2Process 
+	- Show and kill system processes
 - LC2Redirect 
 	- Redirect Output
 - LC2Zip 
@@ -76,7 +78,18 @@ There are different "Plugins" with a different technology stack.
 - LC2FFMPEG 
 	- LC2FFMPEG
 - LC2PAINT 
-	- LC2PAINT - Simple 3D Painter with small animations
+- LC2PAINT - Simple 3D Painter with small animations
+- LC2MySQLDocker 
+	- LC2MySQLDocker - Docker MySQL Server to host tcp port 3306
+- LC2PostGresSQL 
+	- LC2MySQLDocker - Docker Postgres Server to host tcp port
+- LC2SQLServer 
+	- LC2SQLServer - Docker MySQL to host tcp port	
+- LC2RotatingTorproxy 
+	- LC2RotatingTorproxy - Docker LC2RotatingTorproxy ha proxy with rotating tor proxy list nodes
+- LC2Python
+	- LC2Python - Docker LC2Python some python scripts
+	
 
  
 Example Screenshot of LC2ExcelTransform:
