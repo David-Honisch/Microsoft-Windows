@@ -48,7 +48,7 @@ SELECT 'Importing postgresdocker.zip Plugin SCRIPT';
 INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('16','postgresdocker.zip Download','postgresdocker.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/postgresdocker.zip postgresdocker.zip'); 
 SELECT 'Importing postgresdocker.zip Plugin SCRIPT DONE'; 	
 SELECT 'Importing LC2bat2exe.zip Plugin SCRIPT'; 	
-INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('16','LC2bat2exe.zip Download','LC2bat2exe.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/LC2bat2exe.zip LC2bat2exe.zip'); 
+INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('17','LC2bat2exe.zip Download','LC2bat2exe.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/LC2bat2exe.zip LC2bat2exe.zip'); 
 SELECT 'Importing LC2bat2exe.zip Plugin SCRIPT DONE'; 	
 SELECT 'Plugins count ',count(*) from plugins; 
 SELECT 'Running SQL plugins import DONE'; 
