@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/core.css">
+    <script src="assets/js/jquery/jquery.min.js"></script>
+    <script src="../../resources/js/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <!-- <script src="resources/plugins/excelimport/install.js"></script> -->
+    <!-- <script src="../../resources/plugins/excelimport/installmodules.js"></script> -->
+
+
+    <div class="container-fluid cm-container-white">
+        <title>Install v.1.0a</title>
+        <style>
+            #drop {
+                border: 2px dashed #bbb;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                padding: 25px;
+                text-align: center;
+                font: 20pt bold, "Arial";
+                color: #bbb
+            }
+            
+            a {
+                text-decoration: none
+            }
+        </style>
+</head>
+
+<body>
+    <!-- <a href="javascript:getExtFile('file://'+__dirname+'\\..\\..\\..\\..\\resources\\plugins\\excelimport.html');" target="_blank">Go to</a> -->
+
+    <h1 id="title">Install v.1.0</h1>
+    <h3 id="version">v.1.01a</h3>
+
+    <fieldset>
+        <legend>Install Modules</legend>
+        <a href="install.html" class="button">Reload</a>
+        <a href="#htmlout" onclick="InstallModules();" class="button">Install Modules</a>
+        <a href="#mvncnt" onclick="new HttpRequest().execCMD('.\\resources\\plugins\\graburls\\mvninstall.bat install', 'mvncnt');" class="button">Maven Install</a>
+        <!-- <a href="#htmlout" onclick="alert('Test');" class="button">Install Modules</a> -->
+
+    </fieldset>
+    <fieldset>
+        <legend>Check</legend>
+        <div id="pout">Loading...</div>
+        <div id="appcnt">Loading...</div>
+        <div id="modcnt">Loading...</div>
+        <div id="modcnterror"></div>
+        <div id="mvncnt">Loading...</div>
+        <div id="mvncnterror"></div>
+    </fieldset>
+    <script>
+        window.nodeRequire = require;
+        // delete window.require;
+        // delete window.exports;
+        // delete window.module;
+
+        // var XLSX = window.nodeRequire('xlsx');
+
+        // function loadLocation(url) {
+        //     window.location = url;
+        // }
+    </script>
+    <script src="config.js"></script>
+    <script src="api.js"></script>
+    <script src="install.js"></script>
+</body>
+
+</html>

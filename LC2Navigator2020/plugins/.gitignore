@@ -1,0 +1,10 @@
+.old/*
+dist/*
+test/node_modules
+bin/*
+node_modules/*
+release-builds/*
+cheatsheets/*
+node_modules
+appplugin
+test
