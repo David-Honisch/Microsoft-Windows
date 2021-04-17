@@ -1,23 +1,50 @@
 <h1>LC2Navigator2019</h1>
 
+This Version is not longer supported
+
 Source:
-http://letztechance.org
+https://letztechance.org
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
 
 ## What is "LC2Navigator2019" app?
 
-Combining different technologies like electron, html5, jquery and many more.
+Combining different technologies like electron, html5, jquery and many more...
 News, News Grabber and SQLite based plugin system
 
 <img src="app-resources/video.gif" alt="video demo" width="320" />
 
 Different Plugins included:
 - SQLite Database
-- Different Windows Command Plugin
+- Docker support
+- Device flushing plugin coming soon...
+- npm auto download plugins
+- Different Windows Batches Plugin
+- FFMPEG Plugin support
 - Mp3 files will be saved to a **y2mp3** folder in the **Download** folder (grab youtube or anything else)
 - Excel Import Export (convert xls, xlsx, csv, json, xml and more...)
 more coming soon...
+
+## Download Installer (Microsoft Windows x64):
+
+Not longer supported
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2019/LC2Navigator2019install.exe
+
+New Installer:
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
+
+## Requirements
+
+Windows 64
+Mac IOS
+Linux
+
+Note:curently only windows x64 builds available. 32 Bit Electron build is not longer supported
+
+## Plugin requirements
+Docker Desktop
+Python 3x
+PHP
 
 ## Supported os
 
