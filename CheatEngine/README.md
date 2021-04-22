@@ -7,7 +7,7 @@ Repository of Cheats or CheatEngine tables
 My Cheatengine collection of cheat tables
 
 # Repository moved to
-https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020
+https://github.com/David-Honisch/CheatsAndTricks
 
 # Looking for maintainers
 This is a very big data dump, and we'd love some help to filter out through malicious / useless tables. Please volunteer!
