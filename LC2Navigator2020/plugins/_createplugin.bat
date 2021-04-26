@@ -25,7 +25,10 @@ for /f "usebackq tokens=1-3 delims=;" %%a in ("%input%") do (
 	copy resources\default.file.bat.txt "%cd%\%%a\resources\plugins\%%a\%%a.bat"
 	copy resources\default.file.bat.txt "%cd%\%%a\resources\plugins\%%a\index.bat"
 	
-	copy resources\resources\index.bat "%cd%\%%a\resources\plugins\%%a\resources\index.bat"	
+	copy resources\resources\index.bat "%cd%\%%a\resources\plugins\%%a\resources\index.bat"
+	
+	copy core.cmp.bat "%cd%\%%a.cmp.bat"
+	
 )
 
 timeout 3
