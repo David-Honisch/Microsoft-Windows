@@ -62,5 +62,8 @@ SELECT 'Importing LC2DockerPHPMyAdmin.zip Plugin SCRIPT DONE';
 SELECT 'Importing LC2J-Lawyer.zip Plugin SCRIPT'; 	
 INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('21','LC2J-Lawyer.zip Download','LC2J-Lawyer.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/LC2J-Lawyer.zip LC2J-Lawyer.zip'); 
 SELECT 'Importing LC2J-Lawyer.zip Plugin SCRIPT DONE'; 	
+SELECT 'Importing LC2HTTPAnalysis.zip Plugin SCRIPT'; 	
+INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('22','LC2HTTPAnalysis.zip Download','LC2HTTPAnalysis.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/LC2HTTPAnalysis.zip LC2HTTPAnalysis.zip'); 
+SELECT 'Importing LC2HTTPAnalysis.zip Plugin SCRIPT DONE'; 	
 SELECT 'Plugins count ',count(*) from plugins; 
 SELECT 'Running SQL plugins import DONE'; 
