@@ -77,5 +77,8 @@ SELECT 'Importing LC2Kubernetes.zip Plugin SCRIPT DONE';
 SELECT 'Importing LC2RegistryWizard.zip Plugin SCRIPT'; 	
 INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('26','LC2RegistryWizard.zip Download','LC2RegistryWizard.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/LC2RegistryWizard.zip LC2RegistryWizard.zip'); 
 SELECT 'Importing LC2RegistryWizard.zip Plugin SCRIPT DONE'; 	
+SELECT 'Importing LC2ApacheDS.zip Plugin SCRIPT'; 	
+INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('27','LC2ApacheDS.zip Download','LC2ApacheDS.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/LC2ApacheDS.zip LC2ApacheDS.zip'); 
+SELECT 'Importing LC2ApacheDS.zip Plugin SCRIPT DONE'; 	
 SELECT 'Plugins count ',count(*) from plugins; 
 SELECT 'Running SQL plugins import DONE'; 
