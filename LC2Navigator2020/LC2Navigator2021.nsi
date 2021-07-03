@@ -92,21 +92,14 @@ LoadLanguageFile "${NSISDIR}\Contrib\Language files\Slovak.nlf"
 ;Version Information
 
   VIProductVersion "1.2.3.4"
-<<<<<<< HEAD:LCUnityCEFServer.Client/install/LC2UnityServerFullInstall.nsi
-  VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductName" "LC2Navigator2020"
-  VIAddVersionKey /LANG=${LANG_ENGLISH} "Comments" "LC2Navigator2020 Client x64"
-  VIAddVersionKey /LANG=${LANG_ENGLISH} "CompanyName" "letztechance.org"
-  VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalTrademarks" "no trademark"
-  VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalCopyright" "© 2020 by David Honisch"
-  VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "LC2Navigator2020 x64"
-=======
+
+
   VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductName" "LC2Navigator2021"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "Comments" "LC2Navigator2021 Client x64"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "CompanyName" "letztechance.org"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalTrademarks" "no trademark"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalCopyright" "© 2020 by David Honisch"
   VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "LC2Navigator2021 x64"
->>>>>>> db44eafad704b6a285baa67588ec98b4231d0b40:LC2Navigator2020/LC2Navigator2021.nsi
   VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "1.0.0"
 
 ;--------------------------------
@@ -133,8 +126,6 @@ CheckBitmap "${NSISDIR}\Contrib\Graphics\Checks\classic-cross.bmp"
 ;--------------------------------
 ;--------------------------------
 ;--------------------------------
-
-
 LicenseText "HTTP://WWW.LETZTECHANCE.ORG"
 LicenseData "readme.txt"
 
@@ -388,26 +379,20 @@ SectionEnd
 Section "CreateShortCuts"
  CreateDirectory $SMPROGRAMS\$R0
  CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG
-<<<<<<< HEAD:LCUnityCEFServer.Client/install/LC2UnityServerFullInstall.nsi
- CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\LC2Start.NET.lnk" $INSTDIR\LC2Start.exe
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\LC2Search.lnk" $INSTDIR\lc2search.exe
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2020\_LC2Launcher.lnk" $INSTDIR\lc2search.exe
-=======
  CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2021
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2021\LC2Start.NET.lnk" $INSTDIR\LC2Start.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2021\LC2Search.lnk" $INSTDIR\lc2search.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2021\_LC2Launcher.lnk" $INSTDIR\lc2search.exe
->>>>>>> db44eafad704b6a285baa67588ec98b4231d0b40:LC2Navigator2020/LC2Navigator2021.nsi
+
  CreateShortCut "$INSTDIR\Update.lnk" $INSTDIR\LC2Start.NET.exe
  CreateShortCut "$INSTDIR\LC2Start.NET.exe.lnk" $INSTDIR\LC2Start.NET.exe
  CreateShortCut "$INSTDIR\LC2Search.exe.lnk" $INSTDIR\lc2search.exe
  CreateShortCut "$DESKTOP\LC2Search.exe.lnk" $INSTDIR\lc2search.exe
-<<<<<<< HEAD:LCUnityCEFServer.Client/install/LC2UnityServerFullInstall.nsi
+
  CreateShortCut "$DESKTOP\LC2Navigator2020.exe.lnk" $INSTDIR\LC2Start.NET.exe
-=======
+
  CreateShortCut "$DESKTOP\LC2Navigator2021.exe.lnk" $INSTDIR\LC2Start.NET.exe
->>>>>>> db44eafad704b6a285baa67588ec98b4231d0b40:LC2Navigator2020/LC2Navigator2021.nsi
+
  
 ; CreateShortCut "$SMPROGRAMS\Startup\lc2search.exe.lnk" "$INSTDIR\lc2search-win32-ia32\lc2search.exe"
  
