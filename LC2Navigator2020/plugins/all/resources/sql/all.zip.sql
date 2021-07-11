@@ -1,10 +1,10 @@
 SELECT 'Plugins count ',count(*) from plugins; 
-SELECT 'Importing Checksqlite3 Plugin SCRIPT'; 	
-INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('1','Checksqlite3 Download','Checksqlite3 Download','exec .\\resources\\cmd\\getupdates.bat /plugins/.\\resources\\cmd\\checksqlite3.bat .\\resources\\cmd\\checksqlite3.bat'); 
-SELECT 'Importing Checksqlite3 Plugin SCRIPT DONE'; 	
-SELECT 'Importing core.zip core.zip Plugin SCRIPT'; 	
-INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('2','core.zip core.zip Download','core.zip core.zip Download','exec .\\resources\\cmd\\getupdates.bat /plugins/.\\resources\\cmd\\getupdates.bat /plugins/core.zip core.zip .\\resources\\cmd\\getupdates.bat /plugins/core.zip core.zip'); 
-SELECT 'Importing core.zip core.zip Plugin SCRIPT DONE'; 	
+SELECT 'Importing Install SQLITE v.1.0(sqlite3win.zip) and required scripts Plugin SCRIPT'; 	
+INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('1','Install SQLITE v.1.0(sqlite3win.zip) and required scripts Download','Install SQLITE v.1.0(sqlite3win.zip) and required scripts Download','exec .\\resources\\cmd\\getupdates.bat /plugins/exec .\\resources\\cmd\\getupdates.bat /plugins/sqlite3win.zip sqlite3win.zip exec .\\resources\\cmd\\getupdates.bat /plugins/sqlite3win.zip sqlite3win.zip'); 
+SELECT 'Importing Install SQLITE v.1.0(sqlite3win.zip) and required scripts Plugin SCRIPT DONE'; 	
+SELECT 'Importing Core Plugins v.1.0 Plugin SCRIPT'; 	
+INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('2','Core Plugins v.1.0 Download','Core Plugins v.1.0 Download','exec .\\resources\\cmd\\getupdates.bat /plugins/exec .\\resources\\cmd\\getupdates.bat /plugins/core.zip core.zip exec .\\resources\\cmd\\getupdates.bat /plugins/core.zip core.zip'); 
+SELECT 'Importing Core Plugins v.1.0 Plugin SCRIPT DONE'; 	
 SELECT 'Importing All Plugins (Alle Plugins) v.1.0 Plugin SCRIPT'; 	
 INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('3','All Plugins (Alle Plugins) v.1.0 Download','All Plugins (Alle Plugins) v.1.0 Download','exec .\\resources\\cmd\\getupdates.bat /plugins/exec .\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip exec .\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip'); 
 SELECT 'Importing All Plugins (Alle Plugins) v.1.0 Plugin SCRIPT DONE'; 	
