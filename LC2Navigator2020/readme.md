@@ -118,6 +118,14 @@ Linux
 
 Note:curently only windows x64 builds available. 32 Bit Electron build is not longer supported
 
+
+## Plugin Software Requirements (no autoinstall !!)
+
+Python 3
+JDK 8<
+
+Note:curently only windows x64 builds available. 32 Bit Electron build is not longer supported
+
 ## Download Installer (Microsoft Windows x64):
 
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
@@ -200,7 +208,10 @@ You can find scripts on this repository to solve following package.json entries:
 
 #### Tests
 
-- TODO[jest](https://jestjs.io/)
+- TODO
+more plugins coming soon.. P-)
+[emed java directly](https://github.com/jreznot/electron-java-app)
+[jest](https://jestjs.io/)
 
 #### Libraries
 
@@ -210,19 +221,31 @@ You can find scripts on this repository to solve following package.json entries:
 - SQLITE
 - HTML5
 - JQuery
+
 - Angular 10
 - ReactJS
 - SAP.UI
 - Phaser IO
-- .NET CORE
+
+- .NET CORE 3<
 - ASP .NET CORE 
 - .NET CORE EF
 - .NET CORE NHIBERNATE
 - JSF
+- ASF
+- Vadim
+
+- Jenkins
+- Grafana
+- ELK (Elastic Search Kibanan ...)
+- Kong
+
+
 - Spring Boot
 - Spring MVC
 - Spring Rest
 - Hibernate
+
 see plugins...
 
 ### TODO
