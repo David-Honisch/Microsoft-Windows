@@ -2,6 +2,9 @@
 
 ## Source:
 https://letztechance.org
+<a href="https://www.letztechance.org/">LetzteChance.Org</a>
+<a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
+
 
 ## Windows 64 Bit Installer:
 
@@ -89,7 +92,16 @@ There are different "Plugins" with a different technology stack.
 	- LC2RotatingTorproxy - Docker LC2RotatingTorproxy ha proxy with rotating tor proxy list nodes
 - LC2Python
 	- LC2Python - Docker LC2Python some python scripts
+
+- see plugin itslelf for more information
 	
+	
+- see all plugins download
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/plugins/all.zip">All active Plugins</a>
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
+<a href="https://www.letztechance.org/">LetzteChance.Org</a>
+<a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
+
 
  
 Example Screenshot of LC2ExcelTransform:
@@ -115,6 +127,7 @@ Note:curently only windows x64 builds available. 32 Bit Electron build is not lo
 https://www.letztechance.org/read-20-35.html
 
 ## Plugin requirements
+- JDK 8<
 - Docker Desktop
 - Python 3x
 - PHP 7.x
