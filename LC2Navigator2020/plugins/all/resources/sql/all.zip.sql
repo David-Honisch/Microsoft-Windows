@@ -86,5 +86,8 @@ SELECT 'Importing LC2Games.zip Plugin SCRIPT DONE';
 SELECT 'Importing LC2Java.Starter.v.1.0.zip Plugin SCRIPT'; 	
 INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('29','LC2Java.Starter.v.1.0.zip Download','LC2Java.Starter.v.1.0.zip Download','.\\resources\\cmd\\getupdates.bat /plugins/LC2Java.Starter.v.1.0.zip LC2Java.Starter.v.1.0.zip'); 
 SELECT 'Importing LC2Java.Starter.v.1.0.zip Plugin SCRIPT DONE'; 	
+SELECT 'Importing LC2Matplotlib.zip Plugin SCRIPT'; 	
+INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('30','LC2Matplotlib.zip Download','LC2Matplotlib.zip Download','.\\resources\\cmd\\getupdates.bat /plugins/LC2Matplotlib.zip LC2Matplotlib.zip'); 
+SELECT 'Importing LC2Matplotlib.zip Plugin SCRIPT DONE'; 	
 SELECT 'Plugins count ',count(*) from plugins; 
 SELECT 'Running SQL plugins import DONE'; 
