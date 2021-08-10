@@ -150,7 +150,7 @@ Example Screenshot of LC2ExcelTransform:
 <img src="LC2ExcelTransform.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
 
 
-## Requirements
+##Basic Requirements
 
 Windows 64
 Mac IOS
@@ -183,7 +183,7 @@ https://www.letztechance.org/read-20-35.html
 - Maven
 - Ant
 - MsBuild
-- Please read Plugin comments
+- ... okay, guys, it may differ. Read the notes of the plugin or any development comments
 
 ## Supported os
 
