@@ -183,7 +183,8 @@ https://www.letztechance.org/read-20-35.html
 - Maven
 - Ant
 - MsBuild
-- ... okay, guys, it may differ. Read the notes of the plugin or any development comments
+- ...
+- It may be various. Please, read the notes of the plugin or any development comments
 
 ## Supported os
 
