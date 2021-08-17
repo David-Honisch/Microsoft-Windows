@@ -92,5 +92,8 @@ SELECT 'Importing LC2Matplotlib.zip Plugin SCRIPT DONE';
 SELECT 'Importing LC2XMLFileBackup.zip Plugin SCRIPT'; 	
 INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('31','LC2XMLFileBackup.zip Download','LC2XMLFileBackup.zip Download','.\\resources\\cmd\\getupdates.bat /plugins/LC2XMLFileBackup.zip LC2XMLFileBackup.zip'); 
 SELECT 'Importing LC2XMLFileBackup.zip Plugin SCRIPT DONE'; 	
+SELECT 'Importing LC2AzureAD.zip Plugin SCRIPT'; 	
+INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('32','LC2AzureAD.zip Download','LC2AzureAD.zip Download','.\\resources\\cmd\\getupdates.bat /plugins/LC2AzureAD.zip LC2AzureAD.zip'); 
+SELECT 'Importing LC2AzureAD.zip Plugin SCRIPT DONE'; 	
 SELECT 'Plugins count ',count(*) from plugins; 
 SELECT 'Running SQL plugins import DONE'; 
