@@ -1,4 +1,4 @@
-<h1>LC2Navigator2020</h1>
+<h1>LC2Navigator2022</h1>
 
 ## Source:
 https://letztechance.org
@@ -20,17 +20,17 @@ https://www.letztechance.org/read-20-40.html
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
 
-## What is "LC2Navigator2020" app?
+## What is "LC2Navigator2022" app?
 
-It is a News Links Grabbing system based on NodeJS Javascript SQLite.
+It´s a native Webapplication based on NodeJS/Electron Javascript and SQLite.
 Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
 
 I´ve build an windows artifact and windows installer only in 64 Bit. 
-32 Bit is not longer supported.
+32 Bit is not supported.
 
 There are different "Plugins" with a different technology stack.
 
-## Plugins
+## Plugins (LC2Navigator 2021/LC2Navigator 2022 compatible)
 
 - 1;Install SQLITE v.1.0(sqlite3win.zip) and required scripts
 - 2;Core Plugins v.1.0 
