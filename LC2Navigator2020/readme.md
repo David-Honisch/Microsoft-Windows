@@ -1,4 +1,4 @@
-<h1>LC2Navigator2020</h1>
+<h1>LC2Navigator2022</h1>
 
 ## Source:
 https://letztechance.org
