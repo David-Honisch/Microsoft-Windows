@@ -29,6 +29,10 @@ https://www.letztechance.org/read-20-40.html
 
 ## What is "LC2CRC32" app?
 
+it is a small application to verify files
+
+It´s a part of LC2Navigator2022 living as a plugin but it is independent usable
+
 It´s a native Webapplication based on NodeJS/Electron Javascript and SQLite.
 Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
 
