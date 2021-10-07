@@ -11,7 +11,7 @@ https://letztechance.org
 ## Windows 64 Bit Installer:
 
 LC2Navigator 2022:
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2CRC32/LC2Navigator2022install.exe
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/LC2Navigator2022install.exe
 
 
 LC2Navigator 2021:
