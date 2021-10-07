@@ -10,7 +10,11 @@ https://letztechance.org
 
 LC2Navigator 2022:
 https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/LC2Navigator2022install.exe
+# CRC32 signature:
+9a2e8871
 
+
+https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2CRC32 
 
 LC2Navigator 2021:
 https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe
@@ -72,6 +76,8 @@ There are different "Plugins" with a different technology stack.
 - 32;LC2Kong.zip Kong Community Edition Dockeer Container
 - 33;LC2OracleDB.zip Oracle 19c Express Edition Dockeer Container
 - 34;LC2AysncPing.zip - A Little C# Executable that pings a server async
+
+
 
 more in progress...
 
