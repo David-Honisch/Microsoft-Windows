@@ -1,4 +1,4 @@
-<h1>LC2FileEnDeCypter.exe</h1>
+<h1>LC2FileEnDeCypter</h1>
 
 <h2>LC2FileEnDeCypter Plugin v.1.0</h2>
 
@@ -11,7 +11,7 @@ https://letztechance.org
 ## Windows 64 Bit Installer:
 
 LC2Navigator 2022:
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2FileEnDeCypter.exe/LC2FileEnDeCypter.exeinstall.exe
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2FileEnDeCypter/LC2Navigator2022install.exe
 
 
 LC2Navigator 2021:
@@ -27,7 +27,11 @@ https://www.letztechance.org/read-20-40.html
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
 
-## What is "LC2FileEnDeCypter.exe" app?
+## What is "LC2FileEnDeCypter" app?
+
+it is a small application to verify files
+
+It´s a part of LC2Navigator2022 living as a plugin but it is independent usable
 
 It´s a native Webapplication based on NodeJS/Electron Javascript and SQLite.
 Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
