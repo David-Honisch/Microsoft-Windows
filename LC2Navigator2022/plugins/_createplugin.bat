@@ -29,7 +29,7 @@ for /f "usebackq tokens=1-3 delims=;" %%a in ("%input%") do (
 	echo creating default script	
 	REM call resources\default.file.bat "%cd%\%%a\resources\plugins\%%a\%%a.bat" %%a	
 	copy resources\default.file.bat.txt "%cd%\%%a\resources\plugins\%%a\%%a.bat"
-	copy resources\default.file.bat.txt "%cd%\%%a\resources\plugins\%%a\index.bat"
+	copy resources\index.bat "%cd%\%%a\resources\plugins\%%a\index.bat"
 	
 	copy resources\resources\index.bat "%cd%\%%a\resources\plugins\%%a\resources\index.bat"
 	

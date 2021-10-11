@@ -5,11 +5,13 @@ echo %menuFile% !!!!!!!!!!!
 type nul>%menuFile%
 echo Reload;menu.csv;execCMD('exec .\\resources\\plugins\\%pluginName%\\index.bat .\\resources\\plugins\\%pluginName%\\menu.csv', 'out');Reload this view>>%menuFile%
 echo Install requirements;menu.csv;getOpenDialog('#dialog','.\\resources\\plugins\\%pluginName%\\install.htm','Install',{ minWidth: 250,  minHeight: 150, width: 400});%pluginName% Install - Please click here to get all required stuff>>%menuFile%
+echo %pluginName% Table;menu.csv;window.location='list.html?db=%pluginName%';Show %pluginName% Table>>%menuFile%
 echo Show %pluginName% UI;menu.csv;getExtFile('file://'+__dirname+'\\..\\..\\..\\resources\\plugins\\%pluginName%\\%pluginName%.html');%pluginName% Main View>>%menuFile%
 echo Show %pluginName% UI v.2.0;menu.csv;getExtFile('.\\resources\\plugins\\%pluginName%\\%pluginName%.html');%pluginName% Main View>>%menuFile%
 echo %pluginName% Menu v.1.0;menu.csv;execCMD('exec.bat .\\resources\\plugins\\%pluginName%\\index.bat .\\resources\\plugins\\%pluginName%\\menu.csv', 'app_cnt');%pluginName% Main Menu>>%menuFile%
 echo %pluginName% Core Show Process and Kill;menu.csv;execCMD('exec.bat .\\resources\\plugins\\%pluginName%\\resources\\index.bat .\\resources\\plugins\\%pluginName%\\menu\\menu.core.csv', 'app_cnt');%pluginName% Main Menu>>%menuFile%
 echo %pluginName% Extended Test  v.1.0;menu.csv;execCMD('exec.bat .\\resources\\plugins\\%pluginName%\\index.bat .\\resources\\plugins\\%pluginName%\\menu\\menu.ext.csv', 'app_cnt');%pluginName% Main Menu>>%menuFile%
+
 
 
 REM echo Reload;menu.csv;execCMD('exec .\\resources\\plugins\\%pluginName%\\index.bat .\\resources\\plugins\\%pluginName%\\menu.csv', 'cnt');Reload this view >>%menuFile%
