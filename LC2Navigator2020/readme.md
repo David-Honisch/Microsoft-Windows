@@ -1,4 +1,4 @@
-<h1>LC2Navigator2022</h1>
+<h1>LC2Navigator 2022</h1>
 
 ## Source:
 https://letztechance.org
@@ -8,7 +8,7 @@ https://letztechance.org
 
 ## Windows 64 Bit Installer:
 
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/LC2Navigator2022install.exe
 Permanent Link:
 https://www.letztechance.org/read-20-35.html
 
@@ -20,10 +20,11 @@ https://www.letztechance.org/read-20-40.html
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
 
-## What is "LC2Navigator2020" app?
+## What is "LC2Navigator2022" app?
 
-It is a News Links Grabbing system based on NodeJS Javascript SQLite.
+It is a local database powered application to persist apps, urls, news based on NodeJS / Electron 14 and SQLite.
 Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
+Some services will be relocated to java windows service embedded in this application.
 
 I´ve build an windows artifact and windows installer only in 64 Bit. 
 32 Bit is not longer supported.
