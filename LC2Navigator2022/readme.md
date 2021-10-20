@@ -26,7 +26,13 @@ https://www.letztechance.org/read-20-35.html
 https://www.letztechance.org/read-20-40.html
 
 ## Logo:
-<img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
+<img src="lc2searchmain.png" alt="LC2Navigator 2022 Main UI" />
+
+## Example (LC2ShortCutCLI Plugin) Plugin UI:
+<img src="lc2searchplugin.png" alt="LC2Navigator 2022 Plugin Example (LC2ShortCutCLI Plugin) Screen" />
+
+## CSV, XML, JSON, XSLT Import Export :
+<img src="lc2searchplugin.png" alt="LC2Navigator 2022 Plugin Example (LC2ShortCutCLI Plugin) Screen" />
 
 
 ## What is "LC2Navigator2022" app?
@@ -40,6 +46,17 @@ I´ve build an windows artifact and windows installer only in 64 Bit.
 There are different "Plugins" with a different technology stack.
 
 ## Plugins (LC2Navigator 2021/LC2Navigator 2022 compatible)
+
+1;All Plugins Download v.0.91a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip', 'out')
+2;Install SQLITE v.1.0(sqlite3win.zip) and required scripts;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/sqlite3win.zip sqlite3win.zip', 'out')
+3;LC2CRC32 v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2CRC32.zip LC2CRC32.zip', 'out')
+4;lc2process v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/lc2process.zip lc2process.zip', 'out')
+5;LC2ShortCutCLI v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2ShortCutCLI.zip LC2ShortCutCLI.zip', 'out')
+6;LC2Java.Starter.v.1.1 v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2Java.Starter.v.1.1.zip LC2Java.Starter.v.1.1.zip', 'out')
+
+7;Missing Plugins and Updates Info;alert('more coming soon...')
+
+Yes, all the following plugins missing up to now:
 
 - 1;Install SQLITE v.1.0(sqlite3win.zip) and required scripts
 - 2;Core Plugins v.1.0 
@@ -75,11 +92,12 @@ There are different "Plugins" with a different technology stack.
 - 32;LC2MongoDB.zip MongoDB Dockeer Container
 - 32;LC2Kong.zip Kong Community Edition Dockeer Container
 - 33;LC2OracleDB.zip Oracle 19c Express Edition Dockeer Container
-- 34;LC2AysncPing.zip - A Little C# Executable that pings a server async
+- 34;LC2AysncPing.zip - more coming soon...
+- 35;LC2DockerKONG.zip - more coming soon...
+- 36;LC2MiniOpenShift.zip - more coming soon...
+- 37;LC2DeEnCrypter.zip - more coming soon...
 
-
-
-more in progress...
+more plugins and updates in progress...
 
 # Deprecated or unsupported Plugins
 
