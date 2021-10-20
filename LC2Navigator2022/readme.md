@@ -26,13 +26,14 @@ https://www.letztechance.org/read-20-35.html
 https://www.letztechance.org/read-20-40.html
 
 ## Logo:
-<img src="lc2searchmain.png" alt="LC2Navigator 2022 Main UI" />
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchmain.png" alt="LC2Navigator 2022 Main UI" />
 
 ## Example (LC2ShortCutCLI Plugin) Plugin UI:
-<img src="lc2searchplugin.png" alt="LC2Navigator 2022 Plugin Example (LC2ShortCutCLI Plugin) Screen" />
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchplugin.png" alt="LC2Navigator 2022 Plugin Example (LC2ShortCutCLI Plugin) Screen" />
 
 ## CSV, XML, JSON, XSLT Import Export :
-<img src="lc2searchplugin.png" alt="LC2Navigator 2022 Plugin Example (LC2ShortCutCLI Plugin) Screen" />
+using SQLite or LC Webservices:
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchimexport.png" alt="LC2Navigator 2022 Menu XLS, XLSX, JSON, XML Import and Export Screen" />
 
 
 ## What is "LC2Navigator2022" app?
