@@ -11,7 +11,8 @@ https://letztechance.org
 LC2Navigator 2022:
 https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/LC2Navigator2022install.exe
 # CRC32 signature:
-9a2e8871
+889a58ce
+
 
 
 https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2CRC32 
