@@ -98,5 +98,8 @@ SELECT 'Importing LC2AzureAD.zip Plugin SCRIPT DONE';
 SELECT 'Importing LC2Age.zip Plugin SCRIPT'; 	
 INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('33','LC2Age.zip Download','LC2Age.zip Download','.\\resources\\cmd\\getupdates.bat /plugins/LC2Age.zip LC2Age.zip'); 
 SELECT 'Importing LC2Age.zip Plugin SCRIPT DONE'; 	
+SELECT 'Importing lc2ircs.zip Plugin SCRIPT'; 	
+INSERT OR REPLACE INTO plugins(person_id,first_name,name,url)values('34','lc2ircs.zip Download','lc2ircs.zip Download','.\\resources\\cmd\\getupdates.bat /plugins/lc2ircs.zip lc2ircs.zip'); 
+SELECT 'Importing lc2ircs.zip Plugin SCRIPT DONE'; 	
 SELECT 'Plugins count ',count(*) from plugins; 
 SELECT 'Running SQL plugins import DONE'; 
