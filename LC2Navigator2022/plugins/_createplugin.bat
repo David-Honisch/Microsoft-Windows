@@ -10,6 +10,8 @@ for /f "usebackq tokens=1-3 delims=;" %%a in ("%input%") do (
 	
 	echo creating sql script
 	call resources\default.sql.bat "%cd%\%%a\resources\sql\%%a.zip.sql" %%a	
+	
+	call resources\schema.sql.bat "%cd%\%%a\resources\plugins\%%a\schema.sql" %%a	
 
 	echo creating default config script	
 	copy resources\config.bat "%cd%\%%a\resources\plugins\%%a\config.bat"
