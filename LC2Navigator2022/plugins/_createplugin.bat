@@ -3,7 +3,7 @@ set input=_createplugin.csv
 REM set output=org.letztechance.domain.web.GrabUrls.zip
 for /f "usebackq tokens=1-3 delims=;" %%a in ("%input%") do (	
 	mkdir %%a\resources\plugins\%%a
-	mkdir %%a\resources\plugins\%%a\install
+	mkdir %%a\resources\plugins\%%a\import
 	mkdir %%a\resources\plugins\%%a\menu
 	mkdir %%a\resources\plugins\%%a\resources
 	mkdir %%a\resources\sql
@@ -21,7 +21,7 @@ for /f "usebackq tokens=1-3 delims=;" %%a in ("%input%") do (
 	
 	
 
-	copy resources\install\install.csv "%cd%\%%a\resources\plugins\%%a\install\install.csv"
+	copy resources\import\import.csv "%cd%\%%a\resources\plugins\%%a\import\import.csv"
 	copy resources\install.html "%cd%\%%a\resources\plugins\%%a\install.html"
 	copy resources\install.js "%cd%\%%a\resources\plugins\%%a\install.js"
 	copy resources\config.js "%cd%\%%a\resources\plugins\%%a\config.js"
