@@ -6,6 +6,7 @@ https://letztechance.org
 <a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
 
 
+## Download:
 ## Windows 64 Bit Installer:
 
 LC2Navigator 2022:
@@ -79,6 +80,9 @@ Yes, all the following plugins missing up to now:
 - 17;LC2bat2exe
 - 18;LC2DockerSonarCube - Sonarcube Docker Container
 - 19;LC2DockerJenkins - Jenkins Docker Container
+- 20;LCRotatingTorProxy Docker Plugin
+
+##old plugins - migration in progress
 - 20;LC2DockerPHPMyAdmin - PHPMyAdmin Mysql Docker Container
 - 21;LC2J-Lawyer
 - 22;LC2HTTPAnalysis
