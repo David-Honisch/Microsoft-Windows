@@ -1,5 +1,5 @@
 @echo off
-set "fileName=%cd%\test.me.bat"
+set "fileName=%cd%\test.bat"
 set enc=-encrypt
 set dec=-decrypt
 echo encrypting
