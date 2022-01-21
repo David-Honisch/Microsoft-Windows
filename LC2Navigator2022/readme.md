@@ -63,27 +63,27 @@ Yes, all the following plugins missing up to now:
 
 All Plugins Download v.1.01a (14.01.2022) - Alle Plugins als Download verfügbar
 
-SQLITE v.1.0(sqlite3win.zip)
-LC2CRC32 Plugin Downloader v.0.1a
-Lc2process Plugin Downloader v.0.1a
-LC2ShortCutCLI Plugin Downloader v.0.1a
-LC2Java.Starter Plugin Downloader v.1.1c
-Lc2mysqldocker Plugin Downloader v.1.01a
-Lc2postgresdocker Plugin Downloader v.1.01a
-Lc2mongodb Plugin Downloader v.1.01a
-lc2sqlservercmd Plugin Downloader v.1.01a
-LC2DockerJenkins Plugin Downloader v.1.01a
-LC2Grafana Plugin Downloader v.1.01a
-LC2RegistryWizard Plugin Downloader v.1.01a
-LC2Microsoft.Toolkit Plugin Downloader v.1.01a
-lc2ircs Plugin Downloader v.1.01a
-LC2Clock Plugin Downloader v.1.01a
-LC2Age Plugin Downloader v.1.01a
-lc2dockerphpapache Plugin Downloader v.1.01a
-LC2RotatingTorproxy Plugin Downloader v.1.01a
-LC2Age Plugin Downloader v.1.01a 
-LC2DockerSonarCube Plugin Downloader v.1.01a 
-LC2Python Plugin Downloader v.1.01a 
+- SQLITE v.1.0(sqlite3win.zip)
+- LC2CRC32 Plugin Downloader v.0.1a
+- Lc2process Plugin Downloader v.0.1a
+- LC2ShortCutCLI Plugin Downloader v.0.1a
+- LC2Java.Starter Plugin Downloader v.1.1c
+- Lc2mysqldocker Plugin Downloader v.1.01a
+- Lc2postgresdocker Plugin Downloader v.1.01a
+- Lc2mongodb Plugin Downloader v.1.01a
+- lc2sqlservercmd Plugin Downloader v.1.01a
+- LC2DockerJenkins Plugin Downloader v.1.01a
+- LC2Grafana Plugin Downloader v.1.01a
+- LC2RegistryWizard Plugin Downloader v.1.01a
+- LC2Microsoft.Toolkit Plugin Downloader v.1.01a
+- lc2ircs Plugin Downloader v.1.01a
+- LC2Clock Plugin Downloader v.1.01a
+- LC2Age Plugin Downloader v.1.01a
+- lc2dockerphpapache Plugin Downloader v.1.01a
+- LC2RotatingTorproxy Plugin Downloader v.1.01a
+- LC2Age Plugin Downloader v.1.01a 
+- LC2DockerSonarCube Plugin Downloader v.1.01a 
+- LC2Python Plugin Downloader v.1.01a 
 
 
 ##old plugins - migration in progress
