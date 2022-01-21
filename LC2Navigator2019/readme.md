@@ -1,39 +1,196 @@
-<h1>LC2Navigator2019</h1>
+<h1>LC2Navigator2022</h1>
 
-This Version is not longer supported
-
-Source:
+## Source:
 https://letztechance.org
-<img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
+<a href="https://www.letztechance.org/">LetzteChance.Org</a>
+<a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
 
 
-## What is "LC2Navigator2019" app?
+## Download:
+## Windows 64 Bit Installer:
 
-Combining different technologies like electron, html5, jquery and many more...
-News, News Grabber and SQLite based plugin system
+LC2Navigator 2022:
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/LC2Navigator2022install.exe
+# CRC32 signature:
+889a58ce
 
-<img src="app-resources/video.gif" alt="video demo" width="320" />
 
-Different Plugins included:
-- SQLite Database
-- Docker support
-- Device flushing plugin coming soon...
-- npm auto download plugins
-- Different Windows Batches Plugin
-- FFMPEG Plugin support
-- Mp3 files will be saved to a **y2mp3** folder in the **Download** folder (grab youtube or anything else)
-- Excel Import Export (convert xls, xlsx, csv, json, xml and more...)
-more coming soon...
 
-## Download Installer (Microsoft Windows x64):
+https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2CRC32 
 
-Not longer supported
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2019/LC2Navigator2019install.exe
+LC2Navigator 2021:
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe
+Permanent Link:
+https://www.letztechance.org/read-20-35.html
 
-New Installer:
+## Linux 64 Bit Installer:
+(coming soon)
+https://www.letztechance.org/read-20-40.html
+
+## Logo:
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchmain.png" alt="LC2Navigator 2022 Main UI" />
+
+## Example (LC2ShortCutCLI Plugin) Plugin UI:
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchplugin.png" alt="LC2Navigator 2022 Plugin Example (LC2ShortCutCLI Plugin) Screen" />
+
+## CSV, XML, JSON, XSLT Import Export :
+using SQLite or LC Webservices:
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchimexport.png" alt="LC2Navigator 2022 Menu XLS, XLSX, JSON, XML Import and Export Screen" />
+
+
+## What is "LC2Navigator2022" app?
+
+It´s a native Webapplication based on NodeJS/Electron Javascript and SQLite.
+Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
+
+I´ve build an windows artifact and windows installer only in 64 Bit. 
+32 Bit is not supported.
+
+There are different "Plugins" with a different technology stack.
+
+## Plugins (LC2Navigator 2021/LC2Navigator 2022 compatible)
+
+1;All Plugins Download v.0.91a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip', 'out')
+2;Install SQLITE v.1.0(sqlite3win.zip) and required scripts;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/sqlite3win.zip sqlite3win.zip', 'out')
+3;LC2CRC32 v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2CRC32.zip LC2CRC32.zip', 'out')
+4;lc2process v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/lc2process.zip lc2process.zip', 'out')
+5;LC2ShortCutCLI v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2ShortCutCLI.zip LC2ShortCutCLI.zip', 'out')
+6;LC2Java.Starter.v.1.1 v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2Java.Starter.v.1.1.zip LC2Java.Starter.v.1.1.zip', 'out')
+
+7;Missing Plugins and Updates Info;alert('more coming soon...')
+
+Yes, all the following plugins missing up to now:
+
+All Plugins Download v.1.01a (14.01.2022) - Alle Plugins als Download verfügbar
+
+- SQLITE v.1.0(sqlite3win.zip)
+- LC2CRC32 Plugin Downloader v.0.1a
+- Lc2process Plugin Downloader v.0.1a
+- LC2ShortCutCLI Plugin Downloader v.0.1a
+- LC2Java.Starter Plugin Downloader v.1.1c
+- Lc2mysqldocker Plugin Downloader v.1.01a
+- Lc2postgresdocker Plugin Downloader v.1.01a
+- Lc2mongodb Plugin Downloader v.1.01a
+- lc2sqlservercmd Plugin Downloader v.1.01a
+- LC2DockerJenkins Plugin Downloader v.1.01a
+- LC2Grafana Plugin Downloader v.1.01a
+- LC2RegistryWizard Plugin Downloader v.1.01a
+- LC2Microsoft.Toolkit Plugin Downloader v.1.01a
+- lc2ircs Plugin Downloader v.1.01a
+- LC2Clock Plugin Downloader v.1.01a
+- LC2Age Plugin Downloader v.1.01a
+- lc2dockerphpapache Plugin Downloader v.1.01a
+- LC2RotatingTorproxy Plugin Downloader v.1.01a
+- LC2Age Plugin Downloader v.1.01a 
+- LC2DockerSonarCube Plugin Downloader v.1.01a 
+- LC2Python Plugin Downloader v.1.01a 
+
+
+##old plugins - migration in progress
+- ;LC2DockerPHPMyAdmin - PHPMyAdmin Mysql Docker Container
+- ;LC2J-Lawyer
+- ;LC2HTTPAnalysis
+- ;LC2Grafana - Grafana Docker Container
+- ;LC2ELK - Docker Container
+- ;LC2Kubernetes - Demo Kubernetes Cluster
+- ;LC2RegistryWizard - Some nice and small Registry Scripts
+- ;LC2ApacheDS - Apache Directory Docker
+- ;LC2Games - Some small games
+- ;LC2Java.Starter.v.2.1 - A small project management system made with Quarkus /Postgres (Docker)
+- ;LC2Matplotlib.zip - Python MathplotLib rendering on QT
+- ;LC2XMLFileBackup.zip A nice small powershell to Backup files based on XML
+- ;LC2Kong.zip Kong Community Edition Dockeer Container
+- ;LC2OracleDB.zip Oracle 19c Express Edition Dockeer Container
+- ;LC2AysncPing.zip - more coming soon...
+- ;LC2DockerKONG.zip - more coming soon...
+- ;LC2MiniOpenShift.zip - more coming soon...
+- ;LC2DeEnCrypter.zip - more coming soon...
+
+more plugins and updates in progress...
+
+# Deprecated or unsupported Plugins
+
+- SQLIte and NPM AutoInstall Packages 
+	- Required. Please always update this package
+- Core 
+	- SQLITE Import, Export, CRUD and more...
+- LC2Process 
+	- Show and kill system processes
+- LC2Redirect 
+	- Redirect Output
+- LC2Zip 
+	- .NET Core
+- LC2Zip 
+	- ZIP Java Java Installer (SWT)
+- LC2UnZip 
+	- Unzip .NET Core
+- LC2UnZip 
+	- LC2UnZip Java Java Installer (SWT)
+- LC2DL 
+	- LetzteChance.Org offizieller Downloader
+- LC2Start.NET 
+	- LetzteChance.Org offizieller Windows .NET 4.72 Installer
+- LC2SQLIITEGUI 
+	- LetzteChance.Org offizieller LC2SQLIITEGUI
+- LC2RESTIFY 
+	- LC2RESTIFY
+- LC2SOAP 
+	- LC2SOAP
+- LC2ExcelTransform 
+	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
+- LC2SAPUI
+	- - SAP.UI Electron Webpack Project (Routing JSON and query based fragments and models)
+- LC2Docker 
+	- Some fist scripts (updates coming soon.
+- LC2FTP 
+	- FTP Client based on HMTL/NodeJS
+- LC2EXPRESS 
+	- HTTP NPM HTTPSERVER
+- LC2UnityServer 
+	- LC2UnityServer
+- LC2UnityServerClient 
+	- LC2UnityServerClient Chromium Client 
+- LC2Color 
+	- .NET v.4.7.2
+- LC2Color 
+	- .NET Core v.3.1
+- LC2Python 
+	- LC2Python (Python 3 Scripts)
+- LC2PHP 
+	- LC2PHP (PHP Installation required)
+- LC2FFMPEG 
+	- LC2FFMPEG
+- LC2PAINT 
+- LC2PAINT - Simple 3D Painter with small animations
+- LC2MySQLDocker 
+	- LC2MySQLDocker - Docker MySQL Server to host tcp port 3306
+- LC2PostGresSQL 
+	- LC2MySQLDocker - Docker Postgres Server to host tcp port
+- LC2SQLServer 
+	- LC2SQLServer - Docker MySQL to host tcp port	
+- LC2RotatingTorproxy 
+	- LC2RotatingTorproxy - Docker LC2RotatingTorproxy ha proxy with rotating tor proxy list nodes
+- LC2Python
+	- LC2Python - Docker LC2Python some python scripts
+
+- see plugin itslelf for more information
+	
+	
+- see all plugins download
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/plugins/all.zip">All active Plugins</a>
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
+<a href="https://www.letztechance.org/">LetzteChance.Org</a>
+<a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
 
-## Requirements
+
+ 
+Example Screenshot of LC2ExcelTransform:
+- LC2ExcelTransform 
+	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
+<img src="LC2ExcelTransform.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
+
+
+##Basic Requirements
 
 Windows 64
 Mac IOS
@@ -41,10 +198,33 @@ Linux
 
 Note:curently only windows x64 builds available. 32 Bit Electron build is not longer supported
 
+
+## Plugin Software Requirements (no autoinstall !!)
+
+Python 3
+JDK 8<
+
+Note:curently only windows x64 builds available. 32 Bit Electron build is not longer supported
+
+## Download Installer (Microsoft Windows x64):
+
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
+
+## HomePage - Download Installer (Microsoft Windows x64):
+
+https://www.letztechance.org/read-20-35.html
+
 ## Plugin requirements
-Docker Desktop
-Python 3x
-PHP
+- JDK 8<
+- Docker Desktop
+- Python 3x
+- PHP 7.x
+- CURL
+- Maven
+- Ant
+- MsBuild
+- ...
+- It may be various. Please, read the notes of the plugin or any development comments
 
 ## Supported os
 
@@ -54,10 +234,10 @@ PHP
 
 ## Download
 
-- Free ??
-- No ads ??
+- Free ?? yes
+- No ads ?? yes
 
-Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2019](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2019)
+Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020)
 
 ## Change log
 
@@ -77,10 +257,24 @@ Fetch videos from youtube playlist and download them one by one or all.
 </div>
 
 ## Development
+	
+- Not open source
+- No comments
+
+Just using electron.
 
 
-    npm run webpack
+## Development Notes
+
+You can find scripts on this repository to solve following package.json entries:
+    npm run tlint
+	npm run webpack	
     npm run electron
+	npm run test
+	npm run build
+	npm run buildwindows
+	npm run buildmacos
+	npm run buildlinux
 
 
 ### Stack
@@ -95,25 +289,45 @@ Fetch videos from youtube playlist and download them one by one or all.
 
 #### Tests
 
-- TODO[jest](https://jestjs.io/)
+- TODO
+more plugins coming soon.. P-)
+[emed java directly](https://github.com/jreznot/electron-java-app)
+[jest](https://jestjs.io/)
 
 #### Libraries
 
 - Electron
-- HTML5
-- JQuery
-- Angular 10
-- ReactJS
-- Phaser IO
 - NodeJS
 - SQL.js
--- This is realized as a soon coming plugin. Please wait for Updates...
+- SQLITE
+- HTML5
+- JQuery
+
+- Angular 10
+- ReactJS
+- SAP.UI
+- Phaser IO
+
+- .NET CORE 3<
+- ASP .NET CORE 
+- .NET CORE EF
+- .NET CORE NHIBERNATE
 - JSF
+- ASF
+- Vadim
+
+- Jenkins
+- Grafana
+- ELK (Elastic Search Kibanan ...)
+- Kong
+
+
 - Spring Boot
 - Spring MVC
 - Spring Rest
 - Hibernate
-and more...
+
+see plugins...
 
 ### TODO
 
