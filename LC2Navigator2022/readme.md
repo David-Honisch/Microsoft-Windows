@@ -61,47 +61,50 @@ There are different "Plugins" with a different technology stack.
 
 Yes, all the following plugins missing up to now:
 
-- 1;Install SQLITE v.1.0(sqlite3win.zip) and required scripts
-- 2;Core Plugins v.1.0 
-- 3;All Plugins (Alle Plugins) v.1.0
-- 4;apache-maven.zip
-- 5;apache-ant.zip;
-- 6;lc2linkcli.zip
-- 7;excelimport.zip
-- 8;lc2irc
-- 9;graburls
-- 10;LC2RotatingTorproxy
-- 11;lc2process
-- 12;org.letztechance.domain.web.GrabUrls
-- 13;lc2php
-- 14;lc2mysqldocker - Mysql Docker Container
-- 15;LC2Python
-- 16;postgresdocker - Postgres Docker Container
-- 17;LC2bat2exe
-- 18;LC2DockerSonarCube - Sonarcube Docker Container
-- 19;LC2DockerJenkins - Jenkins Docker Container
-- 20;LCRotatingTorProxy Docker Plugin
+All Plugins Download v.1.01a (14.01.2022) - Alle Plugins als Download verfügbar
+
+SQLITE v.1.0(sqlite3win.zip)
+LC2CRC32 Plugin Downloader v.0.1a
+Lc2process Plugin Downloader v.0.1a
+LC2ShortCutCLI Plugin Downloader v.0.1a
+LC2Java.Starter Plugin Downloader v.1.1c
+Lc2mysqldocker Plugin Downloader v.1.01a
+Lc2postgresdocker Plugin Downloader v.1.01a
+Lc2mongodb Plugin Downloader v.1.01a
+lc2sqlservercmd Plugin Downloader v.1.01a
+LC2DockerJenkins Plugin Downloader v.1.01a
+LC2Grafana Plugin Downloader v.1.01a
+LC2RegistryWizard Plugin Downloader v.1.01a
+LC2Microsoft.Toolkit Plugin Downloader v.1.01a
+lc2ircs Plugin Downloader v.1.01a
+LC2Clock Plugin Downloader v.1.01a
+LC2Age Plugin Downloader v.1.01a
+lc2dockerphpapache Plugin Downloader v.1.01a
+LC2RotatingTorproxy Plugin Downloader v.1.01a
+LC2Age Plugin Downloader v.1.01a 
+LC2DockerSonarCube Plugin Downloader v.1.01a 
+LC2Python Plugin Downloader v.1.01a 
+
 
 ##old plugins - migration in progress
-- 20;LC2DockerPHPMyAdmin - PHPMyAdmin Mysql Docker Container
-- 21;LC2J-Lawyer
-- 22;LC2HTTPAnalysis
-- 23;LC2Grafana - Grafana Docker Container
-- 24;LC2ELK - Docker Container
-- 25;LC2Kubernetes - Demo Kubernetes Cluster
-- 26;LC2RegistryWizard - Some nice and small Registry Scripts
-- 27;LC2ApacheDS - Apache Directory Docker
-- 28;LC2Games - Some small games
-- 29;LC2Java.Starter.v.1.0 - A small project management system made with Quarkus /Postgres (Docker)
-- 30;LC2Matplotlib.zip - Python MathplotLib rendering on QT
-- 31;LC2XMLFileBackup.zip A nice small powershell to Backup files based on XML
-- 32;LC2MongoDB.zip MongoDB Dockeer Container
-- 32;LC2Kong.zip Kong Community Edition Dockeer Container
-- 33;LC2OracleDB.zip Oracle 19c Express Edition Dockeer Container
-- 34;LC2AysncPing.zip - more coming soon...
-- 35;LC2DockerKONG.zip - more coming soon...
-- 36;LC2MiniOpenShift.zip - more coming soon...
-- 37;LC2DeEnCrypter.zip - more coming soon...
+- ;LC2DockerPHPMyAdmin - PHPMyAdmin Mysql Docker Container
+- ;LC2J-Lawyer
+- ;LC2HTTPAnalysis
+- ;LC2Grafana - Grafana Docker Container
+- ;LC2ELK - Docker Container
+- ;LC2Kubernetes - Demo Kubernetes Cluster
+- ;LC2RegistryWizard - Some nice and small Registry Scripts
+- ;LC2ApacheDS - Apache Directory Docker
+- ;LC2Games - Some small games
+- ;LC2Java.Starter.v.2.1 - A small project management system made with Quarkus /Postgres (Docker)
+- ;LC2Matplotlib.zip - Python MathplotLib rendering on QT
+- ;LC2XMLFileBackup.zip A nice small powershell to Backup files based on XML
+- ;LC2Kong.zip Kong Community Edition Dockeer Container
+- ;LC2OracleDB.zip Oracle 19c Express Edition Dockeer Container
+- ;LC2AysncPing.zip - more coming soon...
+- ;LC2DockerKONG.zip - more coming soon...
+- ;LC2MiniOpenShift.zip - more coming soon...
+- ;LC2DeEnCrypter.zip - more coming soon...
 
 more plugins and updates in progress...
 
