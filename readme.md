@@ -1,5 +1,6 @@
-<h1>LC2Navigator2022</h1>
+<h1>Letztechance.Org Windows Projects and Tools</h1>
 
+Do you searching for open source ? Check this:
 ## Projects
 
 CheatEngine
@@ -23,9 +24,12 @@ LC2Utils
 LCUnityCEFServer.Client
 Qemu
 
+## more sources:
+https://github.com/David-Honisch/
+
 <h1>LC2Navigator2022</h1>
 
-## Source:
+## Home:
 https://letztechance.org
 <a href="https://www.letztechance.org/">LetzteChance.Org</a>
 <a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
