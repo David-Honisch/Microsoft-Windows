@@ -3,26 +3,26 @@
 Do you searching for open source ? Check this:
 ## Projects
 
-CheatEngine
-CPUUsageMonitor
-CSP.Hash.Generator
-docker
-LC2BlazorChat
-LC2Cheats
-LC2Clock
-LC2CRC32
-LC2DL
-LC2FFMPEGEncoder
-LC2FileEnDeCypter
-LC2JSPing
-LC2Navigator2019 (deprecated)
-LC2Navigator2020 (deprecated)
-LC2Navigator2022
-LC2ParseUrl
-LC2PingAsync
-LC2Utils
-LCUnityCEFServer.Client
-Qemu
+- CheatEngine
+- CPUUsageMonitor
+- CSP.Hash.Generator
+- docker
+- LC2BlazorChat
+- LC2Cheats
+- LC2Clock
+- LC2CRC32
+- LC2DL
+- LC2FFMPEGEncoder
+- LC2FileEnDeCypter
+- LC2JSPing
+- LC2Navigator2019 (deprecated)
+- LC2Navigator2020 (deprecated)
+- LC2Navigator2022
+- LC2ParseUrl
+- LC2PingAsync
+- LC2Utils
+- LCUnityCEFServer.Client
+- Qemu
 
 ## more sources:
 https://github.com/David-Honisch/
