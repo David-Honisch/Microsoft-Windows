@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FFLib
+</name>
+</assembly>
+<members>
+<member name="P:FFLib.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:FFLib.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:FFLib.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="E:FFLib.Encoder.Progress">
+	<summary>
+ Occurs when Progress changes.
+ </summary>
+</member><member name="E:FFLib.Encoder.Status">
+	<summary>
+ Occurs when status changes.
+ </summary>
+</member><member name="E:FFLib.Encoder.ConsoleOutput">
+	<summary>
+ Occurs when StdError of ffmpeg changes. Usefull for debugging or to display the command line to user.
+ </summary>
+</member><member name="E:FFLib.Encoder.MiscInfo">
+	<summary>
+ Misc info such as fps, qfactor, time, bitrate.. Basicly, anything that is in the Stdout of ffmpeg and estimated size.
+ </summary>
+</member><member name="M:FFLib.Encoder.#ctor">
+	<summary>
+ Initializes a new instance of the <see cref="T:FFLib.Encoder"/> class.
+ </summary>
+</member><member name="M:FFLib.Encoder.#ctor(System.String)">
+	<summary>
+ Initializes a new instance of the <see cref="T:FFLib.Encoder"/> class.
+ </summary>
+	<param name="FFmpeg">The FFmpeg executable location.</param>
+</member><member name="T:FFLib.Encoder">
+	<summary>
+ The encode class contains all the code to set up ffmpeg and start the encoding process
+ </summary>
+</member>
+</members>
+</doc>
