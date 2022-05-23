@@ -1,12 +1,12 @@
 <h1>Letztechance.Org News</h1>
 
 ## app.xml
-https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2News/app.xml
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2News/app.xml
+- https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2News/app.xml
+- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2News/app.xml
 
 ## app.xslt
-https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2News/app.xslt
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2News/app.xslt
+- https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2News/app.xslt
+- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2News/app.xslt
 
 
 ## Open sourc3
