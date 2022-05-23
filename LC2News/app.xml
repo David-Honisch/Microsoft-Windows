@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<title lang="en">The App</title>
+<urlslist>
+
+  <urls category="cooking">
+    <title lang="en">Latest News</title>
+    <author>David Honisch</author>
+    <year>2005</year>
+    <price>30.00</price>
+	<url>https://www.letztechance.org/start.html</url>
+  </urls>
+
+  <urls category="security">
+    <title lang="en">Security</title>
+    <author>David Honisch</author>
+    <year>2005</year>
+    <price>29.99</price>
+	<url>https://www.letztechance.org/list-3-1.html</url>
+  </urls>
+  
+  <urls category="web">
+    <title lang="en">Links</title>
+    <author>David Honisch</author>
+    <year>2005</year>
+    <price>29.99</price>
+	<url>https://www.letztechance.org/list-87-1.html</url>
+  </urls>
+  
+  <urls category="tools">
+    <title lang="en">Tools</title>
+    <author>David Honisch</author>
+    <year>2005</year>
+    <price>29.99</price>
+	<url>https://www.letztechance.org/plugins.html</url>
+  </urls>
+  
+  <urls category="games">
+    <title lang="en">Games</title>
+    <author>David Honisch</author>
+    <year>2005</year>
+    <price>29.99</price>
+	<url>https://www.letztechance.org/games.html</url>
+  </urls>
+ 
+</urlslist>
+</root>
