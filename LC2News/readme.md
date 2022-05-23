@@ -2,10 +2,14 @@
 
 ## app.xml
 https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2News/app.xml
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2News/app.xml
 
 ## app.xslt
 https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2News/app.xslt
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2News/app.xslt
 
+
+## Open sourc3
 Do you searching for open source ? Check this repository, visit my homepage
 or download the main project LC2Navigator:
 https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2022
