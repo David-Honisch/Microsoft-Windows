@@ -1,8 +1,10 @@
 <h1>Letztechance.Org News</h1>
 
 ## app.xml
+https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2News/app.xml
 
 ## app.xslt
+https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2News/app.xslt
 
 Do you searching for open source ? Check this repository, visit my homepage
 or download the main project LC2Navigator:
