@@ -1,12 +1,22 @@
 <h1>Letztechance.Org Windows Projects and Tools</h1>
 
-Do you searching for open source ? Check this:
+Do you searching for open source ? Check this repository, visit my homepage
+or download the main project LC2Navigator:
+https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2022
+
 ## Projects
 
-- CheatEngine
-- CPUUsageMonitor
+- LC2Navigator
+- Docker MySQL Server
+- Docker PostgresSQL Server
+- Docker MongoDB Server
+- Docker Microsoft SQL Server
+- Docker Oracle SQL Server
+- Open Hardware
+- OpenXML
+- LC2CPUTemp
+- LC2CPUUsageMonitor
 - CSP.Hash.Generator
-- docker
 - LC2BlazorChat
 - LC2Cheats
 - LC2Clock
@@ -23,16 +33,22 @@ Do you searching for open source ? Check this:
 - LC2Utils
 - LCUnityCEFServer.Client
 - Qemu
+- LC2DockerRancher
+- LC2DockerKong
+- many docker plugins
+- and many more...
 
 ## more sources:
 https://github.com/David-Honisch/
 
 <h1>LC2Navigator2022</h1>
+https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2022
 
 ## Home:
 https://letztechance.org
-<a href="https://www.letztechance.org/">LetzteChance.Org</a>
-<a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
+- <a href="https://www.letztechance.org/">LetzteChance.Org</a>
+- <a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
+- <a href="https://www.letztechance.org/dist/">LetzteChance.Org v.2.0 Alpha (powered by Angular)</a>
 
 
 ## Recommended Download:
