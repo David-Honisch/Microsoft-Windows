@@ -12,9 +12,14 @@
                 <xsl:value-of select="root/title" />
               </div>
               <div class="panel-body demo-btn " style="min-height: 252px; ">
+                <!-- <h2>
+                  <xsl:value-of select="root/title" />
+                </h2> -->
+                <!-- <center> -->
                 <table border="1" style="width:85%;">
                   <tr bgcolor="#9acd32">
                     <th>Title</th>
+                    <th>Updated</th>
                     <th>Url</th>
                   </tr>
                   <xsl:for-each select="root/urlslist/urls">
@@ -23,10 +28,17 @@
                         <xsl:value-of select="title" />
                       </td>
                       <td>
+                        <xsl:value-of select="year" />
+                      </td>
+                      <td>
 
                         <xsl:element name="a">
-                          <xsl:attribute name="href">javascript:openBrowser('<xsl:value-of select="url" />');</xsl:attribute>
+
                           <xsl:value-of select="url" />
+                          <!-- <xsl:attribute name="href">javascript:openBrowser('<xsl:value-of select="url" />');</xsl:attribute> -->
+                          <xsl:attribute name="href">
+                            <xsl:value-of select="urltarget" />
+                          </xsl:attribute>                          
                         </xsl:element>
 
 
@@ -36,7 +48,6 @@
                 </table>
               </div>
             </div>
-            
 
 
             <!-- </center> -->
