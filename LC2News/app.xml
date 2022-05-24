@@ -3,13 +3,13 @@
 <title lang="en">The App</title>
 <urlslist>
 
-  <urls category="cooking">
-    <title lang="en">Latest News</title>
+  <urls category="appnews">
+    <title lang="en">Latest App News</title>
     <author>David Honisch</author>
-    <year>01.01.2022</year>
+    <year>01.05.2022</year>
     <price>0.00</price>
-	<url>https://www.letztechance.org/start.html</url>	
-	<urltarget>javascript:openBrowser('https://www.letztechance.org/start.html')</urltarget>	
+	<url>https://www.letztechance.org/read-20-48.html</url>	
+	<urltarget>javascript:openBrowser('https://www.letztechance.org/read-20-48.html')</urltarget>	
   </urls>
 
   <urls category="cooking">
