@@ -57,8 +57,8 @@
   <urltarget>javascript:openBrowser('https://www.letztechance.org/start.html')</urltarget>	
   </urls>
   
-    <urls category="games">
-    <title lang="en">Intro and Games</title>
+  <urls category="games">
+    <title lang="en">Intro</title>
     <author>David Honisch</author>
   <year>01.01.2022</year>
     <price>0.0</price>
