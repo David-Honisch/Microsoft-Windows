@@ -123,7 +123,7 @@ void LCSimpleConsole::ShowPrompt()
 void LCSimpleConsole::ShowHelp()
 {
     std::wcout << std::endl
-        << "Wi-Fi Direct Legacy AP Demo Usage:" << std::endl
+        << "Wi-Fi Direct Legacy API LC2WiFiDirectLegacyAPI Usage:" << std::endl
         << "----------------------------------" << std::endl
         << "start             : Start the legacy AP to accept connections" << std::endl
         << "stop              : Stop the legacy AP" << std::endl
