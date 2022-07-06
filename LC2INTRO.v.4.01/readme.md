@@ -6,7 +6,7 @@ https://www.letztechance.org/LC2Intro.v.4.0/index.html
 My funny redirection game - powered by phaser
 
 ## Logo:
-<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2INTRO.v.4.01/intro.jpg" alt="LC2Navigator 2022 Main UI" />
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2INTRO.v.4.01/intro.jpg" alt="Intro.v.4.01" />
 
 ## License
 MIT
