@@ -1,12 +1,14 @@
 @echo off
+cls
 set input=_createplugin.csv
 REM set output=org.letztechance.domain.web.GrabUrls.zip
 for /f "usebackq tokens=1-3 delims=;" %%a in ("%input%") do (	
-	mkdir %%a\resources\plugins\%%a
-	mkdir %%a\resources\plugins\%%a\import
-	mkdir %%a\resources\plugins\%%a\menu
-	mkdir %%a\resources\plugins\%%a\resources
-	mkdir %%a\resources\sql
+	mkdir "%%a\resources\plugins\%%a"
+	mkdir "%%a\resources\plugins\%%a\csv"
+	mkdir "%%a\resources\plugins\%%a\import"
+	mkdir "%%a\resources\plugins\%%a\menu"
+	mkdir "%%a\resources\plugins\%%a\resources"
+	mkdir "%%a\resources\sql"
 	
 	echo creating sql script
 	call resources\default.sql.bat "%cd%\%%a\resources\sql\%%a.zip.sql" %%a	

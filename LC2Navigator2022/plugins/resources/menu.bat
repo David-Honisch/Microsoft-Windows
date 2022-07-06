@@ -1,10 +1,13 @@
 @echo off
-set menuFile=%1menu.csv
+set defaultFile=%1csv\default.csv
+set menuFile=%1import\import.csv
 set pluginName=%2
-echo %menuFile% !!!!!!!!!!!
+echo building menu...
+echo %defaultFile% %menuFile% !!!!!!!!!!!
+type nul>%defaultFile%
+echo Reload;menu.csv;execCMD('exec .\\resources\\plugins\\%pluginName%\\index.bat .\\resources\\plugins\\%pluginName%\\menu.csv', 'out');Reload this view>>%defaultFile%
+echo Install requirements;menu.csv;getOpenDialog('#dialog','.\\resources\\plugins\\%pluginName%\\install.htm','Install',{ minWidth: 250,  minHeight: 150, width: 400});%pluginName% Install - Please click here to get all required stuff>>%defaultFile%
 type nul>%menuFile%
-echo Reload;menu.csv;execCMD('exec .\\resources\\plugins\\%pluginName%\\index.bat .\\resources\\plugins\\%pluginName%\\menu.csv', 'out');Reload this view>>%menuFile%
-echo Install requirements;menu.csv;getOpenDialog('#dialog','.\\resources\\plugins\\%pluginName%\\install.htm','Install',{ minWidth: 250,  minHeight: 150, width: 400});%pluginName% Install - Please click here to get all required stuff>>%menuFile%
 echo %pluginName% Table;menu.csv;window.location='list.html?db=%pluginName%';Show %pluginName% Table>>%menuFile%
 echo Show %pluginName% UI;menu.csv;getExtFile('file://'+__dirname+'\\..\\..\\..\\resources\\plugins\\%pluginName%\\%pluginName%.html');%pluginName% Main View>>%menuFile%
 echo Show %pluginName% UI v.2.0;menu.csv;getExtFile('.\\resources\\plugins\\%pluginName%\\%pluginName%.html');%pluginName% Main View>>%menuFile%
