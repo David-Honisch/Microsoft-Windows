@@ -1,6 +1,6 @@
 <h1>Letztechance.Org Windows Projects and Tools</h1>
 
-Do you searching for open source ? Check this repository, visit my homepage
+Please visit my homepage
 or download the main project LC2Navigator:
 https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2022
 
@@ -36,6 +36,7 @@ https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2022
 - LC2DockerRancher
 - LC2DockerKong
 - many docker plugins
+
 - and many more...
 
 ## more sources:
@@ -84,7 +85,7 @@ using SQLite or LC Webservices:
 It´s a native Webapplication based on NodeJS/Electron Javascript and SQLite.
 Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
 
-I´ve build an windows artifact and windows installer only in 64 Bit. 
+I´d build an windows artifact and windows installer only in 64 Bit. 
 32 Bit is not supported.
 
 There are different "Plugins" with a different technology stack.
