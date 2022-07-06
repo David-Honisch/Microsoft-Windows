@@ -80,10 +80,29 @@ All Plugins Download v.1.01a (14.01.2022) - Alle Plugins als Download verfügbar
 - LC2Clock Plugin Downloader v.1.01a
 - LC2Age Plugin Downloader v.1.01a
 - lc2dockerphpapache Plugin Downloader v.1.01a
+- lc2dockerphpapacheservice Plugin Downloader v.1.01a
 - LC2RotatingTorproxy Plugin Downloader v.1.01a
 - LC2Age Plugin Downloader v.1.01a 
 - LC2DockerSonarCube Plugin Downloader v.1.01a 
 - LC2Python Plugin Downloader v.1.01a 
+
+- LC2ApacheRancher Kubernetes Plugin readded
+- LC2SQLCMD Microsoft SQL Server 2019 Docker readded
+- LC2RegistryWizard readded
+- LC2Kubernetes Plugin Downloader
+- LC2IPFS Plugin Downloader
+- LC2Grafana Plugin Downloader
+- LC2ApacheDS Plugin Downloader
+
+- LC2DeEnCrypter - Decrypt and encrypt files via secret and different algorythm
+- LC2KONG
+- LC2Matplotlib 
+- LC2MiniOpenShift
+- LC2OracleDB
+- LC2AysncSmartPing
+
+- LC2GoldenLabyrinth v.0.1a DEMO
+coming soon....
 
 
 ##old plugins - migration in progress
