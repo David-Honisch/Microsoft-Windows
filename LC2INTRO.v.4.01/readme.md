@@ -1,12 +1,14 @@
-<h1>Intro.v.4.01</h1>
+<h1>Intro.v.4.01 or the Golden Labyringth</h1>
 
 ## Source:
 https://www.letztechance.org/LC2Intro.v.4.0/index.html
 
 My funny redirection game - powered by phaser
 
-## Logo:
+## Reach the exit:
 <img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2INTRO.v.4.01/intro.jpg" alt="Intro.v.4.01" />
+
+1st demo version
 
 ## License
 MIT
