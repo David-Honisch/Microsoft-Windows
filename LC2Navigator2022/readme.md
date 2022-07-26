@@ -85,6 +85,8 @@ All Plugins Download v.1.01a (14.01.2022) - Alle Plugins als Download verfügbar
 - LC2Age Plugin Downloader v.1.01a 
 - LC2DockerSonarCube Plugin Downloader v.1.01a 
 - LC2Python Plugin Downloader v.1.01a 
+- LC2RotatingTorproxy Update v.1.1 Downloader
+- LC2CVEGrabber v.0.1a Downloader
 
 - LC2ApacheRancher Kubernetes Plugin readded
 - LC2SQLCMD Microsoft SQL Server 2019 Docker readded
