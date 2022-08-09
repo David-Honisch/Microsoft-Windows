@@ -9,20 +9,17 @@ https://letztechance.org
 ## Download:
 ## Windows 64 Bit Installer:
 
-LC2Navigator 2022:
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/LC2Navigator2022install.exe
+- LC2Navigator 2022:
+- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/LC2Navigator2022install.exe
+
 # CRC32 signature:
-<a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2022/sfv/LC2Navigator2022install.exe.sfv">LC2Navigator2022install.exe.sfv</a>
-<a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2022/sfv/LC2Navigator2022install..exe-crc.sfv">LC2Navigator2022install..exe-crc.sfv</a>
+- <a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2022/sfv/LC2Navigator2022install.exe.sfv">LC2Navigator2022install.exe.sfv</a>
+- <a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2022/sfv/LC2Navigator2022install..exe-crc.sfv">LC2Navigator2022install..exe-crc.sfv</a>
 
 
 
 https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2CRC32 
 
-LC2Navigator 2021:
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe
-Permanent Link:
-https://www.letztechance.org/read-20-35.html
 
 ## Linux 64 Bit Installer:
 (coming soon)
