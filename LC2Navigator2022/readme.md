@@ -243,7 +243,8 @@ https://www.letztechance.org/read-20-35.html
 - CURL
 - MsBuild
 - ...
-- It may be various. Please, read the notes of the plugin or any development comments
+- It may be vary. 
+  Please, read the notes of the plugin or any development comments
 
 ## Supported os
 
