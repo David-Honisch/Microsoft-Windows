@@ -360,7 +360,7 @@ see plugins...
 
 ### Example PIC:LC2ImportExcelTransform Plugins
 LC2ImportExcelTransform v.1.01a
-<img src="excelimportexport.jpg" alt="logo" />
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchimexport.png" alt="LC2Navigator 2022 Menu XLS, XLSX, JSON, XML Import and Export Screen" />
 
 
 ## License
