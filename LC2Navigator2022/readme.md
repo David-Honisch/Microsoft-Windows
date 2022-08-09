@@ -55,6 +55,8 @@ https://www.letztechance.org/read-20-40.html
 The all plugin includes many plugins. Please update by downloading all.zip every time you start this app.
 AutoUpdate is not supported by now.
 
+The all.sql is very simple. Here are the first entries of plugins table import all script:
+
 - 1;All Plugins Download v.0.91a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip', 'out')
 - 2;Install SQLITE v.1.0(sqlite3win.zip) and required scripts;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/sqlite3win.zip sqlite3win.zip', 'out')
 - 3;LC2CRC32 v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2CRC32.zip LC2CRC32.zip', 'out')
@@ -62,7 +64,7 @@ AutoUpdate is not supported by now.
 - 5;LC2ShortCutCLI v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2ShortCutCLI.zip LC2ShortCutCLI.zip', 'out')
 - 6;LC2Java.Starter.v.1.1 v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2Java.Starter.v.1.1.zip LC2Java.Starter.v.1.1.zip', 'out')
 
-7;Missing Plugins and Updates Info;alert('more coming soon...')
+- 7;Missing Plugins and Updates Info;alert('more coming soon...')
 
 Yes, all the following plugins missing up to now:
 
