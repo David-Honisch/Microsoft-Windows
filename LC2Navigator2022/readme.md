@@ -223,8 +223,8 @@ Note:curently only windows x64 builds available. 32 Bit Electron build is not lo
 
 ## Plugin Software Requirements (no autoinstall !!)
 
-JDK 8<
-Python 3
+- JDK 8<
+- Python 3
 
 Note:curently only windows x64 builds available. 32 Bit Electron build is not longer supported
 
