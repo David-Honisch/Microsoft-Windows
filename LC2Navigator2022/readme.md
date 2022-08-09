@@ -1,4 +1,6 @@
 <h1>LC2Navigator2022</h1>
+<p>Installers and Views for many open source tools including sample scripts</p>
+
 
 ## Source:
 https://letztechance.org
