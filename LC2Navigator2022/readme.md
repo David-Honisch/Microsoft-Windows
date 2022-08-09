@@ -274,7 +274,8 @@ Fetch videos from youtube playlist and download them one by one or all.
 
 ## Development
 	
-- Not open source
+- main project is not completly open source
+- most plugin project are 100% open source. Please share this plugin.
 - No comments
 
 Just using electron.
