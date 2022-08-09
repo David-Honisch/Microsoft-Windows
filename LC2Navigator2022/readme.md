@@ -252,8 +252,8 @@ https://www.letztechance.org/read-20-35.html
 ## Supported os
 
 <img width="30" alt="windows" src="app-resources/readme/windows.svg?sanitize=true" />
-<img width="30" alt="mac" src="app-resources/readme/mac.svg?sanitize=true" />
-<img width="30" alt="linux" src="app-resources/readme/linux.svg?sanitize=true" />
+<img width="30" alt="mac" src="app-resources/readme/mac.svg?sanitize=true" /> Please request a build image
+<img width="30" alt="linux" src="app-resources/readme/linux.svg?sanitize=true" />- Please request a build image
 
 ## Download
 
