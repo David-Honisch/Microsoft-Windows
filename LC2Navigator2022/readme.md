@@ -7,6 +7,20 @@ https://letztechance.org
 <a href="https://www.letztechance.org/">LetzteChance.Org</a>
 <a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
 
+## What is "LC2Navigator2022" app?
+
+It´s a native Webapplication based on NodeJS/Electron Javascript and SQLite.
+Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
+
+I´ve build an windows artifact and windows installer only in 64 Bit. 
+32 Bit is not supported.
+
+There are different "Plugins" with a different technology stack.
+
+## CSV, XML, JSON, XSLT Import Export :
+using SQLite or LC Webservices:
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchimexport.png" alt="LC2Navigator 2022 Menu XLS, XLSX, JSON, XML Import and Export Screen" />
+
 
 ## Download:
 ## Windows 64 Bit Installer:
@@ -33,20 +47,8 @@ https://www.letztechance.org/read-20-40.html
 ## Example (LC2ShortCutCLI Plugin) Plugin UI:
 <img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchplugin.png" alt="LC2Navigator 2022 Plugin Example (LC2ShortCutCLI Plugin) Screen" />
 
-## CSV, XML, JSON, XSLT Import Export :
-using SQLite or LC Webservices:
-<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchimexport.png" alt="LC2Navigator 2022 Menu XLS, XLSX, JSON, XML Import and Export Screen" />
 
 
-## What is "LC2Navigator2022" app?
-
-It´s a native Webapplication based on NodeJS/Electron Javascript and SQLite.
-Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
-
-I´ve build an windows artifact and windows installer only in 64 Bit. 
-32 Bit is not supported.
-
-There are different "Plugins" with a different technology stack.
 
 ## Plugins (LC2Navigator 2021/LC2Navigator 2022 compatible)
 
