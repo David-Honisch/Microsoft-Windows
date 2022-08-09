@@ -1,6 +1,0 @@
-Reload;menu.csv;execCMD('exec .\\resources\\plugins\\%pluginName%\\index.bat .\\resources\\plugins\\%pluginName%\\menu.csv', 'cnt');Reload this view
-Install requirements;menu.csv;getExtFile('file://'+__dirname+'\\..\\..\\..\\resources\\plugins\\%pluginName%\\install.html',400,600);%pluginName% Install - Please click here to get all required stuff
-Show UI;menu.csv;getExtFile('file://'+__dirname+'\\..\\..\\..\\resources\\plugins\\%pluginName%\\%pluginName%.html');%pluginName% Main View
-URLS %pluginName% Menu v.1.0;menu.csv;execCMD('exec.bat .\\resources\\plugins\\%pluginName%\\%pluginName%.bat .\\resources\\plugins\\%pluginName%\\menu.csv', 'core_cnt');%pluginName% Main Menu
-URLS %pluginName% Core Test v.1.0;menu.csv;execCMD('exec.bat .\\resources\\plugins\\%pluginName%\\%pluginName%.bat .\\resources\\plugins\\%pluginName%\\menu\\menu.core.csv', 'core_cnt');%pluginName% Main Menu
-URLS %pluginName% Extended Test  v.1.0;menu.csv;execCMD('exec.bat .\\resources\\plugins\\%pluginName%\\%pluginName%.bat .\\resources\\plugins\\%pluginName%\\menu\\menu.ext.csv', 'core_cnt');%pluginName% Main Menu
