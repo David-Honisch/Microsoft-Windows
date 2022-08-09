@@ -66,11 +66,12 @@ The all.sql is very simple. Here are the first entries of plugins table import a
 
 - 7;Missing Plugins and Updates Info;alert('more coming soon...')
 
-Yes, all the following plugins missing up to now:
+Yes, here are some not migrated projects up to now:
 
 All Plugins Download v.1.01a (14.01.2022) - Alle Plugins als Download verfügbar
 
-- SQLITE v.1.0(sqlite3win.zip)
+- All Plugins v.1.0 (including all following data entries. Please download first.)
+
 - LC2CRC32 Plugin Downloader v.0.1a
 - Lc2process Plugin Downloader v.0.1a
 - LC2ShortCutCLI Plugin Downloader v.0.1a
@@ -116,24 +117,24 @@ coming soon....
 
 
 ##old plugins - migration in progress
-- ;LC2DockerPHPMyAdmin - PHPMyAdmin Mysql Docker Container
-- ;LC2J-Lawyer
-- ;LC2HTTPAnalysis
-- ;LC2Grafana - Grafana Docker Container
-- ;LC2ELK - Docker Container
-- ;LC2Kubernetes - Demo Kubernetes Cluster
-- ;LC2RegistryWizard - Some nice and small Registry Scripts
-- ;LC2ApacheDS - Apache Directory Docker
-- ;LC2Games - Some small games
-- ;LC2Java.Starter.v.2.1 - A small project management system made with Quarkus /Postgres (Docker)
-- ;LC2Matplotlib.zip - Python MathplotLib rendering on QT
-- ;LC2XMLFileBackup.zip A nice small powershell to Backup files based on XML
-- ;LC2Kong.zip Kong Community Edition Dockeer Container
-- ;LC2OracleDB.zip Oracle 19c Express Edition Dockeer Container
-- ;LC2AysncPing.zip - more coming soon...
-- ;LC2DockerKONG.zip - more coming soon...
-- ;LC2MiniOpenShift.zip - more coming soon...
-- ;LC2DeEnCrypter.zip - more coming soon...
+- LC2DockerPHPMyAdmin - PHPMyAdmin Mysql Docker Container
+- LC2J-Lawyer
+- LC2HTTPAnalysis
+- LC2Grafana - Grafana Docker Container
+- LC2ELK - Docker Container
+- LC2Kubernetes - Demo Kubernetes Cluster
+- LC2RegistryWizard - Some nice and small Registry Scripts
+- LC2ApacheDS - Apache Directory Docker
+- LC2Games - Some small games
+- LC2Java.Starter.v.2.1 - A small project management system made with Quarkus /Postgres (Docker)
+- LC2Matplotlib.zip - Python MathplotLib rendering on QT
+- LC2XMLFileBackup.zip A nice small powershell to Backup files based on XML
+- LC2Kong.zip Kong Community Edition Dockeer Container
+- LC2OracleDB.zip Oracle 19c Express Edition Dockeer Container
+- LC2AysncPing.zip - more coming soon...
+- LC2DockerKONG.zip - more coming soon...
+- LC2MiniOpenShift.zip - more coming soon...
+- LC2DeEnCrypter.zip - more coming soon...
 
 more plugins and updates in progress...
 
