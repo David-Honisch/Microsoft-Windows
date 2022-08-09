@@ -12,7 +12,8 @@ https://letztechance.org
 LC2Navigator 2022:
 https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/LC2Navigator2022install.exe
 # CRC32 signature:
-889a58ce
+<a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2022/sfv/LC2Navigator2022install.exe.sfv">LC2Navigator2022install.exe.sfv</a>
+<a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2022/sfv/LC2Navigator2022install..exe-crc.sfv">LC2Navigator2022install..exe-crc.sfv</a>
 
 
 
@@ -202,8 +203,7 @@ more plugins and updates in progress...
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/plugins/all.zip">All active Plugins</a>
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
 
-<a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2022/sfv/LC2Navigator2022install.exe.sfv">LC2Navigator2022install.exe.sfv</a>
-<a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2022/sfv/LC2Navigator2022install..exe-crc.sfv">LC2Navigator2022install..exe-crc.sfv</a>
+
 
 <a href="https://www.letztechance.org/">LetzteChance.Org</a>
 <a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
