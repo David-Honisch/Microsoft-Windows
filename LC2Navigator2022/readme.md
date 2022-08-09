@@ -52,12 +52,15 @@ https://www.letztechance.org/read-20-40.html
 
 ## Plugins (LC2Navigator 2021/LC2Navigator 2022 compatible)
 
-1;All Plugins Download v.0.91a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip', 'out')
-2;Install SQLITE v.1.0(sqlite3win.zip) and required scripts;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/sqlite3win.zip sqlite3win.zip', 'out')
-3;LC2CRC32 v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2CRC32.zip LC2CRC32.zip', 'out')
-4;lc2process v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/lc2process.zip lc2process.zip', 'out')
-5;LC2ShortCutCLI v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2ShortCutCLI.zip LC2ShortCutCLI.zip', 'out')
-6;LC2Java.Starter.v.1.1 v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2Java.Starter.v.1.1.zip LC2Java.Starter.v.1.1.zip', 'out')
+The all plugin includes many plugins. Please update by downloading all.zip every time you start this app.
+AutoUpdate is not supported by now.
+
+- 1;All Plugins Download v.0.91a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip', 'out')
+- 2;Install SQLITE v.1.0(sqlite3win.zip) and required scripts;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/sqlite3win.zip sqlite3win.zip', 'out')
+- 3;LC2CRC32 v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2CRC32.zip LC2CRC32.zip', 'out')
+- 4;lc2process v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/lc2process.zip lc2process.zip', 'out')
+- 5;LC2ShortCutCLI v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2ShortCutCLI.zip LC2ShortCutCLI.zip', 'out')
+- 6;LC2Java.Starter.v.1.1 v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2Java.Starter.v.1.1.zip LC2Java.Starter.v.1.1.zip', 'out')
 
 7;Missing Plugins and Updates Info;alert('more coming soon...')
 
