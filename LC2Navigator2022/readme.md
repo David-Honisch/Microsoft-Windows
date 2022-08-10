@@ -96,6 +96,7 @@ All Plugins Download v.1.01a (14.01.2022) - Alle Plugins als Download verfügbar
 - LC2RotatingTorproxy Update v.1.1 Downloader
 - LC2CVEGrabber v.0.1a Downloader
 - LC2TTF - Free Type CLI Wizard
+- LC2Rust
 
 - LC2ApacheRancher Kubernetes Plugin readded
 - LC2SQLCMD Microsoft SQL Server 2019 Docker readded
