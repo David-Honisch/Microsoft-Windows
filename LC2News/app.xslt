@@ -3,13 +3,13 @@
   <xsl:variable name="color" select='"red"' />
   <xsl:template match="/">
     <root>
-      <xsl:template match="/">
+      
         <html>
           <body>
-
+            <xsl:template match="/tabapp">
             <div class="panel panel-default ">
               <div class="panel-heading ">
-                <xsl:value-of select="root/title" />
+                <xsl:value-of select="root/tabapp/title" />
               </div>
               <div class="panel-body demo-btn " style="min-height: 252px; ">
                 <!-- <h2>
@@ -22,7 +22,7 @@
                     <th>Updated</th>
                     <th>Url</th>
                   </tr>
-                  <xsl:for-each select="root/urlslist/urls">
+                  <xsl:for-each select="root/tabapp/urlslist/urls">
                     <tr>
                       <td>
                         <xsl:value-of select="title" />
@@ -49,11 +49,57 @@
               </div>
             </div>
 
+          </xsl:template>
+
+          <!-- utils -->
+          <xsl:template match="/tabutils">
+            <div class="panel panel-default ">
+              <div class="panel-heading ">
+                <xsl:value-of select="root/tabutils/title" />
+              </div>
+              <div class="panel-body demo-btn " style="min-height: 252px; ">
+                <!-- <h2>
+                  <xsl:value-of select="root/title" />
+                </h2> -->
+                <!-- <center> -->
+                <table border="1" style="width:85%;">
+                  <tr bgcolor="#9acd32">
+                    <th>Title</th>
+                    <th>Updated</th>
+                    <th>Url</th>
+                  </tr>
+                  <xsl:for-each select="root/tabutils/urlslist/urls">
+                    <tr>
+                      <td>
+                        <xsl:value-of select="title" />
+                      </td>
+                      <td>
+                        <xsl:value-of select="year" />
+                      </td>
+                      <td>
+
+                        <xsl:element name="a">
+
+                          <xsl:value-of select="url" />                          
+                          <xsl:attribute name="href">
+                            <xsl:value-of select="urltarget" />
+                          </xsl:attribute>                          
+                          
+                        </xsl:element>
+
+
+                      </td>
+                    </tr>
+                  </xsl:for-each>
+                </table>
+              </div>
+            </div>
+
+          </xsl:template>
 
             <!-- </center> -->
           </body>
         </html>
-      </xsl:template>
 
 
     </root>
