@@ -81,7 +81,7 @@
         <author>David Honisch</author>
         <year>14.09.2022</year>
         <price>0.00</price>
-        <url>Transform XML v.1.0</url>
+        <url>All Download Download v.1.0</url>
         <urltarget>javascript:execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip', 'out')</urltarget>
       </urls>
 
