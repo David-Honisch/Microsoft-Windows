@@ -2,10 +2,11 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:variable name="color" select='"red"' />
   <xsl:template match="/">
+    <xsl:template match="/">
     <root>
       <html>
         <body>
-          <xsl:template match="/tabapp">
+          
             <div class="panel panel-default ">
               <div class="panel-heading ">
                 <xsl:value-of select="root/tabapp/title" />
@@ -48,10 +49,10 @@
               </div>
             </div>
 
-          </xsl:template>
+          
 
           <!-- utils -->
-          <xsl:template match="/tabutils">
+          
             <div class="panel panel-default ">
               <div class="panel-heading ">
                 <xsl:value-of select="root/tabutils/title" />
@@ -92,7 +93,7 @@
                 </table>
               </div>
             </div>
-          </xsl:template>
+          
           <!-- </center> -->
         </body>
       </html>
