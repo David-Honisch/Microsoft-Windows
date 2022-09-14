@@ -3,10 +3,10 @@
   <xsl:variable name="color" select='"red"' />
   <xsl:template match="/">
     <root>
-      
-        <html>
-          <body>
-            <xsl:template match="/tabapp">
+
+      <html>
+        <body>
+          <xsl:template match="/tabapp">
             <div class="panel panel-default ">
               <div class="panel-heading ">
                 <xsl:value-of select="root/tabapp/title" />
@@ -38,7 +38,7 @@
                           <!-- <xsl:attribute name="href">javascript:openBrowser('<xsl:value-of select="url" />');</xsl:attribute> -->
                           <xsl:attribute name="href">
                             <xsl:value-of select="urltarget" />
-                          </xsl:attribute>                          
+                          </xsl:attribute>
                         </xsl:element>
 
 
@@ -80,13 +80,12 @@
 
                         <xsl:element name="a">
 
-                          <xsl:value-of select="url" />                          
+                          <xsl:value-of select="url" />
                           <xsl:attribute name="href">
                             <xsl:value-of select="urltarget" />
-                          </xsl:attribute>                          
-                          
-                        </xsl:element>
+                          </xsl:attribute>
 
+                        </xsl:element>
 
                       </td>
                     </tr>
@@ -94,14 +93,10 @@
                 </table>
               </div>
             </div>
-
           </xsl:template>
-
-            <!-- </center> -->
-          </body>
-        </html>
-
-
+          <!-- </center> -->
+        </body>
+      </html>
     </root>
   </xsl:template>
-</xsl:stylesheet>   
+</xsl:stylesheet>
