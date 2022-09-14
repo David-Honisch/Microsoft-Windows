@@ -77,12 +77,12 @@
       <title lang="en">The Utilities</title>
 
       <urls category="appnews">
-        <title lang="en">Latest Utilities News v.1.0</title>
+        <title lang="en">All Download Download v.1.0</title>
         <author>David Honisch</author>
         <year>14.09.2022</year>
         <price>0.00</price>
         <url>Transform XML v.1.0</url>
-        <urltarget>javascript:alert('Test')</urltarget>
+        <urltarget>javascript:execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip', 'out')</urltarget>
       </urls>
 
       <urls category="appnews">
