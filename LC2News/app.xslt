@@ -3,7 +3,6 @@
   <xsl:variable name="color" select='"red"' />
   <xsl:template match="/">
     <root>
-
       <html>
         <body>
           <xsl:template match="/tabapp">
