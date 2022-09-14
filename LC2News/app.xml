@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <title lang="en">The App</title>
+<tabapp>
 <urlslist>
-
+  <title lang="en">The App</title>
   <urls category="appnews">
     <title lang="en">Latest App News</title>
     <author>David Honisch</author>
@@ -67,4 +68,5 @@
   </urls>
  
 </urlslist>
+</tabapp>
 </root>
