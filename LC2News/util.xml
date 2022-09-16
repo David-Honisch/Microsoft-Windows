@@ -25,11 +25,11 @@
       </urls>
 
       <urls category="appnews">
-        <title lang="en">Show installed applications</title>
+        <title lang="en">Show available plugins downloaders</title>
         <author>David Honisch</author>
         <year>14.09.2022</year>
         <price>0.00</price>
-        <url>Show installed applications</url>
+        <url>Show available plugins downloaders</url>
         <urltarget>javascript:execCMD('.\\resources\\cmd\\showplugins.bat', 'out')</urltarget>
       </urls>
 
@@ -150,6 +150,33 @@
         <price>0.0</price>
         <url>https://www.letztechance.org/LC2Intro.v.4.0/index.html</url>
         <urltarget>javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.0/index.html')</urltarget>
+      </urls>
+
+      <urls category="appnews">
+        <title lang="en">Show installed applications</title>
+        <author>David Honisch</author>
+        <year>14.09.2022</year>
+        <price>0.00</price>
+        <url>Show installed applications</url>
+        <urltarget>javascript:execCMD('.\\resources\\cmd\\showapps.bat', 'out')</urltarget>
+      </urls>
+	  
+	   <urls category="appnews">
+        <title lang="en">All Download Download v.1.0</title>
+        <author>David Honisch</author>
+        <year>14.09.2022</year>
+        <price>0.00</price>
+        <url>All Download Download v.1.0</url>
+        <urltarget>javascript:execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip', 'out')</urltarget>
+      </urls>
+
+      <urls category="appnews">
+        <title lang="en">Show available plugins downloaders</title>
+        <author>David Honisch</author>
+        <year>14.09.2022</year>
+        <price>0.00</price>
+        <url>Show available plugins downloaders</url>
+        <urltarget>javascript:execCMD('.\\resources\\cmd\\showplugins.bat', 'out')</urltarget>
       </urls>
     </urlslist>
   </tabutils>
