@@ -6,7 +6,7 @@
     <root>
       <html>
         <body>
-          
+			<h2>Commands</h2>
             <div class="panel panel-default ">
               <div class="panel-heading ">
                 <xsl:value-of select="root/tabapp/title" />
