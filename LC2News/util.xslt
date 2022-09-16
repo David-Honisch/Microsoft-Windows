@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:variable name="color" select='"red"' />
-  <xsl:template match="/">
-    <xsl:template match="/">
+      <xsl:template match="/">
     <root>
       <html>
         <body>
@@ -39,16 +38,12 @@
                             <xsl:value-of select="urltarget" />
                           </xsl:attribute>
                         </xsl:element>
-
-
                       </td>
                     </tr>
                   </xsl:for-each>
                 </table>
               </div>
-            </div>
-
-          
+            </div>          
 
           <!-- utils -->
           
