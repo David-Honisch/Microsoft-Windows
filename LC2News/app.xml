@@ -97,7 +97,7 @@
       </urls>
 
       <urls category="games">
-        <title lang="en">Intro</title>
+        <title lang="en">Intro </title>
         <author>David Honisch</author>
         <year>01.01.2022</year>
         <price>1.0</price>
@@ -106,7 +106,7 @@
       </urls>
 	  
 	  <urls category="games">
-        <title lang="en">Intro</title>
+        <title lang="en">Intro #2</title>
         <author>David Honisch</author>
         <year>01.01.2022</year>
         <price>1.0</price>
