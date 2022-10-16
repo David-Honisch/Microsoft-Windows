@@ -101,8 +101,25 @@
         <author>David Honisch</author>
         <year>01.01.2022</year>
         <price>0.0</price>
-        <url>https://www.letztechance.org/LC2Intro.v.4.0/index.html</url>
+        <url>LC2Intro.v.4.0</url>
         <urltarget>javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.0/index.html')</urltarget>
+      </urls>
+	  <urls category="games">
+        <title lang="en">Intro</title>
+        <author>David Honisch</author>
+        <year>01.01.2022</year>
+        <price>0.0</price>
+        <url>LC2Intro.v.4.1</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.1/index.html')</urltarget>
+      </urls>
+	  
+	        <urls category="games">
+        <title lang="en">Intro</title>
+        <author>David Honisch</author>
+        <year>01.01.2022</year>
+        <price>0.0</price>
+        <url>https://www.letztechance.org/LC2Intro.v.4.1/index.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.1/index.html')</urltarget>
       </urls>
 
     </urlslist>
