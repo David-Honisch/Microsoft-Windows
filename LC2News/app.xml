@@ -102,7 +102,7 @@
         <year>01.01.2022</year>
         <price>0.0</price>
         <url>LC2Intro.v.4.0</url>
-        <urltarget>javascript:getExtFile('https://www.letztechance.org/LC2Intro.v.4.0/index.html?q=javascript:getExtFile('https://www.letztechance.org/LC2Intro.v.4.1/index.html',400,600)')</urltarget>
+        <urltarget>javascript:getExtFile('https://www.letztechance.org/LC2Intro.v.4.0/index.html?q=https://www.letztechance.org/LC2Intro.v.4.1/index.html',400,600)')</urltarget>
       </urls>
 	  <urls category="games">
         <title lang="en">Intro</title>
