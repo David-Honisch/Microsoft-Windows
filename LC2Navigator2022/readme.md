@@ -41,6 +41,12 @@ https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2CRC32
 (coming soon)
 https://www.letztechance.org/read-20-40.html
 
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/release-builds/lc2search-linux-x64/lc2search-linux-x64.zip
+use the following windows app.min.asar:
+https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2022/release-builds/lc2search-win32-x64/app.zip
+
+Ubuntu, Debian image coming soon.
+
 ## Logo:
 <img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchmain.png" alt="LC2Navigator 2022 Main UI" />
 
