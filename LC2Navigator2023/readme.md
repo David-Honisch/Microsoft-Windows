@@ -1,4 +1,4 @@
-<h1>LC2Navigator2022</h1>
+<h1>LC2Navigator2023</h1>
 <p>Installers and Views for many open source tools including sample scripts</p>
 
 
@@ -7,7 +7,7 @@ https://letztechance.org
 <a href="https://www.letztechance.org/">LetzteChance.Org</a>
 <a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
 
-## What is "LC2Navigator2022" app?
+## What is "LC2Navigator2023" app?
 
 It´s a native Webapplication based on NodeJS/Electron Javascript and SQLite.
 Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
@@ -19,18 +19,18 @@ There are different "Plugins" with a different technology stack.
 
 ## CSV, XML, JSON, XSLT Import Export :
 using SQLite or LC Webservices:
-<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchimexport.png" alt="LC2Navigator 2022 Menu XLS, XLSX, JSON, XML Import and Export Screen" />
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/lc2searchimexport.png" alt="LC2Navigator 2022 Menu XLS, XLSX, JSON, XML Import and Export Screen" />
 
 
 ## Download:
 ## Windows 64 Bit Installer:
 
 - LC2Navigator 2022:
-- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/LC2Navigator2022install.exe
+- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2Navigator2023install.exe
 
 # CRC32 signature:
-- <a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2022/sfv/LC2Navigator2022install.exe.sfv">LC2Navigator2022install.exe.sfv</a>
-- <a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2022/sfv/LC2Navigator2022install..exe-crc.sfv">LC2Navigator2022install..exe-crc.sfv</a>
+- <a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2023/sfv/LC2Navigator2023install.exe.sfv">LC2Navigator2023install.exe.sfv</a>
+- <a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2023/sfv/LC2Navigator2023install..exe-crc.sfv">LC2Navigator2023install..exe-crc.sfv</a>
 
 
 
@@ -41,17 +41,17 @@ https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2CRC32
 (coming soon)
 https://www.letztechance.org/read-20-40.html
 
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/release-builds/lc2search-linux-x64/lc2search-linux-x64.zip
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/release-builds/lc2search-linux-x64/lc2search-linux-x64.zip
 use the following windows app.min.asar:
-https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2022/release-builds/lc2search-win32-x64/app.zip
+https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2023/release-builds/lc2search-win32-x64/app.zip
 
 Ubuntu, Debian image coming soon.
 
 ## Logo:
-<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchmain.png" alt="LC2Navigator 2022 Main UI" />
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/lc2searchmain.png" alt="LC2Navigator 2022 Main UI" />
 
 ## Example (LC2ShortCutCLI Plugin) Plugin UI:
-<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchplugin.png" alt="LC2Navigator 2022 Plugin Example (LC2ShortCutCLI Plugin) Screen" />
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/lc2searchplugin.png" alt="LC2Navigator 2022 Plugin Example (LC2ShortCutCLI Plugin) Screen" />
 
 
 
@@ -367,7 +367,7 @@ see plugins...
 
 ### Example PIC:LC2ImportExcelTransform Plugins
 LC2ImportExcelTransform v.1.01a
-<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2022/lc2searchimexport.png" alt="LC2Navigator 2022 Menu XLS, XLSX, JSON, XML Import and Export Screen" />
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/lc2searchimexport.png" alt="LC2Navigator 2022 Menu XLS, XLSX, JSON, XML Import and Export Screen" />
 
 
 ## License
