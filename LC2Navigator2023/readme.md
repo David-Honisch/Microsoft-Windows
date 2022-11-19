@@ -1,149 +1,76 @@
 <h1>LC2Navigator2023</h1>
-<p>Installers and Views for many open source tools including sample scripts</p>
-
 
 ## Source:
-https://letztechance.org
-<a href="https://www.letztechance.org/">LetzteChance.Org</a>
-<a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
-
-## What is "LC2Navigator2023" app?
-
-It´s a native Webapplication based on NodeJS/Electron Javascript and SQLite.
-Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
-
-I´ve build an windows artifact and windows installer only in 64 Bit. 
-32 Bit is not supported.
-
-There are different "Plugins" with a different technology stack.
-
-## CSV, XML, JSON, XSLT Import Export :
-using SQLite or LC Webservices:
-<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/lc2searchimexport.png" alt="LC2Navigator 2022 Menu XLS, XLSX, JSON, XML Import and Export Screen" />
+- https://letztechance.org
+- <a href="https://www.letztechance.org/">LetzteChance.Org</a>
+- <a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
 
 
-## Download:
 ## Windows 64 Bit Installer:
 
-- LC2Navigator 2022:
-- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2Navigator2023install.exe
-
-# CRC32 signature:
-- <a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2023/sfv/LC2Navigator2023install.exe.sfv">LC2Navigator2023install.exe.sfv</a>
-- <a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2023/sfv/LC2Navigator2023install..exe-crc.sfv">LC2Navigator2023install..exe-crc.sfv</a>
-
-
-
-https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2CRC32 
-
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2Navigator2023install.exe
+Permanent Link:
+https://www.letztechance.org/read-20-35.html
 
 ## Linux 64 Bit Installer:
 (coming soon)
 https://www.letztechance.org/read-20-40.html
 
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/release-builds/lc2search-linux-x64/lc2search-linux-x64.zip
-use the following windows app.min.asar:
-https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2023/release-builds/lc2search-win32-x64/app.zip
-
-Ubuntu, Debian image coming soon.
-
 ## Logo:
-<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/lc2searchmain.png" alt="LC2Navigator 2022 Main UI" />
-
-## Example (LC2ShortCutCLI Plugin) Plugin UI:
-<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/lc2searchplugin.png" alt="LC2Navigator 2022 Plugin Example (LC2ShortCutCLI Plugin) Screen" />
+<img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
 
+## What is "LC2Navigator2020" app?
 
+It is a News Links Grabbing system based on NodeJS Javascript SQLite.
+Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
 
-## Plugins (LC2Navigator 2021/LC2Navigator 2022 compatible)
+I´ve build an windows artifact and windows installer only in 64 Bit. 
+32 Bit is not longer supported.
 
-The all plugin includes many plugins. Please update by downloading all.zip every time you start this app.
-AutoUpdate is not supported by now.
+There are different "Plugins" with a different technology stack.
 
-The all.sql is very simple. Here are the first entries of plugins table import all script:
+Please notice:Java have to be installed.
 
-- 1;All Plugins Download v.0.91a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip', 'out')
-- 2;Install SQLITE v.1.0(sqlite3win.zip) and required scripts;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/sqlite3win.zip sqlite3win.zip', 'out')
-- 3;LC2CRC32 v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2CRC32.zip LC2CRC32.zip', 'out')
-- 4;lc2process v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/lc2process.zip lc2process.zip', 'out')
-- 5;LC2ShortCutCLI v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2ShortCutCLI.zip LC2ShortCutCLI.zip', 'out')
-- 6;LC2Java.Starter.v.1.1 v.0.1a;execCMD('.\\resources\\cmd\\getupdates.bat /plugins/LC2Java.Starter.v.1.1.zip LC2Java.Starter.v.1.1.zip', 'out')
+## Plugins
 
-- 7;Missing Plugins and Updates Info;alert('more coming soon...')
+- 1;Install SQLITE v.1.0(sqlite3win.zip) and required scripts
+- 2;Core Plugins v.1.0 
+- 3;All Plugins (Alle Plugins) v.1.0
+- 4;apache-maven.zip
+- 5;apache-ant.zip;
+- 6;lc2linkcli.zip
+- 7;excelimport.zip
+- 8;lc2irc
+- 9;graburls
+- 10;LC2RotatingTorproxy
+- 11;lc2process
+- 12;org.letztechance.domain.web.GrabUrls
+- 13;lc2php
+- 14;lc2mysqldocker - Mysql Docker Container
+- 15;LC2Python
+- 16;postgresdocker - Postgres Docker Container
+- 17;LC2bat2exe
+- 18;LC2DockerSonarCube - Sonarcube Docker Container
+- 19;LC2DockerJenkins - Jenkins Docker Container
+- 20;LC2DockerPHPMyAdmin - PHPMyAdmin Mysql Docker Container
+- 21;LC2J-Lawyer
+- 22;LC2HTTPAnalysis
+- 23;LC2Grafana - Grafana Docker Container
+- 24;LC2ELK - Docker Container
+- 25;LC2Kubernetes - Demo Kubernetes Cluster
+- 26;LC2RegistryWizard - Some nice and small Registry Scripts
+- 27;LC2ApacheDS - Apache Directory Docker
+- 28;LC2Games - Some small games
+- 29;LC2Java.Starter.v.1.0 - A small project management system made with Quarkus /Postgres (Docker)
+- 30;LC2Matplotlib.zip - Python MathplotLib rendering on QT
+- 31;LC2XMLFileBackup.zip A nice small powershell to Backup files based on XML
+- 32;LC2MongoDB.zip MongoDB Dockeer Container
+- 32;LC2Kong.zip Kong Community Edition Dockeer Container
+- 33;LC2OracleDB.zip Oracle 19c Express Edition Dockeer Container
+- 34;LC2AysncPing.zip - A Little C# Executable that pings a server async
 
-Yes, here are some not migrated projects up to now:
-
-All Plugins Download v.1.01a (14.01.2022) - Alle Plugins als Download verfügbar
-
-- All Plugins v.1.0 (including all following data entries. Please download first.)
-
-- LC2CRC32 Plugin Downloader v.0.1a
-- Lc2process Plugin Downloader v.0.1a
-- LC2ShortCutCLI Plugin Downloader v.0.1a
-- LC2Java.Starter Plugin Downloader v.1.1c
-- Lc2mysqldocker Plugin Downloader v.1.01a
-- Lc2postgresdocker Plugin Downloader v.1.01a
-- Lc2mongodb Plugin Downloader v.1.01a
-- lc2sqlservercmd Plugin Downloader v.1.01a
-- LC2DockerJenkins Plugin Downloader v.1.01a
-- LC2Grafana Plugin Downloader v.1.01a
-- LC2RegistryWizard Plugin Downloader v.1.01a
-- LC2Microsoft.Toolkit Plugin Downloader v.1.01a
-- lc2ircs Plugin Downloader v.1.01a
-- LC2Clock Plugin Downloader v.1.01a
-- LC2Age Plugin Downloader v.1.01a
-- lc2dockerphpapache Plugin Downloader v.1.01a
-- lc2dockerphpapacheservice Plugin Downloader v.1.01a
-- LC2RotatingTorproxy Plugin Downloader v.1.01a
-- LC2Age Plugin Downloader v.1.01a 
-- LC2DockerSonarCube Plugin Downloader v.1.01a 
-- LC2Python Plugin Downloader v.1.01a 
-- LC2RotatingTorproxy Update v.1.1 Downloader
-- LC2CVEGrabber v.0.1a Downloader
-- LC2TTF - Free Type CLI Wizard
-- LC2Rust
-
-- LC2ApacheRancher Kubernetes Plugin readded
-- LC2SQLCMD Microsoft SQL Server 2019 Docker readded
-- LC2RegistryWizard readded
-- LC2Kubernetes Plugin Downloader
-- LC2IPFS Plugin Downloader
-- LC2Grafana Plugin Downloader
-- LC2ApacheDS Plugin Downloader
-
-- LC2DeEnCrypter - Decrypt and encrypt files via secret and different algorythm
-- LC2KONG
-- LC2Matplotlib 
-- LC2MiniOpenShift
-- LC2OracleDB
-- LC2AysncSmartPing
-
-- LC2GoldenLabyrinth v.0.1a DEMO
-coming soon....
-
-
-##old plugins - migration in progress
-- LC2DockerPHPMyAdmin - PHPMyAdmin Mysql Docker Container
-- LC2J-Lawyer
-- LC2HTTPAnalysis
-- LC2Grafana - Grafana Docker Container
-- LC2ELK - Docker Container
-- LC2Kubernetes - Demo Kubernetes Cluster
-- LC2RegistryWizard - Some nice and small Registry Scripts
-- LC2ApacheDS - Apache Directory Docker
-- LC2Games - Some small games
-- LC2Java.Starter.v.2.1 - A small project management system made with Quarkus /Postgres (Docker)
-- LC2Matplotlib.zip - Python MathplotLib rendering on QT
-- LC2XMLFileBackup.zip A nice small powershell to Backup files based on XML
-- LC2Kong.zip Kong Community Edition Dockeer Container
-- LC2OracleDB.zip Oracle 19c Express Edition Dockeer Container
-- LC2AysncPing.zip - more coming soon...
-- LC2DockerKONG.zip - more coming soon...
-- LC2MiniOpenShift.zip - more coming soon...
-- LC2DeEnCrypter.zip - more coming soon...
-
-more plugins and updates in progress...
+more in progress...
 
 # Deprecated or unsupported Plugins
 
@@ -214,11 +141,8 @@ more plugins and updates in progress...
 	
 	
 - see all plugins download
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/plugins/all.zip">All active Plugins</a>
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
-
-
-
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/plugins/all.zip">All active Plugins</a>
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2Navigator2020install.exe">Installer</a>
 <a href="https://www.letztechance.org/">LetzteChance.Org</a>
 <a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
 
@@ -227,7 +151,7 @@ more plugins and updates in progress...
 Example Screenshot of LC2ExcelTransform:
 - LC2ExcelTransform 
 	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
-<img src="LC2ExcelTransform.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2ExcelTransform.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
 
 
 ##Basic Requirements
@@ -241,34 +165,43 @@ Note:curently only windows x64 builds available. 32 Bit Electron build is not lo
 
 ## Plugin Software Requirements (no autoinstall !!)
 
-- JDK 8<
-- Python 3
+Python 3
+JDK 8<
 
 Note:curently only windows x64 builds available. 32 Bit Electron build is not longer supported
 
+## Download Installer (Microsoft Windows x64):
+
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2Navigator2023install.exe">Installer</a>
+
+## HomePage - Download Installer (Microsoft Windows x64):
+
+https://www.letztechance.org/read-20-35.html
 
 ## Plugin requirements
 - JDK 8<
 - Docker Desktop
 - Python 3x
+- PHP 7.x
 - CURL
+- Maven
+- Ant
 - MsBuild
 - ...
-- It may be vary. 
-  Please, read the notes of the plugin or any development comments
+- It may be various. Please, read the notes of the plugin or any development comments
 
 ## Supported os
 
 <img width="30" alt="windows" src="app-resources/readme/windows.svg?sanitize=true" />
-<img width="30" alt="mac" src="app-resources/readme/mac.svg?sanitize=true" /> Please request a build image
-<img width="30" alt="linux" src="app-resources/readme/linux.svg?sanitize=true" />- Please request a build image
+<img width="30" alt="mac" src="app-resources/readme/mac.svg?sanitize=true" />
+<img width="30" alt="linux" src="app-resources/readme/linux.svg?sanitize=true" />
 
 ## Download
 
 - Free ?? yes
 - No ads ?? yes
 
-Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020)
+Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2023](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2023)
 
 ## Change log
 
@@ -289,8 +222,7 @@ Fetch videos from youtube playlist and download them one by one or all.
 
 ## Development
 	
-- main project is not completly open source
-- most plugin project are 100% open source. Please share this plugin.
+- Not open source
 - No comments
 
 Just using electron.
@@ -365,9 +297,9 @@ see plugins...
 
 ?? Okay, there a lot of tasks todo....
 
-### Example PIC:LC2ImportExcelTransform Plugins
+### Plugins
 LC2ImportExcelTransform v.1.01a
-<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/lc2searchimexport.png" alt="LC2Navigator 2022 Menu XLS, XLSX, JSON, XML Import and Export Screen" />
+<img src="excelimportexport.jpg" alt="logo" />
 
 
 ## License

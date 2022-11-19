@@ -30,6 +30,8 @@ I´ve build an windows artifact and windows installer only in 64 Bit.
 
 There are different "Plugins" with a different technology stack.
 
+Please notice:Java have to be installed.
+
 ## Plugins
 
 - 1;Install SQLITE v.1.0(sqlite3win.zip) and required scripts
