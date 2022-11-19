@@ -8,7 +8,7 @@ https://letztechance.org
 
 ## Windows 64 Bit Installer:
 
-https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2Navigator2023install.exe
 Permanent Link:
 https://www.letztechance.org/read-20-35.html
 
