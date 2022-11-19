@@ -1,9 +1,9 @@
 <h1>LC2Navigator2023</h1>
 
 ## Source:
-https://letztechance.org
-<a href="https://www.letztechance.org/">LetzteChance.Org</a>
-<a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
+- https://letztechance.org
+- <a href="https://www.letztechance.org/">LetzteChance.Org</a>
+- <a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
 
 
 ## Windows 64 Bit Installer:
@@ -139,8 +139,8 @@ more in progress...
 	
 	
 - see all plugins download
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/plugins/all.zip">All active Plugins</a>
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/plugins/all.zip">All active Plugins</a>
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2Navigator2020install.exe">Installer</a>
 <a href="https://www.letztechance.org/">LetzteChance.Org</a>
 <a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
 
@@ -149,7 +149,7 @@ more in progress...
 Example Screenshot of LC2ExcelTransform:
 - LC2ExcelTransform 
 	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
-<img src="LC2ExcelTransform.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
+<img src="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2ExcelTransform.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
 
 
 ##Basic Requirements
@@ -170,7 +170,7 @@ Note:curently only windows x64 builds available. 32 Bit Electron build is not lo
 
 ## Download Installer (Microsoft Windows x64):
 
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2020/LC2Navigator2020install.exe">Installer</a>
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2Navigator2023install.exe">Installer</a>
 
 ## HomePage - Download Installer (Microsoft Windows x64):
 
@@ -199,7 +199,7 @@ https://www.letztechance.org/read-20-35.html
 - Free ?? yes
 - No ads ?? yes
 
-Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2020)
+Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2023](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2023)
 
 ## Change log
 
