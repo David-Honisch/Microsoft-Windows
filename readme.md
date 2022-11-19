@@ -3,7 +3,8 @@
 ## Source:
 - https://letztechance.org
 - <a href="https://www.letztechance.org/">LetzteChance.Org</a>
-- <a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
+- <a href="https://www.letztechance.org/vue/">LC powered by vue)</a>
+- <a href="https://www.letztechance.org/dist/">LC powered by angular)</a>
 
 
 ## Windows 64 Bit Installer:
