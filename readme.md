@@ -10,7 +10,11 @@
 ## Windows 64 Bit Installer:
 
 https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2Navigator2023install.exe
-Permanent Link:
+
+- Permanent Link:
+https://www.letztechance.org/read-20-48.html
+
+- Old Permanent Link:
 https://www.letztechance.org/read-20-35.html
 
 ## Linux 64 Bit Installer:
@@ -21,13 +25,13 @@ https://www.letztechance.org/read-20-40.html
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
 
-## What is "LC2Navigator2020" app?
+## What is "LC2Navigator2023" app?
 
 It is a News Links Grabbing system based on NodeJS Javascript SQLite.
 Different technologies used like electron, nodejs, sql, sqlite, html5, jquery and many more...
 
 I´ve build an windows artifact and windows installer only in 64 Bit. 
-32 Bit is not longer supported.
+32 Bit systems not longer supported.
 
 There are different "Plugins" with a different technology stack.
 
@@ -143,7 +147,7 @@ more in progress...
 	
 - see all plugins download
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/plugins/all.zip">All active Plugins</a>
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2Navigator2020install.exe">Installer</a>
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/LC2Navigator2023install.exe">Installer</a>
 <a href="https://www.letztechance.org/">LetzteChance.Org</a>
 <a href="https://www.letztechance.org/vue/">LetzteChance.Org v.2.0 Alpha (powered by VUE)</a>
 
