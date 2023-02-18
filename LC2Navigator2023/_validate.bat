@@ -14,4 +14,5 @@ REM for /f "usebackq tokens=1-4 delims=|" %%a in ("%vfileName%") do (
 	REM LC2CRC32CLI.exe %%a > .\sfv\%%~na.csv.csv
 REM )
 move *.sfv .\sfv\
+copy .\sfv\ .\plugins\
 echo done.
