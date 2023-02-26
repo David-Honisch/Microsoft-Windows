@@ -1,6 +1,9 @@
 <h1>LC2Navigator2023</h1>
 
+### OpenAI Example screenshot:
 <img src="LC2OpenAI.jpg" alt="LC2OpenAI Screenshot" width="400" />
+
+### LC2ExcelTransform Example screenshot:
 <img src="LC2ExcelTransform.jpg.png" alt="LC2ExcelTransform Screenshot" width="400" />
 
 ## Source:
