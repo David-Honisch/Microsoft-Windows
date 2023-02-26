@@ -1,6 +1,7 @@
 <h1>LC2Navigator2023</h1>
 
-<img src="LC2ExcelTransform.jpg.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
+<img src="LC2OpenAI.jpg" alt="LC2OpenAI Screenshot" width="400" />
+<img src="LC2ExcelTransform.jpg.png" alt="LC2ExcelTransform Screenshot" width="400" />
 
 ## Source:
 - https://letztechance.org
@@ -21,6 +22,7 @@ https://www.letztechance.org/read-20-40.html
 
 ## Logo:
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
+
 
 
 ## What is "LC2Navigator2020" app?
