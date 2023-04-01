@@ -6,6 +6,9 @@
 ### LC2ExcelTransform Example screenshot:
 <img src="LC2ExcelTransform.jpg.png" alt="LC2ExcelTransform Screenshot" width="400" />
 
+### Checking all requirements Example screenshot:
+<img src="req.png" alt="Checking all requirements screenshot" width="400" />
+
 ## Source:
 - https://letztechance.org
 - <a href="https://www.letztechance.org/">LetzteChance.Org</a>
