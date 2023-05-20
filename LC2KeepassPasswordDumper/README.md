@@ -1,10 +1,17 @@
-#LC2KeepassPasswordDumper
+# LC2KeepassPasswordDumper
 
-## Based on KeePass 2.X Master Password Dumper ([CVE-2023-32784](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32784))
+## Download:
+https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2KeepassPasswordDumper/bin/Release/net5.0
 
-## Update
+### Based on KeePass 2.X Master Password Dumper 
+([CVE-2023-32784](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32784))
+
+### Update
+
 
 The vulnerability was assigned [CVE-2023-32784](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32784). 
+
+
 It should be fixed in KeePass 2.54, which [should come out in the beginning of June 2023]
 (https://sourceforge.net/p/keepass/discussion/329220/thread/f3438e6283/#8a4a). 
  Thanks again to Dominik Reichl for his fast response and creative fix!
