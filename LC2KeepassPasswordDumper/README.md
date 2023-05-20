@@ -1,20 +1,21 @@
 # LC2KeepassPasswordDumper
 
+CVE-2023-32784 POC in C#
+
 ## Download:
 https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2KeepassPasswordDumper/bin/Release/net5.0
 
-### Based on KeePass 2.X Master Password Dumper 
-([CVE-2023-32784](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32784))
+### vulnerability 
+
+##### Based on KeePass 2.X Master Password Dumper 
+
+- [CVE-2023-32784](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32784)
 
 ### Update
 
-
 The vulnerability was assigned [CVE-2023-32784](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32784). 
 
-
 It should be fixed in KeePass 2.54, which [should come out in the beginning of June 2023]
-(https://sourceforge.net/p/keepass/discussion/329220/thread/f3438e6283/#8a4a). 
- Thanks again to Dominik Reichl for his fast response and creative fix!
 
 Clarification: **the password has to be typed on a keyboard, not copied from a clipboard** (see the How it works sections).
 
@@ -79,12 +80,12 @@ It's a quick POC, so likely not very reliable and robust. Please create a pull r
 
 Allowed password characters are currently hardcoded like this: `^[\x20-\x7E]+$` (all printable ASCII characters and space)
 
-## Update
+## Source
 
-The vulnerability was assigned [CVE-2023-32784](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32784). 
-It should be fixed in KeePass 2.54, which [should come out in the beginning of June 2023]
 (https://sourceforge.net/p/keepass/discussion/329220/thread/f3438e6283/#8a4a). 
- Thanks again to Dominik Reichl for his fast response and creative fix!
+ 
+ Thanks again to Dominik Reichl.
 
 ## Related Projects
-- [Python implementation of the PoC](https://github.com/CMEPW/keepass-dump-masterkey) by [CMEPW](https://github.com/CMEPW) (haven't checked if it works)
+
+- [Python implementation of the PoC](https://github.com/CMEPW/keepass-dump-masterkey)
