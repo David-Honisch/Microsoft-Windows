@@ -1,0 +1,92 @@
+# LC2AntiCrack.NET
+
+## What is LC2AntiCrack.NET ?
+
+A C# Project template which contains the most advanced 
+Anti-Cracking methods ever mode in C#.
+
+Contributions are welcome. 
+
+Also feel free to open an issue for adding additional anti-debugging features, etc
+
+<img alt="LC2AntiCrack.NET" src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=LC2AntiCrack.NET&r=20&g=20&b=20&test=">
+
+### Anti Debugging
+* GetForegroundWindow 
+  (looks for bad active window names to check if it's a known debugger)
+
+* Debugger.IsAttached
+
+* Hide Threads From Debugger
+
+* IsDebuggerPresent
+
+* NtQueryInformationProcess: ProcessDebugFlags, ProcessDebugPort, ProcessDebugObjectHandle
+
+* NtClose: Invalid Handle, Protected Handle
+
+* Parent Process Checking (Checks if parent are explorer.exe or cmd.exe)
+
+* Detection of Hardware Breakpoints
+
+* FindWindow (looks for bad window names)
+
+* GetTickCount
+
+* OutputDebugString
+
+* Crashing Non-Managed Debuggers with a Debugger Breakpoint
+
+* OllyDbg Format String Exploit
+
+* Patching DbgUiRemoteBreakin and DbgBreakPoint (Anti-Debugger Attaching)
+
+## Anti Virtualization
+* Detecting Sandboxie
+
+* Detecting Comodo Container
+
+* Detecting Qihoo360 Sandbox
+
+* Detecting Cuckoo Sandbox
+
+* Detecting VirtualBox and VMware
+
+* Detecting HyperV
+
+* Detecting Emulation
+
+* Checking For Blacklisted Usernames
+
+* Detecting KVM
+
+* Detecting Wine
+
+* Checking For Known Bad VM File Locations
+
+* Checking For Known Bad Process Names
+
+* Checking For Ports on the system (useful if the VM or the sandbox have no ports connected)
+
+* Making Sandboxie Crash Your Application (this exploit no longer works, it's patched by sandboxie, that's what i get for making things public :), now it works only with older versions of sandboxie)
+
+## Anti Dll Injection
+* Patching LoadLibraryA
+
+* Patching LoadLibraryW
+
+* Taking Advantage of Binary Image Signature Mitigation Policy to prevent injecting Non-Microsoft Binaries.
+
+## Other Detections
+* Detecting if Unsigned Drivers are Allowed to Load
+
+* Detecting if Test-Signed Drivers are Allowed to Load
+
+* Detecting if Kernel Debugging are Enabled on the System
+
+## Hooks Detection
+* Detecting Most Anti Anti-Debugging Hooking Methods on Common Anti-Debugging Functions by checking for Bad Instructions on Functions Addresses (Most Effective on x64), and it can also detect some sandboxes which uses hooking to monitor application behaviour/activity (like <a href="https://github.com/sandboxie-plus/Sandboxie">Sandboxie/Sandboxie Plus</a>, <a href="https://www.hybrid-analysis.com">Hybrid Analysis</a>, <a href="https://cuckoosandbox.org/">Cuckoo Sandbox</a>, and a lot of other online malware analysis websites/applications).
+
+# Notice
+This Project are created for educational purposes only, 
+also this project are licensed under MIT License.
