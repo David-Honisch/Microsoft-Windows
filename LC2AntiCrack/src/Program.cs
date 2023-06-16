@@ -124,7 +124,7 @@ namespace AntiCrack_DotNet
 
         static void Main(string[] args)
         {
-            Console.Title = "AntiCrack DotNet";
+            Console.Title = "LC2AntiCrack .NET";
             for (;;)
             {
                 ExecuteAntiDebuggingTricks();
