@@ -1,0 +1,17 @@
+INSERT OR REPLACE INTO plugins (name,url) VALUES(1,'All Plugins Download v.0.91a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(2,'Install SQLITE v.1.0(sqlite3win.zip) and required scripts','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/sqlite3win.zip sqlite3win.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(3,'LC2CRC32 Plugin Downloader v.0.1a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/LC2CRC32.zip LC2CRC32.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(4,'lc2process Plugin Downloader v.0.1a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/lc2process.zip lc2process.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(5,'LC2ShortCutCLI Plugin Downloader v.0.1a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/LC2ShortCutCLI.zip LC2ShortCutCLI.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(6,'LC2Java.Starter Plugin Downloader v.1.1','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/LC2Java.Starter.zip LC2Java.Starter.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(7,'lc2mysqldocker Plugin Downloader v.1.01a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/lc2mysqldocker.zip lc2mysqldocker.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(8,'lc2postgresdocker Plugin Downloader v.1.01a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/postgresdocker.zip postgresdocker.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(9,'lc2mongodb Plugin Downloader v.1.01a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/lc2mongodb.zip lc2mongodb.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(10,'lc2sqlservercmd Plugin Downloader v.1.01a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/lc2sqlservercmd.zip lc2sqlservercmd.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(11,'LC2DockerJenkins Plugin Downloader v.1.01a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/LC2DockerJenkins.zip LC2DockerJenkins.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(12,'LC2Grafana Plugin Downloader v.1.01a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/LC2Grafana.zip LC2Grafana.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(13,'LC2RegistryWizard Plugin Downloader v.1.01a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/LC2RegistryWizard.zip LC2RegistryWizard.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(14,'LC2Microsoft.Toolkit Plugin Downloader v.1.01a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/LC2Microsoft.Toolkit.zip LC2Microsoft.Toolkit.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(15,'lc2ircs Plugin Downloader v.1.01a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/lc2ircs.zip lc2ircs.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(16,'LC2Clock Plugin Downloader v.1.01a','execCMD(''.\\resources\\cmd\\getupdates.bat /plugins/LC2Clock.zip LC2Clock.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (name,url) VALUES(17,'Please update all plugins soon','alert(''Update all plugins. There might be updates.'')');

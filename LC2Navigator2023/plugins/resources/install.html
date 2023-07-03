@@ -1,0 +1,26 @@
+    <h1 id="title">Install v.1.0</h1>
+    <h3 id="version">v.1.01a</h3>
+
+    <fieldset>
+        <legend>Install Modules</legend>
+        <!-- <a href="install.html" class="button">Reload</a> -->
+        <a onclick="InstallModules();" class="button">Install Modules</a>
+        <a onclick="execCMD('.\\resources\\plugins\\'+pluginName+'\\mvninstall.bat install', 'mvncnt');" class="button">Maven Install</a>
+        <!-- <a href="#htmlout" onclick="alert('Test');" class="button">Install Modules</a> -->
+
+    </fieldset>
+    <fieldset>
+        <legend>Check</legend>
+        <div id="pout">Loading...</div>
+        <div id="appcnt">Loading...</div>
+        <div id="appcntprogress">Loading...</div>
+        <div id="modcnt">Loading...</div>
+        <div id="modcnterror"></div>
+        <div id="mvncnt">Loading...</div>
+        <div id="mvncnterror"></div>
+    </fieldset>
+<script src="../../resources/plugins/LC2ShortCutCLI/config.js"></script>
+<script src="../../resources/js/api.js"></script>
+<script src="../../resources/js/install.js"></script>
+<script src="../../resources/plugins/LC2ShortCutCLI/install.js"></script>
+	

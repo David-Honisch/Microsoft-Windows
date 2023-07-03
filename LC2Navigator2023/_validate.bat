@@ -2,7 +2,7 @@
 set fileName=_validatefiles.csv
 set vfileName=_v_validatedfiles.csv
 set delfileName=_delvalidatedfiles.csv
-dir /b > %fileName%
+REM dir /b > %fileName%
 REM for /f "usebackq tokens=1-4 delims=|" %%a in ("%fileName%") do (
 	REM LC2CRC32CLI.exe %%a > %~dp0sfv\%%~na%%~xa-crc.sfv
 	REM move %~dp0sfv\%%~na%%~xa-crc.sfv .\sfv\
