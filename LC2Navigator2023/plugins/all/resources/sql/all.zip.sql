@@ -69,8 +69,11 @@ INSERT OR REPLACE INTO plugins (person_id,name,url) VALUES(157,'LC2Oracle23C Dow
 INSERT OR REPLACE INTO plugins (person_id,name,url) VALUES(158,'LC2AntiCrack Downloader v.1.00b - Update 09.04.2023','execCMD(''.\\resources\\cmd\\getupdates.bat https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/ /plugins/LC2AntiCrack.zip LC2AntiCrack.zip'', ''out'')');
 INSERT OR REPLACE INTO plugins (person_id,name,url) VALUES(159,'LC2SteamWizard Plugin Downloader v.1.01a - Update 20.04.2023','execCMD(''.\\resources\\cmd\\getupdates.bat https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/ /plugins/LC2SteamWizard.zip LC2SteamWizard.zip'', ''out'')');
 INSERT OR REPLACE INTO plugins (person_id,name,url) VALUES(160,'LC2CMSBuild Plugin Downloader v.1.01a - Update 06.06.2023','execCMD(''.\\resources\\cmd\\getupdates.bat https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/ /plugins/LC2CMSBuild.zip LC2CMSBuild.zip'', ''out'')');
-
 INSERT OR REPLACE INTO plugins (person_id,name,url) VALUES(161,'LC2DiabloAutoSkill Plugin Downloader v.1.01a - Update 07.06.2023','execCMD(''.\\resources\\cmd\\getupdates.bat https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/ /plugins/LC2DiabloAutoSkill.zip LC2DiabloAutoSkill.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (person_id,name,url) VALUES(162,'LC2OpenSSH Plugin Downloader v.1.01a - Update 22.07.2023','execCMD(''.\\resources\\cmd\\getupdates.bat https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/ /plugins/LC2OpenSSH.zip LC2OpenSSH.zip'', ''out'')');
+INSERT OR REPLACE INTO plugins (person_id,name,url) VALUES(163,'LC2WatsonX Plugin Downloader v.1.01a - Update 22.07.2023','execCMD(''.\\resources\\cmd\\getupdates.bat https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/ /plugins/LC2WatsonX.zip LC2WatsonX.zip'', ''out'')');
+
+
 
 INSERT OR REPLACE INTO plugins (person_id,name,url) VALUES(200,'LC2Java.Starter Plugin Downloader v.1.1c Small Demo App - Update 01.04.2022','execCMD(''.\\resources\\cmd\\getupdates.bat https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2023/ /plugins/LC2Java.Starter.zip LC2Java.Starter.zip'', ''out'')');
 
