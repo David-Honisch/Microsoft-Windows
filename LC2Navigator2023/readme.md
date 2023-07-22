@@ -113,6 +113,10 @@ more in progress...
 	- LC2RotatingTorproxy - Docker LC2RotatingTorproxy ha proxy with rotating tor proxy list nodes
 - LC2Python
 	- LC2Python - Docker LC2Python some python scripts
+- LC2Kafka added		
+- LC2Hadoop added		
+- LC2OpenSSH added	
+- LC2WatsonX added	
 
 - see plugin itslelf for more information
 	
