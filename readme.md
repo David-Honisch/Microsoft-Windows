@@ -1,4 +1,4 @@
-<h1>LC2Navigator2023</h1>
+# LC2Navigator2024 and some other funny projects and examples
 
 
 CPUUsageMonitor
@@ -33,14 +33,16 @@ age
 age v.1.0 Windows 10 Build
 and more funny example script and projects...
 
-
-<img src="LC2Navigator2023/LC2ExcelTransform.jpg.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
-
 ## Source:
 - https://letztechance.org
 - <a href="https://www.letztechance.org/">LetzteChance.Org</a>
 - <a href="https://www.letztechance.org/vue/">LC powered by vue)</a>
 - <a href="https://www.letztechance.org/dist/">LC powered by angular)</a>
+
+## LC2Navigator2024
+
+This is my official LetzteChance.Org app:
+<img src="LC2Navigator2024/LC2ExcelTransform.jpg.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
 
 
 ## Windows 64 Bit Installer:
