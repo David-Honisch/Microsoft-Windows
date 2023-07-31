@@ -1,5 +1,14 @@
 <h1>LC2Navigator2023</h1>
 
+### LC2Navigator2023 is now deprecated. Use:
+https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/master/LC2Navigator2024/LC2Navigator2024install.exe
+
+https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024
+
+Permanent Link:
+https://www.letztechance.org/read-20-35.html
+
+
 ### OpenAI Example screenshot:
 <img src="LC2OpenAI.jpg" alt="LC2OpenAI Screenshot" width="400" />
 
