@@ -1,37 +1,36 @@
 # LC2Navigator2024 and some other funny projects and examples
 
-
-CPUUsageMonitor
-LC2CPUUsageMonitor readme
-CSP.Hash.Generator
-CheatEngine
-LC2AntiCrack
-LC2Base64EnDecode/LC2Base64EnDecode/LC2Base64EnDecode.NET
-LC2Base64EnDecode.NET
-LC2CRC32
-LC2Navigator2023 new update including crc check validating plugin dow…
-LC2Cheats
-LC2DLFile2023
-LC2DL - Download with CLI Progressbar written in RUST - USAGE:LC2DL <…
-LC2FFMPEGEncoder
-LC2FFMPEGEncoder 2
-LC2FileEnDeCypter
-LC2INTRO.v.4.01
-LC2KeepassPasswordDumper
-LC2Navigator2022
-LC2Navigator2023 - old lc navigator
-LC2Navigator2024
-LC2News
-LC2PingAsync
-LC2WindowsSerialNo/LC2WindowsSerialNo
-LC2WindowsSerialNo.exe - missing dlls - Getting Windows serial number…
-LC2ZIP - Rust ZIP Lib +incl. examples
-LCUnityCEFServer.Client
-Qemu
-Qemu Script
-age
-age v.1.0 Windows 10 Build
-and more funny example script and projects...
+- CPUUsageMonitor
+- LC2CPUUsageMonitor readme
+- CSP.Hash.Generator
+- CheatEngine
+- LC2AntiCrack
+- LC2Base64EnDecode/LC2Base64EnDecode/LC2Base64EnDecode.NET
+- LC2Base64EnDecode.NET
+- LC2CRC32
+- LC2Navigator2023 new update including crc check validating plugin dow…
+- LC2Cheats
+- LC2DLFile2023
+- LC2DL - Download with CLI Progressbar written in RUST - USAGE:LC2DL <…
+- LC2FFMPEGEncoder
+- LC2FFMPEGEncoder 2
+- LC2FileEnDeCypter
+- LC2INTRO.v.4.01
+- LC2KeepassPasswordDumper
+- LC2Navigator2022
+- LC2Navigator2023 - old lc navigator
+- LC2Navigator2024
+- LC2News
+- LC2PingAsync
+- LC2WindowsSerialNo/LC2WindowsSerialNo
+- LC2WindowsSerialNo.exe - missing dlls - Getting Windows serial number…
+- LC2ZIP - Rust ZIP Lib +incl. examples
+- LCUnityCEFServer.Client
+- Qemu
+- Qemu Script
+- age
+- age v.1.0 Windows 10 Build
+- and more funny example script and projects...
 
 ## Source:
 - https://letztechance.org
