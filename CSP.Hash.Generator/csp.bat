@@ -1,13 +1,15 @@
 @echo off
-set exec=..\php\php.exe
+set exec=D:\xampp\php\php.exe
 set in=csp_js.csv
 set out=csp.out.csv
 set fout=csp.final.out.csv
-dir /s /b cms\assets\*.js > csp_js.csv
-type nul > %out%
+echo search js files
+dir /s /b *.js > %in%
+echo reset output file
+type nul>%out%
 for /f "usebackq tokens=1-4 delims=," %%a in (%in%) do (
       echo %exec% csp.php %%a
-	  %exec% csp.php %%a >> %out%
+	  %exec% csp.php %%a >> %%a.js.txt
 )
 timeout 1
 REM type nul > %fout%
