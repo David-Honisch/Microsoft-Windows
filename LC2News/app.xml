@@ -54,7 +54,7 @@
       <urls category="cooking">
         <title lang="en">Latest News</title>
         <author>David Honisch</author>
-        <year>01.01.2022</year>
+        <year>15.01.2024</year>
         <price>0.00</price>
         <url>https://www.letztechance.org/start.html</url>
         <urltarget>javascript:openBrowser('https://www.letztechance.org/start.html')</urltarget>
@@ -63,7 +63,7 @@
       <urls category="security">
         <title lang="en">Security</title>
         <author>David Honisch</author>
-        <year>01.01.2022</year>
+        <year>15.01.2024</year>
         <price>0.0</price>
         <url>https://www.letztechance.org/list-3-1.html</url>
         <urltarget>javascript:openBrowser('https://www.letztechance.org/list-3-1.html')</urltarget>
@@ -72,7 +72,7 @@
       <urls category="web">
         <title lang="en">Links</title>
         <author>David Honisch</author>
-        <year>01.01.2022</year>
+        <year>15.01.2024</year>
         <price>0.0</price>
         <url>https://www.letztechance.org/list-87-1.html</url>
         <urltarget>javascript:openBrowser('https://www.letztechance.org/list-87-1.html')</urltarget>
@@ -81,7 +81,7 @@
       <urls category="tools">
         <title lang="en">Tools</title>
         <author>David Honisch</author>
-        <year>01.01.2022</year>
+        <year>15.01.2024</year>
         <price>0.0</price>
         <url>https://www.letztechance.org/plugins.html</url>
         <urltarget>javascript:openBrowser('https://www.letztechance.org/plugins.html')</urltarget>
@@ -90,7 +90,7 @@
       <urls category="games">
         <title lang="en">Games</title>
         <author>David Honisch</author>
-        <year>01.01.2022</year>
+        <year>15.01.2024</year>
         <price>0.0</price>
         <url>https://www.letztechance.org/games.html</url>
         <urltarget>javascript:openBrowser('https://www.letztechance.org/start.html')</urltarget>
@@ -99,7 +99,7 @@
       <urls category="games">
         <title lang="en">Intro </title>
         <author>David Honisch</author>
-        <year>01.01.2022</year>
+        <year>15.01.2024</year>
         <price>1.0</price>
         <url>LC2Intro.v.4.0</url>
         <urltarget>javascript:getExtFile('https://www.letztechance.org/LC2Intro.v.4.0/index.html',600,480)</urltarget>
@@ -108,7 +108,7 @@
 	  <urls category="games">
         <title lang="en">Intro #2</title>
         <author>David Honisch</author>
-        <year>01.01.2022</year>
+        <year>15.01.2024</year>
         <price>1.0</price>
         <url>LC2Intro.v.4.0</url>
         <urltarget>javascript:getExtFile('https://www.letztechance.org/LC2Intro.v.4.0/index.html?q=https://www.letztechance.org/LC2Intro.v.4.1/index.html',400,600)</urltarget>
@@ -116,7 +116,7 @@
 	  <urls category="games">
         <title lang="en">Intro</title>
         <author>David Honisch</author>
-        <year>01.01.2022</year>
+        <year>15.01.2024</year>
         <price>0.0</price>
         <url>LC2Intro.v.4.1</url>
         <urltarget>javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.1/index.html')</urltarget>
@@ -125,7 +125,7 @@
 	        <urls category="games">
         <title lang="en">Intro</title>
         <author>David Honisch</author>
-        <year>01.01.2022</year>
+        <year>15.01.2024</year>
         <price>0.0</price>
         <url>https://www.letztechance.org/LC2Intro.v.4.1/index.html</url>
         <urltarget>javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.1/index.html')</urltarget>
@@ -179,7 +179,7 @@
       <urls category="games">
         <title lang="en">Intro</title>
         <author>David Honisch</author>
-        <year>01.01.2022</year>
+        <year>15.01.2024</year>
         <price>0.0</price>
         <url>https://www.letztechance.org/LC2Intro.v.4.0/index.html</url>
         <urltarget>javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.0/index.html')</urltarget>

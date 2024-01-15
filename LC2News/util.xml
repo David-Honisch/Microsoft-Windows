@@ -137,7 +137,7 @@
       <urls category="appnews">
         <title lang="en">Latest Utilities News</title>
         <author>David Honisch</author>
-        <year>14.09.2022</year>
+        <year>15.01.2024</year>
         <price>0.00</price>
         <url>Transform with Plugin</url>
         <urltarget>javascript:execCMD('exec .\\resources\\plugins\\LC2JXMLTransform\\xmltransform.bat .\\resources\\plugins\\LC2JXMLTransform\\xml\\urls.xml .\\resources\\plugins\\LC2JXMLTransform\\xml\\urlsext.xslt', 'app_cnt');</urltarget>
