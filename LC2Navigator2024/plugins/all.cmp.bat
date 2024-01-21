@@ -1,4 +1,8 @@
+set nppp=C:\tools\Notepad++\notepad++.exe
 set input=all
-set output=all.zip  
-move all.zip all_old.zip  
-call powershell.exe "Add-Type -A 'System.IO.Compression.FileSystem'; [IO.Compression.ZipFile]::CreateFromDirectory('%input%', '%input%.zip');" 
+set srcdir=..\pluginssrc\
+set input=%input%
+set output=%input%.zip
+move %input%.zip %input%_old.zip
+call %nppp% "..\pluginssrc\all\resources\sql\all.zip.sql"
+call powershell.exe "Add-Type -A 'System.IO.Compression.FileSystem'; [IO.Compression.ZipFile]::CreateFromDirectory('%srcdir%%input%', '%input%.zip');"
