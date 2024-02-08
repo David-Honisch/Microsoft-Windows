@@ -9,6 +9,8 @@
 - <a href="https://www.letztechance.org/dist/">LC powered by angular)</a>
 
 ## Projects and Source Code:
+
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024
 - https://github.com/David-Honisch/install
 - https://github.com/David-Honisch/Launcher.NET
 - https://github.com/David-Honisch/LC2Search
@@ -59,6 +61,13 @@ https://www.letztechance.org/read-20-35.html
 - https://www.letztechance.org/download/LC2Navigator.2022.apk
 
 You may approve installation from third party authors.
+
+## tools
+
+- https://github.com/David-Honisch/install/raw/master/LC2CRC32.exe (link down!)
+- https://github.com/David-Honisch/install/raw/master/LC2RedirectOutput.exe
+
+more tools linked soon...
 
 ## License
 MIT
