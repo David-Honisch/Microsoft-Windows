@@ -4,13 +4,15 @@
 
 ## Website:
 - https://letztechance.org
-- <a href="https://www.letztechance.org/">LetzteChance.Org</a>
-- <a href="https://www.letztechance.org/vue/">LC powered by vue)</a>
-- <a href="https://www.letztechance.org/dist/">LC powered by angular)</a>
+- <a href="https://www.letztechance.org/" target="_blank">LetzteChance.Org</a>
+- <a href="https://www.letztechance.org/vue/" target="_blank">LC powered by vue)</a>
+- <a href="https://www.letztechance.org/dist/" target="_blank">LC powered by angular)</a>
 
 ## Projects and Source Code:
 - https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2024/LC2Navigator2024install.exe
-- <a href="https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024">LetzteChance.Org LC2Navigator 2024 Official Page</a>
+- <a href="https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024"  target="_blank">LetzteChance.Org LC2Navigator 2024 Official Page</a>
+
+
 - Permanent Link:https://www.letztechance.org/read-20-35.html
 
 ## LC2Navigator2024
