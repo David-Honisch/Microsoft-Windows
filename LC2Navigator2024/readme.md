@@ -8,17 +8,17 @@
 - <a href="https://www.letztechance.org/vue/" target="_blank">LC powered by vue)</a>
 - <a href="https://www.letztechance.org/dist/" target="_blank">LC powered by angular)</a>
 
-## Projects and Source Code:
+## Project and Source Code:
 - https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2024/LC2Navigator2024install.exe
 - <a href="https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024"  target="_blank">LetzteChance.Org LC2Navigator 2024 Official Page</a>
 
 
 - Permanent Link:https://www.letztechance.org/read-20-35.html
 
-## LC2Navigator2024
+# LC2Navigator2024
 
 This is my official LetzteChance.Org app:
-<img src="LC2Navigator2024/LC2ExcelTransform.jpg" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
+<img src="LC2ExcelTransform.jpg" alt="LC2Navigator 2024 2Excel Transform Exampel Screenshot" width="400" />
 
 ##  LC2Navigator 2024 Official Desktop App:
 ##  Windows 64 Bit Installer:

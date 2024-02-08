@@ -9,9 +9,25 @@
 - <a href="https://www.letztechance.org/dist/">LC powered by angular)</a>
 
 ## Projects and Source Code:
-- https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2024/LC2Navigator2024install.exe
+- https://github.com/David-Honisch/install
+- https://github.com/David-Honisch/Launcher.NET
+- https://github.com/David-Honisch/LC2Search
+- https://github.com/David-Honisch/Microsoft-Windows
+- https://github.com/David-Honisch/NodeLauncher
+- https://github.com/David-Honisch/LC2SpringRestService
+- https://github.com/David-Honisch/Launcher.NET
+- https://github.com/David-Honisch/LC2CRC32
+- https://github.com/David-Honisch/LC2ProcessProxifier
+- https://github.com/David-Honisch/LC2ExcelTransform
+- https://github.com/David-Honisch/LCC64
+- https://github.com/David-Honisch/LC2FFExt
+- https://github.com/David-Honisch/CVE-2022-21882
+- https://github.com/David-Honisch/LCC64
+- https://github.com/David-Honisch/CheatsAndTricks
 - <a href="https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024">LetzteChance.Org LC2Navigator 2024 Official Page</a>
-- Permanent Link:https://www.letztechance.org/read-20-35.html
+
+see all my repositories https://github.com/David-Honisch/
+
 
 ## LC2Navigator2024
 
