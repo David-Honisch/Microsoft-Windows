@@ -1,7 +1,0 @@
-Reload;menu.csv;execCMD('exec .\\resources\\plugins\\lc2mysqldocker\\index.bat .\\resources\\plugins\\lc2mysqldocker\\menu.csv', 'out');Reload this view
-Install requirements;menu.csv;getOpenDialog('#dialog','.\\resources\\plugins\\lc2mysqldocker\\install.html','Install',{ minWidth: 250,  minHeight: 150, width: 400});lc2mysqldocker Install - Please click here to get all required stuff
-Install & Launch;menu.csv;evalCMD('.\\resources\\plugins\\lc2mysqldocker\\launch.bat', 'app_cnt');lc2mysqldocker Install - Please click here to get all required stuff
-START;docker-compose_up.bat;execCMD('start .\\resources\\plugins\\lc2mysqldocker\\startapp.bat', 'app_cnt');lc2mysqldocker docker-compose_up.bat
-STOP;docker-compose_down.bat;execCMD('start .\\resources\\plugins\\lc2mysqldocker\\stop.bat', 'app_cnt');lc2mysqldocker docker-compose_down.bat
-more;more.csv;execCMD('exec .\\resources\\plugins\\lc2mysqldocker\\index.bat .\\resources\\plugins\\lc2mysqldocker\\more.csv', 'app_cnt');More commands
-TEST;docker-compose_up.bat;execCMD('.\\resources\\plugins\\lc2mysqldocker\\test.bat', 'test_cnt');lc2mysqldocker docker-compose_up.bat
