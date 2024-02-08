@@ -24,15 +24,28 @@
 - https://github.com/David-Honisch/CVE-2022-21882
 - https://github.com/David-Honisch/LCC64
 - https://github.com/David-Honisch/CheatsAndTricks
+- https://github.com/David-Honisch/LetzteChance.Org---Encypt-DeCrypter-Login-v.1.0
+- https://github.com/David-Honisch/LC2SQLiteGUI.Exec
+- https://github.com/David-Honisch/LC2ATARI
+- https://github.com/David-Honisch/LC2MusicPlayer
+- https://github.com/David-Honisch/LC2Logo
+- https://github.com/David-Honisch/LC2Navigator
+- https://github.com/David-Honisch/FFMPEG.Convert
+- https://github.com/David-Honisch/LC2IRCRaw
+- https://github.com/David-Honisch/LinkCLI
+- https://github.com/David-Honisch/LC21stHybrid
+- https://github.com/David-Honisch/LC2IRCRaw
+- https://github.com/David-Honisch/LC27ZipUnprotect
+
 - <a href="https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024">LetzteChance.Org LC2Navigator 2024 Official Page</a>
 
-see all my repositories https://github.com/David-Honisch/
+see all my repositories https://github.com/David-Honisch?tab=repositories
 
 
 ## LC2Navigator2024
 
 This is my official LetzteChance.Org app:
-<img src="LC2Navigator2024/LC2ExcelTransform.jpg.png" alt="LC2ExcelTransform Exampel Screenshot" width="400" />
+<img src="LC2Navigator2024/LC2ExcelTransform.jpg" alt="LC2Navigator 2024 Excel  Transformation Example screenshot" width="400" />
 
 ##  LC2Navigator 2024 Official Desktop App:
 ##  Windows 64 Bit Installer:
