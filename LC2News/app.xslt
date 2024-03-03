@@ -46,8 +46,7 @@
           <xsl:value-of select="/root/id" />
         </xsl:attribute>
         <!-- <xsl:value-of select="/root/title" /> -->
-                    <xsl:value-of
-          select="/root/subtitle" />
+                    <xsl:value-of select="/root/subtitle" /> updated on:<xsl:value-of select="/root/update" />
       </xsl:element>
     </xsl:element>
     <xsl:for-each select="root/urlslist/urls">
