@@ -8,7 +8,7 @@
   <html>
   <body>
 
-  <fieldset>
+  <!-- <fieldset>
     <legend>Drop a file</legend>
     <div id="inputKeyFile" class="btn btn-default">Drop a file</div>
     <br />
@@ -20,7 +20,7 @@
     <xsl:element name="div">
       <xsl:attribute name="id"><xsl:value-of select="/root/id" />_progress</xsl:attribute>
     </xsl:element>
-  </fieldset>
+  </fieldset> -->
 
   <!-- <div class="container-fluid cm-container-white"> -->
   <!-- <h2 style="margin-top:0;">Welcome to LetzteChance.Org</h2> -->
