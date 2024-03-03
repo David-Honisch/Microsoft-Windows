@@ -46,7 +46,7 @@
           <xsl:value-of select="/root/id" />
         </xsl:attribute>
         <!-- <xsl:value-of select="/root/title" /> -->
-                    <xsl:value-of select="/root/subtitle" /> updated on:<xsl:value-of select="/root/update" />
+                    <xsl:value-of select="/root/subtitle" />
       </xsl:element>
     </xsl:element>
     <xsl:for-each select="root/urlslist/urls">
@@ -105,6 +105,7 @@
   <xsl:attribute name="style">min-height: 252px;</xsl:attribute>
   
   <xsl:copy-of select="/root/reftables/homecnt" />
+  updated on:<xsl:value-of select="/root/update" />
   <!-- <xsl:value-of select="/root/reftables/homecnt" /> -->
   <table border="1" style="width:85%;">
     <tr bgcolor="#9acd32">
