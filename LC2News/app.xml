@@ -1,6 +1,423 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <title lang="en">The App</title>
+  <title lang="de">lc2navnews</title>
+  <id>lc2navnews</id>
+  <subtitle lang="de">LC2Navigator 2024 News</subtitle>
+  <desc lang="de">Work with AI (ChatGPT/WatsonX)</desc>
+  <urlslist>
+
+    <urls category="appnews">
+      <id>lc2navnews_main</id>
+      <title lang="de">Commands</title>
+      <author>David Honisch</author>
+      <year>01.05.2022</year>
+      <price>0.00</price>
+      <url>https://www.letztechance.org/read-20-48.html</url>
+      <urltarget>javascript:if(getConfirmation('Read
+        now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+    </urls>
+
+    <urls category="apptests">
+      <id>lc2navnews_tests</id>
+      <title lang="de">Readme</title>
+      <author>David Honisch</author>
+      <year>01.05.2022</year>
+      <price>0.00</price>
+      <url>https://www.letztechance.org/read-20-48.html</url>
+      <urltarget>javascript:if(getConfirmation('Read
+        now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+    </urls>
+
+    <urls category="info">
+      <id>lc2navnews_info</id>
+      <title lang="de">Info</title>
+      <author>David Honisch</author>
+      <year>01.01.2022</year>
+      <price>0.00</price>
+      <url>https://www.letztechance.org/start.html</url>
+      <urltarget>javascript:if(getConfirmation('Read
+        now?')){execJava('allfiles','Test','pluginresult',execJavaItem)};</urltarget>
+    </urls>
+
+    <!-- <urls category="cooking">
+      <id>lc2navnews_install</id>
+      <title lang="de">Install</title>
+      <author>David Honisch</author>
+      <year>01.01.2022</year>
+      <price>0.00</price>
+      <url>https://www.letztechance.org/start.html</url>
+      <urltarget>javascript:if(getConfirmation('Read
+        now?')){execJava('allfiles','Test','pluginresult',execJavaItem)};</urltarget>
+    </urls>
+
+    <urls category="cooking">
+      <id>lc2navnews_help</id>
+      <title lang="de">Help</title>
+      <author>David Honisch</author>
+      <year>01.01.2022</year>
+      <price>0.00</price>
+      <url>https://www.letztechance.org/start.html</url>
+      <urltarget>javascript:openBrowser('https://www.letztechance.org/start.html')</urltarget>
+    </urls> -->
+
+  </urlslist>
+
+
+  <reflist>
+
+    <urls category="appnews">
+      <id>appNews</id>
+      <title lang="de">Commands</title>
+      <author>David Honisch</author>
+      <year>01.05.2022</year>
+      <price>0.00</price>
+      <url>https://www.letztechance.org/read-20-48.html</url>
+      <urltarget>javascript:openBrowser('https://www.letztechance.org/read-20-48.html')</urltarget>
+    </urls>
+
+    <urls category="cooking">
+      <id>appNews2</id>
+      <title lang="de">Latest News</title>
+      <author>David Honisch</author>
+      <year>01.01.2022</year>
+      <price>0.00</price>
+      <url>https://www.letztechance.org/start.html</url>
+      <urltarget>javascript:openBrowser('https://www.letztechance.org/start.html')</urltarget>
+    </urls>
+
+    <urls category="security">
+      <id>appNews3</id>
+      <title lang="de">Security</title>
+      <author>David Honisch</author>
+      <year>01.01.2022</year>
+      <price>0.0</price>
+      <url>https://www.letztechance.org/list-3-1.html</url>
+      <urltarget>javascript:openBrowser('https://www.letztechance.org/list-3-1.html')</urltarget>
+    </urls>
+
+    <urls category="web">
+      <id>appNews4</id>
+      <title lang="de">Links</title>
+      <author>David Honisch</author>
+      <year>01.01.2022</year>
+      <price>0.0</price>
+      <url>https://www.letztechance.org/list-87-1.html</url>
+      <urltarget>javascript:openBrowser('https://www.letztechance.org/list-87-1.html')</urltarget>
+    </urls>
+
+    <urls category="tools">
+      <id>appNews5</id>
+      <title lang="de">Tools</title>
+      <author>David Honisch</author>
+      <year>01.01.2022</year>
+      <price>0.0</price>
+      <url>https://www.letztechance.org/plugins.html</url>
+      <urltarget>javascript:openBrowser('https://www.letztechance.org/plugins.html')</urltarget>
+    </urls>
+
+    <urls category="games">
+      <id>appNews6</id>
+      <title lang="de">Games</title>
+      <author>David Honisch</author>
+      <year>01.01.2022</year>
+      <price>0.0</price>
+      <url>https://www.letztechance.org/games.html</url>
+      <urltarget>javascript:openBrowser('https://www.letztechance.org/start.html')</urltarget>
+    </urls>
+
+    <urls category="games">
+      <id>appNews7</id>
+      <title lang="de">Intro</title>
+      <author>David Honisch</author>
+      <year>01.01.2022</year>
+      <price>0.0</price>
+      <url>https://www.letztechance.org/LC2Intro.v.4.0/index.html</url>
+      <urltarget>javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.0/index.html')</urltarget>
+    </urls>
+
+    <urls category="games">
+      <id>appNews8</id>
+      <title lang="de">Intro2</title>
+      <author>David Honisch</author>
+      <year>01.01.2022</year>
+      <price>0.0</price>
+      <url>https://www.letztechance.org/LC2Intro.v.4.0/index.html</url>
+      <urltarget>
+        javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.0/index.html?q=https://www.letztechance.org/LC2Intro.v.4.0/index.html?q=https://www.letztechance.org/LC2Intro.v.4.0/index.html')</urltarget>
+    </urls>
+
+  </reflist>
+  <reftables>
+    <homecnt>
+      <h1>LC2navigator 2024</h1>
+      <p>The news</p>
+
+    </homecnt>
+    <home>
+      <urls category="appnews">
+        <title lang="en">Show installed applications</title>
+        <author>David Honisch</author>
+        <year>14.09.2022</year>
+        <price>0.00</price>
+        <url>Show installed applications</url>
+        <urltarget>javascript:execCMD('.\\resources\\cmd\\showapps.bat', 'out')</urltarget>
+      </urls>
+
+      <urls category="appnews">
+        <title lang="en">All Download Download v.1.0</title>
+        <author>David Honisch</author>
+        <year>14.09.2022</year>
+        <price>0.00</price>
+        <url>All Download Download v.1.0</url>
+        <urltarget>javascript:execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip',
+          'out')</urltarget>
+      </urls>
+
+      <urls category="appnews">
+        <title lang="en">Show available plugins downloaders</title>
+        <author>David Honisch</author>
+        <year>14.09.2022</year>
+        <price>0.00</price>
+        <url>Show available plugins downloaders</url>
+        <urltarget>javascript:execCMD('.\\resources\\cmd\\showplugins.bat', 'out')</urltarget>
+      </urls>
+
+      <urls category="appnews">
+        <title lang="en">All Download Download v.1.0</title>
+        <author>David Honisch</author>
+        <year>16.09.2022</year>
+        <price>0.00</price>
+        <url>All Download Download v.1.0</url>
+        <urltarget>javascript:execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip',
+          'out')</urltarget>
+      </urls>
+
+      <urls category="appnews">
+        <title lang="en">Latest App News</title>
+        <author>David Honisch</author>
+        <year>01.05.2022</year>
+        <price>0.00</price>
+        <url>https://www.letztechance.org/read-20-48.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/read-20-48.html')</urltarget>
+      </urls>
+
+      <urls category="cooking">
+        <title lang="en">Latest News</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.00</price>
+        <url>https://www.letztechance.org/start.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/start.html')</urltarget>
+      </urls>
+
+      <urls category="security">
+        <title lang="en">Security</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.0</price>
+        <url>https://www.letztechance.org/list-3-1.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/list-3-1.html')</urltarget>
+      </urls>
+
+      <urls category="web">
+        <title lang="en">Links</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.0</price>
+        <url>https://www.letztechance.org/list-87-1.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/list-87-1.html')</urltarget>
+      </urls>
+
+      <urls category="tools">
+        <title lang="en">Tools</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.0</price>
+        <url>https://www.letztechance.org/plugins.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/plugins.html')</urltarget>
+      </urls>
+
+      <urls category="games">
+        <title lang="en">Games</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.0</price>
+        <url>https://www.letztechance.org/games.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/start.html')</urltarget>
+      </urls>
+
+      <urls category="games">
+        <title lang="en">Intro </title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>1.0</price>
+        <url>LC2Intro.v.4.0</url>
+        <urltarget>
+          javascript:getExtFile('https://www.letztechance.org/LC2Intro.v.4.0/index.html',600,480)</urltarget>
+      </urls>
+
+      <urls category="games">
+        <title lang="en">Intro #2</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>1.0</price>
+        <url>LC2Intro.v.4.0</url>
+        <urltarget>
+          javascript:getExtFile('https://www.letztechance.org/LC2Intro.v.4.0/index.html?q=https://www.letztechance.org/LC2Intro.v.4.1/index.html',400,600)</urltarget>
+      </urls>
+      <urls category="games">
+        <title lang="en">Intro</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.0</price>
+        <url>LC2Intro.v.4.1</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.1/index.html')</urltarget>
+      </urls>
+
+      <urls category="games">
+        <title lang="en">Intro</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.0</price>
+        <url>https://www.letztechance.org/LC2Intro.v.4.1/index.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.1/index.html')</urltarget>
+      </urls>
+    </home>
+
+    <commands>
+      <urls category="appnews">
+        <title lang="en">Show installed applications</title>
+        <author>David Honisch</author>
+        <year>14.09.2022</year>
+        <price>0.00</price>
+        <url>Show installed applications</url>
+        <urltarget>javascript:execCMD('.\\resources\\cmd\\showapps.bat', 'out')</urltarget>
+      </urls>
+
+      <urls category="appnews">
+        <title lang="en">All Download Download v.1.0</title>
+        <author>David Honisch</author>
+        <year>14.09.2022</year>
+        <price>0.00</price>
+        <url>All Download Download v.1.0</url>
+        <urltarget>javascript:execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip',
+          'out')</urltarget>
+      </urls>
+
+      <urls category="appnews">
+        <title lang="en">Show available plugins downloaders</title>
+        <author>David Honisch</author>
+        <year>14.09.2022</year>
+        <price>0.00</price>
+        <url>Show available plugins downloaders</url>
+        <urltarget>javascript:execCMD('.\\resources\\cmd\\showplugins.bat', 'out')</urltarget>
+      </urls>
+
+      <urls category="appnews">
+        <title lang="en">All Download Download v.1.0</title>
+        <author>David Honisch</author>
+        <year>16.09.2022</year>
+        <price>0.00</price>
+        <url>All Download Download v.1.0</url>
+        <urltarget>javascript:execCMD('.\\resources\\cmd\\getupdates.bat /plugins/all.zip all.zip',
+          'out')</urltarget>
+      </urls>
+
+      <urls category="appnews">
+        <title lang="en">Latest App News</title>
+        <author>David Honisch</author>
+        <year>01.05.2022</year>
+        <price>0.00</price>
+        <url>https://www.letztechance.org/read-20-48.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/read-20-48.html')</urltarget>
+      </urls>
+
+      <urls category="cooking">
+        <title lang="en">Latest News</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.00</price>
+        <url>https://www.letztechance.org/start.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/start.html')</urltarget>
+      </urls>
+
+      <urls category="security">
+        <title lang="en">Security</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.0</price>
+        <url>https://www.letztechance.org/list-3-1.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/list-3-1.html')</urltarget>
+      </urls>
+
+      <urls category="web">
+        <title lang="en">Links</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.0</price>
+        <url>https://www.letztechance.org/list-87-1.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/list-87-1.html')</urltarget>
+      </urls>
+
+      <urls category="tools">
+        <title lang="en">Tools</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.0</price>
+        <url>https://www.letztechance.org/plugins.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/plugins.html')</urltarget>
+      </urls>
+
+      <urls category="games">
+        <title lang="en">Games</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.0</price>
+        <url>https://www.letztechance.org/games.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/start.html')</urltarget>
+      </urls>
+
+      <urls category="games">
+        <title lang="en">Intro </title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>1.0</price>
+        <url>LC2Intro.v.4.0</url>
+        <urltarget>
+          javascript:getExtFile('https://www.letztechance.org/LC2Intro.v.4.0/index.html',600,480)</urltarget>
+      </urls>
+
+      <urls category="games">
+        <title lang="en">Intro #2</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>1.0</price>
+        <url>LC2Intro.v.4.0</url>
+        <urltarget>
+          javascript:getExtFile('https://www.letztechance.org/LC2Intro.v.4.0/index.html?q=https://www.letztechance.org/LC2Intro.v.4.1/index.html',400,600)</urltarget>
+      </urls>
+      <urls category="games">
+        <title lang="en">Intro</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.0</price>
+        <url>LC2Intro.v.4.1</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.1/index.html')</urltarget>
+      </urls>
+
+      <urls category="games">
+        <title lang="en">Intro</title>
+        <author>David Honisch</author>
+        <year>15.01.2024</year>
+        <price>0.0</price>
+        <url>https://www.letztechance.org/LC2Intro.v.4.1/index.html</url>
+        <urltarget>javascript:openBrowser('https://www.letztechance.org/LC2Intro.v.4.1/index.html')</urltarget>
+      </urls>
+    </commands>
+
+
+  </reftables>
+
   <tabapp>
     <title lang="en">Commands and News</title>   
     <urlslist>
@@ -186,4 +603,18 @@
       </urls>
     </urlslist>
   </tabutils>
+
+  <lc2navnews_main>
+    <urls category="games">
+      <title lang="en">xLC2Navigator 2024 Download</title>
+      <author>David Honisch</author>
+      <year>08.02.2024</year>
+      <price>0.0</price>
+      <url>https://www.letztechance.org/LC2Intro.v.4.0/index.html</url>
+      <urltarget>javascript:openBrowser('https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2024/LC2Navigator2024install.exe')</urltarget>
+    </urls>
+
+  </lc2navnews_main>
+
+
 </root>
