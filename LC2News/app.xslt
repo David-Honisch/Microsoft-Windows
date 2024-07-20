@@ -174,6 +174,11 @@
                     <xsl:with-param name="Input" select="/root/categories/catmenu_home/url"/>
                 </xsl:call-template>
             </xsl:when>
+            <xsl:when test="$x='catmenu_server'">
+                <xsl:call-template name="DoStuff2">
+                    <xsl:with-param name="Input" select="/root/categories/catmenu_info/url"/>
+                </xsl:call-template>
+            </xsl:when>
             <xsl:when test="$x='catmenu_info'">
                 <xsl:call-template name="DoStuff2">
                     <xsl:with-param name="Input" select="/root/categories/catmenu_info/url"/>

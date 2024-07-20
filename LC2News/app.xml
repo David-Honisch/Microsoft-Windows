@@ -21,8 +21,14 @@
       <title lang="de">Info</title>
       <update>20.07.2024</update>
       <url>https://www.letztechance.org/read-20-48.html</url>
-      <urltarget>javascript:if(getConfirmation('Read
-        now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+      <urltarget>javascript:if(getConfirmation('Start browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+    </url>
+    <url category="catmenu_info">
+      <id>catmenu_info</id>
+      <title lang="de">Info</title>
+      <update>20.07.2024</update>
+      <url>Start Server</url>
+      <urltarget>javascript:if(getConfirmation('Start server UI now?')){execPluginCMD('out','lc2container');};</urltarget>
     </url>
 
 
@@ -81,5 +87,8 @@
         <urltarget>javascript:if(getConfirmation('Read the now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
       </url>
     </catmenu_info>
+
+
+
   </categories>
 </root>
