@@ -16,7 +16,7 @@
       <urltarget>javascript:if(getConfirmation('Read
         now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
     </url>
-    <url category="catmenu_info">
+    <url category="catmenu_list_info">
       <id>catmenu_info</id>
       <title lang="de">List Info</title>
       <update>20.07.2024</update>
@@ -51,7 +51,7 @@
       </url>
     </catmenu_list_home>
 
-    <catmenu_info>
+    <catmenu_list_info>
       <url category="catmenu_info">
         <id>catmenu_info</id>
         <title lang="de">Info</title>
@@ -76,6 +76,6 @@
         <urltarget>javascript:if(getConfirmation('Read
           now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
       </url>
-    </catmenu_info>
+    </catmenu_list_info>
   </categories>
 </root>
