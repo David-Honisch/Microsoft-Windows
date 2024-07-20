@@ -2,9 +2,9 @@
 <root>
   <title lang="de">lc2navnews</title>
   <id>lc2navnews</id>
-  <subtitle lang="de">LC2Navigator 2024 News</subtitle>
+  <subtitle lang="de">LC2Navigator 2024 List News</subtitle>
   <update>20.03.2024</update>
-  <desc lang="de">Work with AI (ChatGPT/WatsonX)</desc>
+  <desc lang="de">OS,Coding,AI(ChatGPT/WatsonX) and more...</desc>
   <!-- <category></category> -->
   <category>
     <update>20.07.2024</update>
