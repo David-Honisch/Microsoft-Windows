@@ -17,7 +17,7 @@
 
   <xsl:template name="DoStuff2">
     <xsl:param name="Input" />
-    <h1><xsl:value-of select="$Input/title" />:</h1>
+    <!-- <h1><xsl:value-of select="$Input/title" />:</h1> -->
     <table border="1" style="width:85%;">
       <tr bgcolor="#9acd32">
         <th>Updated</th>
@@ -169,14 +169,14 @@
             <!-- tables -->
             Update:<xsl:value-of select="update" />
             <xsl:choose>
-            <xsl:when test="$x='catmenu_home'">
+            <xsl:when test="$x='catmenu_list_home'">
                 <xsl:call-template name="DoStuff2">
-                    <xsl:with-param name="Input" select="/root/categories/catmenu_home/url"/>
+                    <xsl:with-param name="Input" select="/root/categories/catmenu_list_home/url"/>
                 </xsl:call-template>
             </xsl:when>
-            <xsl:when test="$x='catmenu_info'">
+            <xsl:when test="$x='catmenu_list_info'">
                 <xsl:call-template name="DoStuff2">
-                    <xsl:with-param name="Input" select="/root/categories/catmenu_info/url"/>
+                    <xsl:with-param name="Input" select="/root/categories/catmenu_list_info/url"/>
                 </xsl:call-template>
             </xsl:when>
         </xsl:choose>

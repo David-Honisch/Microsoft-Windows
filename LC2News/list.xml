@@ -17,7 +17,7 @@
         now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
     </url>
     <url category="catmenu_list_info">
-      <id>catmenu_info</id>
+      <id>catmenu_list_info</id>
       <title lang="de">List Info</title>
       <update>20.07.2024</update>
       <url>https://www.letztechance.org/read-20-48.html</url>
@@ -52,15 +52,15 @@
     </catmenu_list_home>
 
     <catmenu_list_info>
-      <url category="catmenu_info">
-        <id>catmenu_info</id>
+      <url category="catmenu_list_info">
+        <id>catmenu_list_info</id>
         <title lang="de">Info</title>
         <update>19.07.2024</update>
         <url>https://www.letztechance.org/read-20-48.html</url>
         <urltarget>javascript:if(getConfirmation('Read
           now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
       </url>
-      <url category="catmenu_info">
+      <url category="catmenu_list_info">
         <id>catmenu_infohelp</id>
         <title lang="de">more Info</title>
         <update>20.07.2024</update>
