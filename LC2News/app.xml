@@ -49,6 +49,13 @@
         <url>https://www.letztechance.org/read-20-48.html</url>
         <urltarget>javascript:if(getConfirmation('Start browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
       </url>
+      <url category="catmenu_home">
+        <id>catmenu_home_startserver</id>
+        <title lang="de">Start Server</title>
+        <update>20.07.2024</update>
+        <url>https://www.letztechance.org/read-20-48.html</url>
+        <urltarget>javascript:if(getConfirmation('Start server UI now?')){execPluginCMD('out','lc2container');};</urltarget>
+      </url>
     </catmenu_home>
 
     <catmenu_info>
@@ -57,24 +64,21 @@
         <title lang="de">Info</title>
         <update>19.07.2024</update>
         <url>https://www.letztechance.org/read-20-48.html</url>
-        <urltarget>javascript:if(getConfirmation('Read
-          now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+        <urltarget>javascript:if(getConfirmation('Read browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
       </url>
       <url category="catmenu_info">
         <id>catmenu_infohelp</id>
         <title lang="de">more Info</title>
         <update>20.07.2024</update>
         <url>https://www.letztechance.org/read-20-48.html</url>
-        <urltarget>javascript:if(getConfirmation('Read
-          now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+        <urltarget>javascript:if(getConfirmation('Read browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
       </url>
       <url category="catmenu_info">
         <id>catmenu_infohelp2</id>
         <title lang="de">more more Info</title>
         <update>20.07.2024</update>
         <url>https://www.letztechance.org/read-20-48.html</url>
-        <urltarget>javascript:if(getConfirmation('Read
-          now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+        <urltarget>javascript:if(getConfirmation('Read the now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
       </url>
     </catmenu_info>
   </categories>

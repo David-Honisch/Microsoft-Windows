@@ -17,7 +17,7 @@
 
   <xsl:template name="DoStuff2">
     <xsl:param name="Input" />
-    <h1><xsl:value-of select="$Input/title" />:</h1>
+    <!-- <h1><xsl:value-of select="$Input/title" />:</h1> -->
     <table border="1" style="width:85%;">
       <tr bgcolor="#9acd32">
         <th>Updated</th>
