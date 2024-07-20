@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <title lang="de">lc2navnews</title>
+  <id>lc2navnews</id>
+  <subtitle lang="de">LC2Navigator 2024 News</subtitle>
+  <update>20.03.2024</update>
+  <desc lang="de">Work with AI (ChatGPT/WatsonX)</desc>
+  <!-- <category></category> -->
+  <category>
+    <update>20.07.2024</update>
+    <url category="catmenu_list_home">
+      <id>catmenu_list_home</id>
+      <title lang="de">Commands</title>
+      <update>19.07.2024</update>
+      <url>https://www.letztechance.org/read-20-48.html</url>
+      <urltarget>javascript:if(getConfirmation('Read
+        now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+    </url>
+    <url category="catmenu_info">
+      <id>catmenu_info</id>
+      <title lang="de">Info</title>
+      <update>20.07.2024</update>
+      <url>https://www.letztechance.org/read-20-48.html</url>
+      <urltarget>javascript:if(getConfirmation('Read
+        now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+    </url>
+
+
+    
+  </category>
+  <!-- EOF <category></category> -->
+   <!-- categories -->
+  <categories>
+    <update>20.07.2024</update>
+
+    <catmenu_list_home>
+      <update>20.07.2024</update>
+      <url category="catmenu_list_home">
+        <id>catmenu_list_home</id>
+        <title lang="de">Commands</title>
+        <update>19.07.2024</update>
+        <url>https://www.letztechance.org/read-20-48.html</url>
+        <urltarget>javascript:if(getConfirmation('Read browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+      </url>
+      <url category="catmenu_list_home">
+        <id>catmenu_list_home_help</id>
+        <title lang="de">Commands Info</title>
+        <update>20.07.2024</update>
+        <url>https://www.letztechance.org/read-20-48.html</url>
+        <urltarget>javascript:if(getConfirmation('Start browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+      </url>
+    </catmenu_list_home>
+
+    <catmenu_info>
+      <url category="catmenu_info">
+        <id>catmenu_info</id>
+        <title lang="de">Info</title>
+        <update>19.07.2024</update>
+        <url>https://www.letztechance.org/read-20-48.html</url>
+        <urltarget>javascript:if(getConfirmation('Read
+          now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+      </url>
+      <url category="catmenu_info">
+        <id>catmenu_infohelp</id>
+        <title lang="de">more Info</title>
+        <update>20.07.2024</update>
+        <url>https://www.letztechance.org/read-20-48.html</url>
+        <urltarget>javascript:if(getConfirmation('Read
+          now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+      </url>
+      <url category="catmenu_info">
+        <id>catmenu_infohelp2</id>
+        <title lang="de">more more Info</title>
+        <update>20.07.2024</update>
+        <url>https://www.letztechance.org/read-20-48.html</url>
+        <urltarget>javascript:if(getConfirmation('Read
+          now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+      </url>
+    </catmenu_info>
+  </categories>
+</root>
