@@ -11,7 +11,7 @@
     <url category="catmenu_home">
       <id>catmenu_home</id>
       <title lang="de">Applications and Scripts</title>
-      <update>19.10.2024</update>
+      <update>29.10.2024</update>
       <url>https://www.letztechance.org/read-20-48.html</url>
       <urltarget>javascript:if(getConfirmation('Read
         now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
