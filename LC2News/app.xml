@@ -3,22 +3,22 @@
   <title lang="de">lc2navnews</title>
   <id>lc2navnews</id>
   <subtitle lang="de">LC2Navigator 2024 News</subtitle>
-  <update>20.03.2024</update>
+  <update>28.10.2024</update>
   <desc lang="de">Work with AI (ChatGPT/WatsonX)</desc>
   <!-- <category></category> -->
   <category>
-    <update>20.07.2024</update>
+    <update>20.10.2024</update>
     <url category="catmenu_home">
       <id>catmenu_home</id>
       <title lang="de">Commands</title>
-      <update>19.07.2024</update>
+      <update>19.10.2024</update>
       <url>https://www.letztechance.org/read-20-48.html</url>
       <urltarget>javascript:if(getConfirmation('Read
         now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
     </url>
     <url category="catmenu_info">
       <id>catmenu_info</id>
-      <title lang="de">Info</title>
+      <title lang="de">News</title>
       <update>20.07.2024</update>
       <url>https://www.letztechance.org/read-20-48.html</url>
       <urltarget>javascript:if(getConfirmation('Start browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
