@@ -19,14 +19,14 @@
     <url category="catmenu_info">
       <id>catmenu_info</id>
       <title lang="de">News</title>
-      <update>20.07.2024</update>
+      <update>29.10.2024</update>
       <url>https://www.letztechance.org/read-20-48.html</url>
       <urltarget>javascript:if(getConfirmation('Start browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
     </url>
     <url category="catmenu_info">
       <id>catmenu_info</id>
       <title lang="de">Info</title>
-      <update>20.07.2024</update>
+      <update>29.10.2024</update>
       <url>Start Server</url>
       <urltarget>javascript:if(getConfirmation('Start server UI now?')){execPluginCMD('out','lc2container');};</urltarget>
     </url>
@@ -37,13 +37,13 @@
   <!-- EOF <category></category> -->
    <!-- categories -->
   <categories>
-    <update>20.07.2024</update>
+    <update>29.10.2024</update>
 
     <catmenu_home>
-      <update>20.07.2024</update>
+      <update>29.10.2024</update>
       <url category="catmenu_home">
         <id>catmenu_home</id>
-        <title lang="de">Commands</title>
+        <title lang="de">LC2Navigator2024 Download</title>
         <update>19.07.2024</update>
         <url>https://www.letztechance.org/read-20-48.html</url>
         <urltarget>javascript:if(getConfirmation('Read browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
@@ -51,14 +51,14 @@
       <url category="catmenu_home">
         <id>catmenu_home_help</id>
         <title lang="de">Commands Info</title>
-        <update>20.07.2024</update>
+        <update>29.10.2024</update>
         <url>https://www.letztechance.org/read-20-48.html</url>
         <urltarget>javascript:if(getConfirmation('Start browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
       </url>
       <url category="catmenu_home">
         <id>catmenu_home_startserver</id>
         <title lang="de">Start Server</title>
-        <update>20.07.2024</update>
+        <update>29.10.2024</update>
         <url>Start Server</url>
         <urltarget>javascript:if(getConfirmation('Start server UI now?')){execPluginCMD('out','lc2container');};</urltarget>
       </url>
@@ -75,14 +75,14 @@
       <url category="catmenu_info">
         <id>catmenu_infohelp</id>
         <title lang="de">more Info</title>
-        <update>20.07.2024</update>
+        <update>29.10.2024</update>
         <url>https://www.letztechance.org/read-20-48.html</url>
         <urltarget>javascript:if(getConfirmation('Read browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
       </url>
       <url category="catmenu_info">
         <id>catmenu_infohelp2</id>
         <title lang="de">more more Info</title>
-        <update>20.07.2024</update>
+        <update>29.10.2024</update>
         <url>https://www.letztechance.org/read-20-48.html</url>
         <urltarget>javascript:if(getConfirmation('Read the now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
       </url>
