@@ -103,8 +103,10 @@
 
   <xsl:template name="createTabs">
     <xsl:param name="Input" />
+    <xsl:param name="Id" />
     <!-- default -->
-  Update:<xsl:value-of select="$Input/update" />   
+  Update:<xsl:value-of select="$Input/update" />
+  <!-- Id:<xsl:value-of select="$Id" /> -->
   <table border="1" style="width:85%;">
       <tr bgcolor="#9acd32">
         <th>Title</th>
@@ -166,9 +168,14 @@
           <xsl:attribute name="class">panel-body demo-btn</xsl:attribute>
           <xsl:attribute name="style">min-height:252px;</xsl:attribute>
                                     
-            <!-- tables -->
+            <!-- tables -->            
             Update:<xsl:value-of select="update" />
             <xsl:choose>
+              <xsl:when test="$x='lc2navnews'">
+                <xsl:call-template name="DoStuff2">
+                    <xsl:with-param name="Input" select="/root/categories/lc2navnews/url"/>
+                </xsl:call-template>
+            </xsl:when>  
             <xsl:when test="$x='catmenu_home'">
                 <xsl:call-template name="DoStuff2">
                     <xsl:with-param name="Input" select="/root/categories/catmenu_home/url"/>
@@ -182,6 +189,11 @@
             <xsl:when test="$x='catmenu_info'">
                 <xsl:call-template name="DoStuff2">
                     <xsl:with-param name="Input" select="/root/categories/catmenu_info/url"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:when test="$x='catmenu_news'">
+                <xsl:call-template name="DoStuff2">
+                    <xsl:with-param name="Input" select="/root/categories/catmenu_news/url"/>
                 </xsl:call-template>
             </xsl:when>
         </xsl:choose>
@@ -243,6 +255,12 @@
   <!-- DoCreateTabContents -->
   <xsl:template name="DoCreateTabContents">
     <xsl:param name="Input" />
+    <xsl:variable name="x" select="$Id" />
+    <xsl:variable name="xv" select="$Input/*" />
+    <xsl:variable name="items" select="/root/categories/@x/url" />
+    <!-- Input:<xsl:copy-of  select="$Input" /> -->
+    <!-- Id:<xsl:copy-of  select="$Id" />
+    <hr/> -->
     <div id="myTabContent" class="tab-content">
       <xsl:element name="div">
         <xsl:attribute name="role">tab-panel</xsl:attribute>
@@ -267,6 +285,7 @@
               <xsl:call-template name="createTabs">
                 <!-- <xsl:with-param name="Input" select="root/urlslist/urls" /> -->
                 <xsl:with-param name="Input" select="$Input" />
+                <xsl:with-param name="Id" select="$Id" />
               </xsl:call-template>
               <!-- REPLACED -->
               <!-- REPLACED -->
@@ -279,6 +298,7 @@
       <xsl:call-template name="DoCreateTabBodies">
         <xsl:with-param name="Input2" select="root/urlslist/urls" />
         <xsl:with-param name="Input" select="$Input" />
+        <xsl:with-param name="Id" select="$Id" />
       </xsl:call-template>
     </div>
   </xsl:template>
@@ -297,6 +317,7 @@
             <!-- contents -->
             <xsl:call-template name="DoCreateTabContents">
               <xsl:with-param name="Input" select="root/category/url" />
+              <xsl:with-param name="Id" select="root/category/url/id" />
             </xsl:call-template>
 
             <xsl:copy-of select="$footer"/>

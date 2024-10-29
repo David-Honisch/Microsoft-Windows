@@ -3,11 +3,11 @@
   <title lang="de">lc2navnews</title>
   <id>lc2navnews</id>
   <subtitle lang="de">LC2Navigator 2024 List News</subtitle>
-  <update>20.03.2024</update>
+  <update>29.10.2024</update>
   <desc lang="de">OS,Coding,AI(ChatGPT/WatsonX) and more...</desc>
   <!-- <category></category> -->
   <category>
-    <update>20.07.2024</update>
+    <update>29.10.2024</update>
     <url category="catmenu_list_home">
       <id>catmenu_list_home</id>
       <title lang="de">List Commands</title>
@@ -19,7 +19,7 @@
     <url category="catmenu_list_info">
       <id>catmenu_list_info</id>
       <title lang="de">List Info</title>
-      <update>20.07.2024</update>
+      <update>29.10.2024</update>
       <url>https://www.letztechance.org/read-20-48.html</url>
       <urltarget>javascript:if(getConfirmation('Read
         now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
@@ -31,10 +31,10 @@
   <!-- EOF <category></category> -->
    <!-- categories -->
   <categories>
-    <update>20.07.2024</update>
+    <update>29.10.2024</update>
 
     <catmenu_list_home>
-      <update>20.07.2024</update>
+      <update>29.10.2024</update>
       <url category="catmenu_list_home">
         <id>catmenu_list_home</id>
         <title lang="de">List Commands</title>
@@ -45,7 +45,7 @@
       <url category="catmenu_list_home">
         <id>catmenu_list_home_help</id>
         <title lang="de">List Commands Info</title>
-        <update>20.07.2024</update>
+        <update>29.10.2024</update>
         <url>https://www.letztechance.org/read-20-48.html</url>
         <urltarget>javascript:if(getConfirmation('Start browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
       </url>
@@ -55,7 +55,7 @@
       <url category="catmenu_list_info">
         <id>catmenu_list_info</id>
         <title lang="de">Info</title>
-        <update>19.07.2024</update>
+        <update>29.10.2024</update>
         <url>https://www.letztechance.org/read-20-48.html</url>
         <urltarget>javascript:if(getConfirmation('Read
           now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
@@ -63,7 +63,7 @@
       <url category="catmenu_list_info">
         <id>catmenu_infohelp</id>
         <title lang="de">more Info</title>
-        <update>20.07.2024</update>
+        <update>29.10.2024</update>
         <url>https://www.letztechance.org/read-20-48.html</url>
         <urltarget>javascript:if(getConfirmation('Read
           now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>

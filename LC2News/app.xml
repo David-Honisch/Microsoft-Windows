@@ -3,21 +3,21 @@
   <title lang="de">lc2navnews</title>
   <id>lc2navnews</id>
   <subtitle lang="de">LC2Navigator 2024 News</subtitle>
-  <update>28.10.2024</update>
-  <desc lang="de">Work with AI (ChatGPT/WatsonX)</desc>
+  <update>29.10.2024</update>
+  <desc lang="de">LC2Navigator 2024 News (ChatGPT/WatsonX)</desc>
   <!-- <category></category> -->
   <category>
-    <update>20.10.2024</update>
+    <update>29.10.2024</update>
     <url category="catmenu_home">
       <id>catmenu_home</id>
-      <title lang="de">Commands</title>
+      <title lang="de">Applications and Scripts</title>
       <update>19.10.2024</update>
       <url>https://www.letztechance.org/read-20-48.html</url>
       <urltarget>javascript:if(getConfirmation('Read
         now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
     </url>
     <url category="catmenu_info">
-      <id>catmenu_info</id>
+      <id>catmenu_news</id>
       <title lang="de">News</title>
       <update>29.10.2024</update>
       <url>https://www.letztechance.org/read-20-48.html</url>
@@ -37,38 +37,115 @@
   <!-- EOF <category></category> -->
    <!-- categories -->
   <categories>
-    <update>29.10.2024</update>
+    <update>29.10.2024</update>      
+
+    <lc2navnews>
+      <update>29.10.2024</update>
+      <url category="catmenu_home">
+        <id>catmenu_home_startserver</id>
+        <title lang="de">Download and Import all Plugins List</title>
+        <update>29.10.2024</update>      
+        <url>Download and Import all LC2Navigator2024 Plugins</url>
+        <urltarget>javascript:if(getConfirmation('Start Download and Import all LC2Navigator2024 Plugins now?')){execPluginDL('out','https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2024/plugins/','all.zip');};</urltarget>
+      </url>
+      <url category="lc2navnews">
+        <id>catmenu_home</id>
+        <title lang="de">LC2Navigator2024 Download</title>
+        <update>29.10.2024</update>
+        <url>https://www.letztechance.org/read-20-48.html</url>
+        <urltarget>javascript:if(getConfirmation('Read browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+      </url>
+      <url category="catmenu_home2">
+        <id>catmenu_home</id>
+        <title lang="de">LC2Navigator2024 lc2container Plugin</title>
+        <update>29.10.2024</update>
+        <url>Start lc2container</url>
+        <urltarget>javascript:if(getConfirmation('Start server UI now?')){execPluginCMD('out','lc2container');};</urltarget>
+      </url>      
+      <url category="catmenu_home">
+        <id>catmenu_home_startserver</id>
+        <title lang="de">Start Server</title>
+        <update>29.07.2024</update>
+        <url>Start lc2container Services</url>
+        <urltarget>javascript:if(getConfirmation('Start lc2container Services UI now?')){execPluginCMD('out','lc2containerservice');};</urltarget>
+      </url>
+    </lc2navnews>
 
     <catmenu_home>
       <update>29.10.2024</update>
       <url category="catmenu_home">
-        <id>catmenu_home</id>
-        <title lang="de">LC2Navigator2024 Download</title>
-        <update>19.07.2024</update>
-        <url>https://www.letztechance.org/read-20-48.html</url>
-        <urltarget>javascript:if(getConfirmation('Read browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+        <id>catmenu_home_startserver</id>
+        <title lang="de">Download and Import all Plugins List</title>
+        <update>29.10.2024</update>      
+        <url>Download and Import all LC2Navigator2024 Plugins</url>
+        <urltarget>javascript:if(getConfirmation('Start Download and Import all LC2Navigator2024 Plugins now?')){execPluginDL('out','https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2024/plugins/','all.zip');};</urltarget>
       </url>
       <url category="catmenu_home">
-        <id>catmenu_home_help</id>
-        <title lang="de">Commands Info</title>
-        <update>29.10.2024</update>
-        <url>https://www.letztechance.org/read-20-48.html</url>
-        <urltarget>javascript:if(getConfirmation('Start browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+        <id>catmenu_home_startserver</id>
+        <title lang="de">Start sqlite3win Plugin UI</title>
+        <update>29.10.2024</update>      
+        <url>Show</url>
+        <urltarget>javascript:if(getConfirmation('Start server UI now?')){execPluginCMD('out','sqlite3win');};</urltarget>
+      </url>
+      <url category="catmenu_home">
+        <id>catmenu_home_startserver</id>
+        <title lang="de">Start LC2CRC32 Plugin UI</title>
+        <update>29.10.2024</update>      
+        <url>Show</url>
+        <urltarget>javascript:if(getConfirmation('Start LC2CRC32 UI now?')){execPluginCMD('out','LC2CRC32');};</urltarget>
+      </url>
+      <url category="catmenu_home">
+        <id>catmenu_home_startserver</id>
+        <title lang="de">Start LC2ShortCutCLI Plugin UI</title>
+        <update>29.10.2024</update>      
+        <url>Show</url>
+        <urltarget>javascript:if(getConfirmation('Start server UI now?')){execPluginCMD('out','LC2ShortCutCLI');};</urltarget>
       </url>
       <url category="catmenu_home">
         <id>catmenu_home_startserver</id>
         <title lang="de">Start Server</title>
-        <update>29.10.2024</update>
+        <update>29.10.2024</update>      
         <url>Start Server</url>
         <urltarget>javascript:if(getConfirmation('Start server UI now?')){execPluginCMD('out','lc2container');};</urltarget>
       </url>
     </catmenu_home>
 
+    <catmenu_news>
+      <url category="catmenu_home">
+        <id>catmenu_home_startserver</id>
+        <title lang="de">Download and Import all Plugins List</title>
+        <update>29.10.2024</update>      
+        <url>Download and Import all LC2Navigator2024 Plugins</url>
+        <urltarget>javascript:if(getConfirmation('Start Download and Import all LC2Navigator2024 Plugins now?')){execPluginDL('out','https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2024/plugins/','all.zip');};</urltarget>
+      </url>
+      <url category="catmenu_news">
+        <id>catmenu_info</id>
+        <title lang="de">News</title>
+        <update>29.10.2024</update>      
+        <url>https://www.letztechance.org/read-20-48.html</url>
+        <urltarget>javascript:if(getConfirmation('Read browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+      </url>
+      <url category="catmenu_news">
+        <id>catmenu_infohelp</id>
+        <title lang="de">more Info</title>
+        <update>29.10.2024</update>      
+        <url>https://www.letztechance.org/read-20-48.html</url>
+        <urltarget>javascript:if(getConfirmation('Read browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+      </url>
+      <url category="catmenu_news">
+        <id>catmenu_infohelp2</id>
+        <title lang="de">more more Info</title>
+        <update>29.10.2024</update>      
+        <url>https://www.letztechance.org/read-20-48.html</url>
+        <urltarget>javascript:if(getConfirmation('Read the now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
+      </url>
+    </catmenu_news>
+
     <catmenu_info>
       <url category="catmenu_info">
         <id>catmenu_info</id>
         <title lang="de">Info</title>
-        <update>19.07.2024</update>
+        <update>29.10.2024</update>      
         <url>https://www.letztechance.org/read-20-48.html</url>
         <urltarget>javascript:if(getConfirmation('Read browser now?')){openBrowser('https://www.letztechance.org/read-20-48.html')};</urltarget>
       </url>
