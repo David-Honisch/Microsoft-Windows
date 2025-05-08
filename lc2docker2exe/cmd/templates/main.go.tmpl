@@ -1,0 +1,55 @@
+package main
+
+import (
+	"os"
+	"fmt"
+	"io/ioutil"
+{{- if .Embed}}
+	"embed"
+{{- end}}
+)
+
+{{- if .Embed}}
+//go:embed image.tar.gz
+var embedded embed.FS
+{{- end}}
+
+func main() {
+	shim := Shim{
+		Image: "{{.Image}}",
+		Workdir: "{{.Workdir}}",
+		Env: {{printf "%#v" .Env}},
+		Volumes: {{printf "%#v" .Volumes}},
+		Stdout: ioutil.Discard,
+		Stderr: os.Stderr,
+	}
+
+	if err := run(shim); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
+}
+
+func run(shim Shim) error {
+	if !shim.Exists() {
+	{{- if .Embed}}
+		image, err := embedded.Open("image.tar.gz")
+		if err != nil {
+			return err
+		}
+		defer image.Close()
+
+		err = shim.Load(image)
+		if err != nil {
+			return err
+		}
+	{{else}}
+		err := shim.Pull()
+		if err != nil {
+			return err
+		}
+	{{end}}
+	}
+
+	return shim.Exec(os.Args[1:])
+}
