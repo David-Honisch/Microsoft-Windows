@@ -1,7 +1,11 @@
-# LC2Navigator2024 and some other funny projects and examples
+# LC2Navigator2026
 
-- some nice apps and my official application(s) - lc2navigator
+and some other funny projects and examples
 
+- some nice apps and my official application(s) - lc2navigator 2026 (1st Alpha)
+LC2Navigator - the new official LC UI
+Download the installer here:
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2026
 
 ## Website:
 - https://letztechance.org
