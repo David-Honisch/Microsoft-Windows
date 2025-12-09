@@ -380,17 +380,18 @@ Section "CreateShortCuts"
  CreateDirectory $SMPROGRAMS\$R0
  CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG
  CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\LC2Start.NET.lnk" $INSTDIR\LC2Start.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\LC2Start.LC2Navigator2026.exe.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\LC2Navigator2026.lnk" $INSTDIR\LC2Navigator2026.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\LC2Launcher.lnk" $INSTDIR\LC2Navigator2026.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\_LC2Launcher.lnk" $INSTDIR\LC2Navigator2026.exe
  
 
- CreateShortCut "$INSTDIR\Update.lnk" $INSTDIR\LC2Start.NET.exe
- CreateShortCut "$INSTDIR\LC2Start.NET.exe.lnk" $INSTDIR\LC2Start.NET.exe
+ CreateShortCut "$INSTDIR\Update.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
+ CreateShortCut "$INSTDIR\LC2Start.LC2Navigator.exe.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
  CreateShortCut "$INSTDIR\LC2Navigator2026.exe.lnk" $INSTDIR\LC2Navigator2026.exe
  CreateShortCut "$DESKTOP\LC2Navigator2026.exe.lnk" $INSTDIR\LC2Navigator2026.exe
 
- CreateShortCut "$DESKTOP\LC2Navigator2020.exe.lnk" $INSTDIR\LC2Start.NET.exe
+ CreateShortCut "$DESKTOP\LC2Navigator2020.exe.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
 
  
 
@@ -441,7 +442,7 @@ Section "Programm und Hilfe ausführen..." TESTIDX
 
   SectionIn 1 2 3
   
-  SearchPath $1 $INSTDIR\LC2Start.NET.exe
+  SearchPath $1 $INSTDIR\LC2Start.LC2Navigator.exe
 
 ;  MessageBox MB_OK "notepad.exe=$1"
   ;ExecShell "open" '"$INSTDIR\html\index.html"'
