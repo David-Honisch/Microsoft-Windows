@@ -5,7 +5,7 @@
 ### <h3>(Alpha 2)</h3>
 
 The new LC UI - Windows Build (Linux, MacOs coming soon...)
-<a href="https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/LC2Navigator2025install.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=LC2Navigator2025%20(Beta3)Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2025 Installer Screenshot" width="400" /></a>
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=LC2Navigator2026%20(Alpha) Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
 
 ## Download Installer:
 
@@ -125,72 +125,9 @@ packages tools using
 
 # Notice:Deprecated or unsupported Plugins
 
-- SQLIte and NPM AutoInstall Packages 
-	- Required. Please always update this package
-- Core 
-	- SQLITE Import, Export, CRUD and more...
-- LC2Process 
-	- Show and kill system processes
-- LC2Redirect 
-	- Redirect Output
-- LC2Zip 
-	- .NET Core
-- LC2Zip 
-	- ZIP Java Java Installer (SWT)
-- LC2UnZip 
-	- Unzip .NET Core
-- LC2UnZip 
-	- LC2UnZip Java Java Installer (SWT)
-- LC2DL 
-	- LetzteChance.Org offizieller Downloader
-- LC2Start.NET 
-	- LetzteChance.Org offizieller Windows .NET 4.72 Installer
-- LC2SQLIITEGUI 
-	- LetzteChance.Org offizieller LC2SQLIITEGUI
-- LC2RESTIFY 
-	- LC2RESTIFY
-- LC2SOAP 
-	- LC2SOAP
-- LC2ExcelTransform 
-	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
-- LC2SAPUI
-	- - SAP.UI Electron Webpack Project (Routing JSON and query based fragments and models)
-- LC2Docker 
-	- Some fist scripts (updates coming soon.
-- LC2FTP 
-	- FTP Client based on HMTL/NodeJS
-- LC2EXPRESS 
-	- HTTP NPM HTTPSERVER
-- LC2UnityServer 
-	- LC2UnityServer
-- LC2UnityServerClient 
-	- LC2UnityServerClient Chromium Client 
-- LC2Color 
-	- .NET v.4.7.2
-- LC2Color 
-	- .NET Core v.3.1
-- LC2Python 
-	- LC2Python (Python 3 Scripts)
-- LC2PHP 
-	- LC2PHP (PHP Installation required)
-- LC2FFMPEG 
-	- LC2FFMPEG
-- LC2PAINT 
-- LC2PAINT - Simple 3D Painter with small animations
-- LC2MySQLDocker 
-	- LC2MySQLDocker - Docker MySQL Server to host tcp port 3306
-- LC2PostGresSQL 
-	- LC2MySQLDocker - Docker Postgres Server to host tcp port
-- LC2SQLServer 
-	- LC2SQLServer - Docker MySQL to host tcp port	
-- LC2RotatingTorproxy 
-	- LC2RotatingTorproxy - Docker LC2RotatingTorproxy ha proxy with rotating tor proxy list nodes
-- LC2Python
-	- LC2Python - Docker LC2Python some python scripts
-- LC2Kafka
-- LC2Hadoop
-- LC2OpenSSH
-- LC2WatsonX
+<a href="https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/plugins.csv">Plugins.csv</a>
+
+
 
 - see https://www.letztechance.org to get more information.
 	
