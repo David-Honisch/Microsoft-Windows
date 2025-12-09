@@ -1,8 +1,14 @@
-# LC2Navigator2026
+# Miccrosoft
+## Open Source and Closed Source
+## Projects
+
+### LC2Navigator2026
 
 and some other funny projects and examples
 
 - some nice apps and my official application(s) - lc2navigator 2026 (1st Alpha)
+
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe"><img src="lc2nav.png?width=400&height=400&image=logo.png&text=LC2Navigator2026%20(Alpha) Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
 LC2Navigator - the new official LC UI
 Download the installer here:
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2026
@@ -13,7 +19,7 @@ Download the installer here:
 - <a href="https://www.letztechance.org/vue/">LC powered by vue)</a>
 - <a href="https://www.letztechance.org/dist/">LC powered by angular)</a>
 
-## Projects and Source Code:
+## some Projects and Source Code:
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2026
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2026/app
 - https://github.com/David-Honisch/install

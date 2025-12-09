@@ -6,7 +6,7 @@
 
 The new LC UI - Windows Build (Linux, MacOs coming soon...)
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=LC2Navigator2026%20(Alpha) Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
-
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe"><img src="lc2nav.png?width=400&height=400&image=logo.png&text=LC2Navigator2026%20(Alpha) Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
 ## Download Installer:
 
 - <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe" target="_blank">LC2Navigator2026 x64 Installer(32Bit)</a>
