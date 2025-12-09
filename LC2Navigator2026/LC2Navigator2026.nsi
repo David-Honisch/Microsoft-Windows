@@ -380,18 +380,18 @@ Section "CreateShortCuts"
  CreateDirectory $SMPROGRAMS\$R0
  CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG
  CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\lc2navigator2026.start.exe.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\lc2navigator2026.start.exe.lnk" $INSTDIR\lc2navigator2026.start.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\LC2Navigator2026.lnk" $INSTDIR\LC2Navigator2026.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\LC2Launcher.lnk" $INSTDIR\LC2Navigator2026.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\_LC2Launcher.lnk" $INSTDIR\LC2Navigator2026.exe
  
 
- CreateShortCut "$INSTDIR\Update.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
- CreateShortCut "$INSTDIR\lc2navigator2026.start.exe.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
+ CreateShortCut "$INSTDIR\Update.lnk" $INSTDIR\lc2navigator2026.start.exe
+ CreateShortCut "$INSTDIR\lc2navigator2026.start.exe.lnk" $INSTDIR\lc2navigator2026.start.exe
  CreateShortCut "$INSTDIR\LC2Navigator2026.exe.lnk" $INSTDIR\LC2Navigator2026.exe
  CreateShortCut "$DESKTOP\LC2Navigator2026.exe.lnk" $INSTDIR\LC2Navigator2026.exe
 
- CreateShortCut "$DESKTOP\LC2Navigator2020.exe.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
+ CreateShortCut "$DESKTOP\LC2Navigator2020.exe.lnk" $INSTDIR\lc2navigator2026.start.exe
 
  
 
@@ -402,7 +402,7 @@ Section "CreateShortCuts"
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\AutoStartConfig.lnk" $INSTDIR\LC2autostartConfig.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\AutoStartUninstall.lnk" $INSTDIR\LC2autostartUninstall.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\LC2Config.lnk" $INSTDIR\LC2Config.exe
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\Uninstall.lnk" $INSTDIR\uninst.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\Uninstall.lnk" $INSTDIR\lc2navigator2026_uninst.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\Support.lnk" $INSTDIR\letztechance.org.url
   SectionIn 1 2 3
 
@@ -410,10 +410,10 @@ Section "CreateShortCuts"
 
 SectionEnd
 Section "AutoStartShortCuts"
-CreateShortCut "$SMPROGRAMS\Startup\LC2Navigator2026.exe.lnk" $INSTDIR\LC2Navigator2026.exe
+CreateShortCut "$SMPROGRAMS\Startup\LC2Navigator2026.exe.lnk" $INSTDIR\lc2navigator2026.exe
 SectionEnd
 Section "CreateAutoShortCuts"
- CreateShortCut "$SMPROGRAMS\Startup\LC2Navigator2026.exe.lnk" "$INSTDIR\LC2Navigator2026-win32-ia32\LC2Navigator2026.exe"
+ CreateShortCut "$SMPROGRAMS\Startup\LC2Navigator2026.exe.lnk" "$INSTDIR\LC2Navigator2026-win32-ia32\lc2navigator2026.exe"
   SectionIn 1 2 3
 ;  Call CSCTest
 SectionEnd
@@ -442,7 +442,7 @@ Section "Programm und Hilfe ausführen..." TESTIDX
 
   SectionIn 1 2 3
   
-  SearchPath $1 $INSTDIR\LC2Start.LC2Navigator.exe
+  SearchPath $1 $INSTDIR\lc2navigator2026.start.exe
 
 ;  MessageBox MB_OK "notepad.exe=$1"
   ;ExecShell "open" '"$INSTDIR\html\index.html"'

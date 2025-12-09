@@ -1,4 +1,4 @@
-# <h1>LC2Navigator2026 (Alpha 1)</h1>
+# <h1>LC2Navigator2026 (Alpha 2)</h1>
 
 The new LC UI - Windows Build (Linux, MacOs coming soon...)
 <a href="https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/LC2Navigator2025install.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=LC2Navigator2025%20(Beta3)Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2025 Installer Screenshot" width="400" /></a>
@@ -48,8 +48,10 @@ Please notice:Java have to be installed.
 
 ## Windows 64 Bit Installer:
 
-- <a href="https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/LC2Navigator2025install.exe" target="_blank">LC2Navigator2025 x64 install.exe</a>
-- https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/LC2Navigator2025install.exe
+- <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe" target="_blank">LC2Navigator2026 x64 install.exe</a>
+- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe
+
+The installer is only 32 Bit but the appication is optimized for x64 machines/os.
 
 Permanent Link:
 https://www.letztechance.org/read-20-35.html
@@ -68,7 +70,20 @@ https://www.letztechance.org/read-20-40.html
 ## Logo:
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
+## requirements
 
+if you like to use all functionalities please install and config:
+- docker or/and podman
+- jdk 8<
+- Maven
+- Ant
+- Gradle
+- Rust
+- Python
+- Curl
+
+maybe other plugins uses other tools like go and so on...
+Please read the requirements of every plugin. Click to installation to install requrired  software.
 
 
 ## General about Plugins
@@ -87,32 +102,7 @@ or use the automatic installation inside of lc2navigator.
 ## Plugins
 
 Update 06.07.2025:
-some plugins update:
-- sqlite3win
-- LC2CRC32
-- LC2ShortCutCLI
-- lc2container
-- lc2containerservice
-- LC2Database
-- LC2DBCLI
-- lc2mongodb
-- LC2Oracle23C
 
-- lc2stable_diffusion
-- lc2stable_diffusion Web UI
-- lc2csvxml
-- LC2bat2exe
-- LC2CVEGrabber
-- LC2Authme
-- lc2docker2exe
-- LC2JSVideoPlayer
-
-- LC2SteamAchievementManager
-- lc2tts
-- lc2webllmchat
-- lc2wsdl_client_app
-- lcwebclient_final
-- org.letztechance.domain.web.GrabUrls
 
 build tools using
 - nsis
