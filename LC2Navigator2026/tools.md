@@ -1,11 +1,4 @@
-# Microsoft Windows
-# Open and closed source projects
-
-## <h1>LC2Navigator2026</h1>
-### <h3>(Alpha 2)</h3>
-
-The new LC UI - Windows Build (Linux, MacOs coming soon...)
-<a href="https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/LC2Navigator2025install.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=LC2Navigator2026%20(Alpha) Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2025 Installer Screenshot" width="400" /></a>
+# Tools
 
 install.zip
 install.zip_old.zip
@@ -51,34 +44,34 @@ plugins\java\LC2UIBackend.zip
 plugins\lang\LC2Matplotlib.zip
 plugins\lang\LC2PyChat.zip
 plugins\lang\LC2Rust.zip
-lc2aieditor.zip
-LC2Authme.zip
-LC2bat2exe.zip
-LC2Clock.zip
-LC2CRC32.zip
-lc2crud.zip
-lc2csvxml.zip
-LC2DiabloAutoSkill.zip
-lc2docker2exe.zip
-LC2EncrypDecrypt.zip
-LC2FileExplorer.zip
-lc2imgtag.zip
-LC2Iso2God.zip
-lc2memory.zip
-LC2Microsoft.Toolkit.zip
-lc2miniDiffusion.zip
-lc2newplugin.zip
-LC2OpenSSH.zip
-LC2OpenSSL.zip
-LC2OpenXLA.zip
-LC2ProcessProxifier.zip
-lc2replaceinfile.zip
-LC2ShortCutCLI.zip
-lc2sqlite.zip
-LC2SteamAchievementManager.zip
-lc2tts.zip
-lc2webllmchat.zip
-lc2wsdl_client_app.zip
+plugins/tools/lc2aieditor.zip
+plugins/tools/LC2Authme.zip
+plugins/tools/LC2bat2exe.zip
+plugins/tools/LC2Clock.zip
+plugins/tools/LC2CRC32.zip
+plugins/tools/lc2crud.zip
+plugins/tools/lc2csvxml.zip
+plugins/tools/LC2DiabloAutoSkill.zip
+plugins/tools/lc2docker2exe.zip
+plugins/tools/LC2EncrypDecrypt.zip
+plugins/tools/LC2FileExplorer.zip
+plugins/tools/lc2imgtag.zip
+plugins/tools/LC2Iso2God.zip
+plugins/tools/lc2memory.zip
+plugins/tools/LC2Microsoft.Toolkit.zip
+plugins/tools/lc2miniDiffusion.zip
+plugins/tools/lc2newplugin.zip
+plugins/tools/LC2OpenSSH.zip
+plugins/tools/LC2OpenSSL.zip
+plugins/tools/LC2OpenXLA.zip
+plugins/tools/LC2ProcessProxifier.zip
+plugins/tools/lc2replaceinfile.zip
+plugins/tools/LC2ShortCutCLI.zip
+plugins/tools/lc2sqlite.zip
+plugins/tools/LC2SteamAchievementManager.zip
+plugins/tools/lc2tts.zip
+plugins/tools/lc2webllmchat.zip
+plugins/tools/lc2wsdl_client_app.zip
 pluginssrc\all.zip
 release-builds\lc2search-win32-x64\app.zip
 release-builds\lc2search-win32-x64\exe.zip
@@ -228,170 +221,98 @@ plugins\lang\LC2Rust.zip
 plugins\lang\LC2Rust.zip-crc.sfv
 plugins\lang\LC2Rust.zip.sfv
 plugins\lang\README.md
-lc2aieditor.zip
-lc2aieditor.zip-crc.sfv
-lc2aieditor.zip.sfv
-LC2Authme.zip
-LC2Authme.zip-crc.sfv
-LC2Authme.zip.sfv
-LC2bat2exe.zip
-LC2bat2exe.zip-crc.sfv
-LC2bat2exe.zip.sfv
-LC2Clock.zip
-LC2Clock.zip-crc.sfv
-LC2Clock.zip.sfv
-LC2CRC32.zip
-LC2CRC32.zip-crc.sfv
-LC2CRC32.zip.sfv
-lc2crud.zip
-lc2crud.zip-crc.sfv
-lc2crud.zip.sfv
-lc2csvxml.cmp.bat
-lc2csvxml.zip
-lc2csvxml.zip-crc.sfv
-lc2csvxml.zip.sfv
-LC2DiabloAutoSkill.zip
-LC2DiabloAutoSkill.zip-crc.sfv
-LC2DiabloAutoSkill.zip.sfv
-lc2docker2exe.zip
-lc2docker2exe.zip-crc.sfv
-lc2docker2exe.zip.sfv
-LC2EncrypDecrypt.zip
-LC2EncrypDecrypt.zip-crc.sfv
-LC2EncrypDecrypt.zip.sfv
-LC2FileExplorer.zip
-LC2FileExplorer.zip-crc.sfv
-LC2FileExplorer.zip.sfv
-lc2imgtag.zip
-lc2imgtag.zip-crc.sfv
-lc2imgtag.zip.sfv
-LC2Iso2God.zip
-LC2Iso2God.zip-crc.sfv
-LC2Iso2God.zip.sfv
-lc2memory.zip
-lc2memory.zip-crc.sfv
-lc2memory.zip.sfv
-LC2Microsoft.Toolkit.zip
-LC2Microsoft.Toolkit.zip-crc.sfv
-LC2Microsoft.Toolkit.zip.sfv
-lc2miniDiffusion.zip
-lc2miniDiffusion.zip-crc.sfv
-lc2miniDiffusion.zip.sfv
-lc2newplugin.zip
-lc2newplugin.zip-crc.sfv
-lc2newplugin.zip.sfv
-LC2OpenSSH.zip
-LC2OpenSSH.zip-crc.sfv
-LC2OpenSSH.zip.sfv
-LC2OpenSSL.zip
-LC2OpenSSL.zip-crc.sfv
-LC2OpenSSL.zip.sfv
-LC2OpenXLA.zip
-LC2OpenXLA.zip-crc.sfv
-LC2OpenXLA.zip.sfv
-LC2ProcessProxifier.zip
-LC2ProcessProxifier.zip-crc.sfv
-LC2ProcessProxifier.zip.sfv
-lc2replaceinfile.zip
-lc2replaceinfile.zip-crc.sfv
-lc2replaceinfile.zip.sfv
-LC2ShortCutCLI.zip
-LC2ShortCutCLI.zip-crc.sfv
-LC2ShortCutCLI.zip.sfv
-lc2sqlite.zip
-lc2sqlite.zip-crc.sfv
-lc2sqlite.zip.sfv
-LC2SteamAchievementManager.zip
-LC2SteamAchievementManager.zip-crc.sfv
-LC2SteamAchievementManager.zip.sfv
-lc2tts.cmp.bat
-lc2tts.zip
-lc2tts.zip-crc.sfv
-lc2tts.zip.sfv
-lc2webllmchat.zip
-lc2webllmchat.zip-crc.sfv
-lc2webllmchat.zip.sfv
-lc2wsdl_client_app.zip
-lc2wsdl_client_app.zip-crc.sfv
-lc2wsdl_client_app.zip.sfv
-README.md
+plugins/tools/lc2aieditor.zip
+plugins/tools/lc2aieditor.zip-crc.sfv
+plugins/tools/lc2aieditor.zip.sfv
+plugins/tools/LC2Authme.zip
+plugins/tools/LC2Authme.zip-crc.sfv
+plugins/tools/LC2Authme.zip.sfv
+plugins/tools/LC2bat2exe.zip
+plugins/tools/LC2bat2exe.zip-crc.sfv
+plugins/tools/LC2bat2exe.zip.sfv
+plugins/tools/LC2Clock.zip
+plugins/tools/LC2Clock.zip-crc.sfv
+plugins/tools/LC2Clock.zip.sfv
+plugins/tools/LC2CRC32.zip
+plugins/tools/LC2CRC32.zip-crc.sfv
+plugins/tools/LC2CRC32.zip.sfv
+plugins/tools/lc2crud.zip
+plugins/tools/lc2crud.zip-crc.sfv
+plugins/tools/lc2crud.zip.sfv
+plugins/tools/lc2csvxml.cmp.bat
+plugins/tools/lc2csvxml.zip
+plugins/tools/lc2csvxml.zip-crc.sfv
+plugins/tools/lc2csvxml.zip.sfv
+plugins/tools/LC2DiabloAutoSkill.zip
+plugins/tools/LC2DiabloAutoSkill.zip-crc.sfv
+plugins/tools/LC2DiabloAutoSkill.zip.sfv
+plugins/tools/lc2docker2exe.zip
+plugins/tools/lc2docker2exe.zip-crc.sfv
+plugins/tools/lc2docker2exe.zip.sfv
+plugins/tools/LC2EncrypDecrypt.zip
+plugins/tools/LC2EncrypDecrypt.zip-crc.sfv
+plugins/tools/LC2EncrypDecrypt.zip.sfv
+plugins/tools/LC2FileExplorer.zip
+plugins/tools/LC2FileExplorer.zip-crc.sfv
+plugins/tools/LC2FileExplorer.zip.sfv
+plugins/tools/lc2imgtag.zip
+plugins/tools/lc2imgtag.zip-crc.sfv
+plugins/tools/lc2imgtag.zip.sfv
+plugins/tools/LC2Iso2God.zip
+plugins/tools/LC2Iso2God.zip-crc.sfv
+plugins/tools/LC2Iso2God.zip.sfv
+plugins/tools/lc2memory.zip
+plugins/tools/lc2memory.zip-crc.sfv
+plugins/tools/lc2memory.zip.sfv
+plugins/tools/LC2Microsoft.Toolkit.zip
+plugins/tools/LC2Microsoft.Toolkit.zip-crc.sfv
+plugins/tools/LC2Microsoft.Toolkit.zip.sfv
+plugins/tools/lc2miniDiffusion.zip
+plugins/tools/lc2miniDiffusion.zip-crc.sfv
+plugins/tools/lc2miniDiffusion.zip.sfv
+plugins/tools/lc2newplugin.zip
+plugins/tools/lc2newplugin.zip-crc.sfv
+plugins/tools/lc2newplugin.zip.sfv
+plugins/tools/LC2OpenSSH.zip
+plugins/tools/LC2OpenSSH.zip-crc.sfv
+plugins/tools/LC2OpenSSH.zip.sfv
+plugins/tools/LC2OpenSSL.zip
+plugins/tools/LC2OpenSSL.zip-crc.sfv
+plugins/tools/LC2OpenSSL.zip.sfv
+plugins/tools/LC2OpenXLA.zip
+plugins/tools/LC2OpenXLA.zip-crc.sfv
+plugins/tools/LC2OpenXLA.zip.sfv
+plugins/tools/LC2ProcessProxifier.zip
+plugins/tools/LC2ProcessProxifier.zip-crc.sfv
+plugins/tools/LC2ProcessProxifier.zip.sfv
+plugins/tools/lc2replaceinfile.zip
+plugins/tools/lc2replaceinfile.zip-crc.sfv
+plugins/tools/lc2replaceinfile.zip.sfv
+plugins/tools/LC2ShortCutCLI.zip
+plugins/tools/LC2ShortCutCLI.zip-crc.sfv
+plugins/tools/LC2ShortCutCLI.zip.sfv
+plugins/tools/lc2sqlite.zip
+plugins/tools/lc2sqlite.zip-crc.sfv
+plugins/tools/lc2sqlite.zip.sfv
+plugins/tools/LC2SteamAchievementManager.zip
+plugins/tools/LC2SteamAchievementManager.zip-crc.sfv
+plugins/tools/LC2SteamAchievementManager.zip.sfv
+plugins/tools/lc2tts.cmp.bat
+plugins/tools/lc2tts.zip
+plugins/tools/lc2tts.zip-crc.sfv
+plugins/tools/lc2tts.zip.sfv
+plugins/tools/lc2webllmchat.zip
+plugins/tools/lc2webllmchat.zip-crc.sfv
+plugins/tools/lc2webllmchat.zip.sfv
+plugins/tools/lc2wsdl_client_app.zip
+plugins/tools/lc2wsdl_client_app.zip-crc.sfv
+plugins/tools/lc2wsdl_client_app.zip.sfv
+plugins/tools/README.md
 
-#### currently deprecated (breaking changes)
-
-- SQLIte and NPM AutoInstall Packages 
-	- Required. Please always update this package
-- Core 
-	- SQLITE Import, Export, CRUD and more...
-- LC2Process 
-	- Show and kill system processes
-- LC2Redirect 
-	- Redirect Output
-- LC2Zip 
-	- .NET Core
-- LC2Zip 
-	- ZIP Java Java Installer (SWT)
-- LC2UnZip 
-	- Unzip .NET Core
-- LC2UnZip 
-	- LC2UnZip Java Java Installer (SWT)
-- LC2DL 
-	- LetzteChance.Org offizieller Downloader
-- LC2Start.NET 
-	- LetzteChance.Org offizieller Windows .NET 4.72 Installer
-- LC2SQLIITEGUI 
-	- LetzteChance.Org offizieller LC2SQLIITEGUI
-- LC2RESTIFY 
-	- LC2RESTIFY
-- LC2SOAP 
-	- LC2SOAP
-- LC2ExcelTransform 
-	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
-- LC2SAPUI
-	- - SAP.UI Electron Webpack Project (Routing JSON and query based fragments and models)
-- LC2Docker 
-	- Some fist scripts (updates coming soon.
-- LC2FTP 
-	- FTP Client based on HMTL/NodeJS
-- LC2EXPRESS 
-	- HTTP NPM HTTPSERVER
-- LC2UnityServer 
-	- LC2UnityServer
-- LC2UnityServerClient 
-	- LC2UnityServerClient Chromium Client 
-- LC2Color 
-	- .NET v.4.7.2
-- LC2Color 
-	- .NET Core v.3.1
-- LC2Python 
-	- LC2Python (Python 3 Scripts)
-- LC2PHP 
-	- LC2PHP (PHP Installation required)
-- LC2FFMPEG 
-	- LC2FFMPEG
-- LC2PAINT 
-- LC2PAINT - Simple 3D Painter with small animations
-- LC2MySQLDocker 
-	- LC2MySQLDocker - Docker MySQL Server to host tcp port 3306
-- LC2PostGresSQL 
-	- LC2MySQLDocker - Docker Postgres Server to host tcp port
-- LC2SQLServer 
-	- LC2SQLServer - Docker MySQL to host tcp port	
-- LC2RotatingTorproxy 
-	- LC2RotatingTorproxy - Docker LC2RotatingTorproxy ha proxy with rotating tor proxy list nodes
-- LC2Python
-	- LC2Python - Docker LC2Python some python scripts
-- LC2Kafka
-- LC2Hadoop
-- LC2OpenSSH
-- LC2WatsonX
-
-
-
-### Latest updated plugins
-
-<a href="https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/plugins.csv">Plugins.csv</a>
-
-# Contact:
+## License
+MIT
+(c)by webmaster@letztechance.org
+--------------------------
 - http://www.letztechance.org
 - http://www.letztechance.org/contact.html
 - http://www.letztechance.org/imprint.html

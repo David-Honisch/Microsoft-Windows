@@ -14,6 +14,11 @@ The new LC UI - Windows Build (Linux, MacOs coming soon...)
 Permanent Link:
 https://www.letztechance.org/read-20-35.html
 
+##  Android 64 Bit Application:
+- https://www.letztechance.org/read-20-32.html
+- https://www.letztechance.org/download/LC2Navigator.2022.apk
+
+It´s not inside the goolge play store.
 
 ### LC2Navigator screenshot:
 <img src="https://github.com/David-Honisch/LC2Navigator2024/raw/main/LC2Navigator2025/LC2Navigator2026.jpg" alt="LC2Navigator2024 Screenshot" width="400" />
@@ -24,16 +29,9 @@ It is a UI Database redirecting IO, News, Links, Grabbing, Server,  Services, Co
 and local AI system 
 based on Electron,Tauri, Apache Cordova, NodeJS Javascript SQLite,Python and many more software, tools and languages...
 
-Different technologies used and supported java, rust, python and many more.
-Uses and supports Build System like Maven 3.9x, Gradle or Install NSIS, WX...
-
-A windows and linux x64 Bit build artifact created and uploaded. 
-Microsoft Windows Installer build and uploaded. 
-- 32 Bit is not longer supported.
-
-There are different "Plugins" with a different technology stack.
-
+Please notice:Docker or Podman have to be installed.
 Please notice:Java have to be installed.
+Please notice:Python have to be installed.
 
 ### Plugin screenshot:
 <img src="LC2OpenAI.jpg" alt="Plugins screenshot - example: LC2OpenAI Screenshot" width="400" />
@@ -76,37 +74,31 @@ https://www.letztechance.org/read-20-40.html
 
 ## requirements
 
+- jdk 8<
+- Python
+
+## optional
+
 if you like to use all functionalities please install and config:
 - docker or/and podman
-- jdk 8<
+- jdk 11<
 - Maven
 - Ant
 - Gradle
+- Node
+- Yarn
 - Rust
 - Python
 - Curl
+- go
+- more...(see plugin description)
 
 maybe other plugins uses other tools like go and so on...
 Please read the requirements of every plugin. Click to installation to install requrired  software.
 
-
-## General about Plugins
-
-All plugin downloads managed via this file:
-https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/all.zip
-
-or use the automatic installation inside of lc2navigator.
-# supported languages or tools
-- Rust
-- Python
-- C#/VB .NET
-- Go
-- C++ and more
-
-## Plugins
+## used Build tools
 
 Update 06.07.2025:
-
 
 build tools using
 - nsis
@@ -126,6 +118,10 @@ packages tools using
 
 <a href="https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/plugins.csv">Plugins.csv</a>
 
+- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/plugins.md
+- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/tools.md
+
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/tools.md">Tools</a>
 
 
 - see https://www.letztechance.org to get more information.
