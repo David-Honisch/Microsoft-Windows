@@ -1,12 +1,13 @@
-# <h1>LC2Navigator2026 (Alpha 2)</h1>
+# <h1>LC2Navigator2026</h1>
+## <h3>(Alpha 2)</h3>
 
 The new LC UI - Windows Build (Linux, MacOs coming soon...)
 <a href="https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/LC2Navigator2025install.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=LC2Navigator2025%20(Beta3)Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2025 Installer Screenshot" width="400" /></a>
 
-## Windows 64 Bit Installer:
+## Download Installer:
 
-- <a href="https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/LC2Navigator2025install.exe" target="_blank">LC2Navigator2025 x64 install.exe</a>
-- https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/LC2Navigator2025install.exe
+- <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe" target="_blank">LC2Navigator2026 x64 Installer(32Bit)</a>
+- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe
 
 Permanent Link:
 https://www.letztechance.org/read-20-35.html
@@ -46,7 +47,8 @@ Please notice:Java have to be installed.
 - <a href="https://www.letztechance.org/dist/">LC powered by angular)</a>
 
 
-## Windows 64 Bit Installer:
+## Windows 64 Bit
+### Installer:
 
 - <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe" target="_blank">LC2Navigator2026 x64 install.exe</a>
 - https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe

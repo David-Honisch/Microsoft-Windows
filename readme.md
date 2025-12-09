@@ -1,6 +1,7 @@
 # LC2Navigator2024 and some other funny projects and examples
 
-- some nice apps and my official application - lc2navigator 2024
+- some nice apps and my official application(s) - lc2navigator
+
 
 ## Website:
 - https://letztechance.org
@@ -9,8 +10,8 @@
 - <a href="https://www.letztechance.org/dist/">LC powered by angular)</a>
 
 ## Projects and Source Code:
-
-- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2026
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2026/app
 - https://github.com/David-Honisch/install
 - https://github.com/David-Honisch/Launcher.NET
 - https://github.com/David-Honisch/LC2Search
@@ -39,7 +40,10 @@
 - https://github.com/David-Honisch/LC2IRCRaw
 - https://github.com/David-Honisch/LC27ZipUnprotect
 
-- <a href="https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024">LetzteChance.Org LC2Navigator 2024 Official Page</a>
+## some deprecated projects
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024
+
+### repositories
 
 see all my repositories https://github.com/David-Honisch?tab=repositories
 
