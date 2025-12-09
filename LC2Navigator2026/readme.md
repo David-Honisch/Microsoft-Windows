@@ -18,7 +18,7 @@ https://www.letztechance.org/read-20-35.html
 - https://www.letztechance.org/read-20-32.html
 - https://www.letztechance.org/download/LC2Navigator.2022.apk
 
-It´s not inside the goolge play store.
+It is not inside the goolge play store.
 
 ### LC2Navigator screenshot:
 <img src="https://github.com/David-Honisch/LC2Navigator2024/raw/main/LC2Navigator2025/LC2Navigator2026.jpg" alt="LC2Navigator2024 Screenshot" width="400" />
@@ -178,6 +178,11 @@ Please, read the notes of the plugin or any development comments.
 
 - Free ?? yes
 - No ads ?? yes
+
+# Plugins and Downloads
+
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/plugins.md">Tools</a>
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/tools.md">Tools</a>
 
 Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024)
 
