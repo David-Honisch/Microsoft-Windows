@@ -380,14 +380,14 @@ Section "CreateShortCuts"
  CreateDirectory $SMPROGRAMS\$R0
  CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG
  CreateDirectory $SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026
- CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\LC2Start.LC2Navigator2026.exe.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
+ CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\lc2navigator2026.start.exe.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\LC2Navigator2026.lnk" $INSTDIR\LC2Navigator2026.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\LC2Launcher.lnk" $INSTDIR\LC2Navigator2026.exe
  CreateShortCut "$SMPROGRAMS\$R0\LETZTECHANCE.ORG\LC2Navigator2026\_LC2Launcher.lnk" $INSTDIR\LC2Navigator2026.exe
  
 
  CreateShortCut "$INSTDIR\Update.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
- CreateShortCut "$INSTDIR\LC2Start.LC2Navigator.exe.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
+ CreateShortCut "$INSTDIR\lc2navigator2026.start.exe.lnk" $INSTDIR\LC2Start.LC2Navigator.exe
  CreateShortCut "$INSTDIR\LC2Navigator2026.exe.lnk" $INSTDIR\LC2Navigator2026.exe
  CreateShortCut "$DESKTOP\LC2Navigator2026.exe.lnk" $INSTDIR\LC2Navigator2026.exe
 
