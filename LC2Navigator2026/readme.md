@@ -181,7 +181,7 @@ Please, read the notes of the plugin or any development comments.
 
 # Plugins and Downloads
 
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/plugins.md">Tools</a>
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/plugins.md">Plugins</a>
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/tools.md">Tools</a>
 
 Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024)
