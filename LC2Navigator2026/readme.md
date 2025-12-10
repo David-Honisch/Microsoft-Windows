@@ -72,6 +72,39 @@ https://www.letztechance.org/read-20-40.html
 ## Logo:
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
+# features
+
+This tools has so many features, so i can´t describe them all.
+So, i like to descibe the most atractive features like using 
+- anaylize your local machine (e.g. processes,io, drives, registry)
+- anaylize your drives and files
+- database (sqlite,h2, mysql, oracle, postgres, sqlserver and mongodb import and export
+- build with maven
+- build with gradle
+- build with ant
+- build with node/npm
+- build with typescript, vite, vanilla, angular, react  or vue applications
+- create csp rules or hashlists of external js
+- obfuscatoring
+- encrypt/decrypt
+- compress/decompress
+- automation
+- website grabbing and persisting
+- use or create python scripts
+- use or create rust apps
+- use or create go apps
+- web llm streaming
+- openai, chatgpt,watsonx, gemini
+- and so on. All plugins will be updated and reuploaded.
+
+Please notice:All plugins have to be migrated, so please check my homepage and this repository. 
+Try to update the all plugins to get the current list of migrated plugins.
+
+I will try to update the plugins installation script soon.
+
+Please be patient.
+
+
 ## requirements
 
 - jdk 8<
