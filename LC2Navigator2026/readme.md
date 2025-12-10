@@ -207,15 +207,15 @@ Please, read the notes of the plugin or any development comments.
 <img width="30" alt="mac" src="app-resources/readme/mac.svg?sanitize=true" />
 <img width="30" alt="linux" src="app-resources/readme/linux.svg?sanitize=true" />
 
-## Download
+## USAGE
 
 - Free ?? yes
 - No ads ?? yes
 
 # Plugins and Downloads
 
-<a href="plugins.md">Plugins</a>
-<a href="tools.md">Tools</a>
+- <a href="plugins.md">Plugins</a>
+- <a href="tools.md">Tools</a>
 
 Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024](https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2024)
 
