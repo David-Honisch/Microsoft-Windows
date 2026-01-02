@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.letztechance.maven</groupId>
+    <artifactId>lc2mavenplugin-usage</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.letztechance.maven</groupId>
+                <artifactId>lc2mavenplugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <configuration>
+                    <!-- optional, the command parameter can be changed here too -->
+                    <command2>call echo git rev-parse --short=4 HEAD</command2>
+					<command3>ant -buildfile %~dp0build.xml</command3>
+					<command>exec.bat ant</command>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>version</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.github.ekryd.echo-maven-plugin</groupId>
+                <artifactId>echo-maven-plugin</artifactId>
+                <version>1.2.0</version>
+                <inherited>false</inherited>
+                <executions>
+                    <execution>
+                        <id>end</id>
+                        <goals>
+                            <goal>echo</goal>
+                        </goals>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <message>${line.separator}${line.separator}
+                                The project version is ${project.version}-${version}
+                                ${line.separator}
+                            </message>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
+<!--            <plugin>-->
+<!--            <groupId>org.letztechance.maven</groupId>-->
+<!--			<artifactId>lc2mavenplugin</artifactId>-->
+<!--			<version>1.0-SNAPSHOT</version>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--					<id>move-dist</id>-->
+<!--					<phase>package</phase>-->
+<!--					<goals>-->
+<!--					<goal>move-dist</goal>-->
+<!--					</goals>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--			</plugin>-->
+			<plugin>
+			<groupId>org.letztechance.maven</groupId>
+			<artifactId>lc2mavenplugin</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<executions>
+					<execution>
+					<id>move-dist</id>
+					<phase>package</phase>
+					<goals>
+					<goal>package-dist</goal>
+					</goals>
+					</execution>
+				</executions>
+			</plugin>
+        </plugins>
+    </build>
+</project>
