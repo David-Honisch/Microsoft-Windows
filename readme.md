@@ -84,8 +84,8 @@ It´s not inside the goolge play store.
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC27ZipUnprotect
 
 
-- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/plugins.md
-- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/tools.md
+- https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2026/plugins.md
+- https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2026/tools.md
 
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/tools.md">Tools</a>
 
@@ -95,7 +95,7 @@ see all my repositories https://github.com/David-Honisch?tab=repositories
 
 ## more tools
 
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/tools.md">Tools</a>
+<a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2026/tools.md">Tools</a>
 more tools linked soon...
 
 ## License
