@@ -1,6 +1,6 @@
-#lc2dl.exe
+# lc2dl.exe
 
 a cli downloader
 
-#usage
+## usage
 Usage: lc2dl.exe --source <SOURCE> --target <TARGET>
