@@ -5,14 +5,14 @@ lc2antibruteforce.exe
 - developed in rust
 
 # Features:
-  ✓ Progressive delay with exponential backoff
-  ✓ IP-based blocking and tracking
-  ✓ Device fingerprinting
-  ✓ CAPTCHA protection after failed attempts
-  ✓ Geographic and time-based restrictions
-  ✓ Comprehensive security event logging
-  ✓ Account lockout with progressive delays
-  ✓ Business hours restrictions for suspicious activity
+- ✓ Progressive delay with exponential backoff
+- ✓ IP-based blocking and tracking
+- ✓ Device fingerprinting
+- ✓ CAPTCHA protection after failed attempts
+- ✓ Geographic and time-based restrictions
+- ✓ Comprehensive security event logging
+- ✓ Account lockout with progressive delays
+- ✓ Business hours restrictions for suspicious activity
 Security data cleaning
 
 ## Download
