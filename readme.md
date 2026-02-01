@@ -17,7 +17,7 @@ and some other funny projects and examples
 
 LC2Navigator - the new official LC UI
 Download the installer here:
-- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2026
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/Microsoft-Windows/tree/master/LC2Navigator2026
 
 ##  Android 64 Bit Application:
 - https://www.letztechance.org/read-20-32.html
@@ -27,57 +27,57 @@ It´s not inside the goolge play store.
 
 ## Latest Projects:
 
-- https://github.com/David-Honisch/lc2antibruteforce
-- https://github.com/David-Honisch/lc2asciipatcher
-- https://github.com/David-Honisch/lc2calljar
-- https://github.com/David-Honisch/lc2dir2json
-- https://github.com/David-Honisch/lc2import_json2sqlite
-- https://github.com/David-Honisch/lc2ircclient
-- https://github.com/David-Honisch/lc2indexpc
-- https://github.com/David-Honisch/lc2-maven-plugin
-- https://github.com/David-Honisch/lc2crud
-- https://github.com/David-Honisch/lc2webllm
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2antibruteforce
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2asciipatcher
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2calljar
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2dir2json
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2import_json2sqlite
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ircclient
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2indexpc
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2-maven-plugin
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2crud
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2webllm
 
 ### some more Projects:
 
-- https://github.com/David-Honisch/lc2antibruteforce
-- https://github.com/David-Honisch/lc2asciipatcher
-- https://github.com/David-Honisch/lc2calljar
-- https://github.com/David-Honisch/lc2dir2json
-- https://github.com/David-Honisch/lc2import_json2sqlite
-- https://github.com/David-Honisch/lc2ircclient
-- https://github.com/David-Honisch/lc2indexpc
-- https://github.com/David-Honisch/lc2-maven-plugin
-- https://github.com/David-Honisch/lc2crud
-- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2026
-- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2026/app
-- https://github.com/David-Honisch/install
-- https://github.com/David-Honisch/Launcher.NET
-- https://github.com/David-Honisch/LC2Search
-- https://github.com/David-Honisch/Microsoft-Windows
-- https://github.com/David-Honisch/NodeLauncher
-- https://github.com/David-Honisch/LC2SpringRestService
-- https://github.com/David-Honisch/Launcher.NET
-- https://github.com/David-Honisch/LC2CRC32
-- https://github.com/David-Honisch/LC2ProcessProxifier
-- https://github.com/David-Honisch/LC2ExcelTransform
-- https://github.com/David-Honisch/LCC64
-- https://github.com/David-Honisch/LC2FFExt
-- https://github.com/David-Honisch/CVE-2022-21882
-- https://github.com/David-Honisch/LCC64
-- https://github.com/David-Honisch/CheatsAndTricks
-- https://github.com/David-Honisch/LetzteChance.Org---Encypt-DeCrypter-Login-v.1.0
-- https://github.com/David-Honisch/LC2SQLiteGUI.Exec
-- https://github.com/David-Honisch/LC2ATARI
-- https://github.com/David-Honisch/LC2MusicPlayer
-- https://github.com/David-Honisch/LC2Logo
-- https://github.com/David-Honisch/LC2Navigator
-- https://github.com/David-Honisch/FFMPEG.Convert
-- https://github.com/David-Honisch/LC2IRCRaw
-- https://github.com/David-Honisch/LinkCLI
-- https://github.com/David-Honisch/LC21stHybrid
-- https://github.com/David-Honisch/LC2IRCRaw
-- https://github.com/David-Honisch/LC27ZipUnprotect
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2antibruteforce
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2asciipatcher
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2calljar
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2dir2json
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2import_json2sqlite
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ircclient
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2indexpc
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2-maven-plugin
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2crud
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/Microsoft-Windows/tree/master/LC2Navigator2026
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/Microsoft-Windows/tree/master/LC2Navigator2026/app
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/install
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/Launcher.NET
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Search
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/Microsoft-Windows
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/NodeLauncher
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2SpringRestService
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/Launcher.NET
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2CRC32
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2ProcessProxifier
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2ExcelTransform
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LCC64
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2FFExt
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/CVE-2022-21882
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LCC64
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/CheatsAndTricks
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LetzteChance.Org---Encypt-DeCrypter-Login-v.1.0
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2SQLiteGUI.Exec
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2ATARI
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2MusicPlayer
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Logo
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/FFMPEG.Convert
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2IRCRaw
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LinkCLI
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC21stHybrid
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2IRCRaw
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC27ZipUnprotect
 
 
 - https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/plugins.md
