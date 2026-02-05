@@ -34,7 +34,7 @@ open-siem/
 │ └── ...
 └── requirements.txt
 ```
-### 10. Running the System
+### Running the System
 1. Install the required dependencies:
 ```bash
 pip install -r requirements.txt
