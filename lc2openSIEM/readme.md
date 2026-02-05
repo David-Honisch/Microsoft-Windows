@@ -5,7 +5,7 @@ A Open SIEM (Security Information and Event Management) system using Python.
 Below is a simplified example to illustrate the basic architecture and key components. 
 This example will focus on a basic SIEM system that collects logs from various sources, processes them, and stores them for analysis.
 
-### 1. Project Structure
+### Project Structure
 ```
 open-siem/
 ├── main.py
@@ -33,7 +33,7 @@ open-siem/
 │ ├── logger.py
 │ └── ...
 └── requirements.txt
-
+```
 ### 10. Running the System
 1. Install the required dependencies:
 ```bash
