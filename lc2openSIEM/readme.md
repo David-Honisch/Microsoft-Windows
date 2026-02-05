@@ -1,4 +1,5 @@
-# Microsoft
+# LC2OpenSIEM
+(for Microsoft Windows)
 
 A Open SIEM (Security Information and Event Management) system using Python. 
 Below is a simplified example to illustrate the basic architecture and key components. 
