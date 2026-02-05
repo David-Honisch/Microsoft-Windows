@@ -42,7 +42,7 @@ pip install -r requirements.txt
 2. Run the main script:
 ```bash
 python main.py
-
+```
 ## Website:
 - https://letztechance.org
 - <a href="https://www.letztechance.org/">LetzteChance.Org</a>
