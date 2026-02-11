@@ -1,0 +1,20 @@
+{
+  "credentials": [
+    {
+      "user_id": "root",
+      "secret_key": "rootpassword",
+      "result": "testresult-any token"
+    },
+    {
+      "user_id": "david",
+      "secret_key": "david",
+      "result": "testresult-any token"
+    }
+    ,
+    {
+      "user_id": "david",
+      "secret_key": "test",
+      "result": "testresult-any token"
+    }
+  ]
+}
