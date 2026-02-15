@@ -1,0 +1,162 @@
+{
+  "$schema333": "schema.json",
+  "_$schema2": "https://schema.tauri.app/config/2",
+  "productName": "lc2nav2026",
+  "productTitle": "Welcome to lc2nav2026",
+  "version": "0.1.0",
+  "db2": "lc2_nav2026.db",
+  "db": "sqlite:lc2sqlite2027.db",
+  "script": "test.js",
+  "identifier": "org.letztechance.lc2tauri-sqlite.app",
+  "hosttitle": "LetzteChance.Org",
+  "is_splashscreen": true,
+  "splashscreen": "src/assets/splashscreen.html",
+  "host": "https://www.letztechance.org",
+  "sqlschema": "schema.sql",
+  "css": "App.css",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "tabBody2": "<div><ul class=\"listul\"><li><a onclick=\"javascript:show_splashscreen('LC2Sqlite2025_Splash');\">Splash</a></li></ul></div>",
+    "frontendDist": "../dist"
+  },
+  "file_filters": [
+    {
+      "name": "SQLite Database",
+      "extensions": [
+        "sqlite",
+        "db",
+        "db3",
+        "sqlite3"
+      ]
+    },
+    {
+      "name": "All Files",
+      "extensions": [
+        "*"
+      ]
+    }
+  ],
+  "database": [
+    {
+      "title": "update application",
+      "body": "cmd"
+    },
+    {
+      "title": "insert application",
+      "body": "cmd"
+    }
+  ],
+  "sql": {
+    "alltables": "select name from sqlite_master where type='table' order by name asc;",
+    "application": "select * from application order by name desc;"
+  },
+  "api": {
+    "all": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1",
+    "news": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1",
+    "news_2": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=20&value2=1",
+    "downloads": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=20&value2=1"
+  },
+  "lang": {
+    "de-DE": {
+      "init": "Es wird eingelesen",
+      "fetchnews": "Die Neuigkeiten werden geladen",
+      "enter_a_name": "Enter a name",
+      "enter_a_command": "Enter a command",
+      "enter_a_email": "Enter an e-mail address",
+      "enter_any_cmd": "Enter an command...echo Hello or select * from users limit 1",
+      "news": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1",
+      "news_2": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=20&value2=1",
+      "downloads": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=20&value2=1"
+    }
+  },
+  "more": [
+    {
+      "title": ".tables",
+      "body": ".tables"
+    },
+    {
+      "title": "more",
+      "body": "select * from application"
+    }
+  ],
+  "select_cmd": [
+    {
+      "title": "cmd",
+      "body": "cmd"
+    },
+    {
+      "title": "bash",
+      "body": "bash"
+    },
+    {
+      "title": "powershell",
+      "body": "powershell"
+    },
+    {
+      "title": "redirect",
+      "body": "redirect_cmd"
+    },
+    {
+      "title": "sql",
+      "body": "sql"
+    }
+  ],
+  "faqData": [
+    {
+      "tabTitle": "Home",
+      "tabBody": "<div><ul class=\"listul\"><li><a href=\"#news\">News</a></li><li><a href=\"#downloads\">Downloads</a></li><li><a href=\"src/assets/test.html\" target=\"_blank\">Imprint</a></li><li><a href=\"https://www.letztechance.org/\" target=\"_blank\">HomePage</a></li><li><a onclick=\"javascript:show_splashscreen('LC2Sqlite2025_Splash');\">Splash</a></li></ul></div>"
+    },
+    {
+      "tabTitle": "News",
+      "tabBody": "<div><ul class=\"listul\"><li><a href=\"#news\">News</a></li></ul></div>"
+    },
+    {
+      "tabTitle": "Downloads",
+      "tabBody": "<div><ul class=\"listul\"><li><a href=\"#downloads\">Downloads</a></li></ul></div>"
+    },
+    {
+      "tabTitle": "Imprint",
+      "tabBody": "<div><ul class=\"listul\"><li><a href=\"src/assets/test.html\" target=\"_blank\">Imprint</a></li><li><a href=\"#downloads\">Imprint</a></li></ul></div>"
+    }
+  ],
+  "app": {
+    "windows": [
+      {
+        "title": "lc2sqlite",
+        "decorations": false,
+        "resizable": true,
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "createUpdaterArtifacts": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  },
+  "plugins": {
+    "updater": {
+      "windows": {
+        "installMode": "passive",
+        "pubkey": "CONTENT FROM PUBLICKEY.PEM",
+        "endpoints": [
+          "https://www.letztechance.org/LC2Intro.v.4.0/index.html?q={{target}}/{{arch}}/{{current_version}}",
+          "https://github.com/user/repo/releases/latest/download/latest.json"
+        ]
+      }
+    }
+  }
+}
