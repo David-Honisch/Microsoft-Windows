@@ -1,29 +1,29 @@
-CheatEngine
-doc
-java
-lc2-maven-plugin
-lc2aiagent
-lc2antibruteforce
-lc2asciipatcher
-lc2calljar
-LC2Cheats
-lc2crud
-lc2dir2json
-lc2dl
-lc2docker2exe
-lc2gitreadme
-lc2import_json2sqlite
-lc2indexpc
-lc2ircclient
-lc2licensing_server
-lc2memory
-lc2nav2026
-LC2Navigator2026
-LC2News
-lc2openSIEM
-Lc2Rustube
-LC2ShortCutCLI
-lc2streamripper
-lc2tauri1st
-lc2webllm
-test
+- CheatEngine
+- doc
+- java
+- lc2-maven-plugin
+- lc2aiagent
+- lc2antibruteforce
+- lc2asciipatcher
+- lc2calljar
+- LC2Cheats
+- lc2crud
+- lc2dir2json
+- lc2dl
+- lc2docker2exe
+- lc2gitreadme
+- lc2import_json2sqlite
+- lc2indexpc
+- lc2ircclient
+- lc2licensing_server
+- lc2memory
+- lc2nav2026
+- LC2Navigator2026
+- LC2News
+- lc2openSIEM
+- Lc2Rustube
+- LC2ShortCutCLI
+- lc2streamripper
+- lc2tauri1st
+- lc2webllm
+- test
