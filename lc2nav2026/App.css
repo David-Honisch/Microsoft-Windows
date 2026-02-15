@@ -9,6 +9,7 @@
 .logo.tauri:hover {
     filter: drop-shadow(0 0 2em #24c8db);
 }
+
 .logo.vite:hover {
     filter: drop-shadow(0 0 2em #747bff);
 }
@@ -16,12 +17,15 @@
 .logo.react:hover {
     filter: drop-shadow(0 0 2em #61dafb);
 }
-.faqdata {    
+
+.faqdata {
     padding-bottom: 0.5em;
 }
-.welcome {    
+
+.welcome {
     padding-bottom: 0.5em;
 }
+
 :root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -37,10 +41,11 @@
     -webkit-text-size-adjust: 100%;
 }
 
-.configMessage{
+.configMessage {
     background-color: #f6f6f6 !important;
 }
-.logsMessage{
+
+.logsMessage {
     background-color: #f6f6f6 !important;
 }
 
@@ -64,7 +69,7 @@ header {
     /* IE10+ */
     background: linear-gradient(to bottom, rgba(252, 210, 0, 0.927) 0%, rgba(0, 211, 95, 0.566) 50%, rgba(178, 83, 0, 0.65) 61%, rgba(178, 83, 0, 0.65) 31%, rgba(62, 29, 0, 0.65) 76%, rgba(0, 0, 0, 0) 100%);
     /* W3C */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6b3865c', endColorstr='#00000000', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#a6b3865c', endColorstr='#00000000', GradientType=0);
     /* IE6-8 */
 }
 
@@ -87,7 +92,7 @@ header {
     /* IE10+ */
     background: linear-gradient(to bottom, rgba(252, 210, 0, 0.927) 0%, rgba(0, 211, 95, 0.566) 50%, rgba(178, 83, 0, 0.65) 61%, rgba(178, 83, 0, 0.65) 31%, rgba(62, 29, 0, 0.65) 76%, rgba(0, 0, 0, 0) 100%);
     /* W3C */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6b3865c', endColorstr='#00000000', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#a6b3865c', endColorstr='#00000000', GradientType=0);
     /* IE6-8 */
 }
 
@@ -140,16 +145,18 @@ header {
 }
 
 .ccontainer {
-    top:0px;
+    top: 0px;
     background-color: #f6f6f6;
     margin: 2px;
     padding: 2px;
 }
+
 .gridcontainer {
-  display: grid-lanes;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 16px;
+    display: grid-lanes;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
 }
+
 .container {
     margin: 0;
     /* padding-top: 10vh; */
@@ -158,30 +165,35 @@ header {
     justify-content: center;
     text-align: center;
 }
+
 .logo-container {
-    top:0px;
-    height:auto;
-    max-height:60px;
+    top: 0px;
+    height: auto;
+    max-height: 60px;
     margin-bottom: 2px;
     padding-bottom: 2px;
+    animation: my-animation 2s;
 }
+
 .faq-container {
     position: absolute;
-    top:0px;
-    height:auto;
+    top: 0px;
+    height: auto;
     margin-bottom: 2px;
     padding-bottom: 2px;
 }
-.clock-container{
+
+.clock-container {
     position: absolute;
-    top:0px;
-    right:0px;
+    top: 0px;
+    right: 0px;
     z-index: -1;
     /* background-color: transparent !important; */
     background-color: #f6f6f6 !important;
     padding-bottom: 2px;
-    height:auto;
+    height: auto;
 }
+
 .row {
     display: flex;
     justify-content: center;
@@ -390,10 +402,12 @@ div.sticky {
         opacity: 0;
         top: 100px;
     }
+
     75% {
         opacity: 0.5;
         top: 0px;
     }
+
     100% {
         opacity: 1;
     }
@@ -409,19 +423,148 @@ div.sticky {
 }
 
 @media (prefers-color-scheme: dark) {
-     :root {
+    :root {
         color: #f6f6f6;
         background-color: #2f2f2f;
     }
+
     a:hover {
         color: #24c8db;
     }
+
     input,
     button {
         color: #ffffff;
         background-color: #0f0f0f98;
     }
+
     button:active {
         background-color: #0f0f0f69;
     }
+}
+
+/* Transitions */
+.my-element {
+    transition: all 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes my-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.my-element {
+    animation: my-animation 2s infinite;
+}
+
+/* Transforms */
+.my-element {
+    transform: rotate(45deg) skew(20deg);
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    /* overflow: hidden; */
+}
+
+/* Basic styling for the container */
+.container2 {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect using transition */
+.container:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Transform and transition for interactive elements */
+.interactive-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.interactive-button:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
+
+/* Keyframes for animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Applying animation to an element */
+.spin-icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('path/to/your/icon.png');
+    background-size: cover;
+    animation: spin 2s linear infinite;
+}
+
+/* CSS hack for older browsers */
+/* This is a simple example to demonstrate a CSS hack */
+/* It's not recommended for production use as it's not widely supported */
+.container2::before {
+    content: '';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    zoom: 1;
+}
+
+/* Flexbox hack for older browsers */
+/* This is a simple example to demonstrate a CSS hack */
+/* It's not recommended for production use as it's not widely supported */
+.container2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
