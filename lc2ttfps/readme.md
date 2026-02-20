@@ -6,7 +6,7 @@ lc2ttfps.py: error: the following arguments are required: -i/--input, -o/--outpu
 
 ## Download
 
-<a href="blob:https://github.com/25bd7fc8-2d86-42c9-af82-c10025447363"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2ttfps&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/lc2ttfps/lc2ttfps.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2ttfps&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
 
 ## Website:
 - https://letztechance.org
