@@ -1,9 +1,15 @@
-# lc2ttfps
+# lc2json2xml2json.exe
 
 ## usage
-usage: lc2ttfps.py [-h] -i INPUT -o OUTPUT -p POSTSCRIPT_NAME
-lc2ttfps.py: error: the following arguments are required: -i/--input, -o/--output, -p/--postscript_name
 
+the following required arguments are:
+  --input <INPUT>
+  --xslt <XSLT>
+  --output <OUTPUT>
+
+Usage: lc2json2xml2json.exe --input <INPUT> --xslt <XSLT> --output <OUTPUT>
+
+For more information, try '--help'.
 ## Download
 
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/lc2json2xml2json/lc2json2xml2json.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2json2xml2json.exe&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
