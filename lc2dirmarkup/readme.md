@@ -2,14 +2,8 @@
 
 ## usage
 
-the following required arguments are:
-  --input <INPUT>
-  --xslt <XSLT>
-  --output <OUTPUT>
+Usage: lc2dirmarkup.exe <directory> <github_url>
 
-Usage: lc2dirmarkup.exe --input <INPUT> --xslt <XSLT> --output <OUTPUT>
-
-For more information, try '--help'.
 ## Download
 
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/lc2dirmarkup/lc2dirmarkup.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2dirmarkup.exe&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
