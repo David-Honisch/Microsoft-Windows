@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to LC2AI Agent</title>
+    {{ url_for('static', filename='style.css') }}
+    {{ url_for('static', filename='main.js') }}
+</head>
+
+<body>
+    <h2>Welcome to LC2AI Agent</h2>
+    <p>Welcome to LC2AI Agent is a basic template rendering project template.</p>
+    <form name="predictForm" id="predictForm">
+        <input type="text" name="input" placeholder="type your prompt here..." /><br />
+        <input type="button" value="submit" onclick="post_Form()" />
+    </form>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('index') }}">Index</a>
+    <script>        
+    </script>
+</body>
+
+</html>
