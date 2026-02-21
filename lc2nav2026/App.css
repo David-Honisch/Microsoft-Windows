@@ -1,4 +1,8 @@
+body {
+    z-index: -2;    
+}
 .logo {
+    z-index: -2;
     height: 6em;
     /* padding: 1.5em;
     padding-bottom: 2px; */
@@ -23,10 +27,13 @@
 }
 
 .welcome {
+    z-index: -2;
     padding-bottom: 0.5em;
+    filter: drop-shadow(0 0 8em #616161);
 }
 
 :root {
+    z-index: -2;
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -145,6 +152,7 @@ header {
 }
 
 .ccontainer {
+    z-index: -2;
     top: 0px;
     background-color: #f6f6f6;
     margin: 2px;
@@ -152,12 +160,14 @@ header {
 }
 
 .gridcontainer {
+    z-index: -2;
     display: grid-lanes;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 16px;
 }
 
 .container {
+    z-index: -2;
     margin: 0;
     /* padding-top: 10vh; */
     display: flex;
@@ -167,6 +177,7 @@ header {
 }
 
 .logo-container {
+    z-index: -2;
     top: 0px;
     height: auto;
     max-height: 60px;
@@ -176,6 +187,7 @@ header {
 }
 
 .faq-container {
+    z-index: -2;
     position: absolute;
     top: 0px;
     height: auto;
@@ -184,14 +196,17 @@ header {
 }
 
 .clock-container {
+    z-index: -1;
     position: absolute;
     top: 0px;
     right: 0px;
-    z-index: -1;
     /* background-color: transparent !important; */
     background-color: #f6f6f6 !important;
     padding-bottom: 2px;
     height: auto;
+    filter: drop-shadow(0 0 8em #616161);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0.75;
 }
 
 .row {
