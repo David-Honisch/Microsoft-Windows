@@ -151,6 +151,26 @@ if you like to use all functionalities please install and config:
 maybe other plugins uses other tools like go and so on...
 Please read the requirements of every plugin. Click to installation to install requrired  software.
 
+### Stack
+
+- [electron](http://electronjs.org/)
+- [angular](https://angular.dev/)
+- [jquery](https://jquery.org/)
+- [sqlite](https://sqlite.org/)
+- [java](https://java.org/)
+- [spring boot](https://spring.io/)
+- [typescript](https://www.typescriptlang.org/)
+- [webpack](https://webpack.js.org/)
+
+#### Tests
+
+- TODO
+more plugins coming soon.. P-)
+
+based on:
+[emed java directly](https://github.com/jreznot/electron-java-app)
+[jest](https://jestjs.io/)
+
 ## used Build tools
 
 Update 06.07.2025:
@@ -235,29 +255,10 @@ Fetch videos from youtube playlist and download them one by one or all.
 1. Please use this app for downloading only public resources.
 2. The app doesn't store ANY media files ANYWHERE except on the device who use this app.
 
-### Stack
+# License
 
-- [electron](http://electronjs.org/)
-- [jquery](https://jquery.org/)
-- [sqlite](https://sqlite.org/)
-- [java](https://java.org/)
-- [spring boot](https://spring.io/)
-- [typescript](https://www.typescriptlang.org/)
-- [webpack](https://webpack.js.org/)
-
-#### Tests
-
-- TODO
-more plugins coming soon.. P-)
-
-based on:
-[emed java directly](https://github.com/jreznot/electron-java-app)
-[jest](https://jestjs.io/)
-
-
-
-## License
-MIT
+-
+- MIT
 
 ## License Notes
 
