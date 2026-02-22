@@ -2,7 +2,7 @@
 
 ## usage
 
-.\lc2csv_xslt_to_json -XmlPath "daten.xml" -JsonPath "out.json" -OutputPath "ergebnis.html"
+Usage: lc2csv_xslt_to_json.exe <source file> <target file>
 
 ## Download
 
