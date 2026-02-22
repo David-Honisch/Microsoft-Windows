@@ -6,7 +6,7 @@
 
 ## Download
 
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/lc2json2xml2json/lc2json2xml2json.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2json2xml2json.exe&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/lc2xml2json/lc2xml2json.ps1"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2xml2json&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
 
 ### structure
 
