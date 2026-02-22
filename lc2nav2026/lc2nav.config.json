@@ -6,7 +6,7 @@
   "version": "0.1.0",
   "db2": "lc2_nav2026.db",
   "db": "sqlite:lc2sqlite2027.db",
-  "script": "test.js",
+  "script": "lc2sqlite.js",
   "identifier": "org.letztechance.lc2tauri-sqlite.app",
   "hosttitle": "LetzteChance.Org",
   "is_splashscreen": true,
@@ -106,19 +106,19 @@
   "faqData": [
     {
       "tabTitle": "Home",
-      "tabBody": "<div><ul class=\"listul\"><li><a href=\"#news\">News</a></li><li><a href=\"#downloads\">Downloads</a></li><li><a href=\"src/assets/test.html\" target=\"_blank\">Imprint</a></li><li><a href=\"https://www.letztechance.org/\" target=\"_blank\">HomePage</a></li><li><a onclick=\"javascript:show_splashscreen('LC2Sqlite2025_Splash');\">Splash</a></li></ul></div>"
+      "tabBody": "<div><ul id=\"nav_home\" class=\"listul\"><li><a href=\"index.html\">Home</a></li><li><li><a href=\"#news\">News</a></li><li><a href=\"#downloads\">Downloads</a></li><li><a href=\"src/assets/test.html\" target=\"_blank\">Imprint</a></li><li><a href=\"https://www.letztechance.org/\" target=\"_blank\">HomePage</a></li><li><a onclick=\"javascript:show_splashscreen('LC2Sqlite2025_Splash');\">Splash</a></li></ul></div>"
     },
     {
       "tabTitle": "News",
-      "tabBody": "<div><ul class=\"listul\"><li><a href=\"#news\">News</a></li></ul></div>"
+      "tabBody": "<div><ul id=\"nav_news\" class=\"listul\"><li><a href=\"#news\">News</a></li></div>"
     },
     {
       "tabTitle": "Downloads",
-      "tabBody": "<div><ul class=\"listul\"><li><a href=\"#downloads\">Downloads</a></li></ul></div>"
+      "tabBody": "<div><ul id=\"nav_downloads\" class=\"listul\"><li><a href=\"#downloads\">Downloads</a></li><li></ul></div>"
     },
     {
       "tabTitle": "Imprint",
-      "tabBody": "<div><ul class=\"listul\"><li><a href=\"src/assets/test.html\" target=\"_blank\">Imprint</a></li><li><a href=\"#downloads\">Imprint</a></li></ul></div>"
+      "tabBody": "<div><ul id=\"nav_imprint\" class=\"listul\"><li><a href=\"src/assets/test.html\" target=\"_blank\">Imprint</a></li><li><a href=\"#downloads\">Imprint</a></li></ul></div>"
     }
   ],
   "app": {

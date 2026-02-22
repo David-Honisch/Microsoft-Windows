@@ -3,18 +3,86 @@
 // }
 
 print_action('external script is running...');
+// alert("test");
 setTimeout(() => {
-    // var url_heise = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.golem.de/";
-    var url_heise = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://www.heise.de/newsticker/heise.rdf";
-    var url_golem = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://rss.golem.de/rss.php?feed=RSS0.91";
-    generateHrefs(url_heise, document.getElementById("newsMessage"));
-    generateHrefs(url_golem, document.getElementById("extnewsMessage"));
+    try {
+        const nav_home = document.getElementById("nav_home");
+        const nav_homecnt = document.getElementById("nav_homecnt");
+        const nav_news = document.getElementById("nav_news");
+        const nav_newscnt = document.getElementById("nav_newscnt");
+        const nav_download = document.getElementById("nav_downloads");
+        const nav_downloadscnt = document.getElementById("nav_downloadscnt");
+        const nav_imprint = document.getElementById("nav_imprint");
+        const nav_imprintcnt = document.getElementById("nav_imprintcnt");
+        const newsMessage = document.getElementById("newsMessage");
+        const extnewsMessage = document.getElementById("extnewsMessage");
+        // var url_heise = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.golem.de/";
+        const url_list2 = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1";
+        const url_list = "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1";
+        const url_heise = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://www.heise.de/newsticker/heise.rdf";
+        const url_golem = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://rss.golem.de/rss.php?feed=RSS0.91";
+        generateHrefs(url_heise, newsMessage);
+        generateHrefs(url_golem, extnewsMessage);
+        add_to_menu();
 
-}, 3000);
+    } catch (error) {
+        console.error(error);
+        alert(error);
+        alert(error.stack);
+        nav_newscnt.innerHTML += "<h1>ERROR:</h1>" + error + "";
+    }
+
+}, 5000);
 
 
+async function getJsonData(api, id) {
+    try {
+        const response = await fetch(api);
+        if (!response.ok) {
+            document.getElementById(id).innerHTML = `HTTP-Fehler! Status: ${response.status}`;
+            throw new Error(`HTTP-Fehler! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        document.getElementById(id).innerHTML += JSON.stringify(data);
+    } catch (error) {
+        console.error("Fehler beim Abrufen der Daten:", error);
+        alert(error);
+        document.getElementById(id).innerHTML = error;
+    }
+}
+async function add_to_menu() {
 
+    nav_homecnt.innerHTML = "";
+    nav_newscnt.innerHTML = "";
+    nav_downloadscnt.innerHTML = "";
+    nav_imprintcnt.innerHTML = "";
 
+    nav_home.innerHTML += "<li><a href=\"\">" + "About" + "</a></li>";
+
+    nav_newscnt.innerHTML = "<h1>Loading:" + url_list + "</h1>";
+    // getJsonData(url_list,"nav_news") 
+    // alert("test");
+    httpfetch("GET", url_list).then((response) => {
+        console.log("fetching external url: " + url_list);
+        nav_newscnt.innerHTML = "<h1>Init:" + url_list + "</h1>";
+        var txt = response.text();
+        nav_newscnt.innerHTML = "<h1>" + JSON.stringify(text) + "</h1>";
+        for (var v in txt) {
+            var item = text[v];
+            nav_news.innerHTML += "<li><a href=\"#\">" + JSON.stringify(item) + "</a></li>";
+        }
+        nav_newscnt.innerHTML = "";
+    }).catch((error) => {
+        console.error(error);
+        alert(error);
+        nav_newscnt.innerHTML += "<h1>ERROR:</h1>" + error + "";
+    });
+    nav_homecnt.innerHTML = "";
+    nav_newscnt.innerHTML = "";
+    nav_downloadscnt.innerHTML = "";
+    nav_imprintcnt.innerHTML = "";
+
+}
 
 function generateHrefs(url_heise, divout) {
     const urlHREFRegex = /<a href="([^"]*)">([^<]+)<\/a>/g;
