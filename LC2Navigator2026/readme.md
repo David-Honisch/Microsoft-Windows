@@ -109,6 +109,24 @@ I will try to update the plugins installation script soon.
 Please be patient.
 
 
+##Basic Requirements
+
+Windows 64
+Mac IOS (plugins not supported)
+Linux (plugins not supported)
+
+### Note:
+- Curently only windows x64 builds available. 
+- 32 Bit Electron build is NOT longer supported
+
+
+## Plugin Software Requirements (no autoinstall !!)
+
+Python 3
+Open JDK 8<
+
+Note:Please install this third party software. Many features or "plugin applications" will not work without it.
+
 ## requirements
 
 - jdk 8<
@@ -172,25 +190,6 @@ LC2Navigator supports Excel and XML/XSLT Transformation processing:
 
 
 
-##Basic Requirements
-
-Windows 64
-Mac IOS (plugins not supported)
-Linux (plugins not supported)
-
-### Note:
-- Curently only windows x64 builds available. 
-- 32 Bit Electron build is not longer supported
-
-
-## Plugin Software Requirements (no autoinstall !!)
-
-Python 3
-Open JDK 8<
-
-Note:Please install this third party software.
-
-
 ## Plugin requirements
 - JDK 8<
 - Docker Desktop
@@ -236,29 +235,6 @@ Fetch videos from youtube playlist and download them one by one or all.
 1. Please use this app for downloading only public resources.
 2. The app doesn't store ANY media files ANYWHERE except on the device who use this app.
 
-
-## License
-
-- read download license	
-- mostly open source resources
-- read comments
-
-
-## Development Notes
-
-You can find scripts on this repository to solve following package.json entries:
-	npm run startdev
-    npm run tlint
-	npm run webpack	
-    npm run electron
-	npm run test
-	npm run release
-	npm run build
-	npm run buildwindows
-	npm run buildmacos
-	npm run buildlinux
-
-
 ### Stack
 
 - [electron](http://electronjs.org/)
@@ -282,6 +258,12 @@ based on:
 
 ## License
 MIT
+
+## License Notes
+
+- read download license	
+- mostly open source resources
+- read comments
 
 ### Copyright
 (c)by webmaster@letztechance.org
