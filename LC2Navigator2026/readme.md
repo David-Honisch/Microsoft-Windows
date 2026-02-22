@@ -22,7 +22,7 @@ https://www.letztechance.org/read-20-35.html
 - https://www.letztechance.org/read-20-32.html
 - https://www.letztechance.org/download/LC2Navigator.2022.apk
 
-It is not inside the goolge play store.
+It is not inside the google play store.
 
 ### LC2Navigator screenshot:
 <img src="https://github.com/David-Honisch/LC2Navigator2024/raw/main/LC2Navigator2025/LC2Navigator2026.jpg" alt="LC2Navigator2024 Screenshot" width="400" />

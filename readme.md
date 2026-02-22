@@ -38,7 +38,7 @@ My official Android 64 Bit Application:
 - https://www.letztechance.org/read-20-32.html
 - https://www.letztechance.org/download/LC2Navigator.2022.apk
 
-It´s not inside the goolge play store.
+It´s not inside the google play store.
 
 ### LC2Navigator 2026 Main UI Installer:
 
