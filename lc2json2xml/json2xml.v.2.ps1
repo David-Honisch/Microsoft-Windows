@@ -1,0 +1,1 @@
+Get-Content -Path "data.json" | ConvertFrom-Json | ConvertTo-Xml -As Stream -Depth 3 | Out-File -FilePath "output.xml"
