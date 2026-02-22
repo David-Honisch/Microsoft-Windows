@@ -7,7 +7,10 @@
 - <a href="https://www.letztechance.org/dist/">LC powered by angular)</a>
 ## Projects
 
-### LC2Navigator2026
+### LC2Navigator2026 (Main project)
+
+This is my main project. It is sqlite database based multi application project
+with many features and plugins. See subfolders for more information.
 
 Is now my official desktop application
 including some other funny projects and examples
@@ -25,12 +28,25 @@ Download the installer here:
 
 It´s not inside the goolge play store.
 
-### LC2Navigator 2026 Main UI:
+### LC2Navigator 2026 Main UI Installer:
 
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe"><img src="lc2nav.png?width=400&height=400&image=logo.png&text=LC2Navigator2026%20(Alpha) Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
 
 ## Latest Projects:
 
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2xmlxslt
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2json2xml
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2xml2json
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2csv_xslt_to_json
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2json2xml2json
+
+
+
+### some more Projects:
+
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2asciipatcher
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2runasadmin
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2dirmarkup
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ttfps
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2licensing_server
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2antibruteforce
@@ -43,9 +59,6 @@ It´s not inside the goolge play store.
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2-maven-plugin
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2crud
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2webllm
-
-### some more Projects:
-
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2antibruteforce
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2asciipatcher
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2calljar
@@ -81,6 +94,7 @@ It´s not inside the goolge play store.
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/FFMPEG.Convert
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2IRCRaw
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/LinkCLI
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2dl
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC21stHybrid
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2IRCRaw
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC27ZipUnprotect
