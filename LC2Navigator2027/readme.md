@@ -6,12 +6,12 @@ LC2Navigator 2027 Edition - 1st alpha
 
 The new official LC UI - Windows Build (Linux, MacOs coming soon...) - 64 Bit release:
 
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2027/LC2Navigator2027install.exe"><img src="../lc2nav.png?width=400&height=400&image=logo.png&text=LC2Navigator2027%20(Alpha) Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2027 Installer Screenshot" width="400" /></a>
+<a href="https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/LC2Navigator2027install.exe"><img src="../lc2nav.png?width=400&height=400&image=logo.png&text=LC2Navigator2027%20(Alpha) Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2027 Installer Screenshot" width="400" /></a>
 
 ## Download Installer:
 
-- <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2027install.exe" target="_blank">LC2Navigator2027 x64 Installer(32Bit)</a>
-- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2027/LC2Navigator2027install.exe
+- <a href="https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/LC2Navigator2027install.exe" target="_blank">LC2Navigator2027 x64 Installer(32Bit)</a>
+- https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/LC2Navigator2027install.exe
 
 Permanent Link:
 https://www.letztechance.org/read-20-35.html

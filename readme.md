@@ -23,6 +23,9 @@ including some other funny projects and examples
 # Official LC2Navigator 2026 Homepage
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2026
 
+## Official LC2Navigator 2027 (Alpha) Homepage
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2027
+
 # Windows 11 Installer:
 
 LC2Navigator - the new official LC UI
