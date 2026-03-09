@@ -6,12 +6,11 @@ LC2Navigator 2026 Edition - Final release
 
 The new official LC UI - Windows Build (Linux, MacOs coming soon...) - 64 Bit release:
 
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe"><img src="../lc2nav.png?width=400&height=400&image=logo.png&text=LC2Navigator2026%20(Alpha) Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
+<a href="https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2027"><img src="../lc2nav.png?width=400&height=400&image=logo.png&text=LC2Navigator2026%20(Alpha) Installer&r=20&g=20&b=20&test=" alt="Download page of LC2Navigator2027 Installer" width="400" /></a>
 
 ## Download Installer:
 
-- <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe" target="_blank">LC2Navigator2026 x64 Installer(32Bit)</a>
-- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2Navigator2027
 
 Permanent Link:
 https://www.letztechance.org/read-20-35.html
