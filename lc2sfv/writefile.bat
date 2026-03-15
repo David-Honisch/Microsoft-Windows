@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 REM Set the directory where the files will be created
 set "output_dir=.\"
 REM Create the output directory if it doesn't exist
-if not exist "%output_dir%" mkdir "%output_dir%"
+REM if not exist "%output_dir%" mkdir "%output_dir%"
 REM Get the current date and time
 for /f "tokens=2 delims==" %%I in ('wmic os get localdatetime /value') do set datetime=%%I
 set year=!datetime:~0,4!
