@@ -1,0 +1,14 @@
+f:\git\Microsoft-Windows\lc2geocoder\server\target\release\deps\thiserror-de04d553094d3b60.d: C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\lib.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\aserror.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\display.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\var.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\private.rs f:\git\Microsoft-Windows\lc2geocoder\server\target\release\build\thiserror-d6445a95a7082c3a\out/private.rs
+
+f:\git\Microsoft-Windows\lc2geocoder\server\target\release\deps\libthiserror-de04d553094d3b60.rlib: C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\lib.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\aserror.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\display.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\var.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\private.rs f:\git\Microsoft-Windows\lc2geocoder\server\target\release\build\thiserror-d6445a95a7082c3a\out/private.rs
+
+f:\git\Microsoft-Windows\lc2geocoder\server\target\release\deps\libthiserror-de04d553094d3b60.rmeta: C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\lib.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\aserror.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\display.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\var.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\private.rs f:\git\Microsoft-Windows\lc2geocoder\server\target\release\build\thiserror-d6445a95a7082c3a\out/private.rs
+
+C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\lib.rs:
+C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\aserror.rs:
+C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\display.rs:
+C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\var.rs:
+C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\thiserror-2.0.18\src\private.rs:
+f:\git\Microsoft-Windows\lc2geocoder\server\target\release\build\thiserror-d6445a95a7082c3a\out/private.rs:
+
+# env-dep:OUT_DIR=f:\\git\\Microsoft-Windows\\lc2geocoder\\server\\target\\release\\build\\thiserror-d6445a95a7082c3a\\out

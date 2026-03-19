@@ -1,0 +1,1 @@
+f:\git\Microsoft-Windows\lc2geocoder\server\target\release\lc2geocoder.exe: f:\git\Microsoft-Windows\lc2geocoder\server\src\auth.rs f:\git\Microsoft-Windows\lc2geocoder\server\src\main.rs f:\git\Microsoft-Windows\lc2geocoder\server\src\web\dashboard.html f:\git\Microsoft-Windows\lc2geocoder\server\src\web\login.html

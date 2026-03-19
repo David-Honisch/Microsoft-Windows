@@ -1,0 +1,9 @@
+F:\git\Microsoft-Windows\lc2geocoder\server\target\debug\deps\futures_rustls-0cac8244af25a937.d: C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\lib.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\client.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\common\mod.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\common\handshake.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\server.rs
+
+F:\git\Microsoft-Windows\lc2geocoder\server\target\debug\deps\libfutures_rustls-0cac8244af25a937.rmeta: C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\lib.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\client.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\common\mod.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\common\handshake.rs C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\server.rs
+
+C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\lib.rs:
+C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\client.rs:
+C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\common\mod.rs:
+C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\common\handshake.rs:
+C:\Users\David\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-rustls-0.26.0\src\server.rs:
