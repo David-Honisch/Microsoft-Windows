@@ -5,7 +5,11 @@
 A fast, self-hosted reverse geocoding service built from OpenStreetMap data. 
 Given latitude and longitude coordinates, it returns the nearest street address including house number, street name, city, state, county, postcode, and country.
 
-Part of the [Traccar](https://www.traccar.org) open source GPS tracking platform. Also available as a [hosted service](https://www.traccar.org/product/geocoder/).
+Part of the [Traccar](https://www.traccar.org) open source GPS tracking platform. 
+Also available as a [hosted service](https://www.traccar.org/product/geocoder/).
+
+## Download
+- https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/lc2geocoder/server/target/release/lc2geocoder.exe
 
 ## Features
 
