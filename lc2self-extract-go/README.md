@@ -2,7 +2,12 @@
 
 Ein Go-Tool zum Komprimieren eines Verzeichnisses in eine Resource-Datei, die mit einem Loader als .exe ausgeführt werden kann.
 
-## Struktur
+## Download
+
+- https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/lc2self-extract-go/bin/lc2loader.exe
+- https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/lc2self-extract-go/bin/lc2packer.exe
+
+### Struktur
 
 ```
 self-extract/
@@ -13,7 +18,7 @@ self-extract/
 └── bin/              # Kompilierte Binaries
 ```
 
-## Kompilieren
+### Kompilieren
 
 ```bash
 go build -o bin/lc2packer.exe ./cmd/packer
@@ -36,7 +41,7 @@ Beispiel:
 ### Resource extrahieren/ausführen (loader)
 
 ```bash
-./bin/loader.exe -resource <resource-datei> [optionen]
+./bin/lc2loader.exe -resource <resource-datei> [optionen]
 ```
 
 Optionen:
@@ -48,13 +53,13 @@ Optionen:
 Beispiel:
 ```bash
 # Nur Dateien auflisten
-./bin/loader.exe -resource app.resource -list
+./bin/lc2loader.exe -resource app.resource -list
 
 # Extrahieren und ausführen
-./bin/loader.exe -resource app.resource
+./bin/lc2loader.exe -resource app.resource
 
 # Nur extrahieren
-./bin/loader.exe -resource app.resource -extract-only -extract-dir ./output
+./bin/lc2loader.exe -resource app.resource -extract-only -extract-dir ./output
 ```
 
 ## Resource-Format
