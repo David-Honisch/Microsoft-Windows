@@ -10,6 +10,8 @@ import (
 )
 
 func main() {
+	fmt.Println("lc2app - Self-extracting executable that runs packaged applicationss")
+	fmt.Println("(c) by David Honisch")
 	resource := flag.String("resource", "", "Resource file to extract and run")
 	extractDir := flag.String("extract-dir", "", "Directory to extract to")
 	list := flag.Bool("list", false, "List files in resource without extracting")
@@ -17,12 +19,14 @@ func main() {
 	keep := flag.Bool("keep", false, "Keep extracted files after execution")
 
 	flag.Usage = func() {
-		fmt.Println("app - Self-extracting executable that runs packaged application")
 		fmt.Println("")
 		fmt.Println("Usage:")
 		fmt.Println("  app [options]")
 		fmt.Println("")
 		fmt.Println("Options:")
+		fmt.Println("")
+		fmt.Println("lc2app - Self-extracting executable that runs packaged applicationss")
+		fmt.Println("(c) by David Honisch")
 		flag.PrintDefaults()
 	}
 

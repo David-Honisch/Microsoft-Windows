@@ -15,10 +15,11 @@ func main() {
 	entry := flag.String("entry", "", "Entry point file (relative to source)")
 
 	flag.Usage = func() {
-		fmt.Println("packer - Pack a directory into a self-extracting executable resource")
+		fmt.Println("lc2packer - Pack a directory into a self-extracting executable resource")
+		fmt.Println("(c) by David Honisch")
 		fmt.Println("")
 		fmt.Println("Usage:")
-		fmt.Println("  packer -source <dir> -output <file> -entry <file>")
+		fmt.Println("lc2packer -source <dir> -output <file> -entry <file>")
 		fmt.Println("")
 		fmt.Println("Options:")
 		flag.PrintDefaults()
