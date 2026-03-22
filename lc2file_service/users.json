@@ -1,0 +1,12 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "password": "hashed_password_here"
+        },
+        {
+            "username": "user1",
+            "password": "hashed_password_here"
+        }
+    ]
+}
