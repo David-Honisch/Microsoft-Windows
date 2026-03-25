@@ -21,20 +21,79 @@ setTimeout(() => {
         const url_list = "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1";
         const url_heise = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://www.heise.de/newsticker/heise.rdf";
         const url_golem = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://rss.golem.de/rss.php?feed=RSS0.91";
-        generateHrefs(url_heise, newsMessage);
-        generateHrefs(url_golem, extnewsMessage);
+        const url_ycombinator = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://news.ycombinator.com/rss";
+        newsMessage.innerHTML += "<pre id=\"heise\">Loading...</pre><pre id=\"golem\">Loading...</pre><pre id=\"ycombinator\">Loading...</pre>";
+
+        const heise = document.getElementById("heise");
+        const golem = document.getElementById("golem");
+        const ycombinator = document.getElementById("ycombinator");
+        _generateHrefs(url_ycombinator, extnewsMessage);
+        _generateHrefs(url_heise, heise);
+        _generateHrefs(url_golem, golem);
         add_to_menu();
 
     } catch (error) {
         console.error(error);
         alert(error);
         alert(error.stack);
-        nav_newscnt.innerHTML += "<h1>ERROR:</h1>" + error + "";
+        nav_newscnt.innerHTML += "<pre id=\"out_error_cnt\">ERROR:</pre>" + error + "";
     }
 
 }, 5000);
+const createNEWUI = (url, title) => {
+    const webview = new WebviewWindow('unique-label', {
+        url: url,
+        title: title,
+        width: 600,
+        height: 400,
+    });
 
-
+    webview.once('tauri://created', () => {
+        console.log('Window successfully created');
+    });
+};
+createNEWUI("https://www.letztechance.org/lc/", "Home");
+createNEWUI("https://www.letztechance.org/read-22-51.html", "LC2WebLLM");
+// createNEWUI("public/index.html","The Splash2");
+function _generateHrefs(url, divout) {
+    httpfetch('POST', url, "url", url).then((response) => {
+        console.log("fetching external url: " + url);
+        var txt = response.text();
+        return txt;
+    }).then((text) => {
+        var matches = parseHtmlAndExtractUrls(text);
+        var result = "<ul class=\"listul\">";
+        for (var v in matches) {
+            var item = matches[v];
+            if (item.url !== undefined && item.url !== null && item.url.length > 5 && item.innerHtml !== undefined && item.innerHtml !== null && item.innerHtml.length > 1 && !item.url.includes(".jpeg") && !item.url.includes(".jpg") && !item.url.includes(".png")) {
+            // if (item.url !== undefined && item.url !== null && item.url.length > 5) {
+                result += "<li><a href=\"" + item.url + "\" target=\"_blank\">" + item.innerHtml + "</a><br/></li>";
+            }
+        }
+        result += "</ul>";
+        divout.innerHTML += "<br/>" + result + "<br/>";
+    });
+}
+function parseHtmlAndExtractUrls(html, isHTML = false) {
+    // Create a new DOMParser instance
+    const parser = new DOMParser();
+    // Parse the HTML text into a DOM tree
+    const doc = parser.parseFromString(html, 'text/html');
+    // Find all anchor tags
+    const links = doc.querySelectorAll('a');
+    // Initialize an array to store the results
+    const result = [];
+    // Iterate over the anchor tags
+    links.forEach(link => {
+        // Extract the URL and innerHTML
+        const url = link.href;
+        const innerHtml = isHTML ? link.innerHTML : link.textContent;
+        // Push the result as an object to the array
+        result.push({ url, innerHtml });
+    });
+    // Return the array of results
+    return result;
+}
 async function getJsonData(api, id) {
     try {
         const response = await fetch(api);
