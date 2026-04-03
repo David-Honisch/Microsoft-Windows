@@ -1,7 +1,3 @@
-// function print_action(url_heise) {
-//     console.log(url_heise);
-// }
-
 print_action('external script is running...');
 // alert("test");
 setTimeout(() => {
@@ -31,6 +27,8 @@ setTimeout(() => {
         _generateHrefs(url_heise, heise);
         _generateHrefs(url_golem, golem);
         add_to_menu();
+        addCssCLS("heise","marquee");
+        addCssCLS("golem","marquee");
 
     } catch (error) {
         console.error(error);
@@ -52,10 +50,10 @@ const createNEWUI = (url, title) => {
         console.log('Window successfully created');
     });
 };
-createNEWUI("https://www.letztechance.org/lc/", "Home");
-createNEWUI("https://www.letztechance.org/read-22-51.html", "LC2WebLLM");
+createNEWUI("https://www.letztechance.org/read-22-59.html", "LC2WebLLM-Chat");
+createNEWUI("https://www.letztechance.org/tools/lc2webllm-chat/", "LC2WebLLM");
 // createNEWUI("public/index.html","The Splash2");
-function _generateHrefs(url, divout) {
+function _generateHrefs(url, divout, maxItems = 25) {
     httpfetch('POST', url, "url", url).then((response) => {
         console.log("fetching external url: " + url);
         var txt = response.text();
@@ -63,11 +61,16 @@ function _generateHrefs(url, divout) {
     }).then((text) => {
         var matches = parseHtmlAndExtractUrls(text);
         var result = "<ul class=\"listul\">";
+        var i = 0;
         for (var v in matches) {
             var item = matches[v];
             if (item.url !== undefined && item.url !== null && item.url.length > 5 && item.innerHtml !== undefined && item.innerHtml !== null && item.innerHtml.length > 1 && !item.url.includes(".jpeg") && !item.url.includes(".jpg") && !item.url.includes(".png")) {
-            // if (item.url !== undefined && item.url !== null && item.url.length > 5) {
-                result += "<li><a href=\"" + item.url + "\" target=\"_blank\">" + item.innerHtml + "</a><br/></li>";
+                // if (item.url !== undefined && item.url !== null && item.url.length > 5) {
+                result += "<li><span><a href=\"" + item.url + "\" target=\"_blank\">" + item.innerHtml + "</a></span><br/></li>";
+            }
+            i++;
+            if (i >= maxItems) {
+                break;
             }
         }
         result += "</ul>";
@@ -323,3 +326,7 @@ function extractUrls(text) {
 function generateHtml(urls) { let html = ''; for (const url of urls) { html += `<a href="${url.url}">${url.label}</a> `; } return html.trim(); }
 
 function generateUrlLink(text, urlRegex) { const urls = extractUrls(text); const html = generateHtml(urls); return html; }
+function addCssCLS(e, cls) {
+    var element = document.getElementById(e);
+    element.classList.add(cls);
+}
