@@ -19,8 +19,10 @@ router.post('/login', (req, res) => {
     console.log('pwd:', pwd);
     if (user && user.password === pwd) {
         const token = jwt.sign({ username: user.username }, SECRET_KEY, { expiresIn: '1h' });
+        console.log('user loggedin with:', token);
         res.json({ token });
     } else {
+        console.log('user NOT loggedin :', username);
         res.status(401).json({ message: 'Invalid credentials' });
     }
 });

@@ -6,6 +6,7 @@ const fileRouter = require('./file');
 const app = express();
 const PORT = port || 3000;
 app.use(bodyParser.json());
+app.use('/login', authRouter);
 app.use('/auth', authRouter);
 app.use('/file', fileRouter);
 app.listen(PORT, () => {

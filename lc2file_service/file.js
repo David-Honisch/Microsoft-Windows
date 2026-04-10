@@ -3,7 +3,9 @@ const fs = require('fs');
 const path = require('path');
 const { files } = require('./config.json');
 const router = express.Router();
+console.log('Loaded files:', files);
 router.get('/check', (req, res) => {
+    console.log('Loaded files:', files);
     const { filename } = req.query;
     const file = files.find(f => f.path === filename);
     if (!file) {
@@ -16,6 +18,7 @@ router.get('/check', (req, res) => {
     }
 });
 router.get('/download', (req, res) => {
+    console.log('Loaded files:', files);
     const { filename } = req.query;
     const file = files.find(f => f.path === filename);
     if (!file) {
