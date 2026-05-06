@@ -49,6 +49,7 @@ It´s not inside the google play store.
 
 ## Latest Projects:
 
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ikillswitch
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2xmlxslt
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2json2xml
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2xml2json
@@ -59,6 +60,13 @@ It´s not inside the google play store.
 
 ### some more Projects:
 
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ikillswitch
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2aiagent
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2xmlxslt
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2json2xml
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2xml2json
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2csv_xslt_to_json
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2json2xml2json
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2asciipatcher
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2runasadmin
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2dirmarkup
