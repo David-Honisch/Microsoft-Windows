@@ -1,15 +1,18 @@
 # lc2ikillswitch.exe
 
+a small internet kill switch app - requires admin rights
+
 ## usage
 
 Usage: lc2ikillswitch.exe.exe
 
 ## Download
 
-<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/lc2ikillswitch.exe/lc2ikillswitch.exe.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2ikillswitch.exe&r=20&g=20&b=20&test=" alt="lc2ikillswitch.exe.exe" width="400" /></a>
+<a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/lc2ikillswitch.exe/lc2ikillswitch.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2ikillswitch.exe&r=20&g=20&b=20&test=" alt="lc2ikillswitch.exe.exe" width="400" /></a>
 
 ### structure
 
+├── lc2ikillswitch.exe
 ├── lc2ikillswitch.exe.ps1
 ├── lc2ikillswitch.exe.bat
 
