@@ -49,7 +49,7 @@ Markdown==3.10.1
 MarkupSafe==3.0.2
 matplotlib==3.10.3
 mcp==1.23.1
-microdot==2.5.1
+microdot==2.6.1
 mpmath==1.3.0
 multidict==6.7.0
 networkx==3.5
