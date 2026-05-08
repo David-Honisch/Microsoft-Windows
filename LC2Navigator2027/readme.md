@@ -88,6 +88,8 @@ Please notice:Python have to be installed.
 	│  (Port 8001)   │                    │  (Port 8002)   │
 	└────────────────┘                    └────────────────┘
 
+This is only the basic structure. There are many applications and services coming soon...	
+
 ### Plugin screenshot
 
 <img src="LC2OpenAI.jpg" alt="Plugins screenshot - example: LC2OpenAI Screenshot" width="400" />
