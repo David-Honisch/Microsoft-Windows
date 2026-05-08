@@ -1,0 +1,42 @@
+# Authentication Service Configuration
+
+# Authentication backend: 'ldap' or 'database'
+auth_backend: database
+
+# Server configuration
+server:
+  host: 0.0.0.0
+  port: 8000
+  secret_key: your-secret-key-change-in-production
+  token_expiry_minutes: 60
+
+# Database configuration (used when auth_backend is 'database')
+database:
+  type: sqlite  # sqlite, postgresql, mysql
+  # For SQLite
+  path: auth.db
+  # For PostgreSQL/MySQL (uncomment and configure as needed)
+  # host: localhost
+  # port: 5432
+  # name: auth_db
+  # user: auth_user
+  # password: auth_password
+
+# LDAP configuration (used when auth_backend is 'ldap')
+ldap:
+  server: ldap://localhost:389
+  base_dn: dc=example,dc=com
+  user_dn_template: uid={username},ou=users,dc=example,dc=com
+  bind_dn: cn=admin,dc=example,dc=com
+  bind_password: admin_password
+  search_filter: (uid={username})
+  attributes:
+    - uid
+    - cn
+    - mail
+    - memberOf
+
+# Logging
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

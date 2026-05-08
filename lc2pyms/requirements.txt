@@ -1,0 +1,24 @@
+# Core dependencies
+flask==3.0.0
+flask-cors==4.0.0
+pyyaml==6.0.1
+requests==2.31.0
+
+# Database support
+sqlalchemy==2.0.23
+passlib==1.7.4
+bcrypt==4.1.2
+
+# LDAP support
+ldap3==2.9.1
+
+# Database drivers (optional, uncomment as needed)
+# PostgreSQL
+# psycopg2-binary==2.9.9
+
+# MySQL
+# pymysql==1.1.0
+
+# Development dependencies (optional)
+# pytest==7.4.3
+# pytest-flask==1.3.0
