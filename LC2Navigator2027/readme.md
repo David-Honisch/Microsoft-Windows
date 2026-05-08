@@ -184,7 +184,7 @@ Note:Please install this third party software. Many features or "plugin applicat
 ## requirements
 
 - jdk 8<
-- Python
+- Python 3.14
 
 ## optional
 
@@ -213,6 +213,7 @@ Please read the requirements of every plugin. Click to installation to install r
 - [jquery](https://jquery.org/)
 - [sqlite](https://sqlite.org/)
 - [java](https://java.org/)
+- [python](https://python.org/)
 - [spring boot](https://spring.io/)
 - [typescript](https://www.typescriptlang.org/)
 - [webpack](https://webpack.js.org/)
