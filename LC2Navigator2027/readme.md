@@ -37,6 +37,55 @@ Please notice:Docker or Podman have to be installed.
 Please notice:Java have to be installed.
 Please notice:Python have to be installed.
 
+## What is "LC2Navigator" structrure?
+
+┌─────────────────────────────────────────────────────────────┐
+│               LC2Navigator2027 Desktop App                  │
+└─────────────────────────────────────────────────────────────┘
+                            ▲
+                            │ execute
+                            │
+┌─────────────────────────────────────────────────────────────┐
+│      LC2Navigator2027 Desktop Applications                  │
+│                                                             │
+│      - any application                                      │
+│      - ...                                                  │
+└─────────────────────────────────────────────────────────────┘
+                            ▲
+                            │ requests
+                            │							
+
+┌─────────────────────────────────────────────────────────────┐
+│               Apache, PHP, MySQL Service                    │
+│                 (Port 84, Port 3036)                        │
+│  ┌──────────────┐              ┌──────────────┐             │
+│  │   Database   │      AND     │   PHP        │             │
+│  │   Backend    │              │   Backend    │             │
+│  └──────────────┘              └──────────────┘             │
+└─────────────────────────────────────────────────────────────┘
+                            ▲
+                            │ Token Validation
+                            │							
+
+┌─────────────────────────────────────────────────────────────┐
+│                    Authentication Service                   │
+│                      (Port 8000)                            │
+│  ┌──────────────┐              ┌──────────────┐             │
+│  │   Database   │      OR      │     LDAP     │             │
+│  │   Backend    │              │   Backend    │             │
+│  └──────────────┘              └──────────────┘             │
+└─────────────────────────────────────────────────────────────┘
+                            ▲
+                            │ Token Validation
+                            │
+        ┌───────────────────┴───────────────────┐
+        │                                       │
+┌───────▼────────┐                    ┌────────▼───────┐
+│   Service 1    │                    │   Service 2    │
+│ User Management│                    │ Data Analytics │
+│  (Port 8001)   │                    │  (Port 8002)   │
+└────────────────┘                    └────────────────┘
+
 ### Plugin screenshot:
 <img src="LC2OpenAI.jpg" alt="Plugins screenshot - example: LC2OpenAI Screenshot" width="400" />
 
