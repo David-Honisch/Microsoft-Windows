@@ -8,29 +8,31 @@ The new official LC UI - Windows Build (Linux, MacOs coming soon...) - 64 Bit re
 
 <a href="https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/LC2Navigator2027install.exe"><img src="../lc2nav.png?width=400&height=400&image=logo.png&text=LC2Navigator2027%20(Alpha) Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2027 Installer Screenshot" width="400" /></a>
 
-## Download Installer:
+## Download Installer
 
 - <a href="https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/LC2Navigator2027install.exe" target="_blank">LC2Navigator2027 x64 Installer(32Bit)</a>
-- https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/LC2Navigator2027install.exe
+- <https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/LC2Navigator2027install.exe>
 
 Permanent Link:
-https://www.letztechance.org/read-20-35.html
+<https://www.letztechance.org/read-20-35.html>
 
-##  LC2Android
-#### 64 Bit Application:
+## LC2Android
 
-- https://www.letztechance.org/read-20-32.html
-- https://www.letztechance.org/download/LC2Navigator.2022.apk
+#### 64 Bit Application
+
+- <https://www.letztechance.org/read-20-32.html>
+- <https://www.letztechance.org/download/LC2Navigator.2022.apk>
 
 It is not inside the google play store.
 
-### LC2Navigator screenshot:
+### LC2Navigator screenshot
+
 <img src="https://github.com/David-Honisch/LC2Navigator2024/raw/main/LC2Navigator2025/LC2Navigator2026.jpg" alt="LC2Navigator2024 Screenshot" width="400" />
 
 ## What is "LC2Navigator" app?
 
 It is a UI Database redirecting IO, News, Links, Grabbing, Server,  Services, Container Orchestration, Building OS Software
-and local AI system 
+and local AI system
 based on Electron,Tauri, Apache Cordova, NodeJS Javascript SQLite,Python and many more software, tools and languages...
 
 Please notice:Docker or Podman have to be installed.
@@ -53,7 +55,7 @@ Please notice:Python have to be installed.
 └─────────────────────────────────────────────────────────────┘
                             ▲
                             │ requests
-                            │							
+                            │       
 
 ┌─────────────────────────────────────────────────────────────┐
 │               Apache, PHP, MySQL Service                    │
@@ -65,7 +67,7 @@ Please notice:Python have to be installed.
 └─────────────────────────────────────────────────────────────┘
                             ▲
                             │ Token Validation
-                            │							
+                            │       
 
 ┌─────────────────────────────────────────────────────────────┐
 │                    Authentication Service                   │
@@ -86,49 +88,51 @@ Please notice:Python have to be installed.
 │  (Port 8001)   │                    │  (Port 8002)   │
 └────────────────┘                    └────────────────┘
 
-### Plugin screenshot:
+### Plugin screenshot
+
 <img src="LC2OpenAI.jpg" alt="Plugins screenshot - example: LC2OpenAI Screenshot" width="400" />
 
+### Checking all requirements Plugin screenshot
 
-### Checking all requirements Plugin screenshot:
 <img src="req.png" alt="Checking all requirements screenshot" width="400" />
 
-## Source:
-- https://letztechance.org
+## Source
+
+- <https://letztechance.org>
 - <a href="https://www.letztechance.org/">LetzteChance.Org</a>
 - <a href="https://www.letztechance.org/vue/">LC powered by vue)</a>
 - <a href="https://www.letztechance.org/dist/">LC powered by angular)</a>
 
-
 ## Windows 64 Bit
-### Installer:
+
+### Installer
 
 - <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe" target="_blank">LC2Navigator2026 x64 install.exe</a>
-- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe
+- <https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe>
 
 The installer is only 32 Bit but the appication is optimized for x64 machines/os.
 
 Permanent Link:
-https://www.letztechance.org/read-20-35.html
+<https://www.letztechance.org/read-20-35.html>
 
+## Linux 64 Bit Installer
 
-## Linux 64 Bit Installer:
 (coming soon)
-https://www.letztechance.org/read-20-40.html
+<https://www.letztechance.org/read-20-40.html>
 
+## HomePage - Permanent Link:LC2Navigator2025install.exe (Microsoft Windows x64)
 
-## HomePage - Permanent Link:LC2Navigator2025install.exe (Microsoft Windows x64):
+- <https://www.letztechance.org/read-20-35.html> (NOT working !!! Updated coming soon..)
 
-- https://www.letztechance.org/read-20-35.html (NOT working !!! Updated coming soon..)
+## Logo
 
-
-## Logo:
 <img src="https://www.letztechance.org/assets/img/logo-big.svg" alt="logo" />
 
 # features
 
 This tools has so many features, so i can´t describe them all.
-So, i like to descibe the most atractive features like using 
+So, i like to descibe the most atractive features like using
+
 - anaylize your local machine (e.g. processes,io, drives, registry)
 - anaylize your drives and files
 - database (sqlite,h2, mysql, oracle, postgres, sqlserver and mongodb import and export
@@ -150,24 +154,23 @@ So, i like to descibe the most atractive features like using
 - openai, chatgpt,watsonx, gemini
 - and so on. All plugins will be updated and reuploaded.
 
-Please notice:All plugins have to be migrated, so please check my homepage and this repository. 
+Please notice:All plugins have to be migrated, so please check my homepage and this repository.
 Try to update the all plugins to get the current list of migrated plugins.
 
 I will try to update the plugins installation script soon.
 
 Please be patient.
 
-
-##Basic Requirements
+## Basic Requirements
 
 Windows 64
 Mac IOS (plugins not supported)
 Linux (plugins not supported)
 
-### Note:
-- Curently only windows x64 builds available. 
-- 32 Bit Electron build is NOT longer supported
+### Note
 
+- Curently only windows x64 builds available.
+- 32 Bit Electron build is NOT longer supported
 
 ## Plugin Software Requirements (no autoinstall !!)
 
@@ -184,6 +187,7 @@ Note:Please install this third party software. Many features or "plugin applicat
 ## optional
 
 if you like to use all functionalities please install and config:
+
 - docker or/and podman
 - jdk 11<
 - Maven
@@ -225,41 +229,39 @@ based on:
 Update 06.07.2025:
 
 build tools using
+
 - nsis
 - wix
 - apache-ant
 - apache-maven
 
 packages tools using
+
 - zip
 - sql
 - bat
 - iso
 - rpm
 
-
 # Notice:Deprecated or unsupported Plugins
 
 <a href="https://raw.githubusercontent.com/David-Honisch/LC2Navigator2024/main/LC2Navigator2025/plugins.csv">Plugins.csv</a>
 
-- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/plugins.md
-- https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/tools.md
+- <https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/plugins.md>
+- <https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/tools.md>
 
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/tools.md">Tools</a>
 
-
-- see https://www.letztechance.org to get more information.
-	
-	
+- see <https://www.letztechance.org> to get more information.
  
 LC2Navigator supports Excel and XML/XSLT Transformation processing:
-- file extension supports 
-	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
+
+- file extension supports
+ 	- Up to now there is Supports xls|xlsx|xlsm|xlsb|xml|csv|txt|dif|sylk|slk|prn|ods|fods|htm|html based Editor and Converter
 <img src="LC2ExcelTransform.jpg" alt="LC2Navigator Screenshot" width="400" />
 
-
-
 ## Plugin requirements
+
 - JDK 8<
 - Docker Desktop
 - Python 3x
@@ -294,9 +296,11 @@ Find your download: [https://github.com/David-Honisch/Microsoft-Windows/tree/mas
 ## Change log
 
 ##### 1.1.0
+
 Allow fetch and download a single video
 
 ##### 1.0.0
+
 Fetch videos from youtube playlist and download them one by one or all.
 
 ## Disclaimer
@@ -311,16 +315,17 @@ Fetch videos from youtube playlist and download them one by one or all.
 
 ## License Notes
 
-- read download license	
+- read download license 
 - mostly open source resources
 - read comments
 
 ### Copyright
-(c)by webmaster@letztechance.org
+
+(c)by <webmaster@letztechance.org>
 --------------------------
-http://www.letztechance.org
-http://www.letztechance.org/contact.html
+<http://www.letztechance.org>
+<http://www.letztechance.org/contact.html>
 
 ## Imprint
 
-http://www.letztechance.org/imprint.html
+<http://www.letztechance.org/imprint.html>
