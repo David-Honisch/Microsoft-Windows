@@ -1,6 +1,7 @@
-# Browser Memory Scanner
+# LC2 Browser Memory Scanner
 
-A Rust application that scans Internet Explorer and Microsoft Edge process memory to search for potential passwords and credentials.
+A Rust application that scans Internet Explorer and Microsoft Edge process memory to 
+search for potential passwords and credentials.
 
 ## ⚠️ Legal Disclaimer
 
