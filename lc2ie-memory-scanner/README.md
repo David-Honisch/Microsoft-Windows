@@ -5,7 +5,7 @@ search for potential passwords and credentials.
 
 ## Download
 
-<a href="lc2ie-memory-scanner.exe">lc2ie-memory-scanner.exe</a>
+<a href="https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/lc2ie-memory-scanner/lc2ie-memory-scanner.exe">lc2ie-memory-scanner.exe</a>
 
 ## ⚠️ Legal Disclaimer
 
