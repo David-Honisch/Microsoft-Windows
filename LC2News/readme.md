@@ -2,8 +2,8 @@
 
 ## Download
 
-<a href="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2News/lc2news.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2news.exe&r=20&g=20&b=20&test=" alt="https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2News/lc2news.exe" width="400" /></a>
-- https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2News/lc2news.exe
+<a href="https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2News/lc2news.exe"><img src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2news.exe&r=20&g=20&b=20&test=" alt="https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2News/lc2news.exe" width="400" /></a>
+- https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2News/lc2news.exe
 
 ## xml.md
 
