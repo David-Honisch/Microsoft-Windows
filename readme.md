@@ -49,6 +49,7 @@ It´s not inside the google play store.
 
 ## Latest Projects:
 
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2pgp
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2pyms
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ikillswitch
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2xmlxslt
@@ -61,6 +62,8 @@ It´s not inside the google play store.
 
 ### some more Projects:
 
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2pgp
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2pyms
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ikillswitch
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2aiagent
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2xmlxslt
