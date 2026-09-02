@@ -1,0 +1,69 @@
+version: "3.9"
+
+services:
+  # ── Backend API ─────────────────────────────────────────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: enterprise-rag-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - CHROMA_PERSIST_DIR=/app/data/chroma_db
+      - UPLOAD_DIR=/app/data/uploads
+      - AUDIT_LOG_FILE=/app/data/audit.jsonl
+      - REDIS_URL=redis://redis:6379/0
+      - ALLOWED_ORIGINS=http://localhost:8501,http://frontend:8501
+    volumes:
+      - rag_data:/app/data
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+
+  # ── Streamlit Frontend ───────────────────────────────────────────────────────
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: enterprise-rag-frontend
+    ports:
+      - "8501:8501"
+    environment:
+      - API_BASE=http://api:8000/api/v1
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # ── Redis (session cache + response cache) ───────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: enterprise-rag-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  rag_data:
+    driver: local
+  redis_data:
+    driver: local
