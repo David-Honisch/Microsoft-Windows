@@ -329,7 +329,7 @@ class TestChunker:
         from langchain_core.documents import Document
 
         chunker = DocumentChunker()
-        table_text = "| Name | Value |\n| --- | --- |\n| Alice | 100 |\n| Bob | 200 |"
+        table_text = "| Name | Value |\n| --- | --- |\n| Alice | 100 |\n| David | 200 |"
         docs = [Document(page_content=table_text, metadata={"source_filename": "data.txt", "page": 1})]
         chunks = chunker.chunk_documents(docs)
         assert len(chunks) == 1
