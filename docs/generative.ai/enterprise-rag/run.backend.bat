@@ -1,9 +1,9 @@
 @echo off
-title=frontend
+title=backend
 REM copy .env.example .env
 REM # add OPENAI_API_KEY at minimum
-REM call pip install -r requirements.txt
+call pip install -r requirements.txt
 REM call uvicorn api.main:app --port 8000 --reload   # terminal 1
 REM call uvicorn api.main:app --port 8000 --reload
-REM call python -m uvicorn api.main:app --reload --port 8000
-call python -m streamlit run frontend/app.py
+call python -m uvicorn api.main:app --reload --port 8000
+REM call python -m streamlit run frontend/app.py

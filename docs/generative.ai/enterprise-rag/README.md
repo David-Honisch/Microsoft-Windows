@@ -37,24 +37,24 @@ Enterprise RAG transforms your organisation's unstructured document library — 
 └────────┬────────────────────────┬───────────────────────────────┘
          │                        │
 ┌────────▼─────────┐    ┌─────────▼──────────────────────────────┐
-│  INGESTION        │    │  RAG ORCHESTRATION (LangChain LCEL)    │
-│  PyMuPDF · OCR    │    │  HyDE expansion · Hybrid retrieval     │
-│  PII scrubbing    │    │  Cross-encoder re-ranking              │
-│  Chunker          │    │  Token budget management               │
-│  Embedder         │    │  RAG prompt · JSON output parsing      │
+│  INGESTION       │    │  RAG ORCHESTRATION (LangChain LCEL)    │
+│  PyMuPDF · OCR   │    │  HyDE expansion · Hybrid retrieval     │
+│  PII scrubbing   │    │  Cross-encoder re-ranking              │
+│  Chunker         │    │  Token budget management               │
+│  Embedder        │    │  RAG prompt · JSON output parsing      │
 └────────┬─────────┘    └──────────────────┬─────────────────────┘
          │                                  │
 ┌────────▼──────────────────────────────────▼─────────────────────┐
-│                     VECTOR STORE                                 │
+│                     VECTOR STORE                                │
 │  ChromaDB (local) · Pinecone (cloud)                            │
-│  Dense vectors · BM25 sparse index · Metadata RBAC filter      │
+│  Dense vectors · BM25 sparse index · Metadata RBAC filter       │
 └─────────────────────────────────────────────────────────────────┘
          │                                  │
 ┌────────▼─────────┐    ┌─────────▼──────────────────────────────┐
-│  EMBEDDING MODEL  │    │  LLM PROVIDER                          │
-│  BAAI/bge-m3      │    │  OpenAI GPT-4o                         │
-│  text-embed-3     │    │  Watsonx.ai (Llama 3 / Granite)        │
-│  IBM Slate        │    │  HuggingFace (local)                   │
+│  EMBEDDING MODEL │    │  LLM PROVIDER                          │
+│  BAAI/bge-m3     │    │  OpenAI GPT-4o                         │
+│  text-embed-3    │    │  Watsonx.ai (Llama 3 / Granite)        │
+│  IBM Slate       │    │  HuggingFace (local)                   │
 └──────────────────┘    └────────────────────────────────────────┘
 ```
 
