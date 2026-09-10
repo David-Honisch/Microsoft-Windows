@@ -10,6 +10,12 @@
     "timeout_seconds": 30,
     "retry_attempts": 3
   },
+   "ext_api": {
+    "rssfeed_url": "https://www.letztechance.org//srss.html?query=https://www.letztechance.org/index.php?q=rssreader&value1=1&value2=1",
+    "base_url": "https://www.letztechance.org/lc/webservices/client.php",    
+    "timeout_seconds": 30,
+    "retry_attempts": 3
+  },
   "database": {
     "filename": "lc2install.db",
     "migration_version": 4
