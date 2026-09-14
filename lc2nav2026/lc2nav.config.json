@@ -7,6 +7,7 @@
   "db2": "lc2_nav2026.db",
   "db": "sqlite:lc2sqlite2026.db",
   "script": "lc2sqlite.js",
+  "aiscript": "ai.js",
   "identifier": "org.letztechance.lc2tauri-sqlite.app",
   "hosttitle": "LetzteChance.Org",
   "is_splashscreen": true,
@@ -101,6 +102,10 @@
     {
       "title": "sql",
       "body": "sql"
+    },
+    {
+      "title": "ai",
+      "body": "ai"
     }
   ],
   "faqData": [

@@ -1,5 +1,6 @@
 print_action('external script is running...');
 // alert("test");
+
 setTimeout(() => {
     try {
         const nav_home = document.getElementById("nav_home");
@@ -13,8 +14,10 @@ setTimeout(() => {
         const newsMessage = document.getElementById("newsMessage");
         const extnewsMessage = document.getElementById("extnewsMessage");
         // var url_heise = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.golem.de/";
-        const url_list2 = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1";
+        const url_newslist = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1";
         const url_list = "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1";
+        // const url_heise = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://www.heise.de/newsticker/heise.rdf";
+        const url_heise2 = "https://www.letztechance.org/srss.html?query=https://www.heise.de/newsticker/heise.rdf";
         const url_heise = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://www.heise.de/newsticker/heise.rdf";
         const url_golem = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://rss.golem.de/rss.php?feed=RSS0.91";
         const url_ycombinator = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://news.ycombinator.com/rss";
@@ -23,12 +26,13 @@ setTimeout(() => {
         const heise = document.getElementById("heise");
         const golem = document.getElementById("golem");
         const ycombinator = document.getElementById("ycombinator");
-        _generateHrefs(url_ycombinator, extnewsMessage);
+        // heise.innerHTML = "Loading:"+url_newslist;
+        // _generateHrefs(url_ycombinator, extnewsMessage);
         _generateHrefs(url_heise, heise);
-        _generateHrefs(url_golem, golem);
-        add_to_menu();
-        addCssCLS("heise","marquee");
-        addCssCLS("golem","marquee");
+        // _generateHrefs(url_golem, golem);
+        // add_to_menu();
+        addCssCLS("heise", "marquee");
+        addCssCLS("golem", "marquee");
 
     } catch (error) {
         console.error(error);
@@ -50,33 +54,84 @@ const createNEWUI = (url, title) => {
         console.log('Window successfully created');
     });
 };
-createNEWUI("https://www.letztechance.org/read-22-59.html", "LC2WebLLM-Chat");
-createNEWUI("https://www.letztechance.org/tools/lc2webllm-chat/", "LC2WebLLM");
+// createNEWUI("https://www.letztechance.org/tools/lc2webllm-chat/", "LC2WebLLM");
+// createNEWUI("https://www.letztechance.org/lc", "LC2WebLLM-Chat");
+// createNEWUI("https://chat.webllm.ai/#/chat", "LC2WebLLM");
+createNEWUI("https://www.letztechance.org/tools/lc2webllmchat", "LC2WebLLM-Chat");
+// https://chat.webllm.ai/#/chat
 // createNEWUI("public/index.html","The Splash2");
 function _generateHrefs(url, divout, maxItems = 25) {
-    httpfetch('POST', url, "url", url).then((response) => {
-        console.log("fetching external url: " + url);
-        var txt = response.text();
-        return txt;
-    }).then((text) => {
+    // divout.innerHTML = "Loading:" + url;
+    try {
+        fetchHtml(url).then((response) => {
+            // httpfetch('POST', url, "url", url).then((response) => {
+            console.log("fetching external url: " + url);
+            var txt = response;
+            divout.innerHTML = "OUT" + JSON.stringify(txt); //+JSON.stringify(text);
+            // print_generateHrefs(JSON.stringify(txt), divout, maxItems);
+            print_generateHrefs(JSON.stringify(txt), divout, maxItems);
+            // print_generateHrefs(text, divout, maxItems);
+            return txt;
+        }).then((text) => {
+            // print_generateHrefs(text, divout, maxItems);
+
+        });
+    } catch (error) {
+        console.error("Fehler beim Parsen des HTML-Code:", error);
+        // divout.appendChild("Error:" + error);
+    }
+}
+
+function print_generateHrefs(text, divout, maxItems = 25) {
+    try {
+        // divout.innerHTML = "POUT" + JSON.stringify(text);
+        console.log("text: " + JSON.stringify(text));
+        // divout.innerHTML = "Parsing:" + JSON.stringify(text);
         var matches = parseHtmlAndExtractUrls(text);
-        var result = "<ul class=\"listul\">";
+
+        // Build a real <ul> DOM element so it renders correctly in any container
+        var ul = document.createElement("ul");
+        ul.className = "listul";
+
         var i = 0;
         for (var v in matches) {
-            var item = matches[v];
-            if (item.url !== undefined && item.url !== null && item.url.length > 5 && item.innerHtml !== undefined && item.innerHtml !== null && item.innerHtml.length > 1 && !item.url.includes(".jpeg") && !item.url.includes(".jpg") && !item.url.includes(".png")) {
-                // if (item.url !== undefined && item.url !== null && item.url.length > 5) {
-                result += "<li><span><a href=\"" + item.url + "\" target=\"_blank\">" + item.innerHtml + "</a></span><br/></li>";
-            }
-            i++;
-            if (i >= maxItems) {
-                break;
+            try {
+                var item = matches[v];
+                // Skip entries with missing/too-short url or label, and skip image links
+                if (
+                    item.url == null || item.url.length <= 5 ||
+                    item.innerHtml == null || item.innerHtml.trim().length <= 1 ||
+                    item.url.includes(".jpeg") || item.url.includes(".jpg") || item.url.includes(".png")
+                ) {
+                    continue;
+                }
+                var li = document.createElement("li");
+                var a = document.createElement("a");
+                a.href = item.url;
+                a.target = "_blank";
+                a.textContent = item.innerHtml;
+                li.appendChild(a);
+                ul.appendChild(li);
+                i++;
+                if (i >= maxItems) {
+                    // break;
+                }
+            } catch (error) {
+                console.error("Error:" + e)
             }
         }
-        result += "</ul>";
-        divout.innerHTML += "<br/>" + result + "<br/>";
-    });
+        // Append the rendered <ul> to the target element
+        divout.appendChild(ul);
+        // divout.innerHTML =ul;
+    } catch (error) {
+        console.error("Fehler beim Parsen des HTML-Code:", error);
+        // divout.appendChild("Error:" + error);
+    }
+
+
+
 }
+
 function parseHtmlAndExtractUrls(html, isHTML = false) {
     // Create a new DOMParser instance
     const parser = new DOMParser();
@@ -92,7 +147,10 @@ function parseHtmlAndExtractUrls(html, isHTML = false) {
         const url = link.href;
         const innerHtml = isHTML ? link.innerHTML : link.textContent;
         // Push the result as an object to the array
-        result.push({ url, innerHtml });
+        result.push({
+            url,
+            innerHtml
+        });
     });
     // Return the array of results
     return result;
@@ -231,7 +289,9 @@ function replace_urls(str) {
  * @param {boolean} [opts.includeMailto=false] - If true, include mailto: links.
  * @returns {string[]} Array of unique URL strings (order preserved).
  */
-function extractUrlsFromHtml(html, { includeMailto = false } = {}) {
+function extractUrlsFromHtml(html, {
+    includeMailto = false
+} = {}) {
     if (!html || typeof html !== "string") return [];
 
     const urls = [];
@@ -319,13 +379,29 @@ function extractUrls(text) {
     const urlRegex = /<a href="([^"]*)">([^<]+)<\/a>/g;
     const urls = [];
     let match;
-    while ((match = urlRegex.exec(text)) !== null) { urls.push({ url: match[1], label: match[2] }); }
+    while ((match = urlRegex.exec(text)) !== null) {
+        urls.push({
+            url: match[1],
+            label: match[2]
+        });
+    }
     return urls;
 }
 
-function generateHtml(urls) { let html = ''; for (const url of urls) { html += `<a href="${url.url}">${url.label}</a> `; } return html.trim(); }
+function generateHtml(urls) {
+    let html = '';
+    for (const url of urls) {
+        html += `<a href="${url.url}">${url.label}</a> `;
+    }
+    return html.trim();
+}
 
-function generateUrlLink(text, urlRegex) { const urls = extractUrls(text); const html = generateHtml(urls); return html; }
+function generateUrlLink(text, urlRegex) {
+    const urls = extractUrls(text);
+    const html = generateHtml(urls);
+    return html;
+}
+
 function addCssCLS(e, cls) {
     var element = document.getElementById(e);
     element.classList.add(cls);
