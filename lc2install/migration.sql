@@ -68,8 +68,8 @@ VALUES
         'Development & IT',
         'LC2Navigator2027 v.1.0',
         '€0,0 - €0/month',
-        '2026-09-10T23:00:00Z',
-        '2026-09-13T23:59:59Z',
+        '2026-09-12T03:00:00Z',
+        '2026-09-17T23:59:59Z',
         'webmaster@letztechance.org',
         '+49 30 12345678',
         'https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip',
@@ -81,89 +81,27 @@ VALUES
         -- ,{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/lc2navigatorconfig.zip","filename":"lc2navigatorconfig.zip","destination":"./","extractArchive":true,"createDirectory":true}        
     ),
     (
-        'LC2Navigator2027 v.1.01x',
-        'LC2Navigator2027 v.1.01x',
-        'LC2Navigator2027 v.1.01x',
+        'LC2Navigator2026 v.1.0',
+        'LC2Navigator2026 v.1.0',
+        'LC2Navigator2026 v.1.0',
         'Full-time',
         'Development & IT',
         'LetzteChance.Org - Desktop App.',
         'Development & IT',
-        'LC2Navigator2027 v.1.0',
+        'LC2Navigator2026 v.1.0',
         '€0,0 - €0/month',
-        '2026-09-10T23:00:00Z',
-        '2026-09-13T23:59:59Z',
+        '2026-09-18T21:00:00Z',
+        '2026-09-18T23:59:59Z',
         'webmaster@letztechance.org',
         '+49 30 12345678',
         'https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip',
         1,
-        'lc2navigator2027.exe',       
-       '[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/exe.zip","filename":"exe.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"app.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/gui.zip","filename":"gui.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"app.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/node_modules.zip","filename":"node_modules.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources.zip","filename":"resources.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_cmd.zip","filename":"resources_cmd.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_xml.zip","filename":"resources_xml.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_python.zip","filename":"resources_python.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/assets.zip","filename":"assets.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/schema.zip","filename":"schema.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/lc2navigatorconfig.zip","filename":"lc2navigatorconfig.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/sqlite3win.zip","filename":"sqlite3win.zip","destination":"./","extractArchive":true,"createDirectory":true}]'
+        'lc2navigator2027.exe',
+        -- ,{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"gui.zip","destination":"./","extractArchive":false,"createDirectory":true}
+        '[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/exe.zip","filename":"exe.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"app.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/gui.zip","filename":"gui.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"app.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/node_modules.zip","filename":"node_modules.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources.zip","filename":"resources.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_cmd.zip","filename":"resources_cmd.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_xml.zip","filename":"resources_xml.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_python.zip","filename":"resources_python.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/assets.zip","filename":"assets.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/schema.zip","filename":"schema.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/lc2navigatorconfig.zip","filename":"lc2navigatorconfig.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/sqlite3win.zip","filename":"sqlite3win.zip","destination":"./","extractArchive":true,"createDirectory":true}]'
+        -- ,{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/sqlite3win.zip","filename":"sqlite3win.zip","destination":"./","extractArchive":true,"createDirectory":true}
+        -- ,{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/lc2navigatorconfig.zip","filename":"lc2navigatorconfig.zip","destination":"./","extractArchive":true,"createDirectory":true}        
     ),    
-     (
-        'LC2Navigator2027',
-        'LC2Navigator2027',
-        'LC2Navigator2027',
-        'Full-time',
-        'Development & IT',
-        'Maven 3.383.',
-        'Development & IT',
-        'LC2Navigator2027',
-        '€0,0 - €0/month',
-        '2026-05-01T20:00:00Z',
-        '2026-05-13T23:59:59Z',
-        'webmaster@letztechance.org',
-        '+49 30 12345678',
-        'https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip',
-        1,
-        'lc2navigator2027.exe',
-        -- '[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/schema.zip","filename":schema.zip","destination":"./","extractArchive":true,"createDirectory":true}]'
-        '['+
-        '{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"app.zip","destination":"./","extractArchive":false,"createDirectory":true},'+
-        '{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/gui.zip","filename":"gui.zip","destination":"./","extractArchive":false,"createDirectory":true},'+
-        -- '{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/exe.zip","filename":"exe.zip","destination":"./","extractArchive":false,"createDirectory":true}'+
-        
-        ']'
-    ),
-    (
-        'LC2Navigator2027',
-        'LC2Navigator2027',
-        'LC2Navigator2027',
-        'Full-time',
-        'Development & IT',
-        'Maven 3.383.',
-        'Development & IT',
-        'LC2Navigator2027',
-        '€0,0 - €0/month',
-        '2026-05-01T20:00:00Z',
-        '2026-05-13T23:59:59Z',
-        'webmaster@letztechance.org',
-        '+49 30 12345678',
-        'https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip',
-        1,
-        'lc2navigator2027.exe',
-        -- '[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/schema.zip","filename":schema.zip","destination":"./","extractArchive":true,"createDirectory":true}]'
-        '[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"app.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/gui.zip","filename":"gui.zip","destination":"./","extractArchive":false,"createDirectory":true}, {"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/exe.zip","filename":"exe.zip","destination":"./","extractArchive":false,"createDirectory":true},[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources.zip","filename":"resources.zip","destination":"./","extractArchive":true,"createDirectory":true},[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_cmd.zip","filename":"resources_cmd.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_xml.zip","filename":resources_xml.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_python.zip","filename":resources_python.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/node_modules.zip","filename":node_modules.zip","destination":"./","extractArchive":false,"createDirectory":true}]'
-    ),
-    (
-        'LC2Navigator2027',
-        'LC2Navigator2027',
-        'LC2Navigator2027',
-        'Full-time',
-        'Development & IT',
-        'Maven 3.383.',
-        'Development & IT',
-        'LC2Navigator2027',
-        '€0,0 - €0/month',
-        '2026-05-01T20:00:00Z',
-        '2026-05-13T23:59:59Z',
-        'webmaster@letztechance.org',
-        '+49 30 12345678',
-        'https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip',
-        1,
-        'lc2navigator2027.exe',
-        -- '[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/schema.zip","filename":schema.zip","destination":"./","extractArchive":true,"createDirectory":true}]'
-        '[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"app.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/gui.zip","filename":"gui.zip","destination":"./","extractArchive":false,"createDirectory":true}, {"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/exe.zip","filename":"exe.zip","destination":"./","extractArchive":false,"createDirectory":true},[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources.zip","filename":"resources.zip","destination":"./","extractArchive":true,"createDirectory":true},[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_cmd.zip","filename":"resources_cmd.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_xml.zip","filename":resources_xml.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_python.zip","filename":resources_python.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/node_modules.zip","filename":node_modules.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/assets.zip","filename":assets.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/lc2navigatorconfig.zip","filename":lc2navigatorconfig.zip","destination":"./","extractArchive":false,"createDirectory":true}]'
-    ),
     (
         'lc2-maven-plugin Developer Edition',
         'Apache Maven',
@@ -394,57 +332,56 @@ VALUES
         'exec.batlc2execasdadmin',
         '[{"url":"https://github.com/microsoft/WSL/releases/download/2.7.3/Microsoft.WSL_2.7.3.0_x64_ARM64.msixbundle","filename":"Microsoft.WSL_2.7.3.0_x64_ARM64.msixbundle","destination":"./","extractArchive":false,"createDirectory":true}]'
     ),
-    (
-        'LC2Navigator2027 v.1.021',
-        'LC2Navigator2027 v.1.012',
-        'LC2Navigator2027 v.1.012',
-        'Full-time',
-        'Development & IT',
-        'LetzteChance.Org - Desktop App.',
-        'Development & IT',
-        'LC2Navigator2027 v.1.0',
-        '€0,0 - €0/month',
-        '2021-09-10T23:00:00Z',
-        '2021-09-13T23:59:59Z',
-        'webmaster@letztechance.org',
-        '+49 30 12345678',
-        'https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip',
-        1,
-        'lc2navigator2027.exe',
-        -- ,{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"gui.zip","destination":"./","extractArchive":false,"createDirectory":true}
-        '[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"app.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"gui.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"gui.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/node_modules.zip","filename":"node_modules.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources.zip","filename":"resources.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_cmd.zip","filename":"resources_cmd.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_xml.zip","filename":"resources_xml.zip","destination":"./","extractArchive":false,"createDirectory":true}]'
-        -- ,{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_xml.zip","filename":"resources_xml.zip","destination":"./","extractArchive":false,"createDirectory":true}
-        -- ,{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_cmd.zip","filename":"resources_cmd.zip","destination":"./","extractArchive":false,"createDirectory":true}
-        -- ,{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources.zip","filename":"resources.zip","destination":"./","extractArchive":false,"createDirectory":true}
-        -- ,{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/node_modules.zip.zip","filename":"node_modules.zip.zip","destination":"./","extractArchive":false,"createDirectory":true}
-        -- '[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/app.zip","filename":"app.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/gui.zip","filename":"gui.zip","destination":"./","extractArchive":false,"createDirectory":true}, {"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/release-builds/exe.zip","filename":"exe.zip","destination":"./","extractArchive":false,"createDirectory":true},[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources.zip","filename":"resources.zip","destination":"./","extractArchive":true,"createDirectory":true},[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_cmd.zip","filename":"resources_cmd.zip","destination":"./","extractArchive":true,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_xml.zip","filename":resources_xml.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/resources_python.zip","filename":resources_python.zip","destination":"./","extractArchive":false,"createDirectory":true},{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/node_modules.zip","filename":node_modules.zip","destination":"./","extractArchive":false,"createDirectory":true}]'
-    )
-    --('insert.local.jobs.bat','insert.local.jobs.bat','insert.local.jobs.bat','insert.local.jobs.bat','insert.local.jobs.bat','insert.local.jobs.bat','insert.local.jobs.bat','insert.local.jobs.bat','insert.local.jobs.bat','insert.local.jobs.bat','insert.local.jobs.bat','insert.local.jobs.bat@insert.local.jobs.bat.com','date insert.local.jobs.bat', '.\insert.local.jobs.bat', 109,'exec.bat .\insert.local.jobs.bat','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\insert.local.jobs.bat","filename":".\insert.local.jobs.bat","destination":"./","extractArchive":true,"createDirectory":true}]'),
-    --('lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat@lc2dir2sqlvalues.bat.com','date lc2dir2sqlvalues.bat', '.\lc2dir2sqlvalues.bat', 66,'exec.bat .\lc2dir2sqlvalues.bat','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2dir2sqlvalues.bat","filename":".\lc2dir2sqlvalues.bat","destination":"./","extractArchive":true,"createDirectory":true}]'),
-    
-    ;
--- ('config.toml','config.toml','config.toml','config.toml','config.toml','config.toml@config.toml.com','date config.toml', '.\config.toml', 1548,'exec.bat .\config.toml','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\config.toml","filename":".\config.toml","destination":"./","extractArchive":true,"createDirectory":true}]'),
+-- more binaries
+
+-- core
+('lc2install.exe','lc2install.exe','lc2install.exe','lc2install.exe','lc2install.exe','lc2install.exe','lc2install.exe','lc2install.exe','5348352','2026-09-01T00:00:00Z','2026-09-28T00:00:00Z','lc2install.exe@lc2install.exe.com','5348352', '.\lc2install.exe', 1,'exec.bat .\lc2install.exe','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/lc2install/lc2install.exe","filename":".\lc2install.exe","destination":"./","extractArchive":true,"createDirectory":true}]'),
+
+('all.cmp.bat','all.cmp.bat','all.cmp.bat','all.cmp.bat','all.cmp.bat','all.cmp.bat','all.cmp.bat','all.cmp.bat','all.cmp.bat','2026-09-18T00:00:00Z','all.cmp.bat','all.cmp.bat@all.cmp.bat.com','360', '.\all.cmp.bat', 0,'exec.bat .\all.cmp.bat','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\all.cmp.bat","filename":".\all.cmp.bat","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('all.zip','all.zip','all.zip','all.zip','all.zip','all.zip','all.zip','all.zip','all.zip','2026-09-18T00:00:00Z','all.zip','all.zip@all.zip.com','2175', '.\all.zip', 0,'exec.bat .\all.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\all.zip","filename":".\all.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('assets.zip','assets.zip','assets.zip','assets.zip','assets.zip','assets.zip','assets.zip','assets.zip','assets.zip','2026-09-18T00:00:00Z','assets.zip','assets.zip@assets.zip.com','19105922', '.\assets.zip', 0,'exec.bat .\assets.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\assets.zip","filename":".\assets.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+
+('lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','2026-09-18T00:00:00Z','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat@lc2dir2sqlvalues.bat.com','66', '.\lc2dir2sqlvalues.bat', 0,'exec.bat .\lc2dir2sqlvalues.bat','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2dir2sqlvalues.bat","filename":".\lc2dir2sqlvalues.bat","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','2026-09-18T00:00:00Z','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe@lc2dir2sqlvalues.exe.com','194048', '.\lc2dir2sqlvalues.exe', 0,'exec.bat .\lc2dir2sqlvalues.exe','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2dir2sqlvalues.exe","filename":".\lc2dir2sqlvalues.exe","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('LC2EncrypDecrypt.zip','LC2EncrypDecrypt.zip','LC2EncrypDecrypt.zip','LC2EncrypDecrypt.zip','LC2EncrypDecrypt.zip','LC2EncrypDecrypt.zip','LC2EncrypDecrypt.zip','LC2EncrypDecrypt.zip','LC2EncrypDecrypt.zip','2026-09-18T00:00:00Z','LC2EncrypDecrypt.zip','LC2EncrypDecrypt.zip@LC2EncrypDecrypt.zip.com','51045', '.\LC2EncrypDecrypt.zip', 0,'exec.bat .\LC2EncrypDecrypt.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\LC2EncrypDecrypt.zip","filename":".\LC2EncrypDecrypt.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('lc2navigatorconfig.zip','lc2navigatorconfig.zip','lc2navigatorconfig.zip','lc2navigatorconfig.zip','lc2navigatorconfig.zip','lc2navigatorconfig.zip','lc2navigatorconfig.zip','lc2navigatorconfig.zip','lc2navigatorconfig.zip','2026-09-18T00:00:00Z','lc2navigatorconfig.zip','lc2navigatorconfig.zip@lc2navigatorconfig.zip.com','4497', '.\lc2navigatorconfig.zip', 0,'exec.bat .\lc2navigatorconfig.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2navigatorconfig.zip","filename":".\lc2navigatorconfig.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('node_modules.zip','node_modules.zip','node_modules.zip','node_modules.zip','node_modules.zip','node_modules.zip','node_modules.zip','node_modules.zip','node_modules.zip','2026-09-18T00:00:00Z','node_modules.zip','node_modules.zip@node_modules.zip.com','23714486', '.\node_modules.zip', 0,'exec.bat .\node_modules.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\node_modules.zip","filename":".\node_modules.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+
+('resources.zip','resources.zip','resources.zip','resources.zip','resources.zip','resources.zip','resources.zip','resources.zip','resources.zip','2026-09-18T00:00:00Z','resources.zip','resources.zip@resources.zip.com','77978', '.\resources.zip', 0,'exec.bat .\resources.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\resources.zip","filename":".\resources.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('resources_cmd.zip','resources_cmd.zip','resources_cmd.zip','resources_cmd.zip','resources_cmd.zip','resources_cmd.zip','resources_cmd.zip','resources_cmd.zip','resources_cmd.zip','2026-09-18T00:00:00Z','resources_cmd.zip','resources_cmd.zip@resources_cmd.zip.com','97867', '.\resources_cmd.zip', 0,'exec.bat .\resources_cmd.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\resources_cmd.zip","filename":".\resources_cmd.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('resources_python.zip','resources_python.zip','resources_python.zip','resources_python.zip','resources_python.zip','resources_python.zip','resources_python.zip','resources_python.zip','resources_python.zip','2026-09-18T00:00:00Z','resources_python.zip','resources_python.zip@resources_python.zip.com','142839', '.\resources_python.zip', 0,'exec.bat .\resources_python.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\resources_python.zip","filename":".\resources_python.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('resources_xml.zip','resources_xml.zip','resources_xml.zip','resources_xml.zip','resources_xml.zip','resources_xml.zip','resources_xml.zip','resources_xml.zip','resources_xml.zip','2026-09-18T00:00:00Z','resources_xml.zip','resources_xml.zip@resources_xml.zip.com','75492', '.\resources_xml.zip', 0,'exec.bat .\resources_xml.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\resources_xml.zip","filename":".\resources_xml.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+
+('schema.zip','schema.zip','schema.zip','schema.zip','schema.zip','schema.zip','schema.zip','schema.zip','schema.zip','2026-09-18T00:00:00Z','schema.zip','schema.zip@schema.zip.com','6029', '.\schema.zip', 0,'exec.bat .\schema.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\schema.zip","filename":".\schema.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+
+('sqlite3win.zip','sqlite3win.zip','sqlite3win.zip','sqlite3win.zip','sqlite3win.zip','sqlite3win.zip','sqlite3win.zip','sqlite3win.zip','sqlite3win.zip','2026-09-18T00:00:00Z','sqlite3win.zip','sqlite3win.zip@sqlite3win.zip.com','3044736', '.\sqlite3win.zip', 0,'exec.bat .\sqlite3win.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\sqlite3win.zip","filename":".\sqlite3win.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+
+-- db
+-- container
+('LC2ApacheRancher.zip','LC2ApacheRancher.zip','LC2ApacheRancher.zip','LC2ApacheRancher.zip','LC2ApacheRancher.zip','LC2ApacheRancher.zip','LC2ApacheRancher.zip','LC2ApacheRancher.zip','21202','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','LC2ApacheRancher.zip@LC2ApacheRancher.zip.com','21202', '.\LC2ApacheRancher.zip', 0,'exec.bat .\LC2ApacheRancher.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\LC2ApacheRancher.zip","filename":".\LC2ApacheRancher.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('LC2ApacheTC.zip','LC2ApacheTC.zip','LC2ApacheTC.zip','LC2ApacheTC.zip','LC2ApacheTC.zip','LC2ApacheTC.zip','LC2ApacheTC.zip','LC2ApacheTC.zip','41597','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','LC2ApacheTC.zip@LC2ApacheTC.zip.com','41597', '.\LC2ApacheTC.zip', 0,'exec.bat .\LC2ApacheTC.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\LC2ApacheTC.zip","filename":".\LC2ApacheTC.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('lc2containerservice.zip','lc2containerservice.zip','lc2containerservice.zip','lc2containerservice.zip','lc2containerservice.zip','lc2containerservice.zip','lc2containerservice.zip','lc2containerservice.zip','4793221','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','lc2containerservice.zip@lc2containerservice.zip.com','4793221', '.\lc2containerservice.zip', 0,'exec.bat .\lc2containerservice.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2containerservice.zip","filename":".\lc2containerservice.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('lc2containerservice_backend.zip','lc2containerservice_backend.zip','lc2containerservice_backend.zip','lc2containerservice_backend.zip','lc2containerservice_backend.zip','lc2containerservice_backend.zip','lc2containerservice_backend.zip','lc2containerservice_backend.zip','3596936','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','lc2containerservice_backend.zip@lc2containerservice_backend.zip.com','3596936', '.\lc2containerservice_backend.zip', 0,'exec.bat .\lc2containerservice_backend.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2containerservice_backend.zip","filename":".\lc2containerservice_backend.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('lc2containerservice_frontend.zip','lc2containerservice_frontend.zip','lc2containerservice_frontend.zip','lc2containerservice_frontend.zip','lc2containerservice_frontend.zip','lc2containerservice_frontend.zip','lc2containerservice_frontend.zip','lc2containerservice_frontend.zip','6549406','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','lc2containerservice_frontend.zip@lc2containerservice_frontend.zip.com','6549406', '.\lc2containerservice_frontend.zip', 0,'exec.bat .\lc2containerservice_frontend.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2containerservice_frontend.zip","filename":".\lc2containerservice_frontend.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('LC2Database.zip.sfv','LC2Database.zip.sfv','LC2Database.zip.sfv','LC2Database.zip.sfv','LC2Database.zip.sfv','LC2Database.zip.sfv','LC2Database.zip.sfv','LC2Database.zip.sfv','44','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','LC2Database.zip.sfv@LC2Database.zip.sfv.com','44', '.\LC2Database.zip.sfv', 0,'exec.bat .\LC2Database.zip.sfv','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\LC2Database.zip.sfv","filename":".\LC2Database.zip.sfv","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','66','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','lc2dir2sqlvalues.bat@lc2dir2sqlvalues.bat.com','66', '.\lc2dir2sqlvalues.bat', 0,'exec.bat .\lc2dir2sqlvalues.bat','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2dir2sqlvalues.bat","filename":".\lc2dir2sqlvalues.bat","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','194048','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','lc2dir2sqlvalues.exe@lc2dir2sqlvalues.exe.com','194048', '.\lc2dir2sqlvalues.exe', 0,'exec.bat .\lc2dir2sqlvalues.exe','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2dir2sqlvalues.exe","filename":".\lc2dir2sqlvalues.exe","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('LC2DockerJenkins.zip','LC2DockerJenkins.zip','LC2DockerJenkins.zip','LC2DockerJenkins.zip','LC2DockerJenkins.zip','LC2DockerJenkins.zip','LC2DockerJenkins.zip','LC2DockerJenkins.zip','45765','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','LC2DockerJenkins.zip@LC2DockerJenkins.zip.com','45765', '.\LC2DockerJenkins.zip', 0,'exec.bat .\LC2DockerJenkins.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\LC2DockerJenkins.zip","filename":".\LC2DockerJenkins.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('LC2DockerKeyCloak.zip','LC2DockerKeyCloak.zip','LC2DockerKeyCloak.zip','LC2DockerKeyCloak.zip','LC2DockerKeyCloak.zip','LC2DockerKeyCloak.zip','LC2DockerKeyCloak.zip','LC2DockerKeyCloak.zip','20289','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','LC2DockerKeyCloak.zip@LC2DockerKeyCloak.zip.com','20289', '.\LC2DockerKeyCloak.zip', 0,'exec.bat .\LC2DockerKeyCloak.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\LC2DockerKeyCloak.zip","filename":".\LC2DockerKeyCloak.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('lc2dockerphpapache.zip','lc2dockerphpapache.zip','lc2dockerphpapache.zip','lc2dockerphpapache.zip','lc2dockerphpapache.zip','lc2dockerphpapache.zip','lc2dockerphpapache.zip','lc2dockerphpapache.zip','289049','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','lc2dockerphpapache.zip@lc2dockerphpapache.zip.com','289049', '.\lc2dockerphpapache.zip', 0,'exec.bat .\lc2dockerphpapache.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2dockerphpapache.zip","filename":".\lc2dockerphpapache.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('lc2dockerphpapacheservice.zip','lc2dockerphpapacheservice.zip','lc2dockerphpapacheservice.zip','lc2dockerphpapacheservice.zip','lc2dockerphpapacheservice.zip','lc2dockerphpapacheservice.zip','lc2dockerphpapacheservice.zip','lc2dockerphpapacheservice.zip','7237325','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','lc2dockerphpapacheservice.zip@lc2dockerphpapacheservice.zip.com','7237325', '.\lc2dockerphpapacheservice.zip', 0,'exec.bat .\lc2dockerphpapacheservice.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2dockerphpapacheservice.zip","filename":".\lc2dockerphpapacheservice.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('LC2DockerSonarCube.zip','LC2DockerSonarCube.zip','LC2DockerSonarCube.zip','LC2DockerSonarCube.zip','LC2DockerSonarCube.zip','LC2DockerSonarCube.zip','LC2DockerSonarCube.zip','LC2DockerSonarCube.zip','1012029','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','LC2DockerSonarCube.zip@LC2DockerSonarCube.zip.com','1012029', '.\LC2DockerSonarCube.zip', 0,'exec.bat .\LC2DockerSonarCube.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\LC2DockerSonarCube.zip","filename":".\LC2DockerSonarCube.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('LC2Grafana.zip','LC2Grafana.zip','LC2Grafana.zip','LC2Grafana.zip','LC2Grafana.zip','LC2Grafana.zip','LC2Grafana.zip','LC2Grafana.zip','10137','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','LC2Grafana.zip@LC2Grafana.zip.com','10137', '.\LC2Grafana.zip', 0,'exec.bat .\LC2Grafana.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\LC2Grafana.zip","filename":".\LC2Grafana.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('LC2Podman.zip','LC2Podman.zip','LC2Podman.zip','LC2Podman.zip','LC2Podman.zip','LC2Podman.zip','LC2Podman.zip','LC2Podman.zip','46998','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','LC2Podman.zip@LC2Podman.zip.com','46998', '.\LC2Podman.zip', 0,'exec.bat .\LC2Podman.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\LC2Podman.zip","filename":".\LC2Podman.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('LC2RotatingTorproxy.zip','LC2RotatingTorproxy.zip','LC2RotatingTorproxy.zip','LC2RotatingTorproxy.zip','LC2RotatingTorproxy.zip','LC2RotatingTorproxy.zip','LC2RotatingTorproxy.zip','LC2RotatingTorproxy.zip','111694','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','LC2RotatingTorproxy.zip@LC2RotatingTorproxy.zip.com','111694', '.\LC2RotatingTorproxy.zip', 0,'exec.bat .\LC2RotatingTorproxy.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\LC2RotatingTorproxy.zip","filename":".\LC2RotatingTorproxy.zip","destination":"./","extractArchive":true,"createDirectory":true}]'),
+('lc2stable_diffusion.zip','lc2stable_diffusion.zip','lc2stable_diffusion.zip','lc2stable_diffusion.zip','lc2stable_diffusion.zip','lc2stable_diffusion.zip','lc2stable_diffusion.zip','lc2stable_diffusion.zip','34589','2026-09-18T00:00:00Z','2026-09-28T00:00:00Z','lc2stable_diffusion.zip@lc2stable_diffusion.zip.com','34589', '.\lc2stable_diffusion.zip', 0,'exec.bat .\lc2stable_diffusion.zip','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2stable_diffusion.zip","filename":".\lc2stable_diffusion.zip","destination":"./","extractArchive":true,"createDirectory":true}]')
+
+-- eof
+;
+
 -- ('lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat','lc2dir2sqlvalues.bat@lc2dir2sqlvalues.bat.com','date lc2dir2sqlvalues.bat', '.\lc2dir2sqlvalues.bat', 66,'exec.bat .\lc2dir2sqlvalues.bat','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2dir2sqlvalues.bat","filename":".\lc2dir2sqlvalues.bat","destination":"./","extractArchive":true,"createDirectory":true}]'),
 -- ('lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe','lc2dir2sqlvalues.exe@lc2dir2sqlvalues.exe.com','date lc2dir2sqlvalues.exe', '.\lc2dir2sqlvalues.exe', 194048,'exec.bat .\lc2dir2sqlvalues.exe','[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/.\lc2dir2sqlvalues.exe","filename":".\lc2dir2sqlvalues.exe","destination":"./","extractArchive":true,"createDirectory":true}]');
 
---,
--- (
---     'cmp.bat ',
---     'cmp.bat ',
---     'Remote:cmp.bat ',
---     'Full-time',
---     'Development & IT',
---     '1.0.0',
---     'cmp.bat ',
---     'Development & IT',
---     'cmp.bat @cmp.bat ',
---     '+4900000000',
---     'https://www.letztechance.org/lc/',
---     1,
---     'exec cmp.bat ',
---     '[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/tools/cmp.bat ","filename":"cmp.bat ","destination":"./","extractArchive":false,"createDirectory":true}]'
--- )
-;
 
 --  ('lc2patcher.exe ', 'lc2patcher.exe ', 'Remote:lc2patcher.exe ', 'Full-time', 'Development & IT', '1.0.0', 'lc2patcher.exe ', 'Development & IT', 'lc2patcher.exe @lc2patcher.exe ', '+4900000000', 'https://www.letztechance.org/lc/', 1, 'exec lc2patcher.exe ', '[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/tools/lc2patcher.exe ","filename":"lc2patcher.exe ","destination":"./","extractArchive":false,"createDirectory":true}]');
 --  ('lc2replaceinfile.exe ', 'lc2replaceinfile.exe ', 'Remote:lc2replaceinfile.exe ', 'Full-time', 'Development & IT', '1.0.0', 'lc2replaceinfile.exe ', 'Development & IT', 'lc2replaceinfile.exe @lc2replaceinfile.exe ', '+4900000000', 'https://www.letztechance.org/lc/', 1, 'exec lc2replaceinfile.exe ', '[{"url":"https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/tools/lc2replaceinfile.exe ","filename":"lc2replaceinfile.exe ","destination":"./","extractArchive":false,"createDirectory":true}]');
