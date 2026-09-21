@@ -1,47 +1,7 @@
 print_action('external script is running...');
-// alert("test");
 
-setTimeout(() => {
-    try {
-        const nav_home = document.getElementById("nav_home");
-        const nav_homecnt = document.getElementById("nav_homecnt");
-        const nav_news = document.getElementById("nav_news");
-        const nav_newscnt = document.getElementById("nav_newscnt");
-        const nav_download = document.getElementById("nav_downloads");
-        const nav_downloadscnt = document.getElementById("nav_downloadscnt");
-        const nav_imprint = document.getElementById("nav_imprint");
-        const nav_imprintcnt = document.getElementById("nav_imprintcnt");
-        const newsMessage = document.getElementById("newsMessage");
-        const extnewsMessage = document.getElementById("extnewsMessage");
-        // var url_heise = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.golem.de/";
-        const url_newslist = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1";
-        const url_list = "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1";
-        // const url_heise = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://www.heise.de/newsticker/heise.rdf";
-        const url_heise2 = "https://www.letztechance.org/srss.html?query=https://www.heise.de/newsticker/heise.rdf";
-        const url_heise = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://www.heise.de/newsticker/heise.rdf";
-        const url_golem = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://rss.golem.de/rss.php?feed=RSS0.91";
-        const url_ycombinator = "https://www.letztechance.org/webservices/getcontent.php?ext_url=https://www.letztechance.org/srss.html?query=https://news.ycombinator.com/rss";
-        newsMessage.innerHTML += "<pre id=\"heise\">Loading...</pre><pre id=\"golem\">Loading...</pre><pre id=\"ycombinator\">Loading...</pre>";
-
-        const heise = document.getElementById("heise");
-        const golem = document.getElementById("golem");
-        const ycombinator = document.getElementById("ycombinator");
-        // heise.innerHTML = "Loading:"+url_newslist;
-        // _generateHrefs(url_ycombinator, extnewsMessage);
-        _generateHrefs(url_heise, heise);
-        // _generateHrefs(url_golem, golem);
-        // add_to_menu();
-        addCssCLS("heise", "marquee");
-        addCssCLS("golem", "marquee");
-
-    } catch (error) {
-        console.error(error);
-        alert(error);
-        alert(error.stack);
-        nav_newscnt.innerHTML += "<pre id=\"out_error_cnt\">ERROR:</pre>" + error + "";
-    }
-
-}, 5000);
+const RSS_PROXY = "https://www.letztechance.org/webservices/getcontent.php?ext_url=";
+const RSS_VIEWER = "https://www.letztechance.org/srss.html?query=";
 const createNEWUI = (url, title) => {
     const webview = new WebviewWindow('unique-label', {
         url: url,
@@ -54,355 +14,145 @@ const createNEWUI = (url, title) => {
         console.log('Window successfully created');
     });
 };
-// createNEWUI("https://www.letztechance.org/tools/lc2webllm-chat/", "LC2WebLLM");
-// createNEWUI("https://www.letztechance.org/lc", "LC2WebLLM-Chat");
-// createNEWUI("https://chat.webllm.ai/#/chat", "LC2WebLLM");
 createNEWUI("https://www.letztechance.org/tools/lc2webllmchat", "LC2WebLLM-Chat");
-// https://chat.webllm.ai/#/chat
-// createNEWUI("public/index.html","The Splash2");
-function _generateHrefs(url, divout, maxItems = 25) {
-    // divout.innerHTML = "Loading:" + url;
-    try {
-        fetchHtml(url).then((response) => {
-            // httpfetch('POST', url, "url", url).then((response) => {
-            console.log("fetching external url: " + url);
-            var txt = response;
-            divout.innerHTML = "OUT" + JSON.stringify(txt); //+JSON.stringify(text);
-            // print_generateHrefs(JSON.stringify(txt), divout, maxItems);
-            print_generateHrefs(JSON.stringify(txt), divout, maxItems);
-            // print_generateHrefs(text, divout, maxItems);
-            return txt;
-        }).then((text) => {
-            // print_generateHrefs(text, divout, maxItems);
-
-        });
-    } catch (error) {
-        console.error("Fehler beim Parsen des HTML-Code:", error);
-        // divout.appendChild("Error:" + error);
-    }
+/**
+ * Build the full proxied URL for an RSS feed entry from the config.
+ * @param {string} rss - Raw RSS feed URL from config.
+ * @returns {string}
+ */
+function buildFeedUrl(rss) {
+    return RSS_PROXY + encodeURIComponent(RSS_VIEWER + rss);
 }
 
-function print_generateHrefs(text, divout, maxItems = 25) {
+setTimeout(function () {
     try {
-        // divout.innerHTML = "POUT" + JSON.stringify(text);
-        console.log("text: " + JSON.stringify(text));
-        // divout.innerHTML = "Parsing:" + JSON.stringify(text);
-        var matches = parseHtmlAndExtractUrls(text);
+        /** @type {Array<{id:string, label:string, rss:string, target?:string, marquee?:boolean}>} */
+        var feeds = (typeof window.__news_api === 'undefined' || !Array.isArray(window.__news_api))
+            ? []
+            : window.__news_api;
 
-        // Build a real <ul> DOM element so it renders correctly in any container
+        if (feeds.length === 0) {
+            console.warn('lc2sqlite.js: window.__news_api is empty or not set');
+            return;
+        }
+
+        var newsMessage = document.getElementById("newsMessage");
+        var extnewsMessage = document.getElementById("extnewsMessage");
+
+        // Inject placeholder <pre> elements for feeds that target #newsMessage
+        var inlineFeeds = feeds.filter(function (f) { return !f.target; });
+        if (inlineFeeds.length > 0 && newsMessage) {
+            var placeholders = inlineFeeds.map(function (f) {
+                return '<pre id="' + f.id + '">Loading ' + f.label + '...</pre>';
+            }).join('');
+            newsMessage.innerHTML += placeholders;
+        }
+
+        feeds.forEach(function (feed) {
+            var url = buildFeedUrl(feed.rss);
+            var outEl;
+            if (feed.target) {
+                outEl = document.getElementById(feed.target);
+            } else {
+                outEl = document.getElementById(feed.id);
+            }
+            if (!outEl) {
+                console.warn('lc2sqlite.js: output element not found for feed', feed.id);
+                return;
+            }
+            _generateHrefs(url, outEl);
+            if (feed.marquee) {
+                addCssCLS(feed.id, "marquee");
+            }
+        });
+
+    } catch (error) {
+        console.error('lc2sqlite.js init error:', error);
+    }
+}, 5000);
+
+/**
+ * Fetch HTML from a proxied URL and render links into divout.
+ * @param {string} url
+ * @param {HTMLElement} divout
+ * @param {number} [maxItems=25]
+ */
+function _generateHrefs(url, divout, maxItems) {
+    if (!divout) return;
+    maxItems = maxItems || 25;
+
+    fetchHtml(url)
+        .then(function (response) {
+            console.log("fetching external url: " + url);
+            var txt = response && response.html ? response.html : response;
+            print_generateHrefs(txt, divout, maxItems);
+        })
+        .catch(function (error) {
+            console.error("Error fetching HTML:", error);
+            divout.appendChild(document.createTextNode("Error: " + error));
+        });
+}
+
+/**
+ * Parse fetched HTML, extract links, and append a <ul> to divout.
+ * @param {string} text
+ * @param {HTMLElement} divout
+ * @param {number} [maxItems=25]
+ */
+function print_generateHrefs(text, divout, maxItems) {
+    maxItems = maxItems || 25;
+    try {
+        var matches = parseHtmlAndExtractUrls(text);
         var ul = document.createElement("ul");
         ul.className = "listul";
-
-        var i = 0;
-        for (var v in matches) {
-            try {
-                var item = matches[v];
-                // Skip entries with missing/too-short url or label, and skip image links
-                if (
-                    item.url == null || item.url.length <= 5 ||
-                    item.innerHtml == null || item.innerHtml.trim().length <= 1 ||
-                    item.url.includes(".jpeg") || item.url.includes(".jpg") || item.url.includes(".png")
-                ) {
-                    continue;
-                }
-                var li = document.createElement("li");
-                var a = document.createElement("a");
-                a.href = item.url;
-                a.target = "_blank";
-                a.textContent = item.innerHtml;
-                li.appendChild(a);
-                ul.appendChild(li);
-                i++;
-                if (i >= maxItems) {
-                    // break;
-                }
-            } catch (error) {
-                console.error("Error:" + e)
+        var count = 0;
+        for (var i = 0; i < matches.length; i++) {
+            var item = matches[i];
+            if (
+                !item.url || item.url.length <= 5 ||
+                !item.innerHtml || item.innerHtml.trim().length <= 1 ||
+                /\.(jpe?g|png)$/i.test(item.url)
+            ) {
+                continue;
             }
+            var li = document.createElement("li");
+            var a = document.createElement("a");
+            a.href = item.url;
+            a.target = "_blank";
+            a.textContent = item.innerHtml;
+            li.appendChild(a);
+            ul.appendChild(li);
+            if (++count >= maxItems) break;
         }
-        // Append the rendered <ul> to the target element
         divout.appendChild(ul);
-        // divout.innerHTML =ul;
     } catch (error) {
-        console.error("Fehler beim Parsen des HTML-Code:", error);
-        // divout.appendChild("Error:" + error);
+        console.error("Error parsing HTML:", error);
+        divout.appendChild(document.createTextNode("Error: " + error));
     }
-
-
-
 }
 
-function parseHtmlAndExtractUrls(html, isHTML = false) {
-    // Create a new DOMParser instance
-    const parser = new DOMParser();
-    // Parse the HTML text into a DOM tree
-    const doc = parser.parseFromString(html, 'text/html');
-    // Find all anchor tags
-    const links = doc.querySelectorAll('a');
-    // Initialize an array to store the results
-    const result = [];
-    // Iterate over the anchor tags
-    links.forEach(link => {
-        // Extract the URL and innerHTML
-        const url = link.href;
-        const innerHtml = isHTML ? link.innerHTML : link.textContent;
-        // Push the result as an object to the array
-        result.push({
-            url,
-            innerHtml
-        });
+/**
+ * Parse an HTML string and return [{url, innerHtml}] for every <a> found.
+ * @param {string} html
+ * @returns {Array<{url:string, innerHtml:string}>}
+ */
+function parseHtmlAndExtractUrls(html) {
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(html, 'text/html');
+    var links = doc.querySelectorAll('a');
+    var result = [];
+    links.forEach(function (link) {
+        result.push({ url: link.href, innerHtml: link.textContent });
     });
-    // Return the array of results
     return result;
 }
-async function getJsonData(api, id) {
-    try {
-        const response = await fetch(api);
-        if (!response.ok) {
-            document.getElementById(id).innerHTML = `HTTP-Fehler! Status: ${response.status}`;
-            throw new Error(`HTTP-Fehler! Status: ${response.status}`);
-        }
-        const data = await response.json();
-        document.getElementById(id).innerHTML += JSON.stringify(data);
-    } catch (error) {
-        console.error("Fehler beim Abrufen der Daten:", error);
-        alert(error);
-        document.getElementById(id).innerHTML = error;
-    }
-}
-async function add_to_menu() {
 
-    nav_homecnt.innerHTML = "";
-    nav_newscnt.innerHTML = "";
-    nav_downloadscnt.innerHTML = "";
-    nav_imprintcnt.innerHTML = "";
-
-    nav_home.innerHTML += "<li><a href=\"\">" + "About" + "</a></li>";
-
-    nav_newscnt.innerHTML = "<h1>Loading:" + url_list + "</h1>";
-    // getJsonData(url_list,"nav_news") 
-    // alert("test");
-    httpfetch("GET", url_list).then((response) => {
-        console.log("fetching external url: " + url_list);
-        nav_newscnt.innerHTML = "<h1>Init:" + url_list + "</h1>";
-        var txt = response.text();
-        nav_newscnt.innerHTML = "<h1>" + JSON.stringify(text) + "</h1>";
-        for (var v in txt) {
-            var item = text[v];
-            nav_news.innerHTML += "<li><a href=\"#\">" + JSON.stringify(item) + "</a></li>";
-        }
-        nav_newscnt.innerHTML = "";
-    }).catch((error) => {
-        console.error(error);
-        alert(error);
-        nav_newscnt.innerHTML += "<h1>ERROR:</h1>" + error + "";
-    });
-    nav_homecnt.innerHTML = "";
-    nav_newscnt.innerHTML = "";
-    nav_downloadscnt.innerHTML = "";
-    nav_imprintcnt.innerHTML = "";
-
-}
-
-function generateHrefs(url_heise, divout) {
-    const urlHREFRegex = /<a href="([^"]*)">([^<]+)<\/a>/g;
-    var urlRegex = /(https?:\/\/[^\s]+)/g;
-    httpfetch('POST', url_heise, "url", url_heise).then((response) => {
-        console.log("fetching external url: " + url_heise);
-        var txt = response.text();
-        return txt;
-    }).then((text) => {
-        // print_action("news successfully fetched from: " + url);
-        try {
-            if (text !== undefined) {
-                var matches = extractUrlsFromHtml(text);
-                // console.log(matches);
-                var urls = [];
-                for (var v in matches) {
-                    var item = ("" + matches[v]).split("\">");
-                    urls.push({
-                        "url": (item[0]).replace(/<[^>]*>/g, ''),
-                        "title": ("" + item[0]).replace(/<[^>]*>/g, ''),
-
-                    });
-                }
-                // console.log("URLS:\n" + JSON.stringify(urls));
-                var count = 0;
-                var out = "<ul class=\"listul\">";
-                for (var v in urls) {
-                    var item = urls[v];
-                    if (item.url !== undefined && item.url !== null && item.url.length > 5 && !item.url.includes(".jpeg") && !item.url.includes(".jpg") && !item.url.includes(".png")) {
-                        out += "<li><a href=\"https://www.letztechance.org/openlink?" + item.url + "\" target=\"_blank\">" + item.url + "</a></li>";
-                    }
-                    count++;
-                    if (count > 25)
-
-                        break;
-                }
-                out += "</ul>";
-                // console.log("URLS:\n" + out);
-                divout.innerHTML += "<hr/>NEWS Links:<br/>" + out + "<hr/>";
-
-                // alert(text);
-            } else {
-                alert("URL is not fetchable:", url);
-                print_action("news NOT fetched from: " + url);
-            }
-        } catch (error) {
-            console.error(error);
-            alert(error);
-        }
-    });
-    print_action('external script is done.');
-}
-
-function urlify(text) {
-    var urlRegex = /(http?:\/\/[^\s]+)/g;
-    //   return text.replace(urlRegex, function(url) {
-    //     return '<a href="' + url + '">' + url + '</a>';
-    //   })
-    // or alternatively
-    return ("" + text).replace(urlRegex, '<a href="$1">$1</a>')
-}
-
-function replace_urls(str) {
-    let urls = ["https://www.letztechance.org"];
-    let words = str.split(/\s+/); // Using a regex to split by whitespace    
-    for (let word of words) {
-        let url = null; // Initialize url to null
-        try {
-            let potentialUrl = new URL(word);
-            url = potentialUrl.href;
-            urls.push(urlify(url));
-        } catch (e) {
-            // If the word is not a valid URL, it will throw an error which we ignore
-        }
-    }
-    return urls;
-};
 /**
- * Extracts URLs from an HTML string and returns an array of unique URLs.
- * Tries to use DOM parsing when available, falls back to attribute regex.
- *
- * @param {string} html - The HTML string to scan.
- * @param {Object} [opts] - Options.
- * @param {boolean} [opts.includeMailto=false] - If true, include mailto: links.
- * @returns {string[]} Array of unique URL strings (order preserved).
+ * Add a CSS class to the element with the given id.
+ * @param {string} id
+ * @param {string} cls
  */
-function extractUrlsFromHtml(html, {
-    includeMailto = false
-} = {}) {
-    if (!html || typeof html !== "string") return [];
-
-    const urls = [];
-    const seen = new Set();
-
-    function push(u) {
-        if (!u) return;
-        const s = String(u).trim();
-        if (!s) return;
-        if (!includeMailto && s.toLowerCase().startsWith("mailto:")) return;
-        if (!seen.has(s)) {
-            seen.add(s);
-            urls.push(s);
-        }
-    }
-
-    // Prefer DOM parsing when available (browser/webview)
-    try {
-        if (typeof DOMParser !== "undefined") {
-            const doc = new DOMParser().parseFromString(html, "text/html");
-            // common attributes that contain URLs
-            const attrSelectors = [
-                "a[href]",
-                "area[href]",
-                "link[href]",
-                "img[src]",
-                "script[src]",
-                "iframe[src]",
-                "source[src]",
-                "video[src]",
-                "audio[src]",
-            ].join(",");
-            const nodes = doc.querySelectorAll(attrSelectors);
-            nodes.forEach((node) => {
-                const href = node.getAttribute("href");
-                const src = node.getAttribute("src");
-                push(href || src);
-            });
-
-            // also capture srcset attribute values (multiple comma-separated urls)
-            const srcsetNodes = doc.querySelectorAll("[srcset]");
-            srcsetNodes.forEach((n) => {
-                const ss = n.getAttribute("srcset");
-                if (!ss) return;
-                ss.split(",").forEach(part => {
-                    const u = part.trim().split(/\s+/)[0];
-                    push(u);
-                });
-            });
-
-            return urls;
-        }
-    } catch (e) {
-        // fall through to regex fallback
-    }
-
-    // Fallback: attribute regex (works in non-DOM environments)
-    const attrRegex = /(?:href|src|data-src|data-href|srcset)\s*=\s*(['"])(.*?)\1/gi;
-    let m;
-    while ((m = attrRegex.exec(html)) !== null) {
-        const attr = m[2].trim();
-        if (!attr) continue;
-        if (m[0].toLowerCase().includes("srcset")) {
-            // srcset may contain multiple urls separated by commas
-            attr.split(",").forEach(part => {
-                const u = part.trim().split(/\s+/)[0];
-                push(u);
-            });
-        } else {
-            push(attr);
-        }
-    }
-
-    // Extra pass: plain http/https urls in text nodes
-    const plainUrlRegex = /https?:\/\/[^\s"'<>]+/gi;
-    while ((m = plainUrlRegex.exec(html)) !== null) {
-        push(m[0]);
-    }
-
-    return urls;
-}
-// Example usage: const text = '<a href="https://www.example.com">Example</a> <a href="https://www.google.com">Google</a>'; 
-// const urlRegex = /<a href="([^"]*)">([^<]+)<\/a>/g; const urls = extractUrls(text); const html = generateHtml(urls); const generatedUrlLink = generateUrlLink(text, urlRegex); console.log(generatedUrlLink);
-function extractUrls(text) {
-    const urlRegex = /<a href="([^"]*)">([^<]+)<\/a>/g;
-    const urls = [];
-    let match;
-    while ((match = urlRegex.exec(text)) !== null) {
-        urls.push({
-            url: match[1],
-            label: match[2]
-        });
-    }
-    return urls;
-}
-
-function generateHtml(urls) {
-    let html = '';
-    for (const url of urls) {
-        html += `<a href="${url.url}">${url.label}</a> `;
-    }
-    return html.trim();
-}
-
-function generateUrlLink(text, urlRegex) {
-    const urls = extractUrls(text);
-    const html = generateHtml(urls);
-    return html;
-}
-
-function addCssCLS(e, cls) {
-    var element = document.getElementById(e);
-    element.classList.add(cls);
+function addCssCLS(id, cls) {
+    var el = document.getElementById(id);
+    if (el) el.classList.add(cls);
 }
