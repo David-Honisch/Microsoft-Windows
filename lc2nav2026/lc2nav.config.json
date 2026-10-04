@@ -12,7 +12,7 @@
   "hosttitle": "LetzteChance.Org",
   "is_splashscreen": true,
   "splashscreen": "src/assets/splashscreen.html",
-  "host": "https://www.letztechance.org",
+  "host": "https://www.letztechance.org/lc",
   "sqlschema": "schema.sql",
   "css": "App.css",
   "build": {
@@ -54,10 +54,13 @@
     "application": "select * from application order by name desc;"
   },
   "api": {
-    "all": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1",
-    "news": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1",
+    "all2": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1",
+	"all": "https://www.letztechance.org/lc",
+    "news": "https://www.letztechance.org/lc",
+	"news3": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1",
     "news_2": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=20&value2=1",
-    "downloads": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=20&value2=1",
+    "downloads2": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=20&value2=1",
+	"downloads": "https://www.letztechance.org/lc",
     "news_api": [
       {
         "id": "ycombinator",
@@ -87,9 +90,11 @@
       "enter_a_command": "Enter a command",
       "enter_a_email": "Enter an e-mail address",
       "enter_any_cmd": "Enter an command...echo Hello or select * from users limit 1",
-      "news": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1",
+	  "news": "https://www.letztechance.org/lc",
+      "news22": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=1&value2=1",
       "news_2": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=20&value2=1",
-      "downloads": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=20&value2=1"
+      "downloads2": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=20&value2=1",
+	  "downloads": "https://www.letztechance.org/lc"
     }
   },
   "more": [

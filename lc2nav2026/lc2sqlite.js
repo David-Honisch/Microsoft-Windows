@@ -2,19 +2,19 @@ print_action('external script is running...');
 
 const RSS_PROXY = "https://www.letztechance.org/webservices/getcontent.php?ext_url=";
 const RSS_VIEWER = "https://www.letztechance.org/srss.html?query=";
-const createNEWUI = (url, title) => {
-    const webview = new WebviewWindow('unique-label', {
-        url: url,
-        title: title,
-        width: 600,
-        height: 400,
-    });
+// const createNEWUI = (url, title) => {
+//     const webview = new WebviewWindow('unique-label', {
+//         url: url,
+//         title: title,
+//         width: 600,
+//         height: 400,
+//     });
 
-    webview.once('tauri://created', () => {
-        console.log('Window successfully created');
-    });
-};
-createNEWUI("https://www.letztechance.org/tools/lc2webllmchat", "LC2WebLLM-Chat");
+//     webview.once('tauri://created', () => {
+//         console.log('Window successfully created');
+//     });
+// };
+// createNEWUI("https://www.letztechance.org/tools/lc2webllmchat", "LC2WebLLM-Chat");
 /**
  * Build the full proxied URL for an RSS feed entry from the config.
  * @param {string} rss - Raw RSS feed URL from config.
@@ -60,7 +60,7 @@ setTimeout(function () {
                 console.warn('lc2sqlite.js: output element not found for feed', feed.id);
                 return;
             }
-            _generateHrefs(url, outEl);
+            _generateHrefs(url, outEl, 25, feed.rss);
             if (feed.marquee) {
                 addCssCLS(feed.id, "marquee");
             }
@@ -76,8 +76,9 @@ setTimeout(function () {
  * @param {string} url
  * @param {HTMLElement} divout
  * @param {number} [maxItems=25]
+ * @param {string} [baseUrl]
  */
-function _generateHrefs(url, divout, maxItems) {
+function _generateHrefs(url, divout, maxItems, baseUrl) {
     if (!divout) return;
     maxItems = maxItems || 25;
 
@@ -85,7 +86,7 @@ function _generateHrefs(url, divout, maxItems) {
         .then(function (response) {
             console.log("fetching external url: " + url);
             var txt = response && response.html ? response.html : response;
-            print_generateHrefs(txt, divout, maxItems);
+            print_generateHrefs(txt, divout, maxItems, baseUrl);
         })
         .catch(function (error) {
             console.error("Error fetching HTML:", error);
@@ -98,11 +99,12 @@ function _generateHrefs(url, divout, maxItems) {
  * @param {string} text
  * @param {HTMLElement} divout
  * @param {number} [maxItems=25]
+ * @param {string} [baseUrl]
  */
-function print_generateHrefs(text, divout, maxItems) {
+function print_generateHrefs(text, divout, maxItems, baseUrl) {
     maxItems = maxItems || 25;
     try {
-        var matches = parseHtmlAndExtractUrls(text);
+        var matches = parseHtmlAndExtractUrls(text, baseUrl);
         var ul = document.createElement("ul");
         ul.className = "listul";
         var count = 0;
@@ -134,15 +136,25 @@ function print_generateHrefs(text, divout, maxItems) {
 /**
  * Parse an HTML string and return [{url, innerHtml}] for every <a> found.
  * @param {string} html
+ * @param {string} [baseUrl]
  * @returns {Array<{url:string, innerHtml:string}>}
  */
-function parseHtmlAndExtractUrls(html) {
+function parseHtmlAndExtractUrls(html, baseUrl) {
     var parser = new DOMParser();
     var doc = parser.parseFromString(html, 'text/html');
     var links = doc.querySelectorAll('a');
     var result = [];
     links.forEach(function (link) {
-        result.push({ url: link.href, innerHtml: link.textContent });
+        var href = link.getAttribute('href');
+        if (href) {
+            var absoluteUrl;
+            try {
+                absoluteUrl = new URL(href, baseUrl || window.location.href).href;
+            } catch (e) {
+                absoluteUrl = href;
+            }
+            result.push({ url: absoluteUrl, innerHtml: link.textContent });
+        }
     });
     return result;
 }
