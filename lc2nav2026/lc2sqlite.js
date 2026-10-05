@@ -2,19 +2,19 @@ print_action('external script is running...');
 
 const RSS_PROXY = "https://www.letztechance.org/webservices/getcontent.php?ext_url=";
 const RSS_VIEWER = "https://www.letztechance.org/srss.html?query=";
-// const createNEWUI = (url, title) => {
-//     const webview = new WebviewWindow('unique-label', {
-//         url: url,
-//         title: title,
-//         width: 600,
-//         height: 400,
-//     });
+const createNEWUI = (url, title) => {
+    const webview = new WebviewWindow('unique-label', {
+        url: url,
+        title: title,
+        width: 600,
+        height: 400,
+    });
 
-//     webview.once('tauri://created', () => {
-//         console.log('Window successfully created');
-//     });
-// };
-// createNEWUI("https://www.letztechance.org/tools/lc2webllmchat", "LC2WebLLM-Chat");
+    webview.once('tauri://created', () => {
+        console.log('Window successfully created');
+    });
+};
+createNEWUI("https://www.letztechance.org/tools/lc2webllmchat", "LC2WebLLM-Chat");
 /**
  * Build the full proxied URL for an RSS feed entry from the config.
  * @param {string} rss - Raw RSS feed URL from config.
@@ -27,9 +27,8 @@ function buildFeedUrl(rss) {
 setTimeout(function () {
     try {
         /** @type {Array<{id:string, label:string, rss:string, target?:string, marquee?:boolean}>} */
-        var feeds = (typeof window.__news_api === 'undefined' || !Array.isArray(window.__news_api))
-            ? []
-            : window.__news_api;
+        var feeds = (typeof window.__news_api === 'undefined' || !Array.isArray(window.__news_api)) ? [] :
+            window.__news_api;
 
         if (feeds.length === 0) {
             console.warn('lc2sqlite.js: window.__news_api is empty or not set');
@@ -40,8 +39,10 @@ setTimeout(function () {
         var extnewsMessage = document.getElementById("extnewsMessage");
 
         // Inject placeholder <pre> elements for feeds that target #newsMessage
-        var inlineFeeds = feeds.filter(function (f) { return !f.target; });
-        if (inlineFeeds.length > 0 && newsMessage) {
+        var inlineFeeds = feeds.filter(function (f) {
+            return !f.target;
+        });
+        if (inlineFeeds.length >= 0 && newsMessage) {
             var placeholders = inlineFeeds.map(function (f) {
                 return '<pre id="' + f.id + '">Loading ' + f.label + '...</pre>';
             }).join('');
@@ -58,8 +59,10 @@ setTimeout(function () {
             }
             if (!outEl) {
                 console.warn('lc2sqlite.js: output element not found for feed', feed.id);
+                newsMessage.innerHTML += "lc2sqlite.js: output element not found for feed:" + feed.id;
                 return;
             }
+            outEl.innerHTML = "Reading:" + url;
             _generateHrefs(url, outEl, 25, feed.rss);
             if (feed.marquee) {
                 addCssCLS(feed.id, "marquee");
@@ -70,7 +73,11 @@ setTimeout(function () {
         console.error('lc2sqlite.js init error:', error);
     }
 }, 5000);
-
+async function fetchHtml(url) {
+    return await invoke('fetch_html', {
+        url
+    });
+}
 /**
  * Fetch HTML from a proxied URL and render links into divout.
  * @param {string} url
@@ -79,19 +86,31 @@ setTimeout(function () {
  * @param {string} [baseUrl]
  */
 function _generateHrefs(url, divout, maxItems, baseUrl) {
-    if (!divout) return;
+    if (divout === undefined) return;
     maxItems = maxItems || 25;
+    divout.innerHTML = "Fetching:" + url;
+    console.log("fetching external url: " + url);
+    try {
+        fetchHtml(url)
+            .then(function (response) {
+                try {
+                    console.log("response: " + response);
+                    // divout.innerHTML = "Rendering:" + JSON.stringify(response);
+                    var txt = response && response.html ? response.html : response;
+                    divout.innerHTML = ""+url;// response && response.html ? "RESPONSE:" + response.html : "TEXT:" + txt;
+                    print_generateHrefs(txt, divout, maxItems, baseUrl);
+                } catch (error) {
+                    console.error("Error printing HTML:", error);
+                    divout.innerHTML = "Error: " + error;
+                }
+            })
+            .catch(function (error) {
+                console.error("Error fetching HTML:", error);
+                divout.innerHTML = "Error: " + error;
+            });
+    } catch (error) {
 
-    fetchHtml(url)
-        .then(function (response) {
-            console.log("fetching external url: " + url);
-            var txt = response && response.html ? response.html : response;
-            print_generateHrefs(txt, divout, maxItems, baseUrl);
-        })
-        .catch(function (error) {
-            console.error("Error fetching HTML:", error);
-            divout.appendChild(document.createTextNode("Error: " + error));
-        });
+    }
 }
 
 /**
@@ -102,6 +121,7 @@ function _generateHrefs(url, divout, maxItems, baseUrl) {
  * @param {string} [baseUrl]
  */
 function print_generateHrefs(text, divout, maxItems, baseUrl) {
+    // divout.innerHTML = text;
     maxItems = maxItems || 25;
     try {
         var matches = parseHtmlAndExtractUrls(text, baseUrl);
@@ -121,7 +141,7 @@ function print_generateHrefs(text, divout, maxItems, baseUrl) {
             var a = document.createElement("a");
             a.href = item.url;
             a.target = "_blank";
-            a.textContent = item.innerHtml;
+            a.textContent = i + "-" + item.innerHtml;
             li.appendChild(a);
             ul.appendChild(li);
             if (++count >= maxItems) break;
@@ -153,7 +173,10 @@ function parseHtmlAndExtractUrls(html, baseUrl) {
             } catch (e) {
                 absoluteUrl = href;
             }
-            result.push({ url: absoluteUrl, innerHtml: link.textContent });
+            result.push({
+                url: absoluteUrl,
+                innerHtml: link.textContent
+            });
         }
     });
     return result;
