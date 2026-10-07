@@ -725,3 +725,178 @@ Sure! I'll continue from **Question 34** and complete the **70 most important Cl
 **A.** To specify the model to use  
 **B.** To specify the role of the message (user, assistant)  
 **C.** To specify the type
+
+---
+
+## 📌 **34. What is the recommended way to structure a multi-turn conversation with the Claude API?**  
+**A.** Use a single message per request  
+**B.** Include previous messages in the request using the `history` parameter  
+**C.** Use the `conversation_id` parameter to maintain context  
+**D.** All of the above  
+**✅ Answer: D**
+
+---
+
+## 📌 **35. Which of the following is a valid use case for the Claude API?**  
+**A.** Chatbot development  
+**B.** Code generation  
+**C.** Data analysis  
+**D.** All of the above  
+**✅ Answer: D**
+
+---
+
+## 📌 **36. What is the purpose of the `stop_sequences` parameter in the Claude API?**  
+**A.** To stop the model from generating certain words  
+**B.** To stop the model from generating text after a certain point  
+**C.** To stop the model from using certain tokens  
+**D.** All of the above  
+**✅ Answer: A**
+
+---
+
+## 📌 **37. What is the maximum allowed length for a prompt in the Claude API?**  
+**A.** 1024 characters  
+**B.** 2048 characters  
+**C.** 4096 characters  
+**D.** 8192 characters  
+**✅ Answer: D**
+
+---
+
+## 📌 **38. What is the recommended way to handle API rate limits in the Claude API?**  
+**A.** Use caching  
+**B.** Use exponential backoff  
+**C.** Both A and B  
+**D.** Ignore rate limits  
+**✅ Answer: C**
+
+---
+
+## 📌 **39. What is the recommended way to handle errors in the Claude API?**  
+**A.** Check the HTTP status code  
+**B.** Check the response content for error messages  
+**C.** Both A and B  
+**D.** Ignore errors  
+**✅ Answer: C**
+
+---
+
+## 📌 **40. What is the purpose of the `temperature` parameter in the Claude API?**  
+**A.** To control the randomness of the output  
+**B.** To control the number of tokens in the output  
+**C.** To control the speed of the model  
+**D.** To control the accuracy of the output  
+**✅ Answer: A**
+
+---
+
+## 📌 **41. What is the maximum allowed number of tokens in a single request to the Claude API?**  
+**A.** 2048  
+**B.** 4096  
+**C.** 8192  
+**D.** 16384  
+**✅ Answer: C**
+
+---
+
+## 📌 **42. What is the recommended way to structure a prompt for the Claude API?**  
+**A.** Use clear and concise language  
+**B.** Provide examples of expected output  
+**C.** Use a consistent format for all prompts  
+**D.** All of the above  
+**✅ Answer: D**
+
+---
+
+## 📌 **43. What is the purpose of the `role` parameter in the Claude API?**  
+**A.** To specify the model to use  
+**B.** To specify the role of the message (user, assistant)  
+**C.** To specify the type of response  
+**D.** To specify the temperature of the model  
+**✅ Answer: B**
+
+---
+
+## 📌 **44. Which of the following is a valid value for the `role` parameter in the Claude API?**  
+**A.** `user`  
+**B.** `assistant`  
+**C.** `system`  
+**D.** All of the above  
+**✅ Answer: D**
+
+---
+
+## 📌 **45. What is the recommended way to build a chatbot with the Claude API?**  
+**A.** Use the `history` parameter to maintain context  
+**B.** Send all messages in a single request  
+**C.** Use a single message per request  
+**D.** Both A and B  
+**✅ Answer: A**
+
+---
+
+## 📌 **46. What is the purpose of the `max_tokens` parameter in the Claude API?**  
+**A.** To limit the number of tokens in the output  
+**B.** To limit the number of tokens in the input  
+**C.** To control the temperature of the model  
+**D.** To control the randomness of the output  
+**✅ Answer: A**
+
+---
+
+## 📌 **47. What is the recommended way to handle API rate limits in the Claude API?**  
+**A.** Use caching  
+**B.** Use exponential backoff  
+**C.** Both A and B  
+**D.** Ignore rate limits  
+**✅ Answer: C**
+
+---
+
+## 📌 **48. What is the purpose of the `stop_sequences` parameter in the Claude API?**  
+**A.** To stop the model from generating certain words  
+**B.** To stop the model from generating text after a certain point  
+**C.** To stop the model from using certain tokens  
+**D.** All of the above  
+**✅ Answer: A**
+
+---
+
+## 📌 **49. What is the recommended way to handle errors in the Claude API?**  
+**A.** Check the HTTP status code  
+**B.** Check the response content for error messages  
+**C.** Both A and B  
+**D.** Ignore errors  
+**✅ Answer: C**
+
+---
+
+## 📌 **50. What is the maximum allowed number of tokens in a single request to the Claude API?**  
+**A.** 2048  
+**B.** 4096  
+**C.** 8192  
+**D.** 16384  
+**✅ Answer: C**
+
+---
+
+## 📌 **51. What is the purpose of the `temperature` parameter in the Claude API?**  
+**A.** To control the randomness of the output  
+**B.** To control the number of tokens in the output  
+**C.** To control the speed of the model  
+**D.** To control the accuracy of the output  
+**✅ Answer: A**
+
+---
+
+## 📌 **52. What is the recommended way to structure a prompt for the Claude API?**  
+**A.** Use clear and concise language  
+**B.** Provide examples of expected output  
+**C.** Use a consistent format for all prompts  
+**D.** All of the above  
+**✅ Answer: D**
+
+---
+
+more coming soon...
