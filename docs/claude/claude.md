@@ -1,13 +1,4 @@
-# 
-
-Claude Developer Tutorial
-
-## Deine Nachricht:
-create a learning tutorial for claude developers
-
-## Nachricht von WebLLM:
-# 🧠 **Claude Developer Learning Tutorial**  
-**Empowering Developers with Claude's AI Capabilities**
+# Claude Developer Tutorial
 
 ---
 
