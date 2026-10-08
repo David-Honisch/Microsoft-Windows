@@ -121,7 +121,6 @@ function _generateHrefs(url, divout, maxItems, baseUrl) {
  * @param {string} [baseUrl]
  */
 function print_generateHrefs(text, divout, maxItems, baseUrl) {
-    // divout.innerHTML = text;
     maxItems = maxItems || 25;
     try {
         var matches = parseHtmlAndExtractUrls(text, baseUrl);
@@ -137,11 +136,19 @@ function print_generateHrefs(text, divout, maxItems, baseUrl) {
             ) {
                 continue;
             }
+
+            // Filter out "Comment" (case-insensitive) from innerHtml
+            var filteredInnerHtml = item.innerHtml.replace(/comments\b/gi, '');
+
+            if (filteredInnerHtml.trim().length <= 1) {
+                continue;
+            }
+
             var li = document.createElement("li");
             var a = document.createElement("a");
             a.href = item.url;
             a.target = "_blank";
-            a.textContent = i + "-" + item.innerHtml;
+            a.textContent = i + "-" + filteredInnerHtml;
             li.appendChild(a);
             ul.appendChild(li);
             if (++count >= maxItems) break;
@@ -152,6 +159,39 @@ function print_generateHrefs(text, divout, maxItems, baseUrl) {
         divout.appendChild(document.createTextNode("Error: " + error));
     }
 }
+
+// function print_generateHrefs(text, divout, maxItems, baseUrl) {
+//     // divout.innerHTML = text;
+//     maxItems = maxItems || 25;
+//     try {
+//         var matches = parseHtmlAndExtractUrls(text, baseUrl);
+//         var ul = document.createElement("ul");
+//         ul.className = "listul";
+//         var count = 0;
+//         for (var i = 0; i < matches.length; i++) {
+//             var item = matches[i];
+//             if (
+//                 !item.url || item.url.length <= 5 ||
+//                 !item.innerHtml || item.innerHtml.trim().length <= 1 ||
+//                 /\.(jpe?g|png)$/i.test(item.url)
+//             ) {
+//                 continue;
+//             }
+//             var li = document.createElement("li");
+//             var a = document.createElement("a");
+//             a.href = item.url;
+//             a.target = "_blank";
+//             a.textContent = i + "-" + item.innerHtml;
+//             li.appendChild(a);
+//             ul.appendChild(li);
+//             if (++count >= maxItems) break;
+//         }
+//         divout.appendChild(ul);
+//     } catch (error) {
+//         console.error("Error parsing HTML:", error);
+//         divout.appendChild(document.createTextNode("Error: " + error));
+//     }
+// }
 
 /**
  * Parse an HTML string and return [{url, innerHtml}] for every <a> found.

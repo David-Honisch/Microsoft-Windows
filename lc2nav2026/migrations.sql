@@ -112,10 +112,12 @@ CREATE TABLE IF NOT EXISTS "core_tools" (
 -- Seed data (safe to re-run)
 INSERT OR IGNORE INTO "users"("id","name","command","email")
 VALUES 
-(1,'https://www.letztechance.org/','https://www.letztechance.org/start.html','admin@letztechance.org'),
-(2,'LC2Navigator2027.exe','exec.bat LC2Navigator2027','test@letztechance.org');
+(1,'https://www.letztechance.org/','openURL(''https://www.letztechance.org/start.html'');','admin@letztechance.org'),
+(2,'LC2Navigator2027.exe','..\\..\\exec.bat ..\\..\\LC2Navigator2027','test@letztechance.org'),
+(3,'LC2Navigator2027.exe','..\\..\\exec.bat ..\\..\\LC2Navigator2027','test@letztechance.org');
 
 INSERT OR IGNORE INTO "application"("id","name","description","command","url")
 VALUES 
-(1,'https://www.letztechance.org','exec.bat LC2Navigator2027','start LC2Navigator2027.exe','https://www.letztechance.org'),
-(2,'https://www.letztechance.org','exec.bat LC2Navigator2027.exe','start LC2Navigator2027.exe','https://www.letztechance.org');
+(1,'Start LC2Navigator2027','exec.bat LC2Navigator2027','start ..\\..\\LC2Navigator2027.exe','https://www.letztechance.org'),
+(2,'Start LC2Navigator2027','exec.bat LC2Navigator2027','start ..\\..\\LC2Navigator2027.exe','https://www.letztechance.org'),
+(3,'Show https://www.letztechance.org','exec.bat LC2Navigator2027.exe','openURL(''https://www.letztechance.org/start.html'');','https://www.letztechance.org');
