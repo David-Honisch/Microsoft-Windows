@@ -2,7 +2,7 @@
 flask==3.0.0
 flask-cors==4.0.0
 pyyaml==6.0.1
-requests==2.31.0
+requests==2.33.0
 
 # Database support
 sqlalchemy==2.0.23
