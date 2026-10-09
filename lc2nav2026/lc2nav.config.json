@@ -62,11 +62,17 @@
     "downloads2": "https://www.letztechance.org/webservices/client.php?q=getListJSON&value1=20&value2=1",
 	"downloads": "https://www.letztechance.org/lc",
     "news_api": [
-      {
+	  {
         "id": "lc2news",
         "label": "lc2news",
-        "rss": "https://news.ycombinator.com/rss",
+        "rss": "https://www.letztechance.org/index.php?q=rssreader&value1=1&value2=1",
         "target2": "lc2news"
+      },
+      {
+        "id": "lc2security",
+        "label": "lc2security",
+        "rss": "https://www.letztechance.org/index.php?q=rssreader&value1=2&value2=1",
+        "target2": "lc2security"
       },
       {
         "id": "ycombinator",
