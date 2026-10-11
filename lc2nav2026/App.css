@@ -195,17 +195,41 @@ header {
     margin-bottom: 2px;
     padding-bottom: 2px;
 }
-
 .clock-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    /* Optional: Hintergrund, Padding, etc. */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: -1;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    /* background-color: transparent !important; */
     background-color: #f6f6f6 !important;
     padding-bottom: 2px;
     height: auto;
     filter: drop-shadow(0 0 8em #616161);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0.50;
+    border: 2px solid rgb(178, 83, 0);
+    border-radius: 25px;
+}
+.scrolled-past {
+     z-index: -1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* z-index: 1000; */
+    background-color: #f6f6f6 !important;
+    border: 2px solid rgb(178, 83, 0);
+    filter: drop-shadow(0 0 10em #616161);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0.75;
+}
+.scrolled-past:hover {
+     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* z-index: 1000; */
+    background-color: #f6f6f6 !important;
+    border: 3px solid rgb(178, 83, 0);
+    filter: drop-shadow(0 0 10em #616161);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     opacity: 0.75;
 }
