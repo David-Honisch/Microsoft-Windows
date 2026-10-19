@@ -47,21 +47,36 @@ It´s not inside the google play store.
 
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/LC2Navigator2026install.exe"><img src="lc2nav.png?width=400&height=400&image=logo.png&text=LC2Navigator2026%20(Alpha) Installer&r=20&g=20&b=20&test=" alt="LC2Navigator2025/26 Installer Screenshot" width="400" /></a>
 
+## Documentation and readmes:
+
+https://github.com/David-Honisch/Microsoft-Windows/tree/master/docs
+
 ## Latest Projects:
+
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2sitecloner
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2jar_runner
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2memory
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2trainer
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2watermark
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ttfps
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2runasadmin
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ikillswitch
+
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/docs/generative.ai/enterprise-rag - Enterprise RAG best practice implementation with Python 3.14
+
+
+
+### some more Projects:
 
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2pgp
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2pyms
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2runasadmin
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ikillswitch
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2xmlxslt
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2json2xml
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2xml2json
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2csv_xslt_to_json
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2json2xml2json
-
-
-
-### some more Projects:
-
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2pgp
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2pyms
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ikillswitch
