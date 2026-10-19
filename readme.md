@@ -66,7 +66,7 @@ https://github.com/David-Honisch/Microsoft-Windows/tree/master/docs
 
 
 
-### some more Projects:
+### more Projects:
 
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2pgp
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2pyms
