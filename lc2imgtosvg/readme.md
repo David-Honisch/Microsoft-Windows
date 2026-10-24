@@ -2,8 +2,11 @@
 
 ## usage
 
-the following required arguments are:
--
+lc2imgtosvg.exe [OPTIONS] --input <INPUT>
+
+### requirements
+
+requires a image as source
 
 ## Download Installer
 
