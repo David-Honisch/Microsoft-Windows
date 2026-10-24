@@ -2,6 +2,7 @@ print_action('external script is running...');
 
 const RSS_PROXY = "https://www.letztechance.org/webservices/getcontent.php?ext_url=";
 const RSS_VIEWER = "https://www.letztechance.org/srss.html?query=";
+
 const createNEWUI = (url, title) => {
     const webview = new WebviewWindow('unique-label', {
         url: url,
@@ -14,6 +15,18 @@ const createNEWUI = (url, title) => {
         console.log('Window successfully created');
     });
 };
+//css fix
+window.addEventListener('scroll', function() {
+  const element = document.querySelector('.clock-container');
+  
+  if (window.scrollY >= 100) {
+    element.classList.add('scrolled-past');
+  } else {
+    element.classList.remove('scrolled-past');
+  }
+});
+//eof css fix
+
 createNEWUI("https://www.letztechance.org/tools/lc2webllmchat", "LC2WebLLM-Chat");
 /**
  * Build the full proxied URL for an RSS feed entry from the config.
@@ -35,7 +48,7 @@ setTimeout(function () {
             return;
         }
 
-        var newsMessage = document.getElementById("newsMessage");
+        var newsMessage = document.getElementById("news_Message");
         var extnewsMessage = document.getElementById("extnewsMessage");
 
         // Inject placeholder <pre> elements for feeds that target #newsMessage

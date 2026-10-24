@@ -5,12 +5,13 @@
   "productTitle": "Welcome to lc2nav2026",
   "version": "0.1.0",
   "db2": "lc2_nav2026.db",
-  "db": "sqlite:lc2sqlite2026.db",
+  "db": "sqlite:lc2nav2026.db",
   "script": "lc2sqlite.js",
   "aiscript": "ai.js",
   "identifier": "org.letztechance.lc2tauri-sqlite.app",
   "hosttitle": "LetzteChance.Org",
   "is_splashscreen": true,
+  "is_autodownload": true,
   "splashscreen": "src/assets/splashscreen.html",
   "host": "https://www.letztechance.org/lc",
   "sqlschema": "schema.sql",
@@ -148,7 +149,7 @@
   "faqData": [
     {
       "tabTitle": "Home",
-      "tabBody": "<div><ul class=\"listul\"><li><a href=\"#news\">News</a></li><li><a href=\"#downloads\">Downloads</a></li><li><a href=\"src/assets/test.html\" target=\"_blank\">Imprint</a></li><li><a href=\"https://www.letztechance.org/\" target=\"_blank\">HomePage</a></li><li><a onclick=\"javascript:show_splashscreen('LC2Sqlite2025_Splash');\">Splash</a></li></ul></div>"
+      "tabBody": "<div><ul class=\"listul\"><li><a href=\"#news\">News</a></li><li><a href=\"#downloads\">Downloads</a></li><li><a href=\"#configured-downloads\">Configured files</a></li><li><a href=\"src/assets/test.html\" target=\"_blank\">Imprint</a></li><li><a href=\"https://www.letztechance.org/\" target=\"_blank\">HomePage</a></li><li><a onclick=\"javascript:show_splashscreen('LC2Sqlite2025_Splash');\">Splash</a></li></ul></div>"
     },
     {
       "tabTitle": "News",
@@ -156,7 +157,7 @@
     },
     {
       "tabTitle": "Downloads",
-      "tabBody": "<div><ul class=\"listul\"><li><a href=\"#downloads\">Downloads</a></li></ul></div>"
+      "tabBody": "<div><ul class=\"listul\"><li><a href=\"#downloads\">Online downloads</a></li><li><a href=\"#configured-downloads\">Configured files</a></li></ul></div>"
     },
     {
       "tabTitle": "Imprint",
@@ -200,5 +201,17 @@
         ]
       }
     }
-  }
+  },
+  "downloads": [
+    {
+      "id": "lc2extract",
+      "url": "https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/lc2extract/ui/lc2extract.exe",
+      "file_name": "lc2extract.exe"
+    },
+    {
+      "id": "apache-maven.zip",
+      "url": "https://github.com/David-Honisch/Microsoft-Windows/raw/refs/heads/master/LC2Navigator2027/plugins/build/apache-maven.zip",
+      "file_name": "apache-maven.zip"
+    }
+  ]
 }
