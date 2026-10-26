@@ -3,7 +3,7 @@
 ## usage
 
 Usage: lc2gh_dl.exe [OPTIONS] --owner <OWNER> --repo <REPO>
-Options:
+### Options:
   -o, --owner <OWNER>    The GitHub username or organization (e.g., "tokio-rs")
   -r, --repo <REPO>      The repository name (e.g., "tokio")
   -b, --branch <BRANCH>  The branch, tag, or commit hash to download [default: main]
