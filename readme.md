@@ -53,6 +53,8 @@ https://github.com/David-Honisch/Microsoft-Windows/tree/master/docs
 
 ## Latest Projects:
 
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2imgtosvg
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2text_replacer
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2sitecloner
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2jar_runner
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2memory
