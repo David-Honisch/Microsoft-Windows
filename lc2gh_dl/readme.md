@@ -13,7 +13,20 @@ Usage: lc2gh_dl.exe [OPTIONS] --owner <OWNER> --repo <REPO>
 
 ### requirements
 
-requires a image as source
+requires a github repository
+
+
+### How it works
+
+• GitHub URL Schema: GitHub allows you to download any branch or tag directly 
+  via the URL structure: https://github.com/{owner}/{repo}/archive/refs/heads/{branch}.zip.
+• Streaming Data: Instead of loading the entire zip file into your computer's RAM 
+  all at once (which can crash your app if the repository is large), response.bytes_stream() 
+  downloads the file in small chunks and writes them directly to the hard drive asynchronously.
+  If you want to take this further, let me know if you would like to:
+• Extract the .zip archive programmatically within Rust using the zip crate.
+• Pass the owner, repository name, and branch as command-line arguments instead of hardcoding them.
+• Use a GitHub token to download from a private repository.
 
 ## Download Installer
 
