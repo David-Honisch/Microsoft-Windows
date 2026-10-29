@@ -2,8 +2,8 @@
 
 ## usage
 
-the following required arguments are:
--
+see:
+https://github.com/sysmaya/SQLite-web-Editor
 
 ## Download
 
