@@ -53,7 +53,13 @@ https://github.com/David-Honisch/Microsoft-Windows/tree/master/docs
 
 ## Latest Projects:
 
-- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2imgtosvg
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2commander - My new simple File Explorer forking norton commander ui
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc-installer
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2sqliteeditor
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2relay-mcp-studio
+
+### more Projects:
+
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2text_replacer
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2sitecloner
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2jar_runner
@@ -63,13 +69,6 @@ https://github.com/David-Honisch/Microsoft-Windows/tree/master/docs
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ttfps
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2runasadmin
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2ikillswitch
-
-- https://github.com/David-Honisch/Microsoft-Windows/tree/master/docs/generative.ai/enterprise-rag - Enterprise RAG best practice implementation with Python 3.14
-
-
-
-### more Projects:
-
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2pgp
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2pyms
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/lc2runasadmin
@@ -143,9 +142,11 @@ https://github.com/David-Honisch/Microsoft-Windows/tree/master/docs
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC2IRCRaw
 - https://github.com/David-Honisch/Microsoft-Windows/tree/master/LC27ZipUnprotect
 
-
 - https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2026/plugins.md
 - https://github.com/David-Honisch/Microsoft-Windows/blob/master/LC2Navigator2026/tools.md
+
+
+- https://github.com/David-Honisch/Microsoft-Windows/tree/master/docs/generative.ai/enterprise-rag - Enterprise RAG best practice implementation with Python 3.14
 
 <a href="https://raw.githubusercontent.com/David-Honisch/Microsoft-Windows/refs/heads/master/LC2Navigator2026/tools.md">Tools</a>
 
