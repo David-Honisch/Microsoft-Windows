@@ -1,6 +1,6 @@
-# LetzteChance - Second Chance Job Portal
+# LetzteChance - A archive extractor and binary patcher
 
-A modern Angular application inspired by [letztechance.org](https://www.letztechance.org) that connects job seekers with employers who believe in second chances. Built with Angular 21 and Tauri for cross-platform desktop support.
+A modern Angular application inspired by [letztechance.org](https://www.letztechance.org) that extracts and patches binaries.
 
 ## usage
 
@@ -19,13 +19,7 @@ the following required arguments are:
 
 ## 🌟 Features
 
-- **Job Listings**: Browse available job opportunities with detailed information
-- **Advanced Filtering**: Search and filter jobs by type, category, location, and keywords
-- **Detailed Job Views**: View comprehensive job details including requirements, benefits, and contact information
-- **Responsive Design**: Fully responsive UI that works on desktop, tablet, and mobile devices
-- **Modern UI/UX**: Beautiful gradient designs with smooth animations and transitions
-- **SOAP API Integration**: Full integration with letztechance.org web services (WSDL)
-- **Cross-Platform**: Desktop application support via Tauri
+- **zip, rar, tar**: supports zip, rar, tar
 
 ## 🚀 Technologies
 
