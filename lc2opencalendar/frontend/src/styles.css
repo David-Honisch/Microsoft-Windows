@@ -1,0 +1,2169 @@
+/* ---------- Theme ---------- */
+
+:root,
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f8fafd;
+  --surface: #ffffff;
+  --surface-2: #f0f4f9;
+  --text: #1f1f1f;
+  --text-2: #444746;
+  --text-3: #70757a;
+  --line: #dde3ea;
+  --line-strong: #c4c7c5;
+  --hover: rgba(68, 71, 70, 0.08);
+  --press: rgba(68, 71, 70, 0.14);
+  --primary: #0b57d0;
+  --on-primary: #ffffff;
+  --primary-soft: #c2e7ff;
+  --on-primary-soft: #001d35;
+  --create-bg: #ffffff;
+  --now: #ea4335;
+  --danger: #b3261e;
+  --shadow: 0 1px 3px rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+  --shadow-sm: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  --snack-bg: #313033;
+  --snack-text: #f2f2f2;
+  --snack-action: #a8c7fa;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #131314;
+  --surface: #1e1f20;
+  --surface-2: #282a2c;
+  --text: #e3e3e3;
+  --text-2: #c4c7c5;
+  --text-3: #8e918f;
+  --line: #3c4043;
+  --line-strong: #5f6368;
+  --hover: rgba(227, 227, 227, 0.08);
+  --press: rgba(227, 227, 227, 0.14);
+  --primary: #a8c7fa;
+  --on-primary: #062e6f;
+  --primary-soft: #004a77;
+  --on-primary-soft: #c2e7ff;
+  --create-bg: #37393b;
+  --now: #f28b82;
+  --danger: #f2b8b5;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 4px 8px 3px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.6), 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+  --snack-bg: #e3e3e3;
+  --snack-text: #1f1f1f;
+  --snack-action: #0b57d0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Roboto, 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.spacer {
+  flex: 1;
+}
+
+/* ---------- Buttons ---------- */
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-2);
+  flex: none;
+}
+.icon-btn.sm {
+  width: 32px;
+  height: 32px;
+}
+.icon-btn:hover {
+  background: var(--hover);
+}
+.icon-btn:active {
+  background: var(--press);
+}
+
+.outline-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 20px;
+  background: transparent;
+  color: var(--text);
+  font-weight: 500;
+}
+.outline-btn:hover {
+  background: var(--hover);
+}
+
+.filled-btn {
+  height: 36px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 18px;
+  background: var(--primary);
+  color: var(--on-primary);
+  font-weight: 500;
+}
+.filled-btn:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.text-btn {
+  height: 36px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 18px;
+  background: transparent;
+  color: var(--primary);
+  font-weight: 500;
+}
+.text-btn:hover {
+  background: var(--hover);
+}
+.text-btn.danger {
+  color: var(--danger);
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+}
+
+/* ---------- Layout ---------- */
+
+.app,
+.settings {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 64px;
+  padding: 8px 16px 8px 8px;
+  flex: none;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 232px;
+}
+.logo {
+  margin-left: 4px;
+}
+.brand {
+  font-size: 22px;
+  color: var(--text-2);
+  padding-left: 4px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+.header-nav .outline-btn {
+  margin-right: 12px;
+}
+.header-title {
+  margin: 0 0 0 8px;
+  font-size: 22px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.view-btn {
+  padding-right: 10px;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-radius: 24px 24px 0 0;
+  margin: 0 16px;
+  overflow: hidden;
+}
+
+/* ---------- Sidebar ---------- */
+
+.sidebar {
+  width: 256px;
+  flex: none;
+  /* The calendar always has a 16px left margin. The sidebar takes it back,
+     so the sidebar can shrink to nothing without the calendar jumping. */
+  margin-right: -16px;
+  padding: 8px 8px 16px 8px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sidebar .mini {
+  align-self: stretch;
+}
+.sidebar-settings {
+  display: none;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  height: 48px;
+  margin-top: auto;
+  padding: 0 16px;
+  border: none;
+  border-radius: 24px;
+  background: transparent;
+  color: var(--text);
+  font-weight: 500;
+  text-align: left;
+}
+.sidebar-settings svg {
+  color: var(--text-2);
+}
+.sidebar-settings:hover {
+  background: var(--hover);
+}
+
+.create-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 56px;
+  padding: 0 20px 0 16px;
+  margin: 0 0 16px 8px;
+  border: none;
+  border-radius: 16px;
+  background: var(--create-bg);
+  color: var(--text);
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s;
+}
+.create-btn:hover {
+  box-shadow: var(--shadow);
+  background: color-mix(in srgb, var(--create-bg) 92%, var(--primary));
+}
+.create-plus {
+  color: var(--primary);
+}
+
+/* ---------- Mini month ---------- */
+
+.mini {
+  padding: 0 8px;
+  user-select: none;
+}
+.mini-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 36px;
+  padding-left: 8px;
+}
+.mini-title {
+  font-weight: 500;
+  color: var(--text);
+}
+.mini-nav {
+  display: flex;
+}
+.mini-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  row-gap: 2px;
+}
+.mini-dow {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-2);
+  height: 24px;
+  line-height: 24px;
+}
+.mini-day {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text);
+}
+.mini-day.other {
+  color: var(--text-3);
+}
+.mini-day:hover {
+  background: var(--hover);
+}
+.mini-day.selected {
+  background: var(--primary-soft);
+  color: var(--on-primary-soft);
+}
+.mini-day.today {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+
+/* ---------- Day / week grid ---------- */
+
+.tg {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+.tg-head,
+.tg-scroll {
+  scrollbar-gutter: stable;
+}
+.tg-head {
+  display: flex;
+  flex: none;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  padding-top: 8px;
+}
+.tg-gutter-head,
+.tg-gutter {
+  width: 64px;
+  flex: none;
+}
+.tg-gutter-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 8px 6px 0;
+}
+.tg-tz {
+  font-size: 10px;
+  color: var(--text-3);
+}
+.tg-day-head {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8px;
+  border-left: 1px solid transparent;
+}
+.tg-dow {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-2);
+  letter-spacing: 0.8px;
+}
+.tg-date {
+  width: 46px;
+  height: 46px;
+  margin-top: 2px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 26px;
+  color: var(--text);
+}
+.tg-date:hover {
+  background: var(--hover);
+}
+.tg-day-head.today .tg-dow {
+  color: var(--primary);
+}
+.tg-day-head.today .tg-date {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+
+.tg-scroll {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.tg-body {
+  display: flex;
+  position: relative;
+}
+.tg-gutter {
+  position: relative;
+}
+.tg-hour {
+  position: absolute;
+  right: 8px;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+.tg-cols {
+  flex: 1;
+  display: flex;
+  position: relative;
+  user-select: none;
+  /* Hour lines */
+  background-image: linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+  background-size: 100% 48px;
+}
+.tg-col {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  border-left: 1px solid var(--line);
+}
+.tg-col-events {
+  position: absolute;
+  inset: 0 12px 0 0;
+}
+.tg-now {
+  position: absolute;
+  left: -1px;
+  right: 0;
+  height: 2px;
+  background: var(--now);
+  z-index: 200;
+  pointer-events: none;
+}
+.tg-now-dot {
+  position: absolute;
+  left: -6px;
+  top: -5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--now);
+}
+
+/* Event blocks */
+.ev {
+  position: absolute;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--surface);
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 16px;
+  cursor: pointer;
+  touch-action: none;
+}
+.ev-title {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ev:not(.ev-short) .ev-title {
+  white-space: normal;
+  max-height: calc(100% - 16px);
+}
+.ev-time-inline {
+  font-weight: 400;
+}
+.ev-short {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.ev-time {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ev-past {
+  filter: saturate(0.75) opacity(0.75);
+}
+.ev-draft,
+.ev-dragging {
+  box-shadow: var(--shadow);
+}
+.ev-dragging {
+  opacity: 0.9;
+  cursor: grabbing;
+}
+.ev-resize {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 6px;
+  cursor: ns-resize;
+}
+.ev:hover .ev-resize::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+  width: 16px;
+  margin-left: -8px;
+  height: 2px;
+  border-radius: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+/* ---------- Month view ---------- */
+
+.mv {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.mv-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  min-height: 0;
+}
+.mv-cell {
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+.mv-cell:nth-child(7n) {
+  border-right: none;
+}
+.mv-cell-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6px;
+}
+.mv-dow {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-2);
+  margin-bottom: 2px;
+  letter-spacing: 0.8px;
+}
+.mv-date {
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+}
+.mv-date:hover {
+  background: var(--hover);
+}
+.mv-date.today {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+.mv-cell.other .mv-date {
+  color: var(--text-3);
+}
+.mv-events {
+  padding: 2px 4px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-height: 0;
+}
+.mv-ev,
+.mv-more {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 21px;
+  padding: 0 6px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 12px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 0;
+}
+.mv-ev:hover,
+.mv-more:hover {
+  background: var(--hover);
+}
+.mv-ev.draft {
+  box-shadow: var(--shadow-sm);
+}
+.mv-ev.past {
+  opacity: 0.7;
+}
+.mv-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+.mv-ev-time {
+  color: inherit;
+  opacity: 0.85;
+  flex: none;
+}
+.mv-ev-title {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mv-more {
+  font-weight: 500;
+  color: var(--text-2);
+}
+
+/* ---------- Year view ---------- */
+
+.yv {
+  height: 100%;
+  overflow-y: auto;
+  padding: 16px;
+}
+.yv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+  gap: 24px 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.mini-year .mini-head {
+  padding-left: 12px;
+}
+.mini-year .mini-title {
+  font-size: 15px;
+}
+
+/* ---------- Popovers ---------- */
+
+.popover {
+  position: fixed;
+  z-index: 1000;
+  background: var(--surface-2);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+[data-popover] [data-drag-handle] {
+  cursor: grab;
+  touch-action: none;
+}
+.popover.dragging,
+.popover.dragging [data-drag-handle] {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.menu-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+}
+.menu,
+.ctx-menu {
+  position: fixed;
+  z-index: 1000;
+  min-width: 200px;
+  padding: 8px 0;
+  background: var(--surface-2);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  height: 40px;
+  padding: 0 16px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  color: var(--text);
+}
+.menu-item:hover {
+  background: var(--hover);
+}
+.menu-item.active {
+  background: var(--press);
+}
+.menu-item svg {
+  color: var(--text-2);
+}
+.menu-key {
+  margin-left: auto;
+  color: var(--text-3);
+}
+.menu-divider {
+  height: 1px;
+  margin: 8px 0;
+  background: var(--line);
+}
+.ctx-colors {
+  padding: 4px 12px;
+  width: 200px;
+}
+
+/* Colors */
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.swatch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+}
+.colors-sm .swatch {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+}
+.swatch:hover {
+  transform: scale(1.15);
+}
+
+/* ---------- Event editor ---------- */
+
+.editor-popover {
+  width: 448px;
+  max-width: calc(100vw - 16px);
+}
+.editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.editor-bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 8px;
+  border-radius: 16px 16px 0 0;
+  background: var(--surface-2);
+}
+.editor-popover .editor-bar {
+  background: color-mix(in srgb, var(--surface-2) 85%, var(--text-3));
+}
+.editor-bar-title {
+  padding-left: 4px;
+  font-size: 16px;
+}
+.editor-body {
+  padding: 8px 24px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  overflow-y: auto;
+}
+.editor-title {
+  width: 100%;
+  padding: 8px 0 6px;
+  border: none;
+  border-bottom: 1px solid var(--line-strong);
+  background: transparent;
+  font-size: 22px;
+  outline: none;
+}
+.editor-title:focus {
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 5px;
+}
+.editor-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.row-icon {
+  flex: none;
+  color: var(--text-2);
+  margin-top: 6px;
+}
+.editor-when {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+}
+.time-fields {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.field-btn {
+  height: 32px;
+  padding: 0 8px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text);
+}
+.field-btn:hover {
+  background: var(--hover);
+}
+.time-input {
+  width: 6.5em;
+  outline: none;
+}
+.time-input:focus {
+  background: var(--hover);
+  box-shadow: inset 0 -2px 0 var(--primary);
+}
+.date-field {
+  position: relative;
+}
+.date-picker {
+  position: fixed;
+  z-index: 1000;
+  width: 248px;
+  padding: 8px 0;
+  background: var(--surface);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+.editor-desc {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: var(--hover);
+  resize: vertical;
+  outline: none;
+}
+.editor-desc:focus {
+  box-shadow: inset 0 -2px 0 var(--primary);
+}
+.editor-row .colors {
+  padding-top: 5px;
+}
+.editor-foot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 16px 24px;
+}
+
+/* Docked editor panel */
+.dock {
+  width: 380px;
+  flex: none;
+  margin-left: 16px;
+  background: var(--surface);
+  border-radius: 24px 24px 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.editor.docked .editor-bar {
+  background: transparent;
+  padding: 12px 12px 4px;
+}
+
+/* ---------- Event details ---------- */
+
+.details {
+  width: 420px;
+  max-width: calc(100vw - 16px);
+  padding: 8px 8px 20px;
+}
+.details-bar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+}
+.details-row {
+  display: flex;
+  gap: 16px;
+  padding: 4px 16px 4px 20px;
+}
+.details-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin-top: 6px;
+  flex: none;
+}
+.details-title {
+  font-size: 22px;
+  line-height: 28px;
+  word-break: break-word;
+}
+.details-when {
+  margin-top: 4px;
+  color: var(--text-2);
+}
+.details-desc {
+  white-space: pre-wrap;
+  word-break: break-word;
+  padding-top: 6px;
+  line-height: 20px;
+}
+
+/* ---------- Dialog ---------- */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  width: 320px;
+  padding: 24px 24px 16px;
+  border-radius: 28px;
+  background: var(--surface-2);
+  box-shadow: var(--shadow);
+}
+.modal h2 {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.modal h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-2);
+}
+.modal-foot {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+.radio-list {
+  display: flex;
+  flex-direction: column;
+}
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 40px;
+  cursor: pointer;
+}
+.radio input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--primary);
+}
+
+/* Keyboard shortcuts dialog. */
+.shortcuts-modal {
+  width: min(640px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+}
+.shortcuts-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 8px 32px;
+}
+.shortcuts-group {
+  margin-bottom: 8px;
+}
+.shortcuts-group dl {
+  margin: 0;
+}
+.shortcut-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 32px;
+}
+.shortcut-row dt {
+  color: var(--text);
+}
+.shortcut-row dd {
+  margin: 0;
+  white-space: nowrap;
+}
+.shortcut-or {
+  margin: 0 6px;
+  font-size: 12px;
+  color: var(--text-3);
+}
+.shortcuts-off {
+  margin: -8px 0 16px;
+}
+kbd {
+  display: inline-block;
+  min-width: 24px;
+  padding: 2px 6px;
+  border: 1px solid var(--line);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  background: var(--surface);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: var(--text-2);
+}
+
+/* ---------- Notifications ---------- */
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 40px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+.checkbox input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--primary);
+}
+.settings-note {
+  max-width: 400px;
+  margin: -4px 0 12px;
+  font-size: 13px;
+  color: var(--text-2);
+}
+.text-btn.inline {
+  height: auto;
+  padding: 0;
+  border-radius: 0;
+}
+.text-btn.inline:hover {
+  background: none;
+  text-decoration: underline;
+}
+.reminders {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+.reminder {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.reminder-number {
+  width: 64px;
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+}
+.reminder-number:focus {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+.reminder-number.invalid {
+  border-color: var(--danger);
+  box-shadow: inset 0 0 0 1px var(--danger);
+}
+.reminder .reminder-unit {
+  width: 120px;
+  height: 32px;
+}
+.add-reminder {
+  height: 32px;
+  margin-left: -12px;
+}
+.alert-backdrop {
+  z-index: 1300;
+}
+.alert {
+  width: min(360px, calc(100vw - 32px));
+}
+.alert-item {
+  display: flex;
+  gap: 16px;
+  padding: 4px 0;
+}
+.alert-item .row-icon {
+  margin-top: 2px;
+}
+.alert-title {
+  font-size: 18px;
+}
+.alert-when {
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+/* ---------- Snackbar ---------- */
+
+.snackbar {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 280px;
+  max-width: 560px;
+  padding: 6px 8px 6px 16px;
+  border-radius: 4px;
+  background: var(--snack-bg);
+  color: var(--snack-text);
+  box-shadow: var(--shadow);
+}
+.snackbar > span {
+  flex: 1;
+}
+.snackbar-action {
+  border: none;
+  background: transparent;
+  color: var(--snack-action);
+  font-weight: 500;
+  padding: 8px;
+}
+.snackbar-close {
+  color: var(--snack-text);
+}
+
+/* ---------- Settings page ---------- */
+
+.settings .header {
+  border-bottom: 1px solid var(--line);
+}
+.settings-body {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+.settings-nav {
+  width: 256px;
+  flex: none;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+}
+.settings-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 24px 48px;
+}
+.settings-content section {
+  max-width: 720px;
+  padding: 16px 24px 24px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background: var(--surface);
+}
+.settings-content h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.settings-content h3 {
+  margin: 20px 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 8px 0 12px;
+  max-width: 400px;
+}
+.field-label {
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+/* ---------- Drop-downs (Select, TimeInput) ---------- */
+
+.select-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 40px;
+  padding: 0 8px 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text);
+  text-align: left;
+}
+.select-btn:hover {
+  background: color-mix(in srgb, var(--surface) 92%, var(--text));
+}
+.select-btn.open {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+.select-value {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.search-select {
+  cursor: text;
+}
+.search-select:focus-within {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+.search-select input {
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.search-select .select-caret {
+  cursor: pointer;
+}
+.select-caret {
+  flex: none;
+  color: var(--text-2);
+  transition: transform 0.15s;
+}
+.select-btn.open .select-caret {
+  transform: rotate(180deg);
+}
+
+.dd-list {
+  z-index: 1100;
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--surface-2);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+  color: var(--text);
+  user-select: none;
+}
+.dd-item {
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 16px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.dd-item:hover {
+  background: var(--hover);
+}
+.dd-item.selected {
+  background: color-mix(in srgb, var(--primary) 16%, transparent);
+}
+.dd-item.active {
+  background: var(--press);
+}
+.dd-item.selected.active {
+  background: color-mix(in srgb, var(--primary) 26%, transparent);
+}
+
+/* ---------- Touch ---------- */
+
+body {
+  /* No double-tap zoom delay on phones. */
+  touch-action: manipulation;
+  /* We draw our own pressed state; hide the browser's blue tap flash. */
+  -webkit-tap-highlight-color: transparent;
+}
+.ev,
+.mv-ev {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.tg-scroll {
+  overscroll-behavior: contain;
+}
+.title-short,
+.mv-more-short {
+  display: none;
+}
+/* Phones have no hover: a tapped button must not stay highlighted. */
+@media (hover: none) {
+  .icon-btn:hover,
+  .outline-btn:hover,
+  .text-btn:hover,
+  .field-btn:hover,
+  .dd-item:not(.selected):not(.active):hover,
+  .menu-item:not(.active):hover,
+  .mini-day:not(.today):not(.selected):hover,
+  .tg-day-head:not(.today) .tg-date:hover,
+  .mv-date:not(.today):hover,
+  .mv-ev:not(.draft):hover,
+  .mv-more:hover,
+  .settings-nav-item:hover,
+  .sidebar-settings:hover {
+    background: transparent;
+  }
+  .create-btn:hover {
+    background: var(--create-bg);
+    box-shadow: var(--shadow-sm);
+  }
+  .icon-btn:active,
+  .outline-btn:active,
+  .text-btn:active,
+  .menu-item:active,
+  .mini-day:active,
+  .mv-ev:active {
+    background: var(--press);
+  }
+}
+@media (pointer: coarse) {
+  /* Bigger grab area for resizing with a finger. */
+  .ev-resize {
+    height: 14px;
+  }
+  .dd-item {
+    min-height: 44px;
+  }
+  /* Hover styles stick after a tap on phones; keep them subtle. */
+  .swatch:hover {
+    transform: none;
+  }
+}
+
+/* ---------- Small screens (tablets and phones) ---------- */
+
+@media (max-width: 900px) {
+  .app,
+  .settings {
+    height: 100dvh;
+  }
+  .header {
+    padding: 8px 8px 8px 4px;
+    gap: 4px;
+  }
+  .header-left {
+    min-width: 0;
+  }
+  .brand,
+  .logo {
+    display: none;
+  }
+  .settings .brand {
+    display: inline;
+  }
+  .sidebar-backdrop {
+    position: fixed;
+    inset: 64px 0 0 0;
+    z-index: 499;
+    background: rgba(0, 0, 0, 0.32);
+  }
+  .sidebar {
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: min(288px, 85vw);
+    background: var(--bg);
+    box-shadow: var(--shadow);
+  }
+  .dock {
+    position: fixed;
+    inset: 64px 0 0 0;
+    width: auto;
+    z-index: 600;
+    margin: 0;
+    border-radius: 16px 16px 0 0;
+    box-shadow: var(--shadow);
+  }
+  .main {
+    margin: 0 8px !important;
+    border-radius: 16px 16px 0 0;
+  }
+  .settings-nav {
+    display: none;
+  }
+  .settings-content {
+    padding: 8px 8px 48px;
+  }
+  .settings-content section {
+    padding: 16px;
+  }
+}
+
+/* ---------- Phones ---------- */
+
+@media (max-width: 600px) {
+  /* Phones: no Today button (swipe or the mini month instead), and
+     settings live at the bottom of the sidebar. */
+  .header .today-btn,
+  .header .settings-btn {
+    display: none;
+  }
+  .sidebar-settings {
+    display: flex;
+  }
+
+  /* iOS zooms into inputs with text smaller than 16px. */
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  .header {
+    height: 56px;
+  }
+  .sidebar,
+  .sidebar-backdrop,
+  .dock {
+    top: 56px;
+  }
+  .header-nav {
+    gap: 0;
+  }
+  .header-nav .outline-btn {
+    height: 34px;
+    padding: 0 12px;
+    margin-right: 2px;
+  }
+  .header-nav .icon-btn {
+    width: 32px;
+    height: 32px;
+  }
+  .header-title {
+    font-size: 18px;
+    margin-left: 4px;
+  }
+  .title-long {
+    display: none;
+  }
+  .title-short {
+    display: inline;
+  }
+  .header-right {
+    gap: 0;
+  }
+  .view-btn {
+    height: 34px !important;
+    padding: 0 4px 0 12px !important;
+  }
+
+  /* Day / week grid */
+  .tg-gutter-head,
+  .tg-gutter {
+    width: 44px;
+  }
+  .tg-gutter-head {
+    padding-right: 4px;
+  }
+  .tg-tz {
+    font-size: 9px;
+  }
+  .tg-hour {
+    right: 4px;
+    font-size: 9px;
+  }
+  .tg-dow {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+  .tg-date {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+  }
+  .tg-col-events {
+    right: 4px;
+  }
+  .ev {
+    padding: 1px 3px;
+    font-size: 11px;
+    line-height: 14px;
+    border-radius: 3px;
+  }
+
+  /* Month view: titles only, they are short on a phone. */
+  .mv-dow {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+  .mv-events {
+    padding: 2px 1px 0;
+  }
+  .mv-ev,
+  .mv-more {
+    height: 18px;
+    padding: 0 3px;
+    gap: 3px;
+    font-size: 11px;
+  }
+  .mv-ev-time,
+  .mv-more-long {
+    display: none;
+  }
+  .mv-more-short {
+    display: inline;
+  }
+  .mv-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .yv {
+    padding: 8px;
+  }
+  .yv-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(232px, 100%), 1fr));
+  }
+
+  /* Event cards are sheets stuck to the bottom of the screen. */
+  .popover.sheet {
+    left: 0;
+    right: 0;
+    /* Above the on-screen keyboard on iOS (see keyboard.js); 0 elsewhere. */
+    bottom: var(--kb-inset, 0px);
+    width: 100%;
+    max-width: none;
+    max-height: min(85dvh, calc(var(--vv-height, 100dvh) - 16px));
+    overscroll-behavior: contain;
+    overflow-y: auto;
+    border-radius: 28px 28px 0 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    animation: sheet-in 0.18s ease-out;
+  }
+  .popover.sheet [data-drag-handle] {
+    cursor: default;
+  }
+  /* Small grab bar at the top of the sheet, like native bottom sheets. */
+  .popover.sheet::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 4px;
+    margin: 8px auto 0;
+    border-radius: 2px;
+    background: var(--line-strong);
+  }
+  /* The form sheet has no footer (Delete is in the details card). */
+  .popover.sheet .editor-body {
+    padding-bottom: 16px;
+  }
+  .popover.sheet .editor-bar {
+    background: transparent;
+    border-radius: 0;
+    padding: 4px 16px 4px 8px;
+  }
+  .editor-body {
+    padding: 8px 16px;
+  }
+  .editor-row {
+    gap: 12px;
+  }
+  .editor-foot {
+    padding: 8px 12px 12px 16px;
+  }
+  .details-row {
+    padding: 4px 8px 4px 12px;
+  }
+
+  .snackbar {
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    min-width: 0;
+  }
+}
+
+@keyframes sheet-in {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/* Phones: keep messages clear of the bottom sheet. */
+@media (max-width: 600px) {
+  /* Room to scroll late events above the sheet. */
+  body:has(.popover.sheet) .tg-body {
+    margin-bottom: 70dvh;
+  }
+  body:has(.popover.sheet) .snackbar {
+    top: 64px;
+    bottom: auto;
+  }
+}
+
+/* ---------- Other time zones ---------- */
+
+/* Extra hour columns in the day/week grid, left of the primary one. */
+.tg-gutter-head.extra,
+.tg-gutter.extra {
+  width: 56px;
+}
+.tg-gutter-head.extra {
+  padding-right: 6px;
+}
+.tg-gutter.extra .tg-hour {
+  right: 6px;
+}
+.other-zones {
+  gap: 8px;
+}
+.other-zone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.other-zone .search-select {
+  flex: 1;
+  min-width: 0;
+}
+.other-zone-now {
+  flex: none;
+  min-width: 64px;
+  font-size: 12px;
+  color: var(--text-3);
+}
+.zone-note {
+  margin: 4px 0 0;
+}
+.other-zones .settings-note {
+  margin: 0;
+}
+
+/* ---------- Calendars (sidebar list, settings) ---------- */
+
+.cal-section {
+  align-self: stretch;
+  margin-top: 8px;
+}
+.cal-section-head {
+  display: flex;
+  align-items: center;
+  padding-right: 4px;
+}
+.cal-section-toggle {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 8px 0 16px;
+  border: none;
+  border-radius: 20px;
+  background: transparent;
+  color: var(--text);
+  font-weight: 500;
+  text-align: left;
+}
+.cal-section-toggle:hover {
+  background: var(--hover);
+}
+.cal-section-toggle svg {
+  color: var(--text-2);
+}
+.cal-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cal-item {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding-right: 4px;
+  border-radius: 18px;
+}
+.cal-item:hover,
+.cal-item:has(:focus-visible) {
+  background: var(--hover);
+}
+.cal-check {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+  padding-left: 16px;
+  cursor: pointer;
+}
+/* Checkbox in the calendar's color. */
+.cal-check input {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: none;
+  display: grid;
+  place-content: center;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  border: 2px solid var(--cal);
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+.cal-check input:checked {
+  background: var(--cal);
+}
+.cal-check input:checked::after {
+  content: '';
+  width: 4px;
+  height: 9px;
+  margin-top: -2px;
+  border: solid var(--cal-on);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.cal-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* The options button shows when the row is hovered or focused. */
+.cal-more {
+  visibility: hidden;
+}
+.cal-item:hover .cal-more,
+.cal-item:has(:focus-visible) .cal-more {
+  visibility: visible;
+}
+.cal-dot,
+.dd-dot {
+  flex: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.dd-item .dd-dot {
+  margin-right: 12px;
+}
+.editor-calendar {
+  min-width: 0;
+  max-width: 100%;
+}
+.editor-calendar .select-btn {
+  height: 32px;
+  border: none;
+  background: transparent;
+  padding: 0 4px 0 8px;
+}
+.editor-calendar .select-btn:hover,
+.editor-calendar .select-btn.open {
+  background: var(--hover);
+}
+.swatch-calendar {
+  margin-right: 8px;
+}
+.colors-sm .swatch-calendar {
+  margin-right: 8px;
+}
+
+/* Settings menu: groups ("General", "Add calendar", ...) with items under a thin line. */
+.settings-nav {
+  overflow-y: auto;
+}
+.settings-nav-head {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-right: 16px;
+  padding-right: 8px;
+  border-radius: 0 20px 20px 0;
+}
+.settings-nav-head:hover {
+  background: var(--hover);
+}
+.settings-nav-head.active {
+  background: var(--primary-soft);
+  color: var(--on-primary-soft);
+}
+.settings-nav-head.active .icon-btn {
+  color: inherit;
+}
+.settings-nav-title {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0 0 0 24px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-weight: 500;
+  text-align: left;
+}
+/* Opens and closes by animating its height (0fr to 1fr). */
+.settings-nav-sub {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 200ms ease, opacity 150ms ease;
+}
+.settings-nav-sub.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+.settings-nav-sub-inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  margin-left: 32px;
+  /* The thin line on the left; the marked item's bar covers it. */
+  box-shadow: inset 1px 0 var(--line);
+  transition: margin 200ms ease;
+}
+.settings-nav-sub.open .settings-nav-sub-inner {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.settings-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 40px;
+  margin: 0 16px 0 0;
+  padding: 6px 8px 6px 22px;
+  border: none;
+  border-left: 2px solid transparent;
+  border-radius: 0 20px 20px 0;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+}
+.settings-nav-item:hover {
+  background: var(--hover);
+}
+.settings-nav-item.active {
+  border-left-color: var(--primary);
+  color: var(--primary);
+  font-weight: 500;
+}
+.cal-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.cal-heading .cal-dot {
+  width: 16px;
+  height: 16px;
+}
+.text-field {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text);
+  resize: vertical;
+}
+.text-field:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+.filled-btn:disabled {
+  opacity: 0.5;
+  box-shadow: none;
+  cursor: default;
+}
+.outline-btn.danger {
+  color: var(--danger);
+}
+.modal-text {
+  margin: 0;
+  color: var(--text-2);
+}
+
+@media (max-width: 900px) {
+  .settings .brand {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .settings .header-left {
+    min-width: 0;
+  }
+}
+
+@media (hover: none) {
+  .settings-nav-head:hover {
+    background: transparent;
+  }
+  .settings-nav-head.active:hover {
+    background: var(--primary-soft);
+  }
+  .cal-section-toggle:hover,
+  .cal-item:hover {
+    background: transparent;
+  }
+  /* No hover on touch screens: always show the options button. */
+  .cal-more {
+    visibility: visible;
+  }
+}
+
+/* ---------- Animations ----------
+   Opening and closing animations. Closing elements get the class `closing`
+   and stay on the page until their animation ends (useExit in motion.js;
+   EXIT_MS there must be at least the longest closing animation here).
+   The "Animations" setting (data-motion on <html>) and the device's
+   "reduce motion" setting turn them all off. */
+
+/* Sidebar and docked form (wide screens): they grow and shrink, and the
+   calendar follows. Docking closes the sidebar while the form opens (and the
+   other way round), so all four use the same timing: the calendar edge then
+   moves smoothly in one direction. */
+@media (min-width: 901px) {
+  .sidebar .mini {
+    min-width: 240px;
+  }
+  .sidebar.entering {
+    animation: sidebar-in 0.18s ease-in-out;
+  }
+  .sidebar.closing {
+    animation: sidebar-out 0.18s ease-in-out forwards;
+  }
+  .dock {
+    animation: dock-in 0.18s ease-in-out;
+  }
+  .dock .editor {
+    width: 380px;
+    flex: none;
+  }
+  .dock.closing {
+    animation: dock-out 0.18s ease-in-out forwards;
+  }
+}
+@keyframes sidebar-in {
+  from {
+    width: 16px;
+  }
+}
+@keyframes sidebar-out {
+  to {
+    width: 16px;
+  }
+}
+@keyframes dock-in {
+  from {
+    width: 0;
+    margin-left: 0;
+    opacity: 0;
+  }
+}
+@keyframes dock-out {
+  to {
+    width: 0;
+    margin-left: 0;
+    opacity: 0;
+  }
+}
+
+/* Sidebar (tablets and phones): it slides in over the calendar. */
+@media (max-width: 900px) {
+  .sidebar.entering {
+    animation: drawer-in 0.2s ease-out;
+  }
+  .sidebar.closing {
+    animation: drawer-out 0.16s ease-in forwards;
+  }
+  .sidebar-backdrop.entering {
+    animation: fade-in 0.2s ease-out;
+  }
+  .sidebar-backdrop.closing {
+    animation: fade-out 0.16s ease-in forwards;
+  }
+  /* The docked form covers the calendar here. */
+  .dock {
+    animation: rise-in 0.2s ease-out;
+  }
+  .dock.closing {
+    animation: rise-out 0.16s ease-in forwards;
+  }
+}
+@keyframes drawer-in {
+  from {
+    transform: translateX(-100%);
+  }
+}
+@keyframes drawer-out {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Event details card and floating event form. */
+.popover {
+  animation: pop-in 0.15s ease-out;
+}
+.popover.closing {
+  animation: pop-out 0.12s ease-in forwards;
+}
+/* Phone sheets slide up (sheet-in above) and back down. */
+.popover.sheet.closing {
+  animation: sheet-out 0.16s ease-in forwards;
+}
+.closing {
+  pointer-events: none;
+}
+@keyframes sheet-out {
+  to {
+    transform: translateY(100%);
+  }
+}
+
+/* Right-click menu on an event: grows out of the clicked point. */
+.ctx-menu {
+  animation: pop-in 0.12s ease-out;
+}
+.ctx-menu.closing {
+  animation: fade-out 0.1s ease-in forwards;
+}
+
+/* Dialogs (Appearance, reminder alerts). */
+.modal-backdrop {
+  animation: fade-in 0.15s ease-out;
+}
+.modal-backdrop .modal {
+  animation: pop-in 0.15s ease-out;
+}
+.modal-backdrop.closing {
+  animation: fade-out 0.15s ease-in forwards;
+}
+.modal-backdrop.closing .modal {
+  animation: pop-out 0.15s ease-in forwards;
+}
+
+/* Snackbar. */
+.snackbar {
+  animation: rise-in 0.2s ease-out;
+}
+.snackbar.closing {
+  animation: fade-out 0.15s ease-in forwards;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+@keyframes pop-out {
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+@keyframes rise-out {
+  to {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+
+/* Animations off: the "Animations" setting, or the device asks for less motion. */
+:root[data-motion='off'] *,
+:root[data-motion='off'] *::before,
+:root[data-motion='off'] *::after {
+  animation: none !important;
+  transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
