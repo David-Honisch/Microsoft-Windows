@@ -1,0 +1,22 @@
+# Frontend
+node_modules/
+frontend/dist/
+
+# Frontend build copied into the Go binary (only .gitkeep is kept in git)
+backend/web/dist/*
+!backend/web/dist/.gitkeep
+
+# Go build output
+backend/lc2opencalendar
+backend/backend.exe
+
+# Local database files
+*.db
+*.db-shm
+*.db-wal
+
+# Desktop app build output
+desktop/dist/
+
+# Release bundles
+release/
