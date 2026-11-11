@@ -1,0 +1,55 @@
+{
+  "name": "lc2opencalendar-desktop",
+  "productName": "lc2opencalendar",
+  "version": "0.1.0",
+  "description": "lc2opencalendar desktop app: your self-hosted calendar with notifications in the background.",
+  "license": "MIT",
+  "private": true,
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "org.lc2opencalendar.desktop",
+    "productName": "lc2opencalendar",
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "setup.html",
+      "icons/**"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "icons/icon.png",
+      "category": "Office",
+      "syncDesktopName": true
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icons/icon.png"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "icons/icon.png",
+      "category": "public.app-category.productivity"
+    }
+  },
+  "devDependencies": {
+    "electron": "^45.2.3",
+    "electron-builder": "^26.18.0"
+  },
+  "desktopName": "lc2opencalendar.desktop",
+  "allowScripts": {
+    "electron-winstaller@5.4.0": true
+  }
+}
