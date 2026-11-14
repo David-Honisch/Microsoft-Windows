@@ -1,3 +1,4 @@
 @echo off
-title=start %~dp0backend
-start %~dp0backend
+cd %~dp0
+title=start %~dp0backend.exe
+start %~dp0backend.exe
