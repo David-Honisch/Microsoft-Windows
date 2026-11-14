@@ -203,7 +203,6 @@ header {
     padding-bottom: 2px;
     animation: my-animation 2s;
 }
-
 .faq-container {
     /* z-index: -2; */
     position: absolute;
@@ -212,9 +211,6 @@ header {
     margin-bottom: 2px;
     padding-bottom: 2px;
 }
-
-
-
 /* 2. Die Animation an das Scrollen des Browsers koppeln */
 .clock-container {
     position: fixed;

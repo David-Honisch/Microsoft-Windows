@@ -10,6 +10,12 @@ type WireEvent = Omit<CalendarEvent, 'start' | 'end' | 'reminders'> & {
   reminders: number[] | null;
 };
 
+export interface ICalendarImportResult {
+  calendarsImported: number;
+  eventsImported: number;
+  eventsSkipped: number;
+}
+
 async function request<R>(method: string, path: string, body?: unknown): Promise<R> {
   const res = await fetch(path, {
     method,
@@ -59,4 +65,24 @@ export const api = {
   deleteCalendar: (id: number) => request<null>('DELETE', `/api/calendars/${id}`),
   getSettings: () => request<Partial<Settings>>('GET', '/api/settings'),
   updateSettings: (patch: Partial<Settings>) => request<Partial<Settings>>('PUT', '/api/settings', patch),
+  exportICalendar: async (): Promise<Blob> => {
+    const res = await fetch('/api/export', { headers: { 'X-lc2opencalendar-Client': CLIENT_ID } });
+    if (!res.ok) {
+      const data = await res.json().catch(() => ({} as { error?: string }));
+      throw new Error(data.error || `Request failed (${res.status})`);
+    }
+    return res.blob();
+  },
+  importICalendar: async (file: File): Promise<ICalendarImportResult> => {
+    const form = new FormData();
+    form.append('file', file);
+    const res = await fetch('/api/import', {
+      method: 'POST',
+      headers: { 'X-lc2opencalendar-Client': CLIENT_ID },
+      body: form,
+    });
+    const data = await res.json().catch(() => ({} as ICalendarImportResult & { error?: string }));
+    if (!res.ok) throw new Error(data.error || `Request failed (${res.status})`);
+    return data as ICalendarImportResult;
+  },
 };

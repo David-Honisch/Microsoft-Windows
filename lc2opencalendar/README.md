@@ -96,6 +96,7 @@ Your data stays in the volume.
 - Events have a title, description and color. Events can overlap.
 - Right-click an event to change its color or delete it.
 - Several calendars (for example "Work" and "Family"), each with its own name and color. Tick them in the sidebar to show or hide their events. Create, rename, recolor and delete calendars in Settings.
+- Import and export calendars and events as iCalendar (`.ics`) files from Settings. Re-imports skip events with matching iCalendar IDs.
 - The event form can float or be docked to the side. On phones it slides up from the bottom.
 - Notifications: each event can have up to 5 reminders ("30 minutes before"). Set any number of minutes, hours, days or weeks (up to 4 weeks). Shown as desktop notifications (with Snooze) or as alerts in the page, with an optional sound. The calendar must be open in a browser tab, or the [desktop app](#%EF%B8%8F-desktop-app) must be running.
 - Live sync: a change in one browser tab, another computer or the desktop app shows everywhere else right away (no reload).
@@ -168,6 +169,10 @@ The binary is written to `backend/backend.exe` on Windows or `backend/backend` o
 The backend reads `backend.config.json` from its working directory. Set `port`
 and `database` there. Command-line `-port` and `-database` (or `-db`) options
 override environment variables, which override the config file and defaults.
+Settings → General → Import and export can export all calendars and events to
+one `.ics` file or import an `.ics` file into a new calendar. Event details,
+reminders, calendar colors, and time zones are included. Recurring events are
+not supported.
 
 Desktop app in development (with the backend running): `cd desktop && npm install && npm start`.
 

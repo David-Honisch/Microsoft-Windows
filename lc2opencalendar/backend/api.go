@@ -26,6 +26,8 @@ func (a *API) Register(mux *http.ServeMux) {
 	mux.HandleFunc("GET /api/health", a.health)
 	mux.HandleFunc("GET /api/stream", h.stream)
 	mux.HandleFunc("GET /api/events", a.listEvents)
+	mux.HandleFunc("GET /api/export", a.exportICalendar)
+	mux.HandleFunc("POST /api/import", h.notify(a.importICalendar, "calendars", "events"))
 	mux.HandleFunc("POST /api/events", h.notify(a.createEvent, "events"))
 	mux.HandleFunc("PUT /api/events/{id}", h.notify(a.updateEvent, "events"))
 	mux.HandleFunc("DELETE /api/events/{id}", h.notify(a.deleteEvent, "events"))

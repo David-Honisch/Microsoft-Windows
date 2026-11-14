@@ -1,29 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Downloads and Applications</title>
-    <link rel="stylesheet" type="text/css" href="app.css">
-  </head>
-  <body>
-    <h1>Main</h1>
-      <p>LC2Navigator2026 (tiny) v.1.0.</p>
-      <a href="https://www.letztechance.org/list-20-1.html" target="_blank">Downloads</a>
-      <img src="https://www.letztechance.org/img.png?width=200&height=200&image=logo.png&text=lc2install2026&r=20&g=20&b=20&test=" alt="LC2Navigator2026" width="400" height="200">
-    <section>
-      <h1>Main</h1>
-      <p>LC2Navigator2026 (tiny) v.1.0.</p>
-    </section>
-    <main>
-      <section>
-        <h1>Downloads</h1>
-        <p>Configured download links are displayed here by LC2Navigator.</p>
-      </section>
-      <section>
-        <h1>Applications</h1>
-        <p>Application table values are displayed here by LC2Navigator.</p>
-      </section>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LC2Navigator Executable Launcher</title>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+  <style>
+    .exe-card {
+      transition: transform 0.2s;
+      cursor: pointer;
+      height: 100%;
+    }
+
+    .exe-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .exe-icon {
+      font-size: 3rem;
+      color: #007bff;
+      margin-bottom: 1rem;
+    }
+
+    #searchBar {
+      margin-bottom: 2rem;
+    }
+
+    .card-title {
+      font-size: 0.9rem;
+      word-wrap: break-word;
+    }
+
+    .card-text {
+      font-size: 0.75rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+
+<body class="bg-light p-4">
+  <div class="container-fluid">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2 class="text-center mb-4">Executables and Launcher</h2>
+        <div class="input-group input-group-lg shadow-sm">
+          <a href="#" onclick="window.exec_cmd('exec.bat lc2sqliteeditor.bat',true);"><img
+              src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2sqliteeditor.exe(Final)&r=20&g=20&b=20&test="
+              alt="lc2sqliteeditor Screenshot" width="400" /></a>
+          <a href="#" onclick="window.exec_cmd('lc2sqliteeditor.bat',true);"><img
+              src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2sqliteeditor.exe(Final)&r=20&g=20&b=20&test="
+              alt="lc2sqliteeditor Screenshot" width="400" /></a>
+          <a href="#" onclick="setPageUrl('utf8.html');"><img
+              src="https://www.letztechance.org/img.png?width=400&height=400&image=logo.png&text=lc2sqliteeditor.exe(Final)&r=20&g=20&b=20&test="
+              alt="lc2sqliteeditor Screenshot" width="400" /></a>  
+            
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-12">
+      <h2 class="text-center mb-4">LC2Navigator Executable Launcher</h2>
+      <div class="input-group input-group-lg shadow-sm">
+        <div class="input-group-prepend">
+          <span class="input-group-text bg-white border-right-0"><i class="fas fa-search"></i></span>
+        </div>
+        <input type="text" id="searchBar" class="form-control border-left-0" placeholder="Search executables..."
+          aria-label="Search">
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="exeGrid">
+    <!-- Cards will be injected here -->
+  </div>
+  </div>
+  <div id="outMessage" role="status" aria-live="polite"></div>
+
+  <script>
+    // The user wants to execute these via exec.bat
+    // Data parsed from all_exe.csv
+    const executables = [
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\LC2DL.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\lc2extract.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\lc2navigator2027.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\lc2navigator2027.start.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\LC2RedirectOutput.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\uninst.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\app\\sqlite\\SQLite3.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\jextract\\runtime\\bin\\java.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\jextract\\runtime\\bin\\javaw.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\jextract\\runtime\\bin\\keytool.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2aiagent\\app.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2apache\\lc2apache.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\LC2CRC32\\LC2CRC.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\LC2CRC32\\LC2CRC32CLI.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2crud\\lc2crud.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2dirmarkup\\lc2dirmarkup.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2dl-cli\\lc2dl.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\LC2EncrypDecrypt\\LC2Encryp.Decrypt.CLI.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\LC2EncrypDecrypt\\LC2Encryp.Decrypt.Main.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2extract-cli\\lc2extract-cli.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2gitreadme\\lc2gitreadme.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2import_json2sqlite\\lc2import_json2sqlite.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2indexpc\\lc2indexpc.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2ircclient\\lc2ircclient.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2json2xml2json\\lc2csv_xslt_to_json.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2json2xml2json\\lc2dirmarkup.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2json2xml2json\\lc2json2xml2json.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2licensing_server\\lc2licensing_server.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2memory\\lc2memory.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2nav2026\\lc2nav2026.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2nav2026\\bin\\lc2nav2026.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2replaceinfile\\lc2replaceinfile.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2runasadmin\\lc2mysql.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2runasadmin\\lc2patcher.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2runasadmin\\lc2runasadmin.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2sfv\\lc2dirmarkup.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2sfv\\lc2sfv.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2sfv\\lc2sfv_v1_0.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\LC2ShortCutCLI\\LC2ShortCutCLI.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2sqlite\\lc2sqlite.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2streamripper\\lc2streamripper.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2ttfps\\lc2ttfps.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2webllm\\lc2indexpc.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2webllm\\lc2webllm.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2ytdl\\lc2ytdl.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2ytdl\\yt-dlp.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\yt-dlp\\yt-dlp.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\resources\\app\\sqlite\\SQLite3.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\resources\\plugins\\lc2container\\dbgpClient.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\resources\\plugins\\LC2ShortCutCLI\\app\\LC2ShortCutCLI\\LC2ShortCutCLI.exe",
+      "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\resources\\_app\\sqlite\\SQLite3.exe"
+    ];
+
+    function getFileName(path) {
+      return path.split('\\').pop();
+    }
+
+    function renderCards(filter = '') {
+      const grid = document.getElementById('exeGrid');
+      grid.innerHTML = '';
+
+      const filtered = executables.filter(exe =>
+        getFileName(exe).toLowerCase().includes(filter.toLowerCase()) ||
+        exe.toLowerCase().includes(filter.toLowerCase())
+      );
+
+      filtered.forEach(exe => {
+        const name = getFileName(exe);
+        const card = document.createElement('div');
+        card.className = 'col-md-3 col-sm-4 col-6 mb-4';
+        card.innerHTML = `
+          <div class="card exe-card shadow-sm" onclick="runExe('${exe}')">
+            <div class="card-body text-center">
+              <div class="exe-icon"><i class="fas fa-file-code"></i></div>
+              <h5 class="card-title">${name}</h5>
+              <p class="card-text text-truncate">${exe}</p>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function runExe(exePath) {
+      if (typeof window.exec_cmd !== 'function') {
+        console.error('exec_cmd is not available');
+        return;
+      }
+
+      window.exec_cmd(exePath, true).catch((error) => {
+        console.error('Failed to start executable:', error);
+        document.getElementById('outMessage').textContent =
+          `Failed to start ${exePath}: ${error}`;
+      });
+    }
+
+    document.getElementById('searchBar').addEventListener('input', (e) => {
+      renderCards(e.target.value);
+    });
+    // Initial render
+    renderCards();
+    // Mocking redirect_cmd for the demo if it doesn't exist, 
+    // but in the real environment it should be provided.
+    if (typeof redirect_cmd !== 'function') {
+      window.redirect_cmd = function (cmd) {
+        alert('Executing: ' + cmd + '\\n(This would call the redirect_cmd in the actual environment)');
+      };
+    }
+  </script>
+</body>
+
 </html>

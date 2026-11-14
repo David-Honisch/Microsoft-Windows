@@ -4,26 +4,17 @@ const RSS_PROXY = "https://www.letztechance.org/webservices/getcontent.php?ext_u
 const RSS_VIEWER = "https://www.letztechance.org/srss.html?query=";
 
 const createNEWUI = (url, title) => {
-    const webview = new WebviewWindow('unique-label', {
-        url: url,
-        title: title,
-        width: 600,
-        height: 400,
-    });
-
-    webview.once('tauri://created', () => {
-        console.log('Window successfully created');
-    });
+    window.createTauriWindow(url, title);
 };
 //css fix
-window.addEventListener('scroll', function() {
-  const element = document.querySelector('.clock-container');
-  
-  if (window.scrollY >= 100) {
-    element.classList.add('scrolled-past');
-  } else {
-    element.classList.remove('scrolled-past');
-  }
+window.addEventListener('scroll', function () {
+    const element = document.querySelector('.clock-container');
+
+    if (window.scrollY >= 100) {
+        element.classList.add('scrolled-past');
+    } else {
+        element.classList.remove('scrolled-past');
+    }
 });
 //eof css fix
 
@@ -87,7 +78,7 @@ setTimeout(function () {
     }
 }, 5000);
 async function fetchHtml(url) {
-    return await invoke('fetch_html', {
+    return await window.invokeTauriCommand('fetch_html', {
         url
     });
 }
@@ -110,7 +101,7 @@ function _generateHrefs(url, divout, maxItems, baseUrl) {
                     console.log("response: " + response);
                     // divout.innerHTML = "Rendering:" + JSON.stringify(response);
                     var txt = response && response.html ? response.html : response;
-                    divout.innerHTML = ""+url;// response && response.html ? "RESPONSE:" + response.html : "TEXT:" + txt;
+                    divout.innerHTML = "" + url; // response && response.html ? "RESPONSE:" + response.html : "TEXT:" + txt;
                     print_generateHrefs(txt, divout, maxItems, baseUrl);
                 } catch (error) {
                     console.error("Error printing HTML:", error);
@@ -244,3 +235,120 @@ function addCssCLS(id, cls) {
     var el = document.getElementById(id);
     if (el) el.classList.add(cls);
 }
+//filter executables
+// const executables = [
+//     "LC2DL.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\LC2DL.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\lc2extract.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\lc2navigator2027.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\lc2navigator2027.start.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\LC2RedirectOutput.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\uninst.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\app\\sqlite\\SQLite3.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\jextract\\runtime\\bin\\java.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\jextract\\runtime\\bin\\javaw.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\jextract\\runtime\\bin\\keytool.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2aiagent\\app.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2apache\\lc2apache.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\LC2CRC32\\LC2CRC.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\LC2CRC32\\LC2CRC32CLI.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2crud\\lc2crud.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2dirmarkup\\lc2dirmarkup.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2dl-cli\\lc2dl.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\LC2EncrypDecrypt\\LC2Encryp.Decrypt.CLI.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\LC2EncrypDecrypt\\LC2Encryp.Decrypt.Main.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2extract-cli\\lc2extract-cli.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2gitreadme\\lc2gitreadme.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2import_json2sqlite\\lc2import_json2sqlite.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2indexpc\\lc2indexpc.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2ircclient\\lc2ircclient.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2json2xml2json\\lc2csv_xslt_to_json.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2json2xml2json\\lc2dirmarkup.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2json2xml2json\\lc2json2xml2json.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2licensing_server\\lc2licensing_server.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2memory\\lc2memory.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2nav2026\\lc2nav2026.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2nav2026\\bin\\lc2nav2026.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2replaceinfile\\lc2replaceinfile.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2runasadmin\\lc2mysql.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2runasadmin\\lc2patcher.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2runasadmin\\lc2runasadmin.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2sfv\\lc2dirmarkup.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2sfv\\lc2sfv.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2sfv\\lc2sfv_v1_0.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\LC2ShortCutCLI\\LC2ShortCutCLI.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2sqlite\\lc2sqlite.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2streamripper\\lc2streamripper.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2ttfps\\lc2ttfps.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2webllm\\lc2indexpc.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2webllm\\lc2webllm.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2ytdl\\lc2ytdl.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\lc2ytdl\\yt-dlp.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\app\\yt-dlp\\yt-dlp.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\resources\\app\\sqlite\\SQLite3.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\resources\\plugins\\lc2container\\dbgpClient.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\resources\\plugins\\LC2ShortCutCLI\\app\\LC2ShortCutCLI\\LC2ShortCutCLI.exe",
+//     "D:\\tools\\LETZTECHANCE.ORG\\LC2Navigator2027\\resources\\_app\\sqlite\\SQLite3.exe"
+// ];
+
+// function getFileName(path) {
+//     return path.split('\\').pop();
+// }
+
+// function renderCards(filter = '') {
+//     const grid = document.getElementById('exeGrid');
+//     grid.innerHTML = '';
+
+//     const filtered = executables.filter(exe =>
+//         getFileName(exe).toLowerCase().includes(filter.toLowerCase()) ||
+//         exe.toLowerCase().includes(filter.toLowerCase())
+//     );
+
+//     filtered.forEach(exe => {
+//         const name = getFileName(exe);
+//         const card = document.createElement('div');
+//         card.className = 'col-md-3 col-sm-4 col-6 mb-4';
+//         card.innerHTML = `
+//           <div class="card exe-card shadow-sm" onclick="runExe('${exe}')">
+//             <div class="card-body text-center">
+//               <div class="exe-icon"><i class="fas fa-file-code"></i></div>
+//               <h5 class="card-title">${name}</h5>
+//               <p class="card-text text-truncate">${exe}</p>
+//             </div>
+//           </div>
+//         `;
+//         grid.appendChild(card);
+//     });
+// }
+
+// function runExe(exePath) {
+//     // Use the provided redirect_cmd pattern from the original file
+//     // The user mentioned 'exec.bat start lc2sqliteeditor.exe' in their attempt
+//     // Since we want to execute 'all other executables', we should use the path.
+//     // The original file used javascript:redirect_cmd('exec.bat start lc2sqliteeditor.exe');
+//     // I'll assume redirect_cmd is defined globally or similar.
+//     // I'll use a safer way to call it if it's available.
+
+//     const cmd = `exec.bat "${exePath}"`;
+//     console.log('Running:', cmd);
+
+//     if (typeof redirect_cmd === 'function') {
+//         redirect_cmd(cmd);
+//     } else {
+//         // Fallback if redirect_cmd is not defined (it seems to be a custom function provided by the environment)
+//         window.location.href = `javascript:redirect_cmd('${cmd}')`;
+//     }
+// }
+
+// document.getElementById('searchBar').addEventListener('input', (e) => {
+//     renderCards(e.target.value);
+// });
+// // Initial render
+// renderCards();
+// // Mocking redirect_cmd for the demo if it doesn't exist, 
+// // but in the real environment it should be provided.
+// if (typeof redirect_cmd !== 'function') {
+//     window.redirect_cmd = function (cmd) {
+//         alert('Executing: ' + cmd + '\\n(This would call the redirect_cmd in the actual environment)');
+//     };
+// }

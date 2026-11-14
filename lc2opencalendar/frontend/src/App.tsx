@@ -589,6 +589,10 @@ export default function App() {
           onCreateCalendar={createCalendar}
           onUpdateCalendar={updateCalendar}
           onDeleteCalendar={deleteCalendar}
+          onImportComplete={() => {
+            loadCalendars();
+            setEventsVersion((version) => version + 1);
+          }}
           showShortcuts={showShortcuts}
           onViewShortcuts={() => {
             setPage('calendar');

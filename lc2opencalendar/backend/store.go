@@ -1,7 +1,9 @@
 package main
 
 import (
+	"crypto/rand"
 	"database/sql"
+	"encoding/hex"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -24,7 +26,10 @@ type Event struct {
 	Start time.Time `json:"start"`
 	End   time.Time `json:"end"`
 	// Reminders are notification times in minutes before the start (sorted, no duplicates).
-	Reminders []int `json:"reminders"`
+	Reminders   []int  `json:"reminders"`
+	ICalUID     string `json:"-"`
+	CalendarUID string `json:"-"`
+	AllDay      bool   `json:"-"`
 }
 
 // Calendar groups events, like "Work" or "Family". There is always one
@@ -38,8 +43,9 @@ type Calendar struct {
 	// the primary time zone" (the timeZone setting).
 	TimeZone string `json:"timeZone"`
 	// Hidden calendars stay in the list, but their events are not shown.
-	Hidden  bool `json:"hidden"`
-	Primary bool `json:"primary"`
+	Hidden  bool   `json:"hidden"`
+	Primary bool   `json:"primary"`
+	ICalUID string `json:"-"`
 }
 
 var (
@@ -79,6 +85,7 @@ CREATE TABLE IF NOT EXISTS calendars (
 	time_zone   TEXT    NOT NULL DEFAULT '',
 	hidden      INTEGER NOT NULL DEFAULT 0,
 	is_primary  INTEGER NOT NULL DEFAULT 0,
+	ical_uid    TEXT    NOT NULL DEFAULT '',
 	created_at  INTEGER NOT NULL,
 	updated_at  INTEGER NOT NULL
 );
@@ -121,6 +128,24 @@ func migrate(db *sql.DB) error {
 			return err
 		}
 	}
+	has, err = hasColumn(db, "events", "ical_uid")
+	if err != nil {
+		return err
+	}
+	if !has {
+		if _, err := db.Exec(`ALTER TABLE events ADD COLUMN ical_uid TEXT NOT NULL DEFAULT ''`); err != nil {
+			return err
+		}
+	}
+	has, err = hasColumn(db, "events", "all_day")
+	if err != nil {
+		return err
+	}
+	if !has {
+		if _, err := db.Exec(`ALTER TABLE events ADD COLUMN all_day INTEGER NOT NULL DEFAULT 0`); err != nil {
+			return err
+		}
+	}
 
 	tx, err := db.Begin()
 	if err != nil {
@@ -146,6 +171,15 @@ func migrate(db *sql.DB) error {
 	}
 	if !has {
 		if _, err := tx.Exec(`ALTER TABLE calendars ADD COLUMN time_zone TEXT NOT NULL DEFAULT ''`); err != nil {
+			return err
+		}
+	}
+	has, err = hasColumn(tx, "calendars", "ical_uid")
+	if err != nil {
+		return err
+	}
+	if !has {
+		if _, err := tx.Exec(`ALTER TABLE calendars ADD COLUMN ical_uid TEXT NOT NULL DEFAULT ''`); err != nil {
 			return err
 		}
 	}
@@ -179,7 +213,63 @@ func migrate(db *sql.DB) error {
 	if _, err := tx.Exec(`CREATE INDEX IF NOT EXISTS events_calendar ON events(calendar_id)`); err != nil {
 		return err
 	}
+	if err := assignMissingICalUIDs(tx, "events"); err != nil {
+		return err
+	}
+	if err := assignMissingICalUIDs(tx, "calendars"); err != nil {
+		return err
+	}
+	if _, err := tx.Exec(`CREATE UNIQUE INDEX IF NOT EXISTS events_ical_uid ON events(ical_uid) WHERE ical_uid <> ''`); err != nil {
+		return err
+	}
+	if _, err := tx.Exec(`CREATE UNIQUE INDEX IF NOT EXISTS calendars_ical_uid ON calendars(ical_uid) WHERE ical_uid <> ''`); err != nil {
+		return err
+	}
 	return tx.Commit()
+}
+
+func newICalUID() (string, error) {
+	var value [16]byte
+	if _, err := rand.Read(value[:]); err != nil {
+		return "", err
+	}
+	value[6] = value[6]&0x0f | 0x40
+	value[8] = value[8]&0x3f | 0x80
+	encoded := hex.EncodeToString(value[:])
+	return encoded[:8] + "-" + encoded[8:12] + "-" + encoded[12:16] + "-" + encoded[16:20] + "-" + encoded[20:], nil
+}
+
+func assignMissingICalUIDs(tx *sql.Tx, table string) error {
+	rows, err := tx.Query(`SELECT id FROM ` + table + ` WHERE ical_uid = ''`)
+	if err != nil {
+		return err
+	}
+	var ids []int64
+	for rows.Next() {
+		var id int64
+		if err := rows.Scan(&id); err != nil {
+			rows.Close()
+			return err
+		}
+		ids = append(ids, id)
+	}
+	if err := rows.Err(); err != nil {
+		rows.Close()
+		return err
+	}
+	if err := rows.Close(); err != nil {
+		return err
+	}
+	for _, id := range ids {
+		uid, err := newICalUID()
+		if err != nil {
+			return err
+		}
+		if _, err := tx.Exec(`UPDATE `+table+` SET ical_uid = ? WHERE id = ?`, uid, id); err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 // ensurePrimaryCalendar returns the id of the primary calendar, and creates
@@ -257,7 +347,7 @@ func nowMs() int64              { return time.Now().UnixMilli() }
 // ListEvents returns events that overlap the range [from, to).
 func (s *Store) ListEvents(from, to time.Time) ([]Event, error) {
 	rows, err := s.db.Query(`
-		SELECT id, calendar_id, time_zone, title, description, color, start_ms, end_ms, reminders
+		SELECT id, calendar_id, time_zone, title, description, color, start_ms, end_ms, reminders, ical_uid, all_day
 		FROM events
 		WHERE start_ms < ? AND end_ms > ?
 		ORDER BY start_ms, end_ms DESC, id`, toMs(to), toMs(from))
@@ -271,7 +361,30 @@ func (s *Store) ListEvents(from, to time.Time) ([]Event, error) {
 		var e Event
 		var start, end int64
 		var reminders string
-		if err := rows.Scan(&e.ID, &e.CalendarID, &e.TimeZone, &e.Title, &e.Description, &e.Color, &start, &end, &reminders); err != nil {
+		if err := rows.Scan(&e.ID, &e.CalendarID, &e.TimeZone, &e.Title, &e.Description, &e.Color, &start, &end, &reminders, &e.ICalUID, &e.AllDay); err != nil {
+			return nil, err
+		}
+		e.Start, e.End = fromMs(start), fromMs(end)
+		e.Reminders = decodeReminders(reminders)
+		events = append(events, e)
+	}
+	return events, rows.Err()
+}
+
+func (s *Store) ListAllEvents() ([]Event, error) {
+	rows, err := s.db.Query(`
+		SELECT id, calendar_id, time_zone, title, description, color, start_ms, end_ms, reminders, ical_uid, all_day
+		FROM events ORDER BY start_ms, end_ms DESC, id`)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	events := []Event{}
+	for rows.Next() {
+		var e Event
+		var start, end int64
+		var reminders string
+		if err := rows.Scan(&e.ID, &e.CalendarID, &e.TimeZone, &e.Title, &e.Description, &e.Color, &start, &end, &reminders, &e.ICalUID, &e.AllDay); err != nil {
 			return nil, err
 		}
 		e.Start, e.End = fromMs(start), fromMs(end)
@@ -286,9 +399,9 @@ func (s *Store) GetEvent(id int64) (Event, error) {
 	var start, end int64
 	var reminders string
 	err := s.db.QueryRow(`
-		SELECT id, calendar_id, time_zone, title, description, color, start_ms, end_ms, reminders
+		SELECT id, calendar_id, time_zone, title, description, color, start_ms, end_ms, reminders, ical_uid, all_day
 		FROM events WHERE id = ?`, id).
-		Scan(&e.ID, &e.CalendarID, &e.TimeZone, &e.Title, &e.Description, &e.Color, &start, &end, &reminders)
+		Scan(&e.ID, &e.CalendarID, &e.TimeZone, &e.Title, &e.Description, &e.Color, &start, &end, &reminders, &e.ICalUID, &e.AllDay)
 	if errors.Is(err, sql.ErrNoRows) {
 		return e, ErrNotFound
 	}
@@ -298,11 +411,18 @@ func (s *Store) GetEvent(id int64) (Event, error) {
 }
 
 func (s *Store) CreateEvent(e Event) (Event, error) {
+	if e.ICalUID == "" {
+		var err error
+		e.ICalUID, err = newICalUID()
+		if err != nil {
+			return e, err
+		}
+	}
 	now := nowMs()
 	res, err := s.db.Exec(`
-		INSERT INTO events (calendar_id, time_zone, title, description, color, start_ms, end_ms, reminders, created_at, updated_at)
-		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-		e.CalendarID, e.TimeZone, e.Title, e.Description, e.Color, toMs(e.Start), toMs(e.End), encodeReminders(e.Reminders), now, now)
+		INSERT INTO events (calendar_id, time_zone, title, description, color, start_ms, end_ms, reminders, ical_uid, all_day, created_at, updated_at)
+		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+		e.CalendarID, e.TimeZone, e.Title, e.Description, e.Color, toMs(e.Start), toMs(e.End), encodeReminders(e.Reminders), e.ICalUID, e.AllDay, now, now)
 	if err != nil {
 		return e, err
 	}
@@ -341,11 +461,11 @@ func (s *Store) DeleteEvent(id int64) error {
 
 // ---- Calendars ----
 
-const calendarColumns = `id, name, description, color, time_zone, hidden, is_primary`
+const calendarColumns = `id, name, description, color, time_zone, hidden, is_primary, ical_uid`
 
 func scanCalendar(row interface{ Scan(...any) error }) (Calendar, error) {
 	var c Calendar
-	err := row.Scan(&c.ID, &c.Name, &c.Description, &c.Color, &c.TimeZone, &c.Hidden, &c.Primary)
+	err := row.Scan(&c.ID, &c.Name, &c.Description, &c.Color, &c.TimeZone, &c.Hidden, &c.Primary, &c.ICalUID)
 	return c, err
 }
 
@@ -389,11 +509,18 @@ func (s *Store) CountCalendars() (int, error) {
 }
 
 func (s *Store) CreateCalendar(c Calendar) (Calendar, error) {
+	if c.ICalUID == "" {
+		var err error
+		c.ICalUID, err = newICalUID()
+		if err != nil {
+			return c, err
+		}
+	}
 	now := nowMs()
 	res, err := s.db.Exec(`
-		INSERT INTO calendars (name, description, color, time_zone, hidden, is_primary, created_at, updated_at)
-		VALUES (?, ?, ?, ?, ?, 0, ?, ?)`,
-		c.Name, c.Description, c.Color, c.TimeZone, c.Hidden, now, now)
+		INSERT INTO calendars (name, description, color, time_zone, hidden, is_primary, ical_uid, created_at, updated_at)
+		VALUES (?, ?, ?, ?, ?, 0, ?, ?, ?)`,
+		c.Name, c.Description, c.Color, c.TimeZone, c.Hidden, c.ICalUID, now, now)
 	if err != nil {
 		return c, err
 	}

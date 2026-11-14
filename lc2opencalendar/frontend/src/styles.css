@@ -1090,6 +1090,17 @@ kbd {
   font-size: 13px;
   color: var(--text-2);
 }
+.import-export-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.import-export-message {
+  margin-top: 12px;
+}
+.import-export-message.error {
+  color: var(--danger);
+}
 .text-btn.inline {
   height: auto;
   padding: 0;

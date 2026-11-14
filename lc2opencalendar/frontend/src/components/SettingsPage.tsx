@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { api } from '../api';
 import Icon from '../icons';
 import Select from './Select';
 import SearchSelect from './SearchSelect';
@@ -196,11 +197,86 @@ interface SettingsPageProps {
   onCreateCalendar: (fields: CalendarPatch) => Promise<Calendar | null>;
   onUpdateCalendar: (id: number, patch: CalendarPatch) => void;
   onDeleteCalendar: (id: number) => Promise<boolean>;
+  onImportComplete: () => void;
   showShortcuts: boolean;
   onViewShortcuts: () => void;
 }
 
 type Group = 'general' | 'add' | 'mine';
+
+function ICalendarTools({ onImportComplete }: { onImportComplete: () => void }) {
+  const fileInput = useRef<HTMLInputElement>(null);
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState<{ text: string; error: boolean } | null>(null);
+
+  const exportCalendar = async () => {
+    setBusy(true);
+    setMessage(null);
+    try {
+      const blob = await api.exportICalendar();
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'lc2opencalendar.ics';
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      setMessage({ text: 'Calendar export downloaded.', error: false });
+    } catch (error) {
+      setMessage({ text: error instanceof Error ? error.message : String(error), error: true });
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const importCalendar = async (file: File | undefined) => {
+    if (!file) return;
+    setBusy(true);
+    setMessage(null);
+    try {
+      const result = await api.importICalendar(file);
+      onImportComplete();
+      const eventLabel = `${result.eventsImported} event${result.eventsImported === 1 ? '' : 's'} imported`;
+      const calendarLabel = `${result.calendarsImported} calendar${result.calendarsImported === 1 ? '' : 's'} added`;
+      const skippedLabel = result.eventsSkipped ? `; ${result.eventsSkipped} duplicate${result.eventsSkipped === 1 ? '' : 's'} skipped` : '';
+      setMessage({ text: `${eventLabel}, ${calendarLabel}${skippedLabel}.`, error: false });
+    } catch (error) {
+      setMessage({ text: error instanceof Error ? error.message : String(error), error: true });
+    } finally {
+      setBusy(false);
+      if (fileInput.current) fileInput.current.value = '';
+    }
+  };
+
+  return (
+    <section id="import-export">
+      <h2>Import and export</h2>
+      <p className="settings-note">
+        Export all calendars and events as an iCalendar (.ics) file, or import an .ics file into a new calendar.
+        Re-importing the same file skips events with matching iCalendar IDs. Recurring events are not supported.
+      </p>
+      <div className="import-export-actions">
+        <button type="button" className="filled-btn" disabled={busy} onClick={exportCalendar}>
+          Export calendars
+        </button>
+        <button type="button" className="outline-btn" disabled={busy} onClick={() => fileInput.current?.click()}>
+          Import .ics
+        </button>
+        <input
+          ref={fileInput}
+          type="file"
+          accept=".ics,text/calendar"
+          hidden
+          onChange={(event) => void importCalendar(event.currentTarget.files?.[0])}
+        />
+      </div>
+      {message && (
+        <p className={`settings-note import-export-message${message.error ? ' error' : ''}`} role={message.error ? 'alert' : 'status'}>
+          {message.text}
+        </p>
+      )}
+    </section>
+  );
+}
 
 // The settings are split into pages, like the classic calendar:
 // - "general": date and time, time zone, events, notifications, appearance,
@@ -212,7 +288,7 @@ type Group = 'general' | 'add' | 'mine';
 // `focus`: the page to open first ("create-calendar", "calendar-3"), or null.
 export default function SettingsPage({
   settings, onChange, onBack, focus, calendars, onCreateCalendar, onUpdateCalendar, onDeleteCalendar,
-  showShortcuts, onViewShortcuts,
+  onImportComplete, showShortcuts, onViewShortcuts,
 }: SettingsPageProps) {
   const narrow = useMedia(NARROW);
   const primaryZone = settings.timeZone || T.browserTimeZone();
@@ -255,6 +331,7 @@ export default function SettingsPage({
     { id: 'notifications', title: 'Notification settings' },
     { id: 'appearance', title: 'Appearance' },
     ...(showShortcuts ? [{ id: 'shortcuts', title: 'Keyboard shortcuts' }] : []),
+    { id: 'import-export', title: 'Import and export' },
   ];
 
   // Open a page. `section`: a part of the general page to scroll to.
@@ -511,6 +588,8 @@ export default function SettingsPage({
             </p>
           </section>
         )}
+
+        <ICalendarTools onImportComplete={onImportComplete} />
       </>
     );
   }
